@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-09T22:00:00-07:00",
-  "_updated_by": "manual_backfill",
+  "_updated": "2026-05-10T10:15:00-07:00",
+  "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -12,8 +12,8 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": false,
     "current_phase": "calibration",
-    "days_into_cut": 7,
-    "week_number": 1
+    "days_into_cut": 8,
+    "week_number": 2
   },
   "daily_log": {
     "2026-05-03": {
@@ -730,7 +730,7 @@
         "dal_score": null,
         "neat_score": null
       },
-      "training": null,
+      "training": "rest",
       "food_log_summary": {
         "meals": [
           {
@@ -811,34 +811,34 @@
       "stress_rating": 6,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": 1313,
-        "mcp_protein": 140,
-        "mcp_carbs": 161,
-        "mcp_fat": 35,
+        "mcp_calories": 2267,
+        "mcp_protein": 198,
+        "mcp_carbs": 269,
+        "mcp_fat": 69,
         "reconciled": false,
-        "reconciled_calories": 1313,
-        "reconciled_protein": 140,
-        "reconciled_carbs": 161,
-        "reconciled_fat": 35,
-        "reconciliation_notes": "Partial day at time of pull. Sashimi lunch + standard meals.",
-        "fiber_estimated_g": 45,
-        "protein_per_lb": 0.79
+        "reconciled_calories": 2267,
+        "reconciled_protein": 198,
+        "reconciled_carbs": 269,
+        "reconciled_fat": 69,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": 40,
+        "protein_per_lb": 1.12
       },
       "sleep": {
-        "score": null,
-        "duration_min": null,
-        "efficiency_pct": null,
-        "deep_pct": null,
-        "rem_pct": null,
-        "light_pct": null,
-        "awake_min": null,
-        "latency_min": null,
-        "hr_avg": null,
-        "hr_lowest": null,
-        "hrv_avg": null,
-        "breathing_rate": null,
-        "bedtime": null,
-        "wake_time": null
+        "score": 84,
+        "duration_min": 408,
+        "efficiency_pct": 94.9,
+        "deep_pct": 21.2,
+        "rem_pct": 24.3,
+        "light_pct": 54.5,
+        "awake_min": 21,
+        "latency_min": 9,
+        "hr_avg": 67.6,
+        "hr_lowest": 58,
+        "hrv_avg": 28,
+        "breathing_rate": 15.5,
+        "bedtime": "23:55",
+        "wake_time": "07:05"
       },
       "readiness": {
         "score": 54,
@@ -849,13 +849,13 @@
         "body_temp_deviation": 0.5
       },
       "activity": {
-        "steps": null,
-        "calories_total": null,
-        "calories_active": null,
-        "high_intensity_min": null,
-        "medium_intensity_min": null,
-        "low_intensity_min": null,
-        "sedentary_min": null,
+        "steps": 14165,
+        "calories_total": 2884,
+        "calories_active": 736,
+        "high_intensity_min": 0,
+        "medium_intensity_min": 90,
+        "low_intensity_min": 279,
+        "sedentary_min": 521,
         "dal_score": null,
         "neat_score": null
       },
@@ -867,38 +867,39 @@
             "window": "breakfast",
             "items": [
               "ON Protein 1 scoop",
-              "PB Fit",
+              "PB Fit 2tbsp",
               "Keto Muffin",
               "Banana",
               "Almond Milk"
             ],
             "cal": 383,
             "pro": 42,
-            "carb": 60,
+            "carb": 66,
             "fat": 7
           },
           {
-            "time": "14:07",
+            "time": "14:00",
             "window": "lunch",
             "items": [
-              "Tuna Sashimi 54g",
-              "Salmon Sashimi 42g",
+              "California Roll 3pc",
+              "Yellowfin Tuna Sashimi 54g",
+              "Sashimi Salmon 42g",
               "Hamachi 13g",
               "Seaweed Salad"
             ],
-            "cal": 220,
-            "pro": 37,
-            "carb": 1,
-            "fat": 5
+            "cal": 293,
+            "pro": 39,
+            "carb": 15,
+            "fat": 7
           },
           {
             "time": "15:14",
             "window": "snack",
             "items": [
               "ON Protein 0.5 scoop",
-              "PB Fit",
+              "PB Fit 2tbsp",
               "Keto Muffin",
-              "Berries",
+              "Triple Berry Blend",
               "Almond Milk"
             ],
             "cal": 342,
@@ -910,17 +911,81 @@
             "time": "19:00",
             "window": "dinner",
             "items": [
-              "Chicken Thigh 185g",
-              "Rice 150g",
+              "Chicken Thigh 153g",
+              "Yellowfin Tuna 45g",
+              "Sashimi Salmon 60g",
+              "Hamachi 28g",
+              "Cooked White Rice 200g",
               "Green Beans",
-              "Peas&Carrots"
+              "Peas & Carrots",
+              "Seaweed Salad"
             ],
-            "cal": 460,
-            "pro": 35,
-            "carb": 70,
-            "fat": 8
+            "cal": 678,
+            "pro": 67,
+            "carb": 71,
+            "fat": 13
+          },
+          {
+            "time": "22:00",
+            "window": "pre_sleep",
+            "items": [
+              "Quest Stacks Cinnamon Brown Sugar",
+              "Sunchips Tomato Jalapeno"
+            ],
+            "cal": 430,
+            "pro": 24,
+            "carb": 45,
+            "fat": 20
           }
         ]
+      }
+    },
+    "2026-05-10": {
+      "weight_lbs": 176.6,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 76,
+        "duration_min": 339,
+        "efficiency_pct": 93.1,
+        "deep_pct": 23.3,
+        "rem_pct": 22.7,
+        "light_pct": 54.0,
+        "awake_min": 25,
+        "latency_min": 9,
+        "hr_avg": 55.25,
+        "hr_lowest": 51,
+        "hrv_avg": 51,
+        "breathing_rate": 14.5,
+        "bedtime": "01:09",
+        "wake_time": "07:13"
+      },
+      "readiness": {
+        "score": 72,
+        "hrv_balance": 77,
+        "resting_hr": 71,
+        "recovery_index": 61,
+        "sleep_balance": 49,
+        "body_temp_deviation": 0.27
+      },
+      "activity": null,
+      "training": null,
+      "food_log_summary": {
+        "meals": []
       }
     }
   },
@@ -1139,72 +1204,83 @@
   },
   "checkin_status": {
     "_description": "Tracks whether today's check-in is complete. Reset daily by the 10am task.",
-    "today": "2026-05-09",
+    "today": "2026-05-10",
     "morning_checkin_complete": false,
-    "training_logged": true,
-    "training_type": "lifting"
+    "training_logged": false
   },
   "computed_dashboard_values": {
-    "current_weight": 177.4,
-    "seven_day_avg_weight": 178.6,
-    "rate_of_loss_lbs_per_week": 1.4,
-    "projected_goal_date": "2026-08-01",
-    "weeks_remaining": 12,
-    "total_lost": 1.4,
-    "avg_intake_cal": 2576,
-    "avg_protein_g": 211,
-    "avg_carbs_g": 313,
-    "avg_fat_g": 88,
-    "avg_fiber_g": 61,
-    "protein_per_lb": 1.19,
+    "current_weight": 176.6,
+    "seven_day_avg_weight": 178.0,
+    "rate_of_loss_lbs_per_week": 1.8,
+    "projected_goal_date": "2026-07-19",
+    "weeks_remaining": 10,
+    "total_lost": 2.0,
+    "avg_intake_cal": 2532,
+    "avg_protein_g": 209,
+    "avg_carbs_g": 307,
+    "avg_fat_g": 85,
+    "avg_fiber_g": 58,
+    "protein_per_lb": 1.18,
     "macro_split_pct": {
-      "protein": 29,
+      "protein": 30,
       "carbs": 43,
       "fat": 27
     },
-    "last_night_sleep_score": 71,
-    "avg_sleep_score": 77,
+    "last_night_sleep_score": 76,
+    "avg_sleep_score": 78.3,
     "last_night_hrv": 51,
-    "avg_hrv": 56,
-    "last_night_hr_lowest": 50,
-    "avg_hr_lowest": 50,
-    "last_night_efficiency": 90.6,
-    "avg_efficiency": 92.2,
-    "last_night_deep_pct": 23.9,
-    "last_night_rem_pct": 18.3,
-    "last_night_latency_min": 11,
-    "readiness_today": 54,
-    "avg_readiness": 68,
-    "yesterday_steps": 16156,
-    "avg_steps": 18056,
+    "avg_hrv": 50.6,
+    "last_night_hr_lowest": 51,
+    "avg_hr_lowest": 51.3,
+    "last_night_efficiency": 93.1,
+    "avg_efficiency": 92.4,
+    "last_night_deep_pct": 23.3,
+    "last_night_rem_pct": 22.7,
+    "last_night_latency_min": 9,
+    "readiness_today": 72,
+    "avg_readiness": 69.3,
+    "yesterday_steps": 14165,
+    "avg_steps": 17253,
     "avg_stress": 4.7,
     "all_floor_lifts_green": true,
     "dal_score": null,
     "neat_score": null,
     "signals": [
       {
-        "icon": "🍛",
-        "title": "May 8 reconciled — Indian dinner added 1,856 cal",
-        "detail": "MCP missed AI-logged entries. Actual: 4,332 cal / 220g P. Protein was on point.",
-        "severity": "info"
-      },
-      {
-        "icon": "⚠️",
-        "title": "Readiness crashed to 54",
-        "detail": "Resting HR contributor at 16/100. Artifact from Indian dinner + 2 IPAs. Expect recovery by Monday.",
-        "severity": "warning"
-      },
-      {
-        "icon": "👟",
-        "title": "Steps averaging 18,056",
-        "detail": "Elite NEAT for a cut. Range 16,156-21,238. All days above 16k.",
+        "icon": "💓",
+        "title": "May 9 HRV was 28 — bounced back to 51 last night",
+        "detail": "The May 8 feast + 331lb deads caused a one-night HRV crash. Last night recovered to 51 (near avg). HR lowest back to 51 from 58.",
         "severity": "positive"
       },
       {
-        "icon": "🧪",
-        "title": "Leucine per-meal attention needed",
-        "detail": "Plant protein PDCAAS 0.82, limiting methionine. Chicken complements. Target 2.5g leucine per meal.",
+        "icon": "😴",
+        "title": "Short sleep: 5h 39m (score 76)",
+        "detail": "1:09 AM bedtime cutting into duration. Efficiency was solid (93.1%) and biometrics recovered. Push for earlier bedtime tonight.",
+        "severity": "warning"
+      },
+      {
+        "icon": "🔋",
+        "title": "Readiness recovered: 54 → 72",
+        "detail": "Sleep balance still low at 49/100. Body bouncing back from May 8 spike. Give it another day or two.",
+        "severity": "positive"
+      },
+      {
+        "icon": "👟",
+        "title": "Steps dipped to 14,165 (avg 17,253)",
+        "detail": "Lowest day of the cut so far. Still decent NEAT but worth keeping an eye on today.",
         "severity": "info"
+      },
+      {
+        "icon": "📅",
+        "title": "Week 2 begins — DEXA in 3 days",
+        "detail": "Calibration runs through May 24. DEXA baseline scan May 13 (target ~178 lbs).",
+        "severity": "info"
+      },
+      {
+        "icon": "🥩",
+        "title": "Protein at 198g (1.12 g/lb) yesterday",
+        "detail": "7-day avg protein at 209g (1.18 g/lb). California roll + sashimi + chicken.",
+        "severity": "positive"
       }
     ],
     "micronutrient_status": {
