@@ -174,20 +174,21 @@ async function init() {
   const todayLog = logs[today];
 
   // Helper to read a value from either full log or archive
+  // Uses optional chaining — null nested objects return null, not crash
   function getVal(date, path) {
     if (logs[date]) {
       // Full entry — navigate nested path
       if (path === 'weight') return logs[date].weight_lbs;
       if (path === 'stress') return logs[date].stress_rating;
-      if (path === 'cal') return logs[date].nutrition.reconciled_calories;
-      if (path === 'pro') return logs[date].nutrition.reconciled_protein;
-      if (path === 'carb') return logs[date].nutrition.reconciled_carbs;
-      if (path === 'fat') return logs[date].nutrition.reconciled_fat;
-      if (path === 'sleep') return logs[date].sleep.score;
-      if (path === 'hrv') return logs[date].sleep.hrv_avg;
-      if (path === 'steps') return logs[date].activity.steps;
-      if (path === 'readiness') return logs[date].readiness.score;
-      if (path === 'efficiency') return logs[date].sleep.efficiency_pct;
+      if (path === 'cal') return logs[date].nutrition?.reconciled_calories ?? null;
+      if (path === 'pro') return logs[date].nutrition?.reconciled_protein ?? null;
+      if (path === 'carb') return logs[date].nutrition?.reconciled_carbs ?? null;
+      if (path === 'fat') return logs[date].nutrition?.reconciled_fat ?? null;
+      if (path === 'sleep') return logs[date].sleep?.score ?? null;
+      if (path === 'hrv') return logs[date].sleep?.hrv_avg ?? null;
+      if (path === 'steps') return logs[date].activity?.steps ?? null;
+      if (path === 'readiness') return logs[date].readiness?.score ?? null;
+      if (path === 'efficiency') return logs[date].sleep?.efficiency_pct ?? null;
     } else if (archive[date]) {
       // Archived entry — flat structure
       if (path === 'weight') return archive[date].weight_lbs;
@@ -318,20 +319,20 @@ async function init() {
   const fullDays = dates.filter(d => d !== today);
   let nutRows = '';
   dates.forEach(d => {
-    const n = logs[d].nutrition;
+    const n = logs[d].nutrition || {};
     const isToday = d === today;
     const isReconciled = n.reconciled;
     const label = `May ${+d.split('-')[2]}${isReconciled ? ' ✱' : ''}${isToday ? ' ⌛' : ''}`;
     const cls = isToday ? ' style="color:var(--text-muted);font-style:italic;"' : '';
-    nutRows += `<tr><td${cls}>${label}</td><td${cls}>${fmt(n.reconciled_calories)}</td><td${cls}>${n.reconciled_protein}g</td><td${cls}>${n.reconciled_carbs}g</td><td${cls}>${n.reconciled_fat}g</td><td${cls}>${n.protein_per_lb.toFixed(2)}</td></tr>`;
+    nutRows += `<tr><td${cls}>${label}</td><td${cls}>${fmt(n.reconciled_calories)}</td><td${cls}>${n.reconciled_protein != null ? n.reconciled_protein + 'g' : '—'}</td><td${cls}>${n.reconciled_carbs != null ? n.reconciled_carbs + 'g' : '—'}</td><td${cls}>${n.reconciled_fat != null ? n.reconciled_fat + 'g' : '—'}</td><td${cls}>${n.protein_per_lb != null ? n.protein_per_lb.toFixed(2) : '—'}</td></tr>`;
   });
   nutRows += `<tr class="avg-row"><td>${fullDays.length}-Day Avg</td><td>${fmt(V.avg_intake_cal)}</td><td>${V.avg_protein_g}g</td><td>${V.avg_carbs_g}g</td><td>${V.avg_fat_g}g</td><td>${V.protein_per_lb}</td></tr>`;
 
   // Reconciliation callout
-  const reconDays = dates.filter(d => logs[d].nutrition.reconciled);
+  const reconDays = dates.filter(d => logs[d].nutrition?.reconciled);
   let reconCallout = '';
   if (reconDays.length) {
-    const notes = reconDays.map(d => `✱ May ${+d.split('-')[2]}: ${logs[d].nutrition.reconciliation_notes}`).join('<br>');
+    const notes = reconDays.map(d => `✱ May ${+d.split('-')[2]}: ${logs[d].nutrition?.reconciliation_notes || ''}`).join('<br>');
     reconCallout = `<div class="callout info" style="margin-top:20px;">${notes}</div>`;
   }
 
@@ -347,19 +348,19 @@ async function init() {
   let heatHTML = `<div class="heatmap-grid">
     <div class="heatmap-label"></div>${heatDates.map(d => `<div class="heatmap-header">${shortDate(d)}</div>`).join('')}
     <div class="heatmap-label">Cal</div>${heatDates.map(d => {
-      const v = logs[d].nutrition.reconciled_calories;
+      const v = logs[d].nutrition?.reconciled_calories;
       const partial = d === today;
-      return `<div class="heatmap-cell" style="background:${heatColor(v, calTarget, null, partial)};${partial?'opacity:0.5;':''}">${v}</div>`;
+      return `<div class="heatmap-cell" style="background:${v != null ? heatColor(v, calTarget, null, partial) : 'rgba(50,50,50,0.4)'};${partial?'opacity:0.5;':''}">${v != null ? v : '—'}</div>`;
     }).join('')}
     <div class="heatmap-label">Pro</div>${heatDates.map(d => {
-      const v = logs[d].nutrition.reconciled_protein;
+      const v = logs[d].nutrition?.reconciled_protein;
       const partial = d === today;
-      return `<div class="heatmap-cell" style="background:${heatColor(v, proTarget, proFloor, partial)};${partial?'opacity:0.5;':''}">${v}</div>`;
+      return `<div class="heatmap-cell" style="background:${v != null ? heatColor(v, proTarget, proFloor, partial) : 'rgba(50,50,50,0.4)'};${partial?'opacity:0.5;':''}">${v != null ? v : '—'}</div>`;
     }).join('')}
     <div class="heatmap-label">Fat</div>${heatDates.map(d => {
-      const v = logs[d].nutrition.reconciled_fat;
+      const v = logs[d].nutrition?.reconciled_fat;
       const partial = d === today;
-      return `<div class="heatmap-cell" style="background:${heatColor(v, fatTarget, null, partial)};${partial?'opacity:0.5;':''}">${v}</div>`;
+      return `<div class="heatmap-cell" style="background:${v != null ? heatColor(v, fatTarget, null, partial) : 'rgba(50,50,50,0.4)'};${partial?'opacity:0.5;':''}">${v != null ? v : '—'}</div>`;
     }).join('')}
   </div>
   <div style="margin-top:10px;display:flex;gap:16px;font-family:var(--font-mono);font-size:10px;color:var(--text-muted);">
@@ -378,6 +379,7 @@ async function init() {
   let stressHTML = '';
   dates.forEach(d => {
     const v = logs[d].stress_rating;
+    if (v == null) return;
     const sc = stressColor(v);
     stressHTML += `<div class="stress-row"><span class="stress-day">${shortDate(d)}</span><div class="stress-bar-track"><div class="stress-bar-fill" style="width:${v*10}%;background:${sc.bar};"></div></div><span class="stress-value" style="${sc.cls}">${v}</span></div>`;
   });
@@ -386,7 +388,11 @@ async function init() {
   const liftMap = { back_squat: 'Back Squat', db_chest_press: 'DB Chest Press', trap_bar_deadlift: 'Trap Bar Deadlift' };
   let liftHTML = '';
   for (const [key, label] of Object.entries(liftMap)) {
-    const f = floors[key];
+    const f = floors?.[key];
+    if (!f || !f.history || !f.history.length) {
+      liftHTML += `<div class="lift-row"><span class="lift-name">${label}</span><span class="lift-current">—</span><span class="lift-floor">—</span><div class="lift-status safe"></div></div>`;
+      continue;
+    }
     const hist = f.history;
     const last = hist[hist.length - 1];
     const repsStr = last.reps.join('/');
@@ -395,23 +401,24 @@ async function init() {
 
   // Last training session detail
   let lastSessionHTML = '';
-  if (training.sessions.length) {
+  if (training?.sessions?.length) {
     const s = training.sessions[training.sessions.length - 1];
     lastSessionHTML = `<div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border-subtle);"><div class="panel-title" style="margin-bottom:12px;">Last Session — ${fmtDate(s.date).split(',')[0]}</div><div style="font-size:12px;color:var(--text-secondary);line-height:1.7;font-family:var(--font-mono);font-weight:300;">`;
-    s.exercises.forEach(ex => {
+    (s.exercises || []).forEach(ex => {
+      if (!ex.sets || !ex.sets.length) { lastSessionHTML += `${ex.name}<br>`; return; }
       const setStr = ex.sets.map(st => `${st.reps}`).join('/');
-      const rpeStr = ex.sets.length > 1 ? `RPE ${ex.sets[0].rpe}→${ex.sets[ex.sets.length-1].rpe}` : `RPE ${ex.sets[0].rpe}`;
-      lastSessionHTML += `${ex.name} ${ex.sets[0].weight}×${setStr} · ${rpeStr}<br>`;
+      const rpeStr = ex.sets.length > 1 ? `RPE ${ex.sets[0].rpe || '?'}→${ex.sets[ex.sets.length-1].rpe || '?'}` : `RPE ${ex.sets[0].rpe || '?'}`;
+      lastSessionHTML += `${ex.name} ${ex.sets[0].weight || ''}×${setStr} · ${rpeStr}<br>`;
     });
     lastSessionHTML += `</div></div>`;
   }
 
   // Sleep panel from last available sleep data
-  const sleepDays = dates.filter(d => logs[d].sleep.score != null);
+  const sleepDays = dates.filter(d => logs[d].sleep?.score != null);
   const lastSleep = sleepDays.length ? logs[sleepDays[sleepDays.length-1]].sleep : null;
-  const readinessVal = todayLog.readiness.score;
-  const readinessColor = readinessVal < 60 ? 'color:var(--accent-red)' : readinessVal < 70 ? 'color:var(--accent-gold)' : '';
-  const readinessFlag = readinessVal < 60 ? ' <span style="color:var(--accent-red);font-size:11px;">↓ low</span>' : '';
+  const readinessVal = todayLog.readiness?.score ?? null;
+  const readinessColor = readinessVal != null && readinessVal < 60 ? 'color:var(--accent-red)' : readinessVal != null && readinessVal < 70 ? 'color:var(--accent-gold)' : '';
+  const readinessFlag = readinessVal != null && readinessVal < 60 ? ' <span style="color:var(--accent-red);font-size:11px;">↓ low</span>' : '';
 
   // Macro split
   const sp = V.macro_split_pct;
@@ -465,7 +472,7 @@ async function init() {
       <h1>Summer Cut</h1>
       <span class="header-date">${fmtDate(today)}</span>
     </div>
-    <div class="header-sub">Day <span>${M.days_into_cut}</span> · Week <span>${M.week_number}</span> · ${M.calibration_complete ? 'Active Cut' : 'Calibration Period'}${D.dexa_scans.next_scheduled ? ` · DEXA ${fmtDate(D.dexa_scans.next_scheduled.date).split(',')[0]}` : ''}</div>
+    <div class="header-sub">Day <span>${M.days_into_cut}</span> · Week <span>${M.week_number}</span> · ${M.calibration_complete ? 'Active Cut' : 'Calibration Period'}${D.dexa_scans?.next_scheduled ? ` · DEXA ${fmtDate(D.dexa_scans.next_scheduled.date).split(',')[0]}` : ''}</div>
   </div>
 
   <!-- Headline Metrics -->
@@ -572,7 +579,7 @@ async function init() {
         <div class="panel-row"><span class="panel-row-label">Sleep Efficiency</span><span class="panel-row-value">${lastSleep.efficiency_pct}%</span></div>
         <div class="panel-row"><span class="panel-row-label">${sleepDays.length}-Night Avg Efficiency</span><span class="panel-row-value" style="color:var(--accent-green);">${V.avg_efficiency}%</span></div>
         <div class="panel-row"><span class="panel-row-label">Latency</span><span class="panel-row-value">${lastSleep.latency_min} <span style="color:var(--text-muted);font-size:11px;">min</span></span></div>
-        <div class="panel-row"><span class="panel-row-label">Readiness</span><span class="panel-row-value" style="${readinessColor}">${readinessVal}${readinessFlag}</span></div>
+        <div class="panel-row"><span class="panel-row-label">Readiness</span><span class="panel-row-value" style="${readinessColor}">${readinessVal != null ? readinessVal : '—'}${readinessFlag}</span></div>
         <div class="sleep-arch-bar" style="margin-top:20px;">
           <div class="sleep-arch-segment" style="width:${lastSleep.deep_pct}%;background:var(--accent-blue);"></div>
           <div class="sleep-arch-segment" style="width:${lastSleep.rem_pct}%;background:#7b6db5;"></div>
@@ -670,7 +677,7 @@ async function init() {
     <span class="footer-text">Summer Cut Dashboard v1.0 — Data-Driven</span>
     <div class="footer-status">
       <div class="footer-dot"></div>
-      <span class="footer-text">${M.calibration_complete ? 'Active Cut' : 'Calibration Period'} · ${D.trigger_status.refeed_triggers_active.length === 0 ? 'No Triggers Active' : D.trigger_status.refeed_triggers_active.length + ' Triggers Active'}</span>
+      <span class="footer-text">${M.calibration_complete ? 'Active Cut' : 'Calibration Period'} · ${(D.trigger_status?.refeed_triggers_active?.length || 0) === 0 ? 'No Triggers Active' : D.trigger_status.refeed_triggers_active.length + ' Triggers Active'}</span>
     </div>
   </div>
   `;

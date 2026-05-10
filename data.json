@@ -982,7 +982,17 @@
         "sleep_balance": 49,
         "body_temp_deviation": 0.27
       },
-      "activity": null,
+      "activity": {
+        "steps": null,
+        "calories_total": null,
+        "calories_active": null,
+        "high_intensity_min": null,
+        "medium_intensity_min": null,
+        "low_intensity_min": null,
+        "sedentary_min": null,
+        "dal_score": null,
+        "neat_score": null
+      },
       "training": null,
       "food_log_summary": {
         "meals": []
@@ -1182,13 +1192,13 @@
     "last_refeed": null,
     "last_diet_break": null,
     "continuous_deficit_days": 7,
-    "notes": "Calibration period — triggers disabled until May 24."
+    "notes": "Calibration period \u2014 triggers disabled until May 24."
   },
   "tdee_tracking": {
     "claude_estimate": null,
     "macrofactor_estimate": null,
     "divergence_cal": null,
-    "confidence": "low — week 1 calibrating",
+    "confidence": "low \u2014 week 1 calibrating",
     "history": []
   },
   "dexa_scans": {
@@ -1247,37 +1257,37 @@
     "neat_score": null,
     "signals": [
       {
-        "icon": "💓",
-        "title": "May 9 HRV was 28 — bounced back to 51 last night",
+        "icon": "\ud83d\udc93",
+        "title": "May 9 HRV was 28 \u2014 bounced back to 51 last night",
         "detail": "The May 8 feast + 331lb deads caused a one-night HRV crash. Last night recovered to 51 (near avg). HR lowest back to 51 from 58.",
         "severity": "positive"
       },
       {
-        "icon": "😴",
+        "icon": "\ud83d\ude34",
         "title": "Short sleep: 5h 39m (score 76)",
         "detail": "1:09 AM bedtime cutting into duration. Efficiency was solid (93.1%) and biometrics recovered. Push for earlier bedtime tonight.",
         "severity": "warning"
       },
       {
-        "icon": "🔋",
-        "title": "Readiness recovered: 54 → 72",
+        "icon": "\ud83d\udd0b",
+        "title": "Readiness recovered: 54 \u2192 72",
         "detail": "Sleep balance still low at 49/100. Body bouncing back from May 8 spike. Give it another day or two.",
         "severity": "positive"
       },
       {
-        "icon": "👟",
+        "icon": "\ud83d\udc5f",
         "title": "Steps dipped to 14,165 (avg 17,253)",
         "detail": "Lowest day of the cut so far. Still decent NEAT but worth keeping an eye on today.",
         "severity": "info"
       },
       {
-        "icon": "📅",
-        "title": "Week 2 begins — DEXA in 3 days",
+        "icon": "\ud83d\udcc5",
+        "title": "Week 2 begins \u2014 DEXA in 3 days",
         "detail": "Calibration runs through May 24. DEXA baseline scan May 13 (target ~178 lbs).",
         "severity": "info"
       },
       {
-        "icon": "🥩",
+        "icon": "\ud83e\udd69",
         "title": "Protein at 198g (1.12 g/lb) yesterday",
         "detail": "7-day avg protein at 209g (1.18 g/lb). California roll + sashimi + chicken.",
         "severity": "positive"
@@ -1411,7 +1421,7 @@
           "severity": "good"
         }
       ],
-      "borderline": "Phosphorus 99% · Magnesium 86% · Panto (B5) 86% — borderline OK, boosted by supplements",
+      "borderline": "Phosphorus 99% \u00b7 Magnesium 86% \u00b7 Panto (B5) 86% \u2014 borderline OK, boosted by supplements",
       "top_fix_note": "9 micronutrients below 80% RDA. Top 3 fixes: eggs (choline, B12, A), spinach (folate, A, K), Greek yogurt (calcium, B12, riboflavin)."
     },
     "action_items": [
@@ -1423,12 +1433,12 @@
       {
         "priority": "p2",
         "title": "Boost calcium + riboflavin",
-        "detail": "Greek yogurt (150g/day) adds ~180mg calcium, B12, and riboflavin at ~90 cal. Already buying Dannon Light + Fit — use it daily."
+        "detail": "Greek yogurt (150g/day) adds ~180mg calcium, B12, and riboflavin at ~90 cal. Already buying Dannon Light + Fit \u2014 use it daily."
       },
       {
         "priority": "p3",
         "title": "Add spinach to dinner rotation",
-        "detail": "100g frozen spinach covers folate, vitamin A, and boosts magnesium at only 29 cal. Already eating frozen veg nightly — easy swap/add."
+        "detail": "100g frozen spinach covers folate, vitamin A, and boosts magnesium at only 29 cal. Already eating frozen veg nightly \u2014 easy swap/add."
       },
       {
         "priority": "p3",
