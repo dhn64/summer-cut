@@ -1412,5 +1412,30 @@
     "compression_function": "See archive_entry() below",
     "when_to_run": "Daily, as part of the 10am morning prep task, after writing the new day's entry",
     "note": "Never archive today or the last 13 days. The roundtable needs full per-meal detail for at least 2 weeks of recent history."
+  },
+  "weekly_targets": {
+    "_description": "Set by the Performance Roundtable each Sunday. The dashboard heatmap and adherence metrics read from here. Empty until the first roundtable runs.",
+    "current": {
+      "effective_date": "2026-05-03",
+      "set_by": "initial_estimate",
+      "calories": null,
+      "protein_g": null,
+      "protein_floor_g": null,
+      "carbs_g": null,
+      "fat_g": null,
+      "fiber_g": null,
+      "notes": "No targets set yet. First roundtable will establish week 2 targets from real data."
+    },
+    "history": []
+  },
+  "weekly_programming": {
+    "_description": "Set by the Performance Roundtable (Helms voice). Training prescription for the coming week. Includes lift targets, RPE ranges, volume recommendations, deload timing.",
+    "current": {
+      "effective_date": null,
+      "set_by": null,
+      "program": null,
+      "notes": "Need 2-3 weeks of training log data before Helms can prescribe a structured program."
+    },
+    "history": []
   }
 }
