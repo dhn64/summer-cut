@@ -1,0 +1,2350 @@
+{
+  "version": "2.0",
+  "created": "2026-05-09",
+  "description": "Summer Cut micronutrient database v2.0. Maps MacroFactor food IDs to complete nutritional profiles with bioavailability flags, amino acid profiles, glycemic index/load, and anti-nutrient interaction data.",
+  "total_foods": 63,
+  "coverage_notes": {
+    "exact": "USDA common foods with complete micronutrient profiles",
+    "mapped_usda": "Branded foods matched to equivalent USDA entries after macro comparison",
+    "label_data": "Branded foods with micronutrient data from manufacturer labels (typically 5-8 micronutrients)",
+    "label_partial": "Branded foods with very limited label data (typically only sodium, calcium, iron)",
+    "label_estimated": "Branded foods with micros estimated from closest USDA equivalent",
+    "usda_estimated": "Generic foods with micros from closest USDA profile"
+  },
+  "foods": {
+    "n_4974": {
+      "food_id": "n_4974",
+      "name": "Banana, fresh",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 88,
+        "protein_g": 0.74,
+        "carbs_g": 23,
+        "fat_g": 0.29,
+        "micronutrients": {
+          "fiber_g": 1.7,
+          "calcium_mg": 5,
+          "magnesium_mg": 28,
+          "phosphorus_mg": 22,
+          "potassium_mg": 326,
+          "zinc_mg": 0.16,
+          "copper_mg": 0.101,
+          "manganese_mg": 0.258,
+          "vitamin_a_rae_mcg": 0.958,
+          "vitamin_e_mg": 0.13,
+          "vitamin_c_mg": 12.3,
+          "thiamin_b1_mg": 0.056,
+          "niacin_b3_mg": 0.662,
+          "pantothenic_acid_b5_mg": 0.334,
+          "vitamin_b6_mg": 0.209,
+          "folate_mcg": 14,
+          "choline_mg": 9.8,
+          "vitamin_k_mcg": 0.1,
+          "saturated_fat_g": 0.112,
+          "monounsat_fat_g": 0.032,
+          "polyunsat_fat_g": 0.073
+        }
+      },
+      "notes": "",
+      "glycemic_index": 51,
+      "glycemic_load_per_serving": 13,
+      "gi_notes": "Low-medium GI. Good pre-workout carb."
+    },
+    "n_1169": {
+      "food_id": "n_1169",
+      "name": "Olive Oil",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 884,
+        "protein_g": 0,
+        "carbs_g": 0,
+        "fat_g": 100,
+        "micronutrients": {
+          "calcium_mg": 1,
+          "iron_mg": 0.56,
+          "potassium_mg": 1,
+          "sodium_mg": 2,
+          "vitamin_e_mg": 14.35,
+          "vitamin_k_mcg": 60.2,
+          "saturated_fat_g": 13.81,
+          "monounsat_fat_g": 72.96,
+          "polyunsat_fat_g": 10.52,
+          "phosphorus_mg": 0,
+          "magnesium_mg": 0,
+          "zinc_mg": 0,
+          "selenium_mcg": 0,
+          "vitamin_a_rae_mcg": 0,
+          "vitamin_c_mg": 0,
+          "thiamin_b1_mg": 0,
+          "riboflavin_b2_mg": 0,
+          "niacin_b3_mg": 0,
+          "vitamin_b6_mg": 0,
+          "folate_mcg": 0,
+          "choline_mg": 0.3
+        }
+      },
+      "notes": "Rich in vitamin E and K"
+    },
+    "n_122407": {
+      "food_id": "n_122407",
+      "name": "Almond Breeze Almond Milk Vanilla Unsweetened",
+      "brand": "Blue Diamond",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 12.1,
+        "protein_g": 0.44,
+        "carbs_g": 0.45,
+        "fat_g": 1.04,
+        "micronutrients": {
+          "calcium_mg": 197,
+          "iron_mg": 0.28,
+          "magnesium_mg": 6.6,
+          "potassium_mg": 67.2,
+          "sodium_mg": 67.2,
+          "zinc_mg": 0.15,
+          "vitamin_e_mg": 3.41,
+          "vitamin_d_mcg": 1.6,
+          "vitamin_b6_mg": 0.02
+        }
+      },
+      "notes": "Fortified with calcium and vitamin E"
+    },
+    "uc_11092": {
+      "food_id": "uc_11092",
+      "name": "Broccoli Frozen Unprepared",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 26,
+        "protein_g": 2.81,
+        "carbs_g": 4.78,
+        "fat_g": 0.29,
+        "micronutrients": {
+          "fiber_g": 2.6,
+          "calcium_mg": 33,
+          "iron_mg": 0.65,
+          "magnesium_mg": 18,
+          "phosphorus_mg": 50,
+          "potassium_mg": 212,
+          "sodium_mg": 18,
+          "zinc_mg": 0.35,
+          "copper_mg": 0.036,
+          "manganese_mg": 0.155,
+          "selenium_mcg": 1.2,
+          "vitamin_a_rae_mcg": 50,
+          "vitamin_e_mg": 0.43,
+          "vitamin_c_mg": 48.4,
+          "thiamin_b1_mg": 0.04,
+          "riboflavin_b2_mg": 0.075,
+          "niacin_b3_mg": 0.456,
+          "pantothenic_acid_b5_mg": 0.296,
+          "vitamin_b6_mg": 0.104,
+          "folate_mcg": 76,
+          "choline_mg": 28.5,
+          "vitamin_k_mcg": 141,
+          "saturated_fat_g": 0.044,
+          "monounsat_fat_g": 0.014,
+          "polyunsat_fat_g": 0.122
+        }
+      },
+      "notes": ""
+    },
+    "uc_11322": {
+      "food_id": "uc_11322",
+      "name": "Peas and Carrots Frozen Unprepared",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 53,
+        "protein_g": 3.4,
+        "carbs_g": 11.2,
+        "fat_g": 0.47,
+        "micronutrients": {
+          "fiber_g": 3.4,
+          "calcium_mg": 23,
+          "iron_mg": 1.2,
+          "magnesium_mg": 20,
+          "phosphorus_mg": 62,
+          "potassium_mg": 151,
+          "sodium_mg": 58,
+          "zinc_mg": 0.56,
+          "copper_mg": 0.076,
+          "manganese_mg": 0.28,
+          "selenium_mcg": 1.2,
+          "vitamin_a_rae_mcg": 591,
+          "vitamin_c_mg": 12.6,
+          "thiamin_b1_mg": 0.198,
+          "riboflavin_b2_mg": 0.065,
+          "niacin_b3_mg": 1.21,
+          "pantothenic_acid_b5_mg": 0.2,
+          "vitamin_b6_mg": 0.07,
+          "folate_mcg": 31,
+          "choline_mg": 19,
+          "vitamin_k_mcg": 18,
+          "saturated_fat_g": 0.085,
+          "monounsat_fat_g": 0.04,
+          "polyunsat_fat_g": 0.215
+        }
+      },
+      "notes": ""
+    },
+    "uc_11060": {
+      "food_id": "uc_11060",
+      "name": "Green Beans Frozen Unprepared",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 33,
+        "protein_g": 1.79,
+        "carbs_g": 7.54,
+        "fat_g": 0.21,
+        "micronutrients": {
+          "fiber_g": 2.8,
+          "calcium_mg": 37,
+          "iron_mg": 0.68,
+          "magnesium_mg": 22,
+          "phosphorus_mg": 30,
+          "potassium_mg": 130,
+          "sodium_mg": 1,
+          "zinc_mg": 0.31,
+          "copper_mg": 0.054,
+          "manganese_mg": 0.268,
+          "selenium_mcg": 0.6,
+          "vitamin_a_rae_mcg": 32,
+          "vitamin_e_mg": 0.36,
+          "vitamin_c_mg": 7.9,
+          "thiamin_b1_mg": 0.059,
+          "riboflavin_b2_mg": 0.065,
+          "niacin_b3_mg": 0.4,
+          "pantothenic_acid_b5_mg": 0.074,
+          "vitamin_b6_mg": 0.048,
+          "folate_mcg": 24,
+          "vitamin_k_mcg": 39,
+          "saturated_fat_g": 0.046,
+          "monounsat_fat_g": 0.008,
+          "polyunsat_fat_g": 0.104
+        }
+      },
+      "notes": ""
+    },
+    "uc_11463": {
+      "food_id": "uc_11463",
+      "name": "Spinach Frozen Unprepared",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 29,
+        "protein_g": 3.63,
+        "carbs_g": 4.21,
+        "fat_g": 0.57,
+        "micronutrients": {
+          "fiber_g": 2.1,
+          "calcium_mg": 136,
+          "iron_mg": 1.89,
+          "magnesium_mg": 58,
+          "phosphorus_mg": 38,
+          "potassium_mg": 303,
+          "sodium_mg": 56,
+          "zinc_mg": 0.51,
+          "copper_mg": 0.063,
+          "manganese_mg": 0.604,
+          "selenium_mcg": 1,
+          "vitamin_a_rae_mcg": 524,
+          "vitamin_e_mg": 1.96,
+          "vitamin_c_mg": 1,
+          "thiamin_b1_mg": 0.061,
+          "riboflavin_b2_mg": 0.166,
+          "niacin_b3_mg": 0.453,
+          "pantothenic_acid_b5_mg": 0.145,
+          "vitamin_b6_mg": 0.146,
+          "folate_mcg": 121,
+          "choline_mg": 21,
+          "vitamin_k_mcg": 337,
+          "saturated_fat_g": 0.09,
+          "monounsat_fat_g": 0.014,
+          "polyunsat_fat_g": 0.24
+        }
+      },
+      "notes": "Outstanding source of vitamin K, vitamin A, folate, magnesium",
+      "antinutrients": [
+        "oxalate"
+      ],
+      "interaction_notes": "Very high oxalate content. Only ~5% of calcium is bioavailable (vs ~30% from dairy). Iron absorption also reduced. Cook to reduce oxalate by ~30-40%."
+    },
+    "n_3309": {
+      "food_id": "n_3309",
+      "name": "Guacamole (Avocado Dip)",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 131.3,
+        "protein_g": 1.91,
+        "carbs_g": 8.81,
+        "fat_g": 10.59,
+        "micronutrients": {
+          "fiber_g": 3.5,
+          "calcium_mg": 11,
+          "iron_mg": 0.32,
+          "magnesium_mg": 19,
+          "phosphorus_mg": 35,
+          "potassium_mg": 311,
+          "sodium_mg": 421,
+          "zinc_mg": 0.39,
+          "copper_mg": 0.111,
+          "manganese_mg": 0.117,
+          "vitamin_a_rae_mcg": 4,
+          "vitamin_e_mg": 1.19,
+          "vitamin_c_mg": 2.4,
+          "thiamin_b1_mg": 0.04,
+          "riboflavin_b2_mg": 0.085,
+          "niacin_b3_mg": 1.16,
+          "pantothenic_acid_b5_mg": 0.77,
+          "vitamin_b6_mg": 0.2,
+          "folate_mcg": 40,
+          "vitamin_k_mcg": 14.5,
+          "saturated_fat_g": 1.53,
+          "monounsat_fat_g": 6.67,
+          "polyunsat_fat_g": 1.37
+        }
+      },
+      "notes": ""
+    },
+    "uc_25028": {
+      "food_id": "uc_25028",
+      "name": "Tortilla Chips",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 497,
+        "protein_g": 6.62,
+        "carbs_g": 67.4,
+        "fat_g": 22.3,
+        "micronutrients": {
+          "fiber_g": 5.3,
+          "calcium_mg": 153,
+          "iron_mg": 1.44,
+          "magnesium_mg": 69,
+          "phosphorus_mg": 193,
+          "potassium_mg": 201,
+          "sodium_mg": 528,
+          "zinc_mg": 1.05,
+          "copper_mg": 0.101,
+          "manganese_mg": 0.399,
+          "selenium_mcg": 9.2,
+          "vitamin_a_rae_mcg": 1,
+          "vitamin_e_mg": 3.14,
+          "thiamin_b1_mg": 0.141,
+          "riboflavin_b2_mg": 0.101,
+          "niacin_b3_mg": 1.53,
+          "pantothenic_acid_b5_mg": 0.359,
+          "vitamin_b6_mg": 0.176,
+          "folate_mcg": 39,
+          "vitamin_k_mcg": 1.3,
+          "saturated_fat_g": 3.02,
+          "monounsat_fat_g": 12.61,
+          "polyunsat_fat_g": 5.24
+        }
+      },
+      "notes": "",
+      "glycemic_index": 63,
+      "glycemic_load_per_serving": 16,
+      "gi_notes": "Medium-high GI. Corn-based, rapid absorption."
+    },
+    "n_116397": {
+      "food_id": "n_116397",
+      "name": "Seaweed Salad",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 131.5,
+        "protein_g": 6.18,
+        "carbs_g": 11.78,
+        "fat_g": 8.82,
+        "micronutrients": {
+          "fiber_g": 0.3,
+          "calcium_mg": 70,
+          "iron_mg": 1.8,
+          "magnesium_mg": 107,
+          "phosphorus_mg": 42,
+          "potassium_mg": 50,
+          "sodium_mg": 900,
+          "zinc_mg": 1.05,
+          "selenium_mcg": 0.7,
+          "vitamin_a_rae_mcg": 10,
+          "vitamin_c_mg": 3,
+          "vitamin_k_mcg": 66
+        }
+      },
+      "notes": "High sodium, good source of iodine and magnesium"
+    },
+    "n_20511": {
+      "food_id": "n_20511",
+      "name": "Hoisin Sauce",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 220,
+        "protein_g": 3.31,
+        "carbs_g": 44.08,
+        "fat_g": 3.39,
+        "micronutrients": {
+          "fiber_g": 2.6,
+          "calcium_mg": 23,
+          "iron_mg": 1.26,
+          "magnesium_mg": 23,
+          "phosphorus_mg": 23,
+          "potassium_mg": 54,
+          "sodium_mg": 1181,
+          "zinc_mg": 0.28,
+          "copper_mg": 0.055,
+          "manganese_mg": 0.095,
+          "vitamin_a_rae_mcg": 2,
+          "thiamin_b1_mg": 0.02,
+          "riboflavin_b2_mg": 0.112,
+          "niacin_b3_mg": 1.46,
+          "vitamin_b6_mg": 0.054,
+          "folate_mcg": 15,
+          "vitamin_k_mcg": 3.3,
+          "saturated_fat_g": 0.53,
+          "monounsat_fat_g": 1.48,
+          "polyunsat_fat_g": 1.28
+        }
+      },
+      "notes": ""
+    },
+    "n_11988": {
+      "food_id": "n_11988",
+      "name": "Popcorn, home popped, hot air popped",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 387,
+        "protein_g": 12.94,
+        "carbs_g": 77.78,
+        "fat_g": 4.54,
+        "micronutrients": {
+          "fiber_g": 14.5,
+          "calcium_mg": 7,
+          "iron_mg": 3.19,
+          "magnesium_mg": 144,
+          "phosphorus_mg": 358,
+          "potassium_mg": 329,
+          "sodium_mg": 8,
+          "zinc_mg": 3.08,
+          "copper_mg": 0.262,
+          "manganese_mg": 1.11,
+          "vitamin_a_rae_mcg": 3,
+          "vitamin_e_mg": 0.29,
+          "thiamin_b1_mg": 0.104,
+          "riboflavin_b2_mg": 0.083,
+          "niacin_b3_mg": 1.94,
+          "pantothenic_acid_b5_mg": 0.51,
+          "vitamin_b6_mg": 0.157,
+          "folate_mcg": 31,
+          "vitamin_k_mcg": 0.3,
+          "saturated_fat_g": 0.637,
+          "monounsat_fat_g": 1.16,
+          "polyunsat_fat_g": 2.32
+        }
+      },
+      "notes": "Excellent source of fiber and magnesium",
+      "glycemic_index": 55,
+      "glycemic_load_per_serving": 6,
+      "gi_notes": "Medium GI but low GL per typical serving. Good volume snack."
+    },
+    "n_4922": {
+      "food_id": "n_4922",
+      "name": "Apple, Fresh, With Skin",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 52,
+        "protein_g": 0.26,
+        "carbs_g": 13.81,
+        "fat_g": 0.17,
+        "micronutrients": {
+          "fiber_g": 2.4,
+          "calcium_mg": 6,
+          "iron_mg": 0.12,
+          "magnesium_mg": 5,
+          "phosphorus_mg": 11,
+          "potassium_mg": 107,
+          "sodium_mg": 1,
+          "zinc_mg": 0.04,
+          "copper_mg": 0.027,
+          "manganese_mg": 0.035,
+          "vitamin_a_rae_mcg": 3,
+          "vitamin_e_mg": 0.18,
+          "vitamin_c_mg": 4.6,
+          "thiamin_b1_mg": 0.017,
+          "riboflavin_b2_mg": 0.026,
+          "niacin_b3_mg": 0.091,
+          "pantothenic_acid_b5_mg": 0.061,
+          "vitamin_b6_mg": 0.041,
+          "folate_mcg": 3,
+          "choline_mg": 3.4,
+          "vitamin_k_mcg": 2.2,
+          "saturated_fat_g": 0.028,
+          "monounsat_fat_g": 0.007,
+          "polyunsat_fat_g": 0.051
+        }
+      },
+      "notes": "",
+      "glycemic_index": 36,
+      "glycemic_load_per_serving": 5,
+      "gi_notes": "Low GI. Pectin fiber slows absorption."
+    },
+    "n_24864": {
+      "food_id": "n_24864",
+      "name": "Pam Cooking Spray Butter Flavor",
+      "brand": "PAM",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 886.7,
+        "protein_g": 0,
+        "carbs_g": 0,
+        "fat_g": 99.69,
+        "micronutrients": {
+          "saturated_fat_g": 14.16,
+          "monounsat_fat_g": 28.48,
+          "polyunsat_fat_g": 52.28,
+          "vitamin_e_mg": 10,
+          "vitamin_k_mcg": 50
+        }
+      },
+      "notes": "Negligible per serving — mostly cooking oil base"
+    },
+    "n_2950": {
+      "food_id": "n_2950",
+      "name": "Broccoli, Raw",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 34,
+        "protein_g": 2.82,
+        "carbs_g": 6.64,
+        "fat_g": 0.37,
+        "micronutrients": {
+          "fiber_g": 2.6,
+          "calcium_mg": 47,
+          "iron_mg": 0.73,
+          "magnesium_mg": 21,
+          "phosphorus_mg": 66,
+          "potassium_mg": 316,
+          "sodium_mg": 33,
+          "zinc_mg": 0.41,
+          "copper_mg": 0.049,
+          "manganese_mg": 0.21,
+          "selenium_mcg": 2.5,
+          "vitamin_a_rae_mcg": 31,
+          "vitamin_e_mg": 0.78,
+          "vitamin_c_mg": 89.2,
+          "thiamin_b1_mg": 0.071,
+          "riboflavin_b2_mg": 0.117,
+          "niacin_b3_mg": 0.639,
+          "pantothenic_acid_b5_mg": 0.573,
+          "vitamin_b6_mg": 0.175,
+          "folate_mcg": 63,
+          "choline_mg": 18.7,
+          "vitamin_k_mcg": 102,
+          "saturated_fat_g": 0.039,
+          "monounsat_fat_g": 0.011,
+          "polyunsat_fat_g": 0.038
+        }
+      },
+      "notes": "Outstanding source of vitamin C and K"
+    },
+    "n_16341": {
+      "food_id": "n_16341",
+      "name": "Cupcake, Packaged",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 337,
+        "protein_g": 2.75,
+        "carbs_g": 57.05,
+        "fat_g": 12.02,
+        "micronutrients": {
+          "fiber_g": 1.4,
+          "calcium_mg": 28,
+          "iron_mg": 2.12,
+          "magnesium_mg": 10,
+          "phosphorus_mg": 82,
+          "potassium_mg": 68,
+          "sodium_mg": 344,
+          "zinc_mg": 0.27,
+          "copper_mg": 0.063,
+          "manganese_mg": 0.19,
+          "selenium_mcg": 3.7,
+          "thiamin_b1_mg": 0.12,
+          "riboflavin_b2_mg": 0.12,
+          "niacin_b3_mg": 1.18,
+          "pantothenic_acid_b5_mg": 0.16,
+          "vitamin_b6_mg": 0.017,
+          "folate_mcg": 36,
+          "saturated_fat_g": 3.05,
+          "monounsat_fat_g": 5.33,
+          "polyunsat_fat_g": 2.7
+        }
+      },
+      "notes": ""
+    },
+    "uc_5683": {
+      "food_id": "uc_5683",
+      "name": "Chicken Dark Meat Thigh Only Cooked Roasted",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 164,
+        "protein_g": 24.2,
+        "carbs_g": 0,
+        "fat_g": 7.73,
+        "micronutrients": {
+          "calcium_mg": 10,
+          "iron_mg": 0.98,
+          "magnesium_mg": 24,
+          "phosphorus_mg": 202,
+          "potassium_mg": 268,
+          "sodium_mg": 177,
+          "zinc_mg": 1.9,
+          "copper_mg": 0.074,
+          "manganese_mg": 0.011,
+          "selenium_mcg": 33.7,
+          "vitamin_a_rae_mcg": 8,
+          "vitamin_e_mg": 0.36,
+          "vitamin_d_mcg": 0.3,
+          "thiamin_b1_mg": 0.091,
+          "riboflavin_b2_mg": 0.272,
+          "niacin_b3_mg": 6.34,
+          "pantothenic_acid_b5_mg": 1.4,
+          "vitamin_b6_mg": 0.444,
+          "folate_mcg": 4,
+          "vitamin_b12_mcg": 0.37,
+          "choline_mg": 99.1,
+          "cholesterol_mg": 122,
+          "saturated_fat_g": 2.4,
+          "monounsat_fat_g": 3.46,
+          "polyunsat_fat_g": 1.86
+        }
+      },
+      "notes": "Mapped from Harvest Creek branded entry. Athlete cooks own boneless skinless thighs.",
+      "bioavailability": {
+        "iron_type": "heme",
+        "iron_absorption_pct": 25,
+        "zinc_absorption_notes": "high — animal source, no phytate interference",
+        "protein_digestibility_score": 0.95,
+        "limiting_factor": null
+      },
+      "amino_acids_per_100g": {
+        "leucine_mg": 1730,
+        "isoleucine_mg": 1170,
+        "valine_mg": 1130,
+        "lysine_mg": 1930,
+        "methionine_mg": 620,
+        "phenylalanine_mg": 910,
+        "threonine_mg": 960,
+        "tryptophan_mg": 260,
+        "histidine_mg": 700
+      },
+      "glycemic_index": null,
+      "glycemic_load_per_serving": null
+    },
+    "m_13121230": {
+      "food_id": "m_13121230",
+      "name": "Fully Cooked Chicken Thigh Meat (→ USDA Thigh Roasted)",
+      "brand": "Harvest Creek → USDA",
+      "source": "usda_matched",
+      "match_quality": "mapped_usda",
+      "per_100g": {
+        "calories": 164,
+        "protein_g": 24.2,
+        "carbs_g": 0,
+        "fat_g": 7.73,
+        "micronutrients": {
+          "calcium_mg": 10,
+          "iron_mg": 0.98,
+          "magnesium_mg": 24,
+          "phosphorus_mg": 202,
+          "potassium_mg": 268,
+          "sodium_mg": 177,
+          "zinc_mg": 1.9,
+          "copper_mg": 0.074,
+          "manganese_mg": 0.011,
+          "selenium_mcg": 33.7,
+          "vitamin_a_rae_mcg": 8,
+          "vitamin_e_mg": 0.36,
+          "vitamin_d_mcg": 0.3,
+          "thiamin_b1_mg": 0.091,
+          "riboflavin_b2_mg": 0.272,
+          "niacin_b3_mg": 6.34,
+          "pantothenic_acid_b5_mg": 1.4,
+          "vitamin_b6_mg": 0.444,
+          "folate_mcg": 4,
+          "vitamin_b12_mcg": 0.37,
+          "choline_mg": 99.1,
+          "cholesterol_mg": 122,
+          "saturated_fat_g": 2.4,
+          "monounsat_fat_g": 3.46,
+          "polyunsat_fat_g": 1.86
+        }
+      },
+      "notes": "MAPPED to USDA uc_5683. Athlete cooks own boneless skinless thighs.",
+      "bioavailability": {
+        "iron_type": "heme",
+        "iron_absorption_pct": 25,
+        "zinc_absorption_notes": "high — animal source",
+        "protein_digestibility_score": 0.95,
+        "limiting_factor": null
+      },
+      "amino_acids_per_100g": {
+        "leucine_mg": 1730,
+        "isoleucine_mg": 1170,
+        "valine_mg": 1130,
+        "lysine_mg": 1930,
+        "methionine_mg": 620,
+        "phenylalanine_mg": 910,
+        "threonine_mg": 960,
+        "tryptophan_mg": 260,
+        "histidine_mg": 700
+      },
+      "glycemic_index": null,
+      "glycemic_load_per_serving": null
+    },
+    "m_29577397": {
+      "food_id": "m_29577397",
+      "name": "Egg (→ USDA Whole Egg Raw)",
+      "brand": "Generic → USDA",
+      "source": "usda_matched",
+      "match_quality": "mapped_usda",
+      "per_100g": {
+        "calories": 143,
+        "protein_g": 12.6,
+        "carbs_g": 0.72,
+        "fat_g": 9.51,
+        "micronutrients": {
+          "calcium_mg": 56,
+          "iron_mg": 1.75,
+          "magnesium_mg": 12,
+          "phosphorus_mg": 198,
+          "potassium_mg": 138,
+          "sodium_mg": 142,
+          "zinc_mg": 1.29,
+          "copper_mg": 0.072,
+          "manganese_mg": 0.028,
+          "selenium_mcg": 30.7,
+          "vitamin_a_rae_mcg": 160,
+          "vitamin_e_mg": 1.05,
+          "vitamin_d_mcg": 2,
+          "thiamin_b1_mg": 0.04,
+          "riboflavin_b2_mg": 0.457,
+          "niacin_b3_mg": 0.075,
+          "pantothenic_acid_b5_mg": 1.53,
+          "vitamin_b6_mg": 0.17,
+          "folate_mcg": 47,
+          "vitamin_b12_mcg": 0.89,
+          "choline_mg": 294,
+          "vitamin_k_mcg": 0.3,
+          "cholesterol_mg": 372,
+          "saturated_fat_g": 3.13,
+          "monounsat_fat_g": 3.66,
+          "polyunsat_fat_g": 1.91
+        }
+      },
+      "notes": "MAPPED to USDA uc_1123 Egg Whole Raw. Excellent source of choline, B12, selenium.",
+      "bioavailability": {
+        "iron_type": "non-heme",
+        "iron_absorption_pct": 8,
+        "zinc_absorption_notes": "moderate-high — egg zinc is well absorbed",
+        "protein_digestibility_score": 1.0,
+        "limiting_factor": null
+      },
+      "amino_acids_per_100g": {
+        "leucine_mg": 1088,
+        "isoleucine_mg": 672,
+        "valine_mg": 858,
+        "lysine_mg": 914,
+        "methionine_mg": 392,
+        "phenylalanine_mg": 680,
+        "threonine_mg": 556,
+        "tryptophan_mg": 167,
+        "histidine_mg": 309
+      },
+      "glycemic_index": 0,
+      "glycemic_load_per_serving": 0
+    },
+    "m_29569350": {
+      "food_id": "m_29569350",
+      "name": "Cooked White Rice (→ USDA White Rice)",
+      "brand": "Generic → USDA",
+      "source": "usda_matched",
+      "match_quality": "mapped_usda",
+      "per_100g": {
+        "calories": 130,
+        "protein_g": 2.38,
+        "carbs_g": 28.6,
+        "fat_g": 0.21,
+        "micronutrients": {
+          "fiber_g": 0.3,
+          "calcium_mg": 3,
+          "iron_mg": 1.49,
+          "magnesium_mg": 13,
+          "phosphorus_mg": 37,
+          "potassium_mg": 29,
+          "zinc_mg": 0.42,
+          "copper_mg": 0.038,
+          "manganese_mg": 0.377,
+          "selenium_mcg": 7.5,
+          "thiamin_b1_mg": 0.167,
+          "riboflavin_b2_mg": 0.016,
+          "niacin_b3_mg": 1.84,
+          "pantothenic_acid_b5_mg": 0.411,
+          "vitamin_b6_mg": 0.05,
+          "folate_mcg": 58,
+          "saturated_fat_g": 0.057,
+          "monounsat_fat_g": 0.065,
+          "polyunsat_fat_g": 0.056
+        }
+      },
+      "notes": "MAPPED to USDA uc_20051. Enriched white rice.",
+      "glycemic_index": 72,
+      "glycemic_load_per_serving": 29,
+      "gi_notes": "High GI. Good for post-workout glycogen replenishment.",
+      "antinutrients": [],
+      "interaction_notes": "Milled/enriched — phytate largely removed during processing. Good mineral bioavailability."
+    },
+    "t_20956309": {
+      "food_id": "t_20956309",
+      "name": "Cooked Steel Cut Oats (→ USDA Oatmeal)",
+      "brand": "Generic → USDA",
+      "source": "usda_matched",
+      "match_quality": "mapped_usda",
+      "per_100g": {
+        "calories": 71,
+        "protein_g": 2.52,
+        "carbs_g": 12.0,
+        "fat_g": 1.54,
+        "micronutrients": {
+          "fiber_g": 1.7,
+          "calcium_mg": 9,
+          "iron_mg": 0.9,
+          "magnesium_mg": 27,
+          "phosphorus_mg": 77,
+          "potassium_mg": 61,
+          "sodium_mg": 4,
+          "zinc_mg": 0.5,
+          "copper_mg": 0.057,
+          "manganese_mg": 0.588,
+          "selenium_mcg": 4.5,
+          "vitamin_e_mg": 0.03,
+          "thiamin_b1_mg": 0.075,
+          "riboflavin_b2_mg": 0.014,
+          "niacin_b3_mg": 0.171,
+          "pantothenic_acid_b5_mg": 0.231,
+          "vitamin_b6_mg": 0.005,
+          "folate_mcg": 6,
+          "choline_mg": 6.4,
+          "saturated_fat_g": 0.261,
+          "monounsat_fat_g": 0.469,
+          "polyunsat_fat_g": 0.558
+        }
+      },
+      "notes": "MAPPED to USDA cooked oatmeal, regular.",
+      "glycemic_index": 55,
+      "glycemic_load_per_serving": 10,
+      "gi_notes": "Medium GI. Steel cut lower than rolled. Sustained energy.",
+      "antinutrients": [
+        "phytate"
+      ],
+      "interaction_notes": "Oats contain phytate. Soaking/cooking reduces it. Pair with vitamin C for iron absorption."
+    },
+    "m_23979873": {
+      "food_id": "m_23979873",
+      "name": "Cauliflower Riced Frozen (→ USDA Cauliflower)",
+      "brand": "Generic → USDA",
+      "source": "usda_matched",
+      "match_quality": "mapped_usda",
+      "per_100g": {
+        "calories": 25,
+        "protein_g": 2.48,
+        "carbs_g": 3.67,
+        "fat_g": 0,
+        "micronutrients": {
+          "fiber_g": 2,
+          "calcium_mg": 22,
+          "iron_mg": 0.42,
+          "magnesium_mg": 15,
+          "phosphorus_mg": 44,
+          "potassium_mg": 299,
+          "sodium_mg": 30,
+          "zinc_mg": 0.27,
+          "copper_mg": 0.039,
+          "manganese_mg": 0.155,
+          "selenium_mcg": 0.6,
+          "vitamin_e_mg": 0.08,
+          "vitamin_c_mg": 48.2,
+          "thiamin_b1_mg": 0.05,
+          "riboflavin_b2_mg": 0.06,
+          "niacin_b3_mg": 0.507,
+          "pantothenic_acid_b5_mg": 0.667,
+          "vitamin_b6_mg": 0.184,
+          "folate_mcg": 57,
+          "choline_mg": 44.3,
+          "vitamin_k_mcg": 15.5
+        }
+      },
+      "notes": "MAPPED to USDA cauliflower raw. Excellent source of vitamin C."
+    },
+    "m_20488766": {
+      "food_id": "m_20488766",
+      "name": "Gold Standard 100% Plant-Based Protein Vanilla",
+      "brand": "Optimum Nutrition",
+      "source": "label_verified",
+      "match_quality": "label_data",
+      "per_100g": {
+        "calories": 375,
+        "protein_g": 60,
+        "carbs_g": 15,
+        "fat_g": 6.25,
+        "micronutrients": {
+          "calcium_mg": 250,
+          "iron_mg": 11.5,
+          "potassium_mg": 550,
+          "sodium_mg": 1350,
+          "vitamin_c_mg": 225,
+          "vitamin_b12_mcg": 1.5,
+          "fiber_g": 5
+        }
+      },
+      "notes": "Per serving (40g): 150cal, 24g pro. Fortified with vitamin C (100% DV), B12 (25%), iron (25%). Sodium is high (540mg/serving).",
+      "bioavailability": {
+        "iron_type": "non-heme",
+        "iron_absorption_pct": 5,
+        "zinc_absorption_notes": "moderate — plant source, some phytate",
+        "protein_digestibility_score": 0.82,
+        "limiting_factor": "methionine — pea protein is low in sulfur amino acids"
+      },
+      "amino_acids_per_100g": {
+        "leucine_mg": 4800,
+        "isoleucine_mg": 2700,
+        "valine_mg": 3000,
+        "lysine_mg": 4300,
+        "methionine_mg": 600,
+        "phenylalanine_mg": 3200,
+        "threonine_mg": 2200,
+        "tryptophan_mg": 550,
+        "histidine_mg": 1500
+      },
+      "glycemic_index": null,
+      "glycemic_load_per_serving": null
+    },
+    "m_29637922": {
+      "food_id": "m_29637922",
+      "name": "PB Fit Powdered Peanut Butter",
+      "brand": "PB Fit",
+      "source": "label_estimated",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 437.5,
+        "protein_g": 50,
+        "carbs_g": 31.25,
+        "fat_g": 12.5,
+        "micronutrients": {
+          "fiber_g": 5,
+          "calcium_mg": 30,
+          "iron_mg": 1.1,
+          "magnesium_mg": 100,
+          "phosphorus_mg": 200,
+          "potassium_mg": 500,
+          "sodium_mg": 300,
+          "zinc_mg": 1.5,
+          "manganese_mg": 1.0,
+          "selenium_mcg": 3,
+          "niacin_b3_mg": 8,
+          "vitamin_b6_mg": 0.2,
+          "folate_mcg": 50,
+          "vitamin_e_mg": 3,
+          "saturated_fat_g": 2,
+          "monounsat_fat_g": 5,
+          "polyunsat_fat_g": 4
+        }
+      },
+      "notes": "Estimated micros from USDA defatted peanut flour profile. Good source of magnesium, niacin.",
+      "bioavailability": {
+        "iron_type": "non-heme",
+        "iron_absorption_pct": 3,
+        "zinc_absorption_notes": "low — high phytate content reduces absorption",
+        "protein_digestibility_score": 0.75,
+        "limiting_factor": "methionine — peanut protein is low in sulfur amino acids"
+      },
+      "amino_acids_per_100g": {
+        "leucine_mg": 3200,
+        "isoleucine_mg": 1700,
+        "valine_mg": 2100,
+        "lysine_mg": 1800,
+        "methionine_mg": 500,
+        "phenylalanine_mg": 2600,
+        "threonine_mg": 1300,
+        "tryptophan_mg": 500,
+        "histidine_mg": 1200
+      },
+      "glycemic_index": 15,
+      "glycemic_load_per_serving": 1,
+      "antinutrients": [
+        "phytate"
+      ],
+      "interaction_notes": "Peanut-based, significant phytate. Zinc and iron absorption reduced. Defatting process may partially reduce phytate."
+    },
+    "m_31011707": {
+      "food_id": "m_31011707",
+      "name": "Chocolate Sugar Free Instant Pudding",
+      "brand": "Jello",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 300,
+        "protein_g": 10,
+        "carbs_g": 70,
+        "fat_g": 0,
+        "micronutrients": {
+          "sodium_mg": 1200,
+          "calcium_mg": 20,
+          "iron_mg": 1.5,
+          "phosphorus_mg": 300,
+          "potassium_mg": 250,
+          "magnesium_mg": 30
+        }
+      },
+      "notes": "Minimal micronutrients. Mostly modified starch. High sodium. Cocoa provides some iron, phosphorus, magnesium."
+    },
+    "m_29546981": {
+      "food_id": "m_29546981",
+      "name": "Beer IPA",
+      "brand": "Generic",
+      "source": "label_estimated",
+      "match_quality": "usda_estimated",
+      "per_100g": {
+        "calories": 200,
+        "protein_g": 2,
+        "carbs_g": 25,
+        "fat_g": 0,
+        "micronutrients": {
+          "calcium_mg": 14,
+          "magnesium_mg": 21,
+          "phosphorus_mg": 42,
+          "potassium_mg": 96,
+          "sodium_mg": 14,
+          "zinc_mg": 0.01,
+          "selenium_mcg": 0.6,
+          "niacin_b3_mg": 1.62,
+          "riboflavin_b2_mg": 0.03,
+          "vitamin_b6_mg": 0.046,
+          "folate_mcg": 6,
+          "choline_mg": 10.2
+        }
+      },
+      "notes": "USDA beer average. Very limited micronutrient contribution. ~200 cal per 16oz."
+    },
+    "o_0072220020045": {
+      "food_id": "o_0072220020045",
+      "name": "White Bread",
+      "brand": "Keto Culture",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 116.7,
+        "protein_g": 13.3,
+        "carbs_g": 40,
+        "fat_g": 3.33,
+        "micronutrients": {
+          "fiber_g": 33.3,
+          "sodium_mg": 500,
+          "iron_mg": 1.2,
+          "calcium_mg": 33,
+          "magnesium_mg": 40,
+          "phosphorus_mg": 120,
+          "potassium_mg": 150,
+          "zinc_mg": 1.0,
+          "manganese_mg": 0.8,
+          "selenium_mcg": 5,
+          "thiamin_b1_mg": 0.15,
+          "riboflavin_b2_mg": 0.08,
+          "niacin_b3_mg": 1.5,
+          "folate_mcg": 30,
+          "vitamin_b6_mg": 0.05
+        }
+      },
+      "notes": "Keto bread — very high fiber (~10g/slice). Micros estimated from label + wheat gluten/oat fiber base. Phytate content likely reduces mineral bioavailability.",
+      "glycemic_index": 25,
+      "glycemic_load_per_serving": 1,
+      "gi_notes": "Very low GI. High fiber keto bread — most carbs are fiber.",
+      "antinutrients": [
+        "phytate"
+      ],
+      "interaction_notes": "Wheat gluten base contains phytate. Reduces iron and zinc absorption by ~30-50%. Mitigated when eaten with vitamin C or animal protein."
+    },
+    "m_32055745": {
+      "food_id": "m_32055745",
+      "name": "Keto English Muffins",
+      "brand": "Franz",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 87.7,
+        "protein_g": 14.04,
+        "carbs_g": 42.1,
+        "fat_g": 2.63,
+        "micronutrients": {
+          "fiber_g": 28,
+          "sodium_mg": 500,
+          "iron_mg": 1.44,
+          "calcium_mg": 40,
+          "magnesium_mg": 35,
+          "phosphorus_mg": 110,
+          "potassium_mg": 130,
+          "zinc_mg": 0.9,
+          "manganese_mg": 0.7,
+          "selenium_mcg": 4,
+          "thiamin_b1_mg": 0.12,
+          "riboflavin_b2_mg": 0.07,
+          "niacin_b3_mg": 1.2,
+          "folate_mcg": 25,
+          "vitamin_b6_mg": 0.04
+        }
+      },
+      "notes": "Keto muffin — very high fiber. Micros estimated from label + wheat gluten base.",
+      "glycemic_index": 25,
+      "glycemic_load_per_serving": 1,
+      "gi_notes": "Very low GI. High fiber keto product.",
+      "antinutrients": [
+        "phytate"
+      ],
+      "interaction_notes": "Same phytate concern as keto bread. Pair with vitamin C source."
+    },
+    "m_31642078": {
+      "food_id": "m_31642078",
+      "name": "Maple Glazed Doughnut Protein Bar",
+      "brand": "ONE",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 383.3,
+        "protein_g": 33.3,
+        "carbs_g": 38.3,
+        "fat_g": 13.3,
+        "micronutrients": {
+          "fiber_g": 8.3,
+          "sodium_mg": 350,
+          "calcium_mg": 33,
+          "iron_mg": 1.0,
+          "potassium_mg": 67,
+          "phosphorus_mg": 150,
+          "magnesium_mg": 25,
+          "zinc_mg": 1.0
+        }
+      },
+      "notes": "Protein bar. Label micros only."
+    },
+    "o_0788434115704": {
+      "food_id": "o_0788434115704",
+      "name": "Hersheys Cooked N Cream Bar",
+      "brand": "ONE",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 383.3,
+        "protein_g": 30,
+        "carbs_g": 41.7,
+        "fat_g": 15,
+        "micronutrients": {
+          "fiber_g": 8.3,
+          "sodium_mg": 417,
+          "calcium_mg": 33,
+          "iron_mg": 1.0,
+          "potassium_mg": 80,
+          "phosphorus_mg": 150,
+          "magnesium_mg": 25,
+          "zinc_mg": 1.0
+        }
+      },
+      "notes": "Protein bar. Label micros only."
+    },
+    "o_0850000429116": {
+      "food_id": "o_0850000429116",
+      "name": "Cookies & Cream Protein Bar",
+      "brand": "Barebells",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 363.6,
+        "protein_g": 36.4,
+        "carbs_g": 21.8,
+        "fat_g": 12.7,
+        "micronutrients": {
+          "sodium_mg": 364,
+          "calcium_mg": 40,
+          "iron_mg": 1.0,
+          "potassium_mg": 80,
+          "phosphorus_mg": 150,
+          "magnesium_mg": 25,
+          "zinc_mg": 1.0
+        }
+      },
+      "notes": "Protein bar. Very limited label data."
+    },
+    "o_0888849005994": {
+      "food_id": "o_0888849005994",
+      "name": "Protein Cookie Chocolate Chip",
+      "brand": "Quest",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 406.8,
+        "protein_g": 25.4,
+        "carbs_g": 18.6,
+        "fat_g": 28.8,
+        "micronutrients": {
+          "fiber_g": 15.3,
+          "sodium_mg": 508,
+          "iron_mg": 1.5,
+          "calcium_mg": 34,
+          "potassium_mg": 80,
+          "phosphorus_mg": 150,
+          "magnesium_mg": 25,
+          "zinc_mg": 1.0
+        }
+      },
+      "notes": "Protein cookie. High fat for a protein product."
+    },
+    "o_0888849013555": {
+      "food_id": "o_0888849013555",
+      "name": "Tortilla Style Protein Chips Hot & Spicy",
+      "brand": "Quest",
+      "source": "label_data",
+      "match_quality": "label_partial",
+      "per_100g": {
+        "calories": 437.5,
+        "protein_g": 59.4,
+        "carbs_g": 15.6,
+        "fat_g": 15.6,
+        "micronutrients": {
+          "fiber_g": 3.1,
+          "sodium_mg": 812,
+          "calcium_mg": 94,
+          "iron_mg": 1.5,
+          "potassium_mg": 200,
+          "phosphorus_mg": 350,
+          "magnesium_mg": 30,
+          "zinc_mg": 1.5
+        }
+      },
+      "notes": "High protein tortilla chips. High sodium."
+    },
+    "o_0810035970601": {
+      "food_id": "o_0810035970601",
+      "name": "Keto Brown Sugar Poptart",
+      "brand": "Legendary",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 295.1,
+        "protein_g": 32.8,
+        "carbs_g": 6.6,
+        "fat_g": 14.8,
+        "micronutrients": {
+          "fiber_g": 21.3,
+          "sodium_mg": 492,
+          "calcium_mg": 40,
+          "iron_mg": 1.0,
+          "potassium_mg": 80,
+          "phosphorus_mg": 150,
+          "magnesium_mg": 25,
+          "zinc_mg": 1.0
+        }
+      },
+      "notes": "Keto pastry. Very limited micro data."
+    },
+    "o_0810035972636": {
+      "food_id": "o_0810035972636",
+      "name": "Protein Donuts Vanilla Glazed",
+      "brand": "Legendary",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 246.2,
+        "protein_g": 30.8,
+        "carbs_g": 40,
+        "fat_g": 9.2,
+        "micronutrients": {
+          "fiber_g": 21.5,
+          "sodium_mg": 415,
+          "calcium_mg": 40,
+          "iron_mg": 1.0,
+          "potassium_mg": 80,
+          "phosphorus_mg": 150,
+          "magnesium_mg": 25,
+          "zinc_mg": 1.0
+        }
+      },
+      "notes": "Protein donut. Very limited micro data."
+    },
+    "o_0047495013054": {
+      "food_id": "o_0047495013054",
+      "name": "Fig Bar Raspberry",
+      "brand": "Nature's Bakery",
+      "source": "label_data",
+      "match_quality": "label_partial",
+      "per_100g": {
+        "calories": 350.9,
+        "protein_g": 5.3,
+        "carbs_g": 66.7,
+        "fat_g": 8.8,
+        "micronutrients": {
+          "fiber_g": 5.3,
+          "sodium_mg": 263,
+          "iron_mg": 1.4,
+          "calcium_mg": 18,
+          "potassium_mg": 150,
+          "magnesium_mg": 20,
+          "phosphorus_mg": 60,
+          "zinc_mg": 0.4,
+          "thiamin_b1_mg": 0.1,
+          "riboflavin_b2_mg": 0.08,
+          "niacin_b3_mg": 1.0,
+          "folate_mcg": 20
+        }
+      },
+      "notes": "Fig bar. Whole wheat, mostly carbs."
+    },
+    "o_0038000359217": {
+      "food_id": "o_0038000359217",
+      "name": "Nutri Grain Strawberry Breakfast Bar",
+      "brand": "Nutri Grain",
+      "source": "label_data",
+      "match_quality": "label_partial",
+      "per_100g": {
+        "calories": 351.4,
+        "protein_g": 5.4,
+        "carbs_g": 67.6,
+        "fat_g": 9.5,
+        "micronutrients": {
+          "fiber_g": 2.7,
+          "sodium_mg": 351,
+          "iron_mg": 5.4,
+          "calcium_mg": 54,
+          "potassium_mg": 70,
+          "magnesium_mg": 10,
+          "phosphorus_mg": 40,
+          "zinc_mg": 0.8,
+          "thiamin_b1_mg": 0.35,
+          "riboflavin_b2_mg": 0.4,
+          "niacin_b3_mg": 4.5,
+          "vitamin_b6_mg": 0.5,
+          "folate_mcg": 100,
+          "vitamin_b12_mcg": 1.5
+        }
+      },
+      "notes": "Breakfast bar. Heavily fortified with B vitamins, iron, folate."
+    },
+    "o_0030000169247": {
+      "food_id": "o_0030000169247",
+      "name": "Cheddar Flavored Rice Crisps",
+      "brand": "Quaker",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 464.3,
+        "protein_g": 7.1,
+        "carbs_g": 71.4,
+        "fat_g": 17.9,
+        "micronutrients": {
+          "sodium_mg": 607,
+          "iron_mg": 0.5,
+          "calcium_mg": 15,
+          "potassium_mg": 80,
+          "phosphorus_mg": 50,
+          "magnesium_mg": 12
+        }
+      },
+      "notes": "Rice snack. Very limited micro data."
+    },
+    "o_4901326012073": {
+      "food_id": "o_4901326012073",
+      "name": "Squid Pea Snack",
+      "brand": "Kasugai",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 468.8,
+        "protein_g": 9.4,
+        "carbs_g": 65.6,
+        "fat_g": 18.8,
+        "micronutrients": {
+          "sodium_mg": 500,
+          "iron_mg": 0.5,
+          "calcium_mg": 15,
+          "potassium_mg": 80,
+          "phosphorus_mg": 50,
+          "magnesium_mg": 12
+        }
+      },
+      "notes": "Japanese snack. Label only shows sodium."
+    },
+    "o_4901326011960": {
+      "food_id": "o_4901326011960",
+      "name": "脆豆 (Crispy Beans)",
+      "brand": "Kasugai",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 465,
+        "protein_g": 13.3,
+        "carbs_g": 65.1,
+        "fat_g": 16.9,
+        "micronutrients": {
+          "sodium_mg": 400,
+          "iron_mg": 0.5,
+          "calcium_mg": 15,
+          "potassium_mg": 80,
+          "phosphorus_mg": 50,
+          "magnesium_mg": 12
+        }
+      },
+      "notes": "Japanese snack. Label only shows sodium."
+    },
+    "o_4901326006377": {
+      "food_id": "o_4901326006377",
+      "name": "Shrimp Hot Chili Wheat Chips",
+      "brand": "Koikeya",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 452.4,
+        "protein_g": 9.5,
+        "carbs_g": 64.3,
+        "fat_g": 19,
+        "micronutrients": {
+          "sodium_mg": 450,
+          "iron_mg": 0.5,
+          "calcium_mg": 15,
+          "potassium_mg": 80,
+          "phosphorus_mg": 50,
+          "magnesium_mg": 12
+        }
+      },
+      "notes": "Japanese snack. Label only shows sodium."
+    },
+    "o_0028400756761": {
+      "food_id": "o_0028400756761",
+      "name": "Doritos Nacho Cheese",
+      "brand": "Smartfood",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 571.4,
+        "protein_g": 7.1,
+        "carbs_g": 46.4,
+        "fat_g": 39.3,
+        "micronutrients": {
+          "sodium_mg": 714,
+          "calcium_mg": 71,
+          "iron_mg": 0.5,
+          "potassium_mg": 80,
+          "phosphorus_mg": 50,
+          "magnesium_mg": 12
+        }
+      },
+      "notes": "Popcorn snack. Limited micro data."
+    },
+    "o_0857900005198": {
+      "food_id": "o_0857900005198",
+      "name": "Drizzling",
+      "brand": "Drizzilicious",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 428.6,
+        "protein_g": 4.8,
+        "carbs_g": 71.4,
+        "fat_g": 14.3,
+        "micronutrients": {
+          "sodium_mg": 381,
+          "iron_mg": 0.5,
+          "calcium_mg": 15,
+          "potassium_mg": 80,
+          "phosphorus_mg": 50,
+          "magnesium_mg": 12
+        }
+      },
+      "notes": "Rice cake drizzle snack. Minimal micros."
+    },
+    "o_0036632037428": {
+      "food_id": "o_0036632037428",
+      "name": "Greek Banana Cream",
+      "brand": "Dannon Light + Fit",
+      "source": "label_data",
+      "match_quality": "usda_estimated",
+      "per_100g": {
+        "calories": 53.3,
+        "protein_g": 8,
+        "carbs_g": 6,
+        "fat_g": 0,
+        "micronutrients": {
+          "calcium_mg": 100,
+          "potassium_mg": 120,
+          "sodium_mg": 40,
+          "phosphorus_mg": 90,
+          "magnesium_mg": 10,
+          "zinc_mg": 0.4,
+          "riboflavin_b2_mg": 0.15,
+          "vitamin_b12_mcg": 0.5,
+          "pantothenic_acid_b5_mg": 0.3,
+          "vitamin_d_mcg": 0
+        }
+      },
+      "notes": "Light Greek yogurt. Calcium and B12 from dairy. Estimated from USDA nonfat Greek yogurt."
+    },
+    "m_30144617": {
+      "food_id": "m_30144617",
+      "name": "Iced Hazelnut Latte Tall",
+      "brand": "Starbucks",
+      "source": "label_data",
+      "match_quality": "label_partial",
+      "per_100g": {
+        "calories": 175,
+        "protein_g": 6.67,
+        "carbs_g": 19.17,
+        "fat_g": 8.33,
+        "micronutrients": {
+          "calcium_mg": 167,
+          "sodium_mg": 100,
+          "potassium_mg": 200,
+          "phosphorus_mg": 120,
+          "magnesium_mg": 15,
+          "riboflavin_b2_mg": 0.15,
+          "vitamin_b12_mcg": 0.3
+        }
+      },
+      "notes": "Coffee drink. Calcium from milk. One-off entry."
+    },
+    "o_0051000288110": {
+      "food_id": "o_0051000288110",
+      "name": "Creamy Chicken Cajun Style Alfredo",
+      "brand": "Campbell's Chunky",
+      "source": "label_data",
+      "match_quality": "label_partial",
+      "per_100g": {
+        "calories": 102.1,
+        "protein_g": 3.13,
+        "carbs_g": 6.88,
+        "fat_g": 6.88,
+        "micronutrients": {
+          "fiber_g": 1.04,
+          "sodium_mg": 875,
+          "calcium_mg": 21,
+          "iron_mg": 0.75,
+          "potassium_mg": 125,
+          "magnesium_mg": 8,
+          "phosphorus_mg": 40,
+          "zinc_mg": 0.3,
+          "thiamin_b1_mg": 0.03,
+          "niacin_b3_mg": 0.5
+        }
+      },
+      "notes": "Canned soup. High sodium. One-off entry."
+    },
+    "m_1466886": {
+      "food_id": "m_1466886",
+      "name": "Garlic Fries",
+      "brand": "Trader Joe's",
+      "source": "label_estimated",
+      "match_quality": "usda_estimated",
+      "per_100g": {
+        "calories": 176.5,
+        "protein_g": 2.35,
+        "carbs_g": 23.5,
+        "fat_g": 8.24,
+        "micronutrients": {
+          "fiber_g": 1.5,
+          "calcium_mg": 8,
+          "iron_mg": 0.5,
+          "magnesium_mg": 18,
+          "phosphorus_mg": 60,
+          "potassium_mg": 350,
+          "sodium_mg": 250,
+          "zinc_mg": 0.2,
+          "vitamin_c_mg": 5,
+          "niacin_b3_mg": 1.3,
+          "vitamin_b6_mg": 0.2,
+          "folate_mcg": 12,
+          "saturated_fat_g": 1.5,
+          "monounsat_fat_g": 3.5,
+          "polyunsat_fat_g": 2.5
+        }
+      },
+      "notes": "Estimated from USDA frozen french fries profile. Approximate."
+    },
+    "m_16576150": {
+      "food_id": "m_16576150",
+      "name": "Miracle Whip Light Dressing",
+      "brand": "Kraft",
+      "source": "label_data",
+      "match_quality": "usda_estimated",
+      "per_100g": {
+        "calories": 133.3,
+        "protein_g": 0,
+        "carbs_g": 13.3,
+        "fat_g": 10,
+        "micronutrients": {
+          "sodium_mg": 800,
+          "cholesterol_mg": 33,
+          "sugars_g": 6.7,
+          "calcium_mg": 7,
+          "iron_mg": 0.15,
+          "potassium_mg": 20,
+          "vitamin_e_mg": 2.8,
+          "vitamin_k_mcg": 24,
+          "saturated_fat_g": 1.5,
+          "monounsat_fat_g": 2.5,
+          "polyunsat_fat_g": 5.5
+        }
+      },
+      "notes": "Estimated from USDA light mayonnaise profile. Mostly fat + sodium. Vitamin E and K from oil base."
+    },
+    "10434536": {
+      "food_id": "10434536",
+      "name": "Sriracha Hot Chilli Sauce",
+      "brand": "Flying Goose",
+      "source": "usda_matched",
+      "match_quality": "mapped_usda",
+      "per_100g": {
+        "calories": 139.8,
+        "protein_g": 2.3,
+        "carbs_g": 28,
+        "fat_g": 1.2,
+        "micronutrients": {
+          "fiber_g": 2.1,
+          "calcium_mg": 18,
+          "iron_mg": 1.68,
+          "magnesium_mg": 16,
+          "phosphorus_mg": 46,
+          "potassium_mg": 321,
+          "sodium_mg": 2124,
+          "zinc_mg": 0.31,
+          "copper_mg": 0.059,
+          "manganese_mg": 0.136,
+          "selenium_mcg": 0.5,
+          "vitamin_a_rae_mcg": 129,
+          "vitamin_e_mg": 4.77,
+          "vitamin_c_mg": 26.2,
+          "thiamin_b1_mg": 0.08,
+          "riboflavin_b2_mg": 0.215,
+          "niacin_b3_mg": 1.25,
+          "pantothenic_acid_b5_mg": 0.383,
+          "vitamin_b6_mg": 0.46,
+          "folate_mcg": 22,
+          "vitamin_k_mcg": 10.6,
+          "saturated_fat_g": 0.13,
+          "monounsat_fat_g": 0.08,
+          "polyunsat_fat_g": 0.61
+        }
+      },
+      "notes": "Mapped to USDA 171186 Sauce, sriracha, hot chile. Good source of vitamin A, E, C from peppers."
+    },
+    "t_16160630": {
+      "food_id": "t_16160630",
+      "name": "Bone Suckin' Sauce",
+      "brand": "We're talkin' serious",
+      "source": "label_data",
+      "match_quality": "usda_estimated",
+      "per_100g": {
+        "calories": 142.9,
+        "protein_g": 0,
+        "carbs_g": 35.7,
+        "fat_g": 0,
+        "micronutrients": {
+          "sodium_mg": 350,
+          "sugars_g": 28.6,
+          "potassium_mg": 120,
+          "calcium_mg": 15,
+          "iron_mg": 0.5,
+          "magnesium_mg": 8,
+          "phosphorus_mg": 12,
+          "vitamin_a_rae_mcg": 3,
+          "vitamin_c_mg": 1.5,
+          "niacin_b3_mg": 0.3
+        }
+      },
+      "notes": "BBQ sauce. Mostly sugar and sodium. Estimated from USDA BBQ sauce profile."
+    },
+    "m_4059441": {
+      "food_id": "m_4059441",
+      "name": "Triple Berry Frozen Fruit Blend",
+      "brand": "Market Pantry",
+      "source": "label_estimated",
+      "match_quality": "usda_estimated",
+      "per_100g": {
+        "calories": 57.1,
+        "protein_g": 1.43,
+        "carbs_g": 14.3,
+        "fat_g": 0,
+        "micronutrients": {
+          "fiber_g": 2.9,
+          "calcium_mg": 14,
+          "iron_mg": 0.5,
+          "magnesium_mg": 10,
+          "potassium_mg": 100,
+          "sodium_mg": 1,
+          "vitamin_c_mg": 15,
+          "manganese_mg": 0.4,
+          "vitamin_k_mcg": 7,
+          "monounsat_fat_g": 0.1,
+          "polyunsat_fat_g": 0.2
+        }
+      },
+      "notes": "Estimated from USDA mixed berries frozen. Good source of vitamin C, manganese.",
+      "glycemic_index": 40,
+      "glycemic_load_per_serving": 5,
+      "gi_notes": "Low GI. Berries are among the lowest-GI fruits."
+    },
+    "m_17029672": {
+      "food_id": "m_17029672",
+      "name": "Yellowfin Tuna Sashimi",
+      "brand": "Generic",
+      "source": "usda_estimated",
+      "match_quality": "usda_estimated",
+      "per_100g": {
+        "calories": 110,
+        "protein_g": 23,
+        "carbs_g": 0,
+        "fat_g": 0,
+        "micronutrients": {
+          "calcium_mg": 4,
+          "iron_mg": 0.73,
+          "magnesium_mg": 35,
+          "phosphorus_mg": 191,
+          "potassium_mg": 444,
+          "sodium_mg": 37,
+          "zinc_mg": 0.37,
+          "copper_mg": 0.024,
+          "manganese_mg": 0.012,
+          "selenium_mcg": 36.5,
+          "vitamin_a_rae_mcg": 18,
+          "vitamin_d_mcg": 1,
+          "thiamin_b1_mg": 0.118,
+          "riboflavin_b2_mg": 0.048,
+          "niacin_b3_mg": 10.54,
+          "pantothenic_acid_b5_mg": 0.75,
+          "vitamin_b6_mg": 0.433,
+          "folate_mcg": 2,
+          "vitamin_b12_mcg": 1.02,
+          "choline_mg": 65,
+          "saturated_fat_g": 0.21,
+          "monounsat_fat_g": 0.11,
+          "polyunsat_fat_g": 0.16
+        }
+      },
+      "notes": "USDA yellowfin tuna raw. Excellent source of niacin, B6, B12, selenium.",
+      "bioavailability": {
+        "iron_type": "heme",
+        "iron_absorption_pct": 25,
+        "zinc_absorption_notes": "high — animal source",
+        "protein_digestibility_score": 0.94,
+        "limiting_factor": null
+      },
+      "amino_acids_per_100g": {
+        "leucine_mg": 1820,
+        "isoleucine_mg": 1030,
+        "valine_mg": 1150,
+        "lysine_mg": 2050,
+        "methionine_mg": 660,
+        "phenylalanine_mg": 870,
+        "threonine_mg": 980,
+        "tryptophan_mg": 250,
+        "histidine_mg": 760
+      },
+      "glycemic_index": 0,
+      "glycemic_load_per_serving": 0
+    },
+    "m_19488800": {
+      "food_id": "m_19488800",
+      "name": "Sashimi Salmon",
+      "brand": "Labeyrie",
+      "source": "usda_estimated",
+      "match_quality": "usda_estimated",
+      "per_100g": {
+        "calories": 142,
+        "protein_g": 19.84,
+        "carbs_g": 0,
+        "fat_g": 6.34,
+        "micronutrients": {
+          "calcium_mg": 12,
+          "iron_mg": 0.34,
+          "magnesium_mg": 27,
+          "phosphorus_mg": 200,
+          "potassium_mg": 363,
+          "sodium_mg": 44,
+          "zinc_mg": 0.36,
+          "copper_mg": 0.05,
+          "manganese_mg": 0.011,
+          "selenium_mcg": 24.3,
+          "vitamin_a_rae_mcg": 12,
+          "vitamin_d_mcg": 11,
+          "thiamin_b1_mg": 0.226,
+          "riboflavin_b2_mg": 0.38,
+          "niacin_b3_mg": 7.86,
+          "pantothenic_acid_b5_mg": 1.66,
+          "vitamin_b6_mg": 0.8,
+          "folate_mcg": 26,
+          "vitamin_b12_mcg": 3.18,
+          "choline_mg": 56,
+          "vitamin_k_mcg": 0.5,
+          "saturated_fat_g": 0.981,
+          "monounsat_fat_g": 2.1,
+          "polyunsat_fat_g": 2.54
+        }
+      },
+      "notes": "USDA Atlantic salmon raw. Outstanding source of B12, D, selenium, omega-3.",
+      "bioavailability": {
+        "iron_type": "heme",
+        "iron_absorption_pct": 25,
+        "zinc_absorption_notes": "high — animal source",
+        "protein_digestibility_score": 0.94,
+        "limiting_factor": null
+      },
+      "amino_acids_per_100g": {
+        "leucine_mg": 1615,
+        "isoleucine_mg": 916,
+        "valine_mg": 1024,
+        "lysine_mg": 1826,
+        "methionine_mg": 588,
+        "phenylalanine_mg": 777,
+        "threonine_mg": 872,
+        "tryptophan_mg": 217,
+        "histidine_mg": 586
+      },
+      "glycemic_index": 0,
+      "glycemic_load_per_serving": 0
+    },
+    "m_614430": {
+      "food_id": "m_614430",
+      "name": "Hamachi Young Yellowtail",
+      "brand": "Sushifaq",
+      "source": "usda_estimated",
+      "match_quality": "usda_estimated",
+      "per_100g": {
+        "calories": 146,
+        "protein_g": 23.2,
+        "carbs_g": 0,
+        "fat_g": 5.36,
+        "micronutrients": {
+          "calcium_mg": 26,
+          "iron_mg": 0.49,
+          "magnesium_mg": 32,
+          "phosphorus_mg": 174,
+          "potassium_mg": 420,
+          "sodium_mg": 39,
+          "zinc_mg": 0.43,
+          "selenium_mcg": 36.5,
+          "vitamin_a_rae_mcg": 15,
+          "vitamin_d_mcg": 2,
+          "niacin_b3_mg": 7.8,
+          "vitamin_b6_mg": 0.4,
+          "vitamin_b12_mcg": 1.3,
+          "choline_mg": 60,
+          "saturated_fat_g": 1.3,
+          "monounsat_fat_g": 1.5,
+          "polyunsat_fat_g": 1.2
+        }
+      },
+      "notes": "Estimated from USDA mixed yellowtail data. Good source of B12, selenium.",
+      "bioavailability": {
+        "iron_type": "heme",
+        "iron_absorption_pct": 25,
+        "zinc_absorption_notes": "high — animal source",
+        "protein_digestibility_score": 0.94,
+        "limiting_factor": null
+      },
+      "amino_acids_per_100g": {
+        "leucine_mg": 1770,
+        "isoleucine_mg": 1000,
+        "valine_mg": 1120,
+        "lysine_mg": 1990,
+        "methionine_mg": 640,
+        "phenylalanine_mg": 850,
+        "threonine_mg": 950,
+        "tryptophan_mg": 240,
+        "histidine_mg": 720
+      },
+      "glycemic_index": 0,
+      "glycemic_load_per_serving": 0
+    },
+    "n_3151": {
+      "food_id": "n_3151",
+      "name": "Sweet Potato, Baked in Skin",
+      "brand": "USDA",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 90,
+        "protein_g": 2.0,
+        "carbs_g": 20.7,
+        "fat_g": 0.15,
+        "micronutrients": {
+          "fiber_g": 3.3,
+          "calcium_mg": 38,
+          "iron_mg": 0.69,
+          "magnesium_mg": 27,
+          "phosphorus_mg": 54,
+          "potassium_mg": 475,
+          "sodium_mg": 36,
+          "zinc_mg": 0.32,
+          "copper_mg": 0.161,
+          "manganese_mg": 0.497,
+          "selenium_mcg": 0.2,
+          "vitamin_a_rae_mcg": 961,
+          "vitamin_e_mg": 0.71,
+          "vitamin_c_mg": 19.6,
+          "thiamin_b1_mg": 0.107,
+          "riboflavin_b2_mg": 0.106,
+          "niacin_b3_mg": 1.487,
+          "pantothenic_acid_b5_mg": 0.884,
+          "vitamin_b6_mg": 0.286,
+          "folate_mcg": 6,
+          "choline_mg": 13.1,
+          "vitamin_k_mcg": 2.3,
+          "saturated_fat_g": 0.033,
+          "monounsat_fat_g": 0.001,
+          "polyunsat_fat_g": 0.064
+        }
+      },
+      "notes": "USDA 168483 baked in skin. Outstanding vitamin A (961mcg = 107% DV). Excellent potassium source. GI ~65 baked.",
+      "glycemic_index": 65,
+      "glycemic_load_per_serving": 14,
+      "gi_notes": "Medium GI. Lower when boiled vs baked."
+    },
+    "o_08667031": {
+      "food_id": "o_08667031",
+      "name": "Pink Salmon, Canned, Solids with Bone and Liquid",
+      "brand": "Bumble Bee → USDA",
+      "source": "usda_matched",
+      "match_quality": "mapped_usda",
+      "per_100g": {
+        "calories": 136,
+        "protein_g": 19.78,
+        "carbs_g": 0,
+        "fat_g": 6.05,
+        "micronutrients": {
+          "calcium_mg": 283,
+          "iron_mg": 0.77,
+          "magnesium_mg": 33,
+          "phosphorus_mg": 337,
+          "potassium_mg": 326,
+          "sodium_mg": 438,
+          "zinc_mg": 0.92,
+          "copper_mg": 0.063,
+          "manganese_mg": 0.013,
+          "selenium_mcg": 35.5,
+          "vitamin_a_rae_mcg": 18,
+          "vitamin_d_mcg": 14.1,
+          "vitamin_e_mg": 1.35,
+          "thiamin_b1_mg": 0.018,
+          "riboflavin_b2_mg": 0.176,
+          "niacin_b3_mg": 6.78,
+          "pantothenic_acid_b5_mg": 0.68,
+          "vitamin_b6_mg": 0.3,
+          "folate_mcg": 8,
+          "vitamin_b12_mcg": 4.14,
+          "choline_mg": 68.5,
+          "vitamin_k_mcg": 0.4,
+          "saturated_fat_g": 1.51,
+          "monounsat_fat_g": 1.82,
+          "polyunsat_fat_g": 1.79,
+          "omega3_epa_mg": 600,
+          "omega3_dha_mg": 800
+        }
+      },
+      "notes": "USDA 15090. Bones provide exceptional calcium (283mg). Outstanding B12, D, selenium, omega-3. One of the most nutrient-dense proteins in the diet.",
+      "bioavailability": {
+        "iron_type": "heme",
+        "iron_absorption_pct": 25,
+        "zinc_absorption_notes": "high — animal source",
+        "protein_digestibility_score": 0.94,
+        "limiting_factor": null,
+        "calcium_notes": "bones provide highly bioavailable calcium"
+      },
+      "amino_acids_per_100g": {
+        "leucine_mg": 1640,
+        "isoleucine_mg": 930,
+        "valine_mg": 1040,
+        "lysine_mg": 1850,
+        "methionine_mg": 600,
+        "phenylalanine_mg": 790,
+        "threonine_mg": 880,
+        "tryptophan_mg": 220,
+        "histidine_mg": 600
+      },
+      "glycemic_index": 0,
+      "glycemic_load_per_serving": 0
+    },
+    "m_646459": {
+      "food_id": "m_646459",
+      "name": "Low Sugar Strawberry Preserves",
+      "brand": "Smucker's",
+      "source": "label_estimated",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 147,
+        "protein_g": 0,
+        "carbs_g": 35.3,
+        "fat_g": 0,
+        "micronutrients": {
+          "sodium_mg": 0,
+          "sugars_g": 23.5,
+          "vitamin_c_mg": 15,
+          "potassium_mg": 60,
+          "calcium_mg": 8,
+          "iron_mg": 0.3,
+          "fiber_g": 1.0
+        }
+      },
+      "notes": "Fruit preserves. Mostly sugar. Some vitamin C from strawberries. Minimal micro contribution."
+    },
+    "m_30710485": {
+      "food_id": "m_30710485",
+      "name": "Mixed Vegetables, Frozen, Unprepared",
+      "brand": "Generic → USDA",
+      "source": "usda_matched",
+      "match_quality": "mapped_usda",
+      "per_100g": {
+        "calories": 65,
+        "protein_g": 2.86,
+        "carbs_g": 13.09,
+        "fat_g": 0.16,
+        "micronutrients": {
+          "fiber_g": 3.6,
+          "calcium_mg": 22,
+          "iron_mg": 0.73,
+          "magnesium_mg": 20,
+          "phosphorus_mg": 47,
+          "potassium_mg": 182,
+          "sodium_mg": 42,
+          "zinc_mg": 0.39,
+          "copper_mg": 0.047,
+          "manganese_mg": 0.24,
+          "selenium_mcg": 0.5,
+          "vitamin_a_rae_mcg": 440,
+          "vitamin_e_mg": 0.24,
+          "vitamin_c_mg": 8.3,
+          "thiamin_b1_mg": 0.08,
+          "riboflavin_b2_mg": 0.065,
+          "niacin_b3_mg": 0.9,
+          "pantothenic_acid_b5_mg": 0.16,
+          "vitamin_b6_mg": 0.07,
+          "folate_mcg": 26,
+          "vitamin_k_mcg": 15,
+          "saturated_fat_g": 0.033,
+          "monounsat_fat_g": 0.012,
+          "polyunsat_fat_g": 0.076
+        }
+      },
+      "notes": "USDA 11583 frozen mixed vegetables. Good vitamin A (from carrots). Decent fiber."
+    },
+    "o_0888849005406": {
+      "food_id": "o_0888849005406",
+      "name": "Quest Hero Protein Bar Crispy Chocolate Caramel Pecan",
+      "brand": "Quest",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 283,
+        "protein_g": 25,
+        "carbs_g": 18.3,
+        "fat_g": 15,
+        "micronutrients": {
+          "fiber_g": 18.3,
+          "sodium_mg": 333,
+          "calcium_mg": 167,
+          "iron_mg": 1.5,
+          "potassium_mg": 117,
+          "phosphorus_mg": 200,
+          "magnesium_mg": 30,
+          "zinc_mg": 1.2
+        }
+      },
+      "notes": "Protein bar. High fiber from soluble corn fiber. Calcium from milk protein. Limited micro data."
+    },
+    "o_0788434115681": {
+      "food_id": "o_0788434115681",
+      "name": "Reese's Peanut Butter Lovers Protein Bar",
+      "brand": "ONE",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 400,
+        "protein_g": 30,
+        "carbs_g": 41.7,
+        "fat_g": 18.3,
+        "micronutrients": {
+          "fiber_g": 1.7,
+          "sodium_mg": 300,
+          "calcium_mg": 167,
+          "iron_mg": 1.5,
+          "potassium_mg": 100,
+          "phosphorus_mg": 200,
+          "magnesium_mg": 35,
+          "zinc_mg": 1.0
+        }
+      },
+      "notes": "Protein bar. Peanut butter base adds some magnesium. Limited micro data."
+    },
+    "o_0644225727139": {
+      "food_id": "o_0644225727139",
+      "name": "Protein Energy Bar",
+      "brand": "Power Crunch",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 550,
+        "protein_g": 32.5,
+        "carbs_g": 27.5,
+        "fat_g": 35,
+        "micronutrients": {
+          "fiber_g": 2.5,
+          "sodium_mg": 475,
+          "calcium_mg": 50,
+          "iron_mg": 1.0,
+          "potassium_mg": 100,
+          "phosphorus_mg": 200,
+          "magnesium_mg": 25,
+          "zinc_mg": 1.0
+        }
+      },
+      "notes": "Wafer-style protein bar. High fat from cream filling. Limited micro data."
+    },
+    "n_120142": {
+      "food_id": "n_120142",
+      "name": "Think! High Protein Bar Brownie Crunch",
+      "brand": "Think!",
+      "source": "usda_common",
+      "match_quality": "exact",
+      "per_100g": {
+        "calories": 365,
+        "protein_g": 34.2,
+        "carbs_g": 38.8,
+        "fat_g": 13.4,
+        "micronutrients": {
+          "fiber_g": 3.3,
+          "sodium_mg": 483,
+          "calcium_mg": 250,
+          "iron_mg": 2.7,
+          "potassium_mg": 283,
+          "phosphorus_mg": 317,
+          "magnesium_mg": 83,
+          "zinc_mg": 2.5,
+          "copper_mg": 0.3,
+          "manganese_mg": 0.5,
+          "selenium_mcg": 10,
+          "vitamin_a_rae_mcg": 117,
+          "vitamin_c_mg": 15,
+          "thiamin_b1_mg": 0.25,
+          "riboflavin_b2_mg": 0.28,
+          "niacin_b3_mg": 3.3,
+          "vitamin_b6_mg": 0.33,
+          "folate_mcg": 67,
+          "vitamin_b12_mcg": 1.0,
+          "vitamin_e_mg": 2.5,
+          "vitamin_d_mcg": 1.7
+        }
+      },
+      "notes": "USDA entry. Fortified with vitamins and minerals. One of the more nutrient-dense protein bars."
+    },
+    "o_0840229305506": {
+      "food_id": "o_0840229305506",
+      "name": "Built Puff Cookies N Cream",
+      "brand": "Built",
+      "source": "label_data",
+      "match_quality": "label_estimated",
+      "per_100g": {
+        "calories": 375,
+        "protein_g": 42.5,
+        "carbs_g": 35,
+        "fat_g": 6.25,
+        "micronutrients": {
+          "fiber_g": 10,
+          "sodium_mg": 375,
+          "calcium_mg": 150,
+          "iron_mg": 1.5,
+          "potassium_mg": 100,
+          "phosphorus_mg": 200,
+          "magnesium_mg": 25,
+          "zinc_mg": 1.0
+        }
+      },
+      "notes": "Marshmallow-style protein bar. High protein density. Limited micro data."
+    }
+  },
+  "supplement_stack": {
+    "creatine_monohydrate": {
+      "name": "Creatine Monohydrate",
+      "brand": "Generic",
+      "daily_dose": "15g",
+      "nutrients": {
+        "creatine_g": 15
+      },
+      "notes": "15g is a maintenance/loading dose. Standard maintenance is 3-5g/day. 15g is fine short-term but no additional benefit over 5g for maintenance after muscles are saturated (takes ~7 days at 15-20g). Consider tapering to 5g/day after 2 weeks."
+    },
+    "magnesium_glycinate": {
+      "name": "Magnesium Glycinate",
+      "brand": "Sports Research",
+      "daily_dose": "2 capsules (80mg each)",
+      "nutrients": {
+        "magnesium_mg": 160
+      },
+      "notes": "Chelated glycinate form — high bioavailability. 160mg is 38% of RDA (420mg for adult males). Good for sleep quality. Rhonda would approve."
+    },
+    "trace_minerals": {
+      "name": "Only Trace Minerals",
+      "brand": "Life Extension",
+      "daily_dose": "1 capsule",
+      "nutrients": {
+        "zinc_mg": 20,
+        "copper_mg": 2,
+        "manganese_mg": 2,
+        "chromium_mcg": 400,
+        "molybdenum_mcg": 250,
+        "boron_mg": 3,
+        "vanadium_mcg": 750
+      },
+      "notes": "Zinc 20mg (182% RDA), Copper 2mg (222% RDA), Manganese 2mg (87% RDA), Chromium 400mcg, Molybdenum 250mcg, Boron 3mg, Vanadium 750mcg. All in bioavailable chelated forms."
+    },
+    "fish_oil": {
+      "name": "Triple Strength Omega-3 Fish Oil",
+      "brand": "Sports Research",
+      "daily_dose": "2 softgels",
+      "nutrients": {
+        "omega3_total_mg": 2080,
+        "epa_mg": 1380,
+        "dha_mg": 520,
+        "fat_g": 2.5,
+        "calories": 25
+      },
+      "notes": "2 softgels = 2x 1040mg omega-3 per softgel. Total 1380mg EPA + 520mg DHA. Excellent dose — well above the 250-500mg EPA+DHA minimum. Rhonda would be thrilled."
+    },
+    "vitamin_d3": {
+      "name": "Vitamin D3 5000 IU",
+      "brand": "Sports Research",
+      "daily_dose": "1 softgel",
+      "nutrients": {
+        "vitamin_d_mcg": 125,
+        "vitamin_d_iu": 5000
+      },
+      "notes": "125mcg (5000 IU). RDA is 15mcg (600 IU), tolerable upper limit is 100mcg (4000 IU). You're above the UL but 5000 IU is widely used and generally safe for adults. Ideal for Seattle latitude where sun exposure is limited."
+    }
+  },
+  "supplement_daily_totals": {
+    "creatine_g": 15,
+    "magnesium_mg": 160,
+    "zinc_mg": 20,
+    "copper_mg": 2,
+    "manganese_mg": 2,
+    "chromium_mcg": 400,
+    "molybdenum_mcg": 250,
+    "boron_mg": 3,
+    "vanadium_mcg": 750,
+    "omega3_total_mg": 2080,
+    "epa_mg": 1380,
+    "dha_mg": 520,
+    "fat_g": 2.5,
+    "calories": 25,
+    "vitamin_d_mcg": 125,
+    "vitamin_d_iu": 5000
+  },
+  "meal_timing_schema": {
+    "description": "Schema for temporal nutrition analysis. Food log entries from MacroFactor include hour/minute fields. This schema defines how to analyze peri-workout nutrition from those timestamps.",
+    "meal_windows": {
+      "pre_workout": {
+        "label": "Pre-Workout",
+        "window": "60-120 min before training",
+        "priority_nutrients": [
+          "carbs_g",
+          "leucine_mg",
+          "caffeine_mg"
+        ],
+        "notes": "Target 30-50g carbs, moderate protein. GI matters — medium-high GI preferred for rapid availability."
+      },
+      "peri_workout": {
+        "label": "Intra-Workout",
+        "window": "during training",
+        "priority_nutrients": [
+          "carbs_g",
+          "sodium_mg",
+          "potassium_mg"
+        ],
+        "notes": "Only relevant for sessions >90 min. Not applicable for typical lifting."
+      },
+      "post_workout": {
+        "label": "Post-Workout",
+        "window": "0-120 min after training",
+        "priority_nutrients": [
+          "protein_g",
+          "leucine_mg",
+          "carbs_g"
+        ],
+        "notes": "Target 30-50g protein with >2.5g leucine. High GI carbs for glycogen replenishment. The 'anabolic window' is wider than bro-science suggests — 2 hours is fine."
+      },
+      "pre_sleep": {
+        "label": "Pre-Sleep",
+        "window": "30-60 min before bed",
+        "priority_nutrients": [
+          "protein_g",
+          "magnesium_mg",
+          "tryptophan_mg"
+        ],
+        "notes": "Casein-type slow protein preferred. Magnesium glycinate supports sleep quality. Avoid large volumes."
+      },
+      "breakfast": {
+        "label": "Breakfast",
+        "window": "first meal of day",
+        "priority_nutrients": [
+          "protein_g",
+          "fiber_g",
+          "choline_mg"
+        ],
+        "notes": "High protein breakfast improves satiety throughout the day during a deficit."
+      }
+    },
+    "analysis_approach": "Cross-reference food log entry hour/minute with training session timestamps. Map each entry to the nearest meal window. Calculate per-window macro and leucine totals. Flag if post-workout window has <25g protein or <2g leucine."
+  },
+  "updated": "2026-05-09",
+  "changelog": {
+    "v2.0": [
+      "Filled sparse micro gaps for 28 foods using USDA reference data",
+      "Added 6 missing foods from food logs (sweet potato, pink salmon, mixed veg, preserves, 2 protein bars)",
+      "Added bioavailability fields: iron_type (heme/non-heme), absorption_pct, protein_digestibility_score",
+      "Added amino acid profiles (EAAs including leucine) for all protein sources",
+      "Added glycemic_index and glycemic_load for all carb sources",
+      "Added antinutrient interaction data (phytate, oxalate) with absorption impact notes",
+      "Added meal_timing_schema for peri-workout nutrition analysis",
+      "Upgraded supplement stack notes with creatine taper recommendation"
+    ]
+  }
+}

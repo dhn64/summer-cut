@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Cut — Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-primary: #0a0a0a;
+    --bg-card: #111111;
+    --bg-card-elevated: #161616;
+    --bg-card-hover: #1a1a1a;
+    --border-subtle: #1e1e1e;
+    --border-medium: #2a2a2a;
+    --text-primary: #f0ece4;
+    --text-secondary: #8a8579;
+    --text-muted: #5a5650;
+    --accent-blue: #4a8ec2;
+    --accent-blue-dim: rgba(74, 142, 194, 0.15);
+    --accent-blue-glow: rgba(74, 142, 194, 0.08);
+    --accent-gold: #c4a265;
+    --accent-gold-dim: rgba(196, 162, 101, 0.15);
+    --accent-gold-glow: rgba(196, 162, 101, 0.08);
+    --accent-green: #5a9e6f;
+    --accent-green-dim: rgba(90, 158, 111, 0.12);
+    --accent-red: #c25454;
+    --accent-red-dim: rgba(194, 84, 84, 0.12);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); font-weight: 400; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  .dashboard { max-width: 1200px; margin: 0 auto; padding: 48px 32px 80px; }
+  .header { margin-bottom: 56px; padding-bottom: 32px; border-bottom: 1px solid var(--border-subtle); }
+  .header-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+  .header h1 { font-family: var(--font-display); font-size: 32px; font-weight: 500; letter-spacing: -0.5px; }
+  .header-date { font-family: var(--font-mono); font-size: 12px; font-weight: 300; color: var(--text-muted); letter-spacing: 1.5px; text-transform: uppercase; }
+  .header-sub { font-size: 14px; color: var(--text-secondary); font-weight: 300; }
+  .header-sub span { color: var(--accent-blue); }
+  .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border-subtle); margin-bottom: 48px; border: 1px solid var(--border-subtle); }
+  .metric-card { background: var(--bg-card); padding: 28px 24px; }
+  .metric-label { font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 10px; }
+  .metric-value { font-family: var(--font-display); font-size: 36px; font-weight: 600; color: var(--text-primary); line-height: 1.1; margin-bottom: 6px; }
+  .metric-value .unit { font-size: 16px; font-weight: 400; color: var(--text-secondary); margin-left: 2px; }
+  .metric-detail { font-family: var(--font-mono); font-size: 11px; color: var(--text-secondary); font-weight: 300; }
+  .metric-detail .positive { color: var(--accent-green); }
+  .metric-detail .negative { color: var(--accent-red); }
+  .metric-detail .blue { color: var(--accent-blue); }
+  .section { margin-bottom: 48px; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+  .section-header h2 { font-family: var(--font-display); font-size: 20px; font-weight: 500; letter-spacing: -0.3px; }
+  .section-header .line { flex: 1; height: 1px; background: var(--border-subtle); }
+  .section-header .badge { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); padding: 4px 10px; border: 1px solid var(--border-medium); }
+  .panels-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border-subtle); border: 1px solid var(--border-subtle); }
+  .panel { background: var(--bg-card); padding: 28px; }
+  .panel-title { font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border-subtle); }
+  .panel-row { display: flex; justify-content: space-between; align-items: baseline; padding: 8px 0; }
+  .panel-row:not(:last-child) { border-bottom: 1px solid rgba(30,30,30,0.6); }
+  .panel-row-label { font-size: 13px; color: var(--text-secondary); }
+  .panel-row-value { font-family: var(--font-mono); font-size: 14px; color: var(--text-primary); }
+  .chart-container { background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 32px; }
+  .nutrition-table { width: 100%; border-collapse: collapse; }
+  .nutrition-table th { font-family: var(--font-mono); font-size: 10px; font-weight: 400; letter-spacing: 1px; text-transform: uppercase; color: var(--text-muted); text-align: right; padding: 8px 6px; border-bottom: 1px solid var(--border-subtle); }
+  .nutrition-table th:first-child { text-align: left; }
+  .nutrition-table td { font-family: var(--font-mono); font-size: 13px; color: var(--text-primary); text-align: right; padding: 10px 6px; border-bottom: 1px solid rgba(30,30,30,0.4); font-weight: 300; }
+  .nutrition-table td:first-child { text-align: left; color: var(--text-secondary); font-weight: 400; }
+  .nutrition-table tr.avg-row td { border-top: 1px solid var(--border-medium); color: var(--accent-blue); font-weight: 500; }
+  .micro-row { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+  .micro-name { font-family: var(--font-mono); font-size: 10px; color: var(--text-secondary); width: 110px; text-align: right; flex-shrink: 0; }
+  .micro-bar-track { flex: 1; height: 6px; background: rgba(30,30,30,0.8); position: relative; }
+  .micro-bar-fill { height: 100%; min-width: 2px; }
+  .micro-bar-target { position: absolute; top: -3px; width: 1px; height: 12px; background: var(--text-muted); opacity: 0.6; }
+  .micro-pct { font-family: var(--font-mono); font-size: 10px; width: 45px; text-align: right; flex-shrink: 0; }
+  .lift-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; }
+  .lift-row:not(:last-child) { border-bottom: 1px solid rgba(30,30,30,0.6); }
+  .lift-name { font-size: 13px; color: var(--text-secondary); min-width: 120px; }
+  .lift-current { font-family: var(--font-mono); font-size: 14px; color: var(--text-primary); text-align: right; }
+  .lift-floor { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); text-align: right; min-width: 80px; }
+  .lift-status { width: 8px; height: 8px; border-radius: 50%; margin-left: 12px; }
+  .lift-status.safe { background: var(--accent-green); box-shadow: 0 0 8px var(--accent-green-dim); }
+  .lift-status.warning { background: var(--accent-gold); box-shadow: 0 0 8px var(--accent-gold-dim); }
+  .lift-status.danger { background: var(--accent-red); box-shadow: 0 0 8px var(--accent-red-dim); }
+  .dal-headline { display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px; }
+  .dal-score { font-family: var(--font-display); font-size: 42px; font-weight: 600; }
+  .dal-trend { font-family: var(--font-mono); font-size: 13px; color: var(--text-secondary); }
+  .stress-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .stress-day { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); width: 28px; }
+  .stress-bar-track { flex: 1; height: 4px; background: rgba(30,30,30,0.8); }
+  .stress-bar-fill { height: 100%; }
+  .stress-value { font-family: var(--font-mono); font-size: 11px; width: 20px; text-align: right; }
+  .sleep-arch-bar { display: flex; height: 8px; overflow: hidden; margin-top: 16px; margin-bottom: 8px; }
+  .sleep-arch-segment { height: 100%; }
+  .sleep-arch-legend { display: flex; gap: 16px; margin-top: 8px; }
+  .sleep-arch-legend-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: var(--text-secondary); font-family: var(--font-mono); font-weight: 300; }
+  .sleep-arch-legend-item .dot { width: 6px; height: 6px; }
+  .macro-split-bar { display: flex; height: 8px; margin-bottom: 8px; }
+  .timeline-container { background: var(--bg-card); border: 1px solid var(--border-subtle); padding: 28px 32px; }
+  .timeline-track { position: relative; height: 3px; background: var(--border-medium); margin: 32px 0 24px; }
+  .timeline-progress { position: absolute; left: 0; top: 0; height: 100%; background: var(--accent-blue); }
+  .timeline-marker { position: absolute; top: -6px; width: 15px; height: 15px; border: 2px solid var(--accent-blue); background: var(--bg-card); border-radius: 50%; transform: translateX(-50%); }
+  .timeline-marker.active { background: var(--accent-blue); box-shadow: 0 0 12px var(--accent-blue-dim); }
+  .timeline-marker.future { border-color: var(--border-medium); }
+  .timeline-labels { display: flex; justify-content: space-between; margin-top: 8px; }
+  .timeline-label { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; text-align: center; }
+  .timeline-label.active { color: var(--accent-blue); }
+  .timeline-label .weight { display: block; font-size: 11px; color: var(--text-secondary); margin-top: 2px; text-transform: none; letter-spacing: 0; }
+  .callout { padding: 14px 18px; border-left: 2px solid; margin-top: 16px; font-size: 12px; font-family: var(--font-mono); line-height: 1.6; letter-spacing: 0.2px; }
+  .callout.warn { border-color: var(--accent-gold); background: var(--accent-gold-glow); color: var(--accent-gold); }
+  .callout.info { border-color: var(--accent-blue); background: var(--accent-blue-glow); color: var(--accent-blue); }
+  .correlation-card { background: var(--bg-card-elevated); border: 1px solid var(--border-subtle); padding: 16px 20px; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 14px; }
+  .corr-icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+  .corr-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+  .corr-text strong { color: var(--text-primary); font-weight: 500; }
+  .corr-text .data { font-family: var(--font-mono); font-size: 11px; color: var(--accent-blue); }
+  .action-item { display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--border-subtle); align-items: flex-start; }
+  .action-priority { font-family: var(--font-mono); font-size: 9px; letter-spacing: 1px; padding: 3px 8px; text-transform: uppercase; flex-shrink: 0; margin-top: 2px; }
+  .action-priority.p1 { background: var(--accent-red-dim); color: var(--accent-red); }
+  .action-priority.p2 { background: var(--accent-gold-dim); color: var(--accent-gold); }
+  .action-priority.p3 { background: var(--accent-blue-dim); color: var(--accent-blue); }
+  .action-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+  .action-text strong { color: var(--text-primary); font-weight: 500; }
+  .heatmap-grid { display: grid; grid-template-columns: 50px repeat(7, 1fr); gap: 3px; align-items: center; }
+  .heatmap-label { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); text-align: right; padding-right: 8px; }
+  .heatmap-cell { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 10px; color: var(--text-primary); border-radius: 3px; min-height: 32px; }
+  .heatmap-header { font-family: var(--font-mono); font-size: 9px; color: var(--text-muted); text-align: center; }
+  .sparkline { display: inline-flex; align-items: flex-end; gap: 2px; height: 18px; margin-top: 4px; }
+  .sparkline-bar { width: 5px; border-radius: 1px 1px 0 0; }
+  .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; }
+  .footer-text { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+  .footer-status { display: flex; align-items: center; gap: 6px; }
+  .footer-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent-gold); animation: pulse 3s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+  @media (max-width: 768px) {
+    .dashboard { padding: 24px 16px 60px; }
+    .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+    .panels-grid { grid-template-columns: 1fr; }
+    .metric-value { font-size: 28px; }
+    .header h1 { font-size: 24px; }
+    .heatmap-grid { gap: 2px !important; }
+    .nutrition-table td, .nutrition-table th { padding: 6px 3px; font-size: 11px; }
+  }
+</style>
+</head>
+<body>
+<div class="dashboard" id="app">
+  <div style="text-align:center;padding:100px 0;color:var(--text-muted);font-family:var(--font-mono);font-size:13px;">Loading data.json...</div>
+</div>
+
+<script>
+async function init() {
+  let D;
+  try {
+    const r = await fetch('data.json');
+    D = await r.json();
+  } catch(e) {
+    document.getElementById('app').innerHTML = `<div style="text-align:center;padding:100px 0;color:var(--accent-red);font-family:var(--font-mono);">Failed to load data.json — ${e.message}</div>`;
+    return;
+  }
+
+  const V = D.computed_dashboard_values;
+  const M = D.cut_metadata;
+  const logs = D.daily_log;
+  const archive = D.daily_log_archive || {};
+  const floors = D.strength_floor_tracking;
+  const training = D.training_log;
+
+  // Merge daily_log (full) + archive (compressed) into a unified timeline
+  // Archive entries have a subset of fields — normalize them
+  const allDates = [...new Set([...Object.keys(logs), ...Object.keys(archive).filter(k => !k.startsWith('_'))])].sort();
+  const recentDates = Object.keys(logs).sort();  // only full-detail entries
+  const today = recentDates[recentDates.length - 1];
+  const todayLog = logs[today];
+
+  // Helper to read a value from either full log or archive
+  function getVal(date, path) {
+    if (logs[date]) {
+      // Full entry — navigate nested path
+      if (path === 'weight') return logs[date].weight_lbs;
+      if (path === 'stress') return logs[date].stress_rating;
+      if (path === 'cal') return logs[date].nutrition.reconciled_calories;
+      if (path === 'pro') return logs[date].nutrition.reconciled_protein;
+      if (path === 'carb') return logs[date].nutrition.reconciled_carbs;
+      if (path === 'fat') return logs[date].nutrition.reconciled_fat;
+      if (path === 'sleep') return logs[date].sleep.score;
+      if (path === 'hrv') return logs[date].sleep.hrv_avg;
+      if (path === 'steps') return logs[date].activity.steps;
+      if (path === 'readiness') return logs[date].readiness.score;
+      if (path === 'efficiency') return logs[date].sleep.efficiency_pct;
+    } else if (archive[date]) {
+      // Archived entry — flat structure
+      if (path === 'weight') return archive[date].weight_lbs;
+      if (path === 'stress') return archive[date].stress_rating;
+      if (path === 'cal') return archive[date].reconciled_calories;
+      if (path === 'pro') return archive[date].reconciled_protein;
+      if (path === 'carb') return archive[date].reconciled_carbs;
+      if (path === 'fat') return archive[date].reconciled_fat;
+      if (path === 'sleep') return archive[date].sleep_score;
+      if (path === 'hrv') return archive[date].hrv_avg;
+      if (path === 'steps') return archive[date].steps;
+      if (path === 'readiness') return archive[date].readiness_score;
+      if (path === 'efficiency') return archive[date].efficiency_pct;
+    }
+    return null;
+  }
+
+  // Use recentDates for detailed panels (nutrition table, heatmap, stress bars)
+  // Use allDates for trend charts (weight, sparklines)
+  const dates = recentDates;  // detailed views use recent only
+  const trendDates = allDates; // charts use full history
+
+  // Helpers
+  const fmt = n => n == null ? '—' : n.toLocaleString();
+  const fmtDate = d => { const p = d.split('-'); return `${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+p[1]-1]} ${+p[2]}, ${p[0]}`; };
+  const shortDate = d => `M${+d.split('-')[2]}`;
+
+  // Color helpers for heatmap
+  function heatColor(val, target, floor, isPartial) {
+    if (isPartial) return 'rgba(50,50,50,0.4)';
+    if (floor != null && val < floor) return 'rgba(194,84,84,0.3)';
+    const diff = Math.abs(val - target) / target;
+    if (diff < 0.1) return 'rgba(90,158,111,0.3)';
+    if (val > target) return val > target * 1.5 ? 'rgba(194,84,84,0.3)' : 'rgba(196,162,101,0.25)';
+    return 'rgba(90,158,111,0.2)';
+  }
+
+  function stressColor(v) {
+    if (v <= 4) return { bar: 'var(--accent-green)', cls: 'color:var(--accent-green)' };
+    if (v <= 6) return { bar: 'var(--accent-gold)', cls: 'color:var(--accent-gold)' };
+    return { bar: 'var(--accent-red)', cls: 'color:var(--accent-red)' };
+  }
+
+  // Build sparkline bars from daily values
+  function sparkline(values, color='var(--accent-blue)') {
+    const valid = values.filter(v => v != null);
+    if (!valid.length) return '';
+    const max = Math.max(...valid);
+    const min = Math.min(...valid);
+    const range = max - min || 1;
+    return `<div class="sparkline">${values.map((v,i) => {
+      if (v == null) return `<div class="sparkline-bar" style="height:0;background:transparent;"></div>`;
+      const h = Math.max(10, ((v - min) / range) * 100);
+      const isLast = i === values.length - 1;
+      return `<div class="sparkline-bar" style="height:${h}%;background:${color};opacity:${isLast ? 1 : 0.6};"></div>`;
+    }).join('')}</div>`;
+  }
+
+  // Get values arrays — use full trend history for sparklines/charts
+  const weights = trendDates.map(d => getVal(d, 'weight'));
+  const cals = trendDates.map(d => getVal(d, 'cal'));
+  const stresses = dates.map(d => getVal(d, 'stress'));  // stress bars only show recent
+
+  // Weight chart uses full trend history
+  const wDates = trendDates.filter(d => getVal(d, 'weight') != null);
+  const wVals = wDates.map(d => getVal(d, 'weight'));
+  const wMin = Math.min(...wVals) - 1;
+  const wMax = Math.max(...wVals) + 1;
+  const wRange = wMax - wMin;
+  const chartW = 800, chartH = 220, padL = 60, padR = 40;
+  const usable = chartW - padL - padR;
+
+  function wX(i) { return padL + (i / (trendDates.length - 1)) * usable; }
+  function wY(v) { return 20 + ((wMax - v) / wRange) * (chartH - 40); }
+
+  let svgLines = '';
+  // Grid
+  const gridSteps = [Math.ceil(wMax), Math.ceil(wMax) - 1, Math.ceil(wMax) - 2, Math.ceil(wMax) - 3, Math.floor(wMin)];
+  const uniqueGrid = [...new Set(gridSteps)].filter(v => v >= wMin && v <= wMax);
+  uniqueGrid.forEach(v => {
+    svgLines += `<line x1="${padL}" y1="${wY(v)}" x2="${padL+usable}" y2="${wY(v)}" stroke="#1a1a1a" stroke-width="0.5"/>`;
+    svgLines += `<text x="${padL-8}" y="${wY(v)+4}" fill="#5a5650" font-family="JetBrains Mono" font-size="10" text-anchor="end">${v}</text>`;
+  });
+  // Axis
+  svgLines += `<line x1="${padL}" y1="20" x2="${padL}" y2="${chartH}" stroke="#1e1e1e" stroke-width="1"/>`;
+  svgLines += `<line x1="${padL}" y1="${chartH}" x2="${padL+usable}" y2="${chartH}" stroke="#1e1e1e" stroke-width="1"/>`;
+
+  // Daily dots
+  trendDates.forEach((d, i) => {
+    const w = getVal(d, 'weight');
+    if (w != null) {
+      svgLines += `<circle cx="${wX(i)}" cy="${wY(w)}" r="3.5" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>`;
+    } else {
+      svgLines += `<text x="${wX(i)}" y="${wY((wMax+wMin)/2)}" fill="#3a3a3a" font-family="JetBrains Mono" font-size="9" text-anchor="middle">—</text>`;
+    }
+  });
+
+  // Running average line
+  let avgPoints = [];
+  let runSum = 0, runCount = 0;
+  trendDates.forEach((d, i) => {
+    const w = getVal(d, 'weight');
+    if (w != null) { runSum += w; runCount++; }
+    if (runCount > 0) avgPoints.push(`${wX(i)},${wY(runSum/runCount)}`);
+  });
+  if (avgPoints.length > 1) {
+    svgLines += `<polyline points="${avgPoints.join(' ')}" fill="none" stroke="#4a8ec2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>`;
+    const lastPt = avgPoints[avgPoints.length-1].split(',');
+    svgLines += `<circle cx="${lastPt[0]}" cy="${lastPt[1]}" r="4" fill="#4a8ec2" stroke="#0a0a0a" stroke-width="2"/>`;
+  }
+
+  // Date labels
+  trendDates.forEach((d, i) => {
+    const label = i === 0 ? fmtDate(d).split(',')[0] : `${+d.split('-')[2]}`;
+    const isToday = d === today;
+    svgLines += `<text x="${wX(i)}" y="${chartH+18}" fill="${isToday ? '#4a8ec2' : '#5a5650'}" font-family="JetBrains Mono" font-size="9" text-anchor="middle">${label}</text>`;
+  });
+
+  // Legend
+  svgLines += `<line x1="${padL+2}" y1="${chartH+30}" x2="${padL+20}" y2="${chartH+30}" stroke="#4a8ec2" stroke-width="2.5"/>`;
+  svgLines += `<text x="${padL+24}" y="${chartH+33}" fill="#8a8579" font-family="DM Sans" font-size="10">7-day avg</text>`;
+  svgLines += `<circle cx="${padL+84}" cy="${chartH+30}" r="3" fill="none" stroke="#2a2a2a" stroke-width="1.5"/>`;
+  svgLines += `<text x="${padL+90}" y="${chartH+33}" fill="#8a8579" font-family="DM Sans" font-size="10">daily</text>`;
+
+  const weightSVG = `<svg viewBox="0 0 ${chartW+60} ${chartH+45}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">${svgLines}</svg>`;
+
+  // Nutrition table rows
+  const fullDays = dates.filter(d => d !== today);
+  let nutRows = '';
+  dates.forEach(d => {
+    const n = logs[d].nutrition;
+    const isToday = d === today;
+    const isReconciled = n.reconciled;
+    const label = `May ${+d.split('-')[2]}${isReconciled ? ' ✱' : ''}${isToday ? ' ⌛' : ''}`;
+    const cls = isToday ? ' style="color:var(--text-muted);font-style:italic;"' : '';
+    nutRows += `<tr><td${cls}>${label}</td><td${cls}>${fmt(n.reconciled_calories)}</td><td${cls}>${n.reconciled_protein}g</td><td${cls}>${n.reconciled_carbs}g</td><td${cls}>${n.reconciled_fat}g</td><td${cls}>${n.protein_per_lb.toFixed(2)}</td></tr>`;
+  });
+  nutRows += `<tr class="avg-row"><td>${fullDays.length}-Day Avg</td><td>${fmt(V.avg_intake_cal)}</td><td>${V.avg_protein_g}g</td><td>${V.avg_carbs_g}g</td><td>${V.avg_fat_g}g</td><td>${V.protein_per_lb}</td></tr>`;
+
+  // Reconciliation callout
+  const reconDays = dates.filter(d => logs[d].nutrition.reconciled);
+  let reconCallout = '';
+  if (reconDays.length) {
+    const notes = reconDays.map(d => `✱ May ${+d.split('-')[2]}: ${logs[d].nutrition.reconciliation_notes}`).join('<br>');
+    reconCallout = `<div class="callout info" style="margin-top:20px;">${notes}</div>`;
+  }
+
+  // Heatmap
+  const heatDates = dates;
+  const calTarget = 2200, proTarget = 180, proFloor = 160, fatTarget = 70;
+  let heatHTML = `<div class="heatmap-grid">
+    <div class="heatmap-label"></div>${heatDates.map(d => `<div class="heatmap-header">${shortDate(d)}</div>`).join('')}
+    <div class="heatmap-label">Cal</div>${heatDates.map(d => {
+      const v = logs[d].nutrition.reconciled_calories;
+      const partial = d === today;
+      return `<div class="heatmap-cell" style="background:${heatColor(v, calTarget, null, partial)};${partial?'opacity:0.5;':''}">${v}</div>`;
+    }).join('')}
+    <div class="heatmap-label">Pro</div>${heatDates.map(d => {
+      const v = logs[d].nutrition.reconciled_protein;
+      const partial = d === today;
+      return `<div class="heatmap-cell" style="background:${heatColor(v, proTarget, proFloor, partial)};${partial?'opacity:0.5;':''}">${v}</div>`;
+    }).join('')}
+    <div class="heatmap-label">Fat</div>${heatDates.map(d => {
+      const v = logs[d].nutrition.reconciled_fat;
+      const partial = d === today;
+      return `<div class="heatmap-cell" style="background:${heatColor(v, fatTarget, null, partial)};${partial?'opacity:0.5;':''}">${v}</div>`;
+    }).join('')}
+  </div>
+  <div style="margin-top:10px;display:flex;gap:16px;font-family:var(--font-mono);font-size:10px;color:var(--text-muted);">
+    <span><span style="display:inline-block;width:8px;height:8px;background:rgba(90,158,111,0.3);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>On target</span>
+    <span><span style="display:inline-block;width:8px;height:8px;background:rgba(196,162,101,0.25);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Over</span>
+    <span><span style="display:inline-block;width:8px;height:8px;background:rgba(194,84,84,0.3);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Below floor</span>
+  </div>`;
+
+  // Signals
+  let signalsHTML = '';
+  (V.signals || []).forEach(s => {
+    signalsHTML += `<div class="correlation-card"><span class="corr-icon">${s.icon}</span><div class="corr-text"><strong>${s.title}.</strong> ${s.detail} <span class="data">${s.severity}</span></div></div>`;
+  });
+
+  // Stress bars
+  let stressHTML = '';
+  dates.forEach(d => {
+    const v = logs[d].stress_rating;
+    const sc = stressColor(v);
+    stressHTML += `<div class="stress-row"><span class="stress-day">${shortDate(d)}</span><div class="stress-bar-track"><div class="stress-bar-fill" style="width:${v*10}%;background:${sc.bar};"></div></div><span class="stress-value" style="${sc.cls}">${v}</span></div>`;
+  });
+
+  // Strength panel
+  const liftMap = { back_squat: 'Back Squat', db_chest_press: 'DB Chest Press', trap_bar_deadlift: 'Trap Bar Deadlift' };
+  let liftHTML = '';
+  for (const [key, label] of Object.entries(liftMap)) {
+    const f = floors[key];
+    const hist = f.history;
+    const last = hist[hist.length - 1];
+    const repsStr = last.reps.join('/');
+    liftHTML += `<div class="lift-row"><span class="lift-name">${label}</span><span class="lift-current">${last.weight} × ${repsStr}</span><span class="lift-floor">floor: ${f.floor_weight}×${f.floor_reps}</span><div class="lift-status ${f.status === 'green' ? 'safe' : f.status === 'yellow' ? 'warning' : 'danger'}"></div></div>`;
+  }
+
+  // Last training session detail
+  let lastSessionHTML = '';
+  if (training.sessions.length) {
+    const s = training.sessions[training.sessions.length - 1];
+    lastSessionHTML = `<div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border-subtle);"><div class="panel-title" style="margin-bottom:12px;">Last Session — ${fmtDate(s.date).split(',')[0]}</div><div style="font-size:12px;color:var(--text-secondary);line-height:1.7;font-family:var(--font-mono);font-weight:300;">`;
+    s.exercises.forEach(ex => {
+      const setStr = ex.sets.map(st => `${st.reps}`).join('/');
+      const rpeStr = ex.sets.length > 1 ? `RPE ${ex.sets[0].rpe}→${ex.sets[ex.sets.length-1].rpe}` : `RPE ${ex.sets[0].rpe}`;
+      lastSessionHTML += `${ex.name} ${ex.sets[0].weight}×${setStr} · ${rpeStr}<br>`;
+    });
+    lastSessionHTML += `</div></div>`;
+  }
+
+  // Sleep panel from last available sleep data
+  const sleepDays = dates.filter(d => logs[d].sleep.score != null);
+  const lastSleep = sleepDays.length ? logs[sleepDays[sleepDays.length-1]].sleep : null;
+  const readinessVal = todayLog.readiness.score;
+  const readinessColor = readinessVal < 60 ? 'color:var(--accent-red)' : readinessVal < 70 ? 'color:var(--accent-gold)' : '';
+  const readinessFlag = readinessVal < 60 ? ' <span style="color:var(--accent-red);font-size:11px;">↓ low</span>' : '';
+
+  // Macro split
+  const sp = V.macro_split_pct;
+
+  // Micronutrient panel
+  const micro = V.micronutrient_status || { gaps: [], strengths: [] };
+  function microColor(sev) {
+    if (sev === 'gap') return { fill: 'var(--accent-red)', text: 'color:var(--accent-red)' };
+    if (sev === 'watch') return { fill: 'var(--accent-gold)', text: 'color:var(--accent-gold)' };
+    if (sev === 'high') return { fill: 'var(--accent-blue)', text: 'color:var(--accent-blue)' };
+    return { fill: 'var(--accent-green)', text: 'color:var(--accent-green)' };
+  }
+
+  let gapsHTML = '';
+  micro.gaps.forEach(g => {
+    const mc = microColor(g.severity);
+    const w = Math.min(100, g.pct_rda);
+    gapsHTML += `<div class="micro-row"><span class="micro-name">${g.nutrient}</span><div class="micro-bar-track"><div class="micro-bar-fill" style="width:${w}%;background:${mc.fill};"></div><div class="micro-bar-target" style="left:100%;"></div></div><span class="micro-pct" style="${mc.text}">${g.pct_rda}%</span></div>`;
+  });
+
+  let strengthsHTML = '';
+  micro.strengths.forEach(s => {
+    const mc = microColor(s.severity);
+    strengthsHTML += `<div class="micro-row"><span class="micro-name">${s.nutrient}</span><div class="micro-bar-track"><div class="micro-bar-fill" style="width:100%;background:${mc.fill};"></div></div><span class="micro-pct" style="${mc.text}">${s.pct_rda}%</span></div>`;
+  });
+
+  // Action items
+  const actions = V.action_items || [];
+  let actionsHTML = '';
+  actions.forEach((a, i) => {
+    const isLast = i === actions.length - 1;
+    const isDone = a.priority === 'done';
+    const prioClass = isDone ? 'p3' : a.priority;
+    const textStyle = isDone ? ' style="text-decoration:line-through;opacity:0.5;"' : '';
+    actionsHTML += `<div class="action-item"${isLast ? ' style="border-bottom:none;"' : ''}><span class="action-priority ${prioClass}">${a.priority}</span><div class="action-text"${textStyle}><strong>${a.title}.</strong> ${a.detail}</div></div>`;
+  });
+
+  // Timeline progress
+  const totalToLose = M.start_weight - M.goal_weight;
+  const lost = V.total_lost;
+  const progressPct = Math.min(100, (lost / totalToLose) * 100);
+
+  // ═══════════════════════════════════════
+  // RENDER
+  // ═══════════════════════════════════════
+
+  document.getElementById('app').innerHTML = `
+  <!-- Header -->
+  <div class="header">
+    <div class="header-top">
+      <h1>Summer Cut</h1>
+      <span class="header-date">${fmtDate(today)}</span>
+    </div>
+    <div class="header-sub">Day <span>${M.days_into_cut}</span> · Week <span>${M.week_number}</span> · ${M.calibration_complete ? 'Active Cut' : 'Calibration Period'}${D.dexa_scans.next_scheduled ? ` · DEXA ${fmtDate(D.dexa_scans.next_scheduled.date).split(',')[0]}` : ''}</div>
+  </div>
+
+  <!-- Headline Metrics -->
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-label">Current Weight</div>
+      <div class="metric-value">${V.current_weight}<span class="unit">lbs</span></div>
+      <div class="metric-detail">today's weigh-in ${sparkline(weights, 'var(--accent-blue)')}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">7-Day Average</div>
+      <div class="metric-value">${V.seven_day_avg_weight}<span class="unit">lbs</span></div>
+      <div class="metric-detail"><span class="positive">↓ ${V.total_lost} lbs</span> from ${M.start_weight} start</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Rate of Loss</div>
+      <div class="metric-value">${V.rate_of_loss_lbs_per_week}<span class="unit">lbs/wk</span></div>
+      <div class="metric-detail"><span class="blue">target: ${M.target_rate_above_168} lbs/wk</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Projected Goal</div>
+      <div class="metric-value">${V.projected_goal_date ? fmtDate(V.projected_goal_date).split(',')[0] : '—'}</div>
+      <div class="metric-detail">~${V.weeks_remaining} weeks at current rate</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Est. TDEE</div>
+      <div class="metric-value">${D.tdee_tracking.claude_estimate ? fmt(D.tdee_tracking.claude_estimate) : '—'}<span class="unit">cal</span></div>
+      <div class="metric-detail" style="color:var(--text-muted);">${D.tdee_tracking.confidence}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Avg Intake</div>
+      <div class="metric-value">${fmt(V.avg_intake_cal)}<span class="unit">cal</span></div>
+      <div class="metric-detail">${fullDays.length}-day avg (reconciled) ${sparkline(cals, 'var(--accent-blue)')}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Total Lost</div>
+      <div class="metric-value">${V.total_lost}<span class="unit">lbs</span></div>
+      <div class="metric-detail">of ${totalToLose} lbs to goal</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Days Into Cut</div>
+      <div class="metric-value">${M.days_into_cut}</div>
+      <div class="metric-detail">started ${fmtDate(M.start_date)}</div>
+    </div>
+  </div>
+
+  <!-- Weight Trend -->
+  <div class="section">
+    <div class="section-header"><h2>Weight Trend</h2><span class="line"></span><span class="badge">${dates.length}-Day View</span></div>
+    <div class="chart-container">${weightSVG}</div>
+  </div>
+
+  <!-- Nutrition Audit -->
+  <div class="section">
+    <div class="section-header"><h2>Nutrition Audit</h2><span class="line"></span><span class="badge">${fmtDate(dates[0]).split(',')[0]}–${+today.split('-')[2]} · MCP + Reconciled</span></div>
+    <div class="chart-container" style="padding:24px 28px;overflow-x:auto;">
+      <table class="nutrition-table">
+        <thead><tr><th>Date</th><th>Cal</th><th>Protein</th><th>Carbs</th><th>Fat</th><th>P g/lb</th></tr></thead>
+        <tbody>${nutRows}</tbody>
+      </table>
+      ${reconCallout}
+      <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--border-subtle);">
+        <div style="font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px;">Macro Adherence Heatmap</div>
+        ${heatHTML}
+      </div>
+    </div>
+  </div>
+
+  <!-- Signals -->
+  <div class="section">
+    <div class="section-header"><h2>Signals</h2><span class="line"></span><span class="badge">Auto-Detected · Week ${M.week_number}</span></div>
+    ${signalsHTML}
+  </div>
+
+  <!-- Micronutrient Status -->
+  <div class="section">
+    <div class="section-header"><h2>Micronutrient Status</h2><span class="line"></span><span class="badge">Typical Day · Food + Supps</span></div>
+    <div class="panels-grid">
+      <div class="panel">
+        <div class="panel-title" style="color:var(--accent-red);">⚑ Gaps — Action Required</div>
+        ${gapsHTML}
+        ${micro.top_fix_note ? `<div class="callout info" style="margin-top:16px;">${micro.top_fix_note}</div>` : ''}
+      </div>
+      <div class="panel">
+        <div class="panel-title" style="color:var(--accent-green);">✓ Covered — At or Above RDA</div>
+        ${strengthsHTML}
+        ${micro.borderline ? `<div style="margin-top:16px;padding:10px 14px;background:rgba(30,30,30,0.5);font-family:var(--font-mono);font-size:11px;color:var(--text-muted);">${micro.borderline}</div>` : ''}
+      </div>
+    </div>
+  </div>
+
+  <!-- Recovery & Nutrition -->
+  <div class="section">
+    <div class="section-header"><h2>Recovery & Nutrition</h2><span class="line"></span><span class="badge">Last Night + Averages</span></div>
+    <div class="panels-grid">
+      <div class="panel">
+        <div class="panel-title">Sleep & Recovery — Real Oura Data</div>
+        ${lastSleep ? `
+        <div class="panel-row"><span class="panel-row-label">Sleep Score</span><span class="panel-row-value">${lastSleep.score}</span></div>
+        <div class="panel-row"><span class="panel-row-label">${sleepDays.length}-Night Avg Score</span><span class="panel-row-value">${V.avg_sleep_score}</span></div>
+        <div class="panel-row"><span class="panel-row-label">HRV</span><span class="panel-row-value">${lastSleep.hrv_avg} <span style="color:var(--text-muted);font-size:11px;">ms</span></span></div>
+        <div class="panel-row"><span class="panel-row-label">${sleepDays.length}-Night Avg HRV</span><span class="panel-row-value">${V.avg_hrv} <span style="color:var(--text-muted);font-size:11px;">ms</span></span></div>
+        <div class="panel-row"><span class="panel-row-label">Lowest Resting HR</span><span class="panel-row-value">${lastSleep.hr_lowest} <span style="color:var(--text-muted);font-size:11px;">bpm</span></span></div>
+        <div class="panel-row"><span class="panel-row-label">Sleep Efficiency</span><span class="panel-row-value">${lastSleep.efficiency_pct}%</span></div>
+        <div class="panel-row"><span class="panel-row-label">${sleepDays.length}-Night Avg Efficiency</span><span class="panel-row-value" style="color:var(--accent-green);">${V.avg_efficiency}%</span></div>
+        <div class="panel-row"><span class="panel-row-label">Latency</span><span class="panel-row-value">${lastSleep.latency_min} <span style="color:var(--text-muted);font-size:11px;">min</span></span></div>
+        <div class="panel-row"><span class="panel-row-label">Readiness</span><span class="panel-row-value" style="${readinessColor}">${readinessVal}${readinessFlag}</span></div>
+        <div class="sleep-arch-bar" style="margin-top:20px;">
+          <div class="sleep-arch-segment" style="width:${lastSleep.deep_pct}%;background:var(--accent-blue);"></div>
+          <div class="sleep-arch-segment" style="width:${lastSleep.rem_pct}%;background:#7b6db5;"></div>
+          <div class="sleep-arch-segment" style="width:${lastSleep.light_pct}%;background:var(--border-medium);"></div>
+        </div>
+        <div class="sleep-arch-legend">
+          <div class="sleep-arch-legend-item"><div class="dot" style="background:var(--accent-blue);"></div>Deep ${Math.round(lastSleep.deep_pct)}%</div>
+          <div class="sleep-arch-legend-item"><div class="dot" style="background:#7b6db5;"></div>REM ${Math.round(lastSleep.rem_pct)}%</div>
+          <div class="sleep-arch-legend-item"><div class="dot" style="background:var(--border-medium);"></div>Light ${Math.round(lastSleep.light_pct)}%</div>
+        </div>
+        ` : '<div style="color:var(--text-muted);">No sleep data yet for tonight.</div>'}
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">Macro Summary — ${fullDays.length}-Day Avg (Reconciled)</div>
+        <div class="panel-row"><span class="panel-row-label">Calories</span><span class="panel-row-value">${fmt(V.avg_intake_cal)} <span style="color:var(--text-muted);font-size:11px;">cal</span></span></div>
+        <div class="panel-row"><span class="panel-row-label">Protein</span><span class="panel-row-value">${V.avg_protein_g}<span style="color:var(--text-muted);font-size:11px;">g</span> <span style="color:var(--text-muted);font-size:11px;">· ${V.protein_per_lb} g/lb</span></span></div>
+        <div class="panel-row"><span class="panel-row-label">Carbohydrates</span><span class="panel-row-value">${V.avg_carbs_g}<span style="color:var(--text-muted);font-size:11px;">g</span></span></div>
+        <div class="panel-row"><span class="panel-row-label">Fat</span><span class="panel-row-value">${V.avg_fat_g}<span style="color:var(--text-muted);font-size:11px;">g</span></span></div>
+        <div class="panel-row"><span class="panel-row-label">Fiber (est.)</span><span class="panel-row-value" style="color:var(--accent-blue);">${V.avg_fiber_g}<span style="color:var(--text-muted);font-size:11px;">g</span> <span style="color:var(--accent-blue);font-size:11px;">${Math.round(V.avg_fiber_g/38*100)}% RDA</span></span></div>
+        <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--border-subtle);">
+          <div class="panel-title" style="margin-bottom:12px;">Macro Split</div>
+          <div class="macro-split-bar">
+            <div style="width:${sp.protein}%;background:var(--accent-blue);height:8px;"></div>
+            <div style="width:${sp.carbs}%;background:var(--accent-gold);height:8px;"></div>
+            <div style="width:${sp.fat}%;background:var(--text-muted);height:8px;"></div>
+          </div>
+          <div class="sleep-arch-legend">
+            <div class="sleep-arch-legend-item"><div class="dot" style="background:var(--accent-blue);"></div>P ${sp.protein}%</div>
+            <div class="sleep-arch-legend-item"><div class="dot" style="background:var(--accent-gold);"></div>C ${sp.carbs}%</div>
+            <div class="sleep-arch-legend-item"><div class="dot" style="background:var(--text-muted);"></div>F ${sp.fat}%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Strength & Activity -->
+  <div class="section">
+    <div class="section-header"><h2>Strength & Activity</h2><span class="line"></span><span class="badge">${V.all_floor_lifts_green ? 'All Green' : 'Check Floors'}</span></div>
+    <div class="panels-grid">
+      <div class="panel">
+        <div class="panel-title">Floor Lifts — Status</div>
+        ${liftHTML}
+        ${lastSessionHTML}
+      </div>
+      <div class="panel">
+        <div class="panel-title">Activity</div>
+        <div class="panel-row"><span class="panel-row-label">Steps (yesterday)</span><span class="panel-row-value">${fmt(V.yesterday_steps)}</span></div>
+        <div class="panel-row"><span class="panel-row-label">${dates.length - 1}-Day Avg Steps</span><span class="panel-row-value">${fmt(V.avg_steps)}</span></div>
+        <div class="panel-row"><span class="panel-row-label">DAL Score</span><span class="panel-row-value">${V.dal_score || '—'} <span style="color:var(--text-muted);font-size:11px;">calibrating</span></span></div>
+        <div class="panel-row"><span class="panel-row-label">NEAT Score</span><span class="panel-row-value">${V.neat_score || '—'} <span style="color:var(--text-muted);font-size:11px;">calibrating</span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Life Stress -->
+  <div class="section">
+    <div class="section-header"><h2>Life Stress</h2><span class="line"></span><span class="badge">${dates.length}-Day · Avg ${V.avg_stress}</span></div>
+    <div class="chart-container" style="padding:24px 32px;">${stressHTML}</div>
+  </div>
+
+  <!-- Cut Timeline -->
+  <div class="section">
+    <div class="section-header"><h2>Cut Timeline</h2><span class="line"></span><span class="badge">${V.weeks_remaining}-Week Arc</span></div>
+    <div class="timeline-container">
+      <div class="timeline-track">
+        <div class="timeline-progress" style="width:${progressPct}%;"></div>
+        <div class="timeline-marker active" style="left:0%;"></div>
+        <div class="timeline-marker" style="left:${progressPct}%;background:var(--accent-blue);border-color:var(--accent-blue);box-shadow:0 0 8px var(--accent-blue-dim);"></div>
+        <div class="timeline-marker future" style="left:50%;"></div>
+        <div class="timeline-marker future" style="left:75%;"></div>
+        <div class="timeline-marker future" style="left:100%;"></div>
+      </div>
+      <div class="timeline-labels">
+        <div class="timeline-label active">START<span class="weight">${M.start_weight} lbs · ${fmtDate(M.start_date).split(',')[0]}</span></div>
+        <div class="timeline-label" style="color:var(--accent-blue);">NOW<span class="weight">~${V.seven_day_avg_weight} lbs</span></div>
+        <div class="timeline-label">DEXA 2<span class="weight">~170 lbs</span></div>
+        <div class="timeline-label">DEXA 3<span class="weight">~165 lbs</span></div>
+        <div class="timeline-label">GOAL<span class="weight">${M.goal_weight} lbs</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Items -->
+  <div class="section">
+    <div class="section-header"><h2>Action Items</h2><span class="line"></span><span class="badge">Week ${M.week_number} Takeaways</span></div>
+    <div class="chart-container" style="padding:24px 28px;">
+      ${actionsHTML}
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span class="footer-text">Summer Cut Dashboard v1.0 — Data-Driven</span>
+    <div class="footer-status">
+      <div class="footer-dot"></div>
+      <span class="footer-text">${M.calibration_complete ? 'Active Cut' : 'Calibration Period'} · ${D.trigger_status.refeed_triggers_active.length === 0 ? 'No Triggers Active' : D.trigger_status.refeed_triggers_active.length + ' Triggers Active'}</span>
+    </div>
+  </div>
+  `;
+}
+
+init();
+</script>
+</body>
+</html>
