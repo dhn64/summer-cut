@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-10T10:15:00-07:00",
-  "_updated_by": "morning_prep_task",
+  "_updated": "2026-05-10T22:00:00-07:00",
+  "_updated_by": "roundtable_week_1",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -1422,7 +1422,7 @@
         }
       ],
       "borderline": "Phosphorus 99% \u00b7 Magnesium 86% \u00b7 Panto (B5) 86% \u2014 borderline OK, boosted by supplements",
-      "top_fix_note": "9 micronutrients below 80% RDA. Top 3 fixes: eggs (choline, B12, A), spinach (folate, A, K), Greek yogurt (calcium, B12, riboflavin)."
+      "top_fix_note": "9 micronutrients below 80% RDA. Top 3 fixes: eggs (choline, B12, A), spinach (folate, A, K), canned salmon (calcium, B12, omega-3). No dairy \u2014 athlete is lactose intolerant."
     },
     "action_items": [
       {
@@ -1432,8 +1432,8 @@
       },
       {
         "priority": "p2",
-        "title": "Boost calcium + riboflavin",
-        "detail": "Greek yogurt (150g/day) adds ~180mg calcium, B12, and riboflavin at ~90 cal. Already buying Dannon Light + Fit \u2014 use it daily."
+        "title": "Boost calcium + riboflavin (dairy-free)",
+        "detail": "Canned salmon with bones 3-4x/week (283mg calcium per 3oz + B12, D, omega-3) plus daily fortified plant milk (300mg calcium/cup). Closes calcium gap without dairy."
       },
       {
         "priority": "p3",
@@ -1502,15 +1502,16 @@
   "weekly_targets": {
     "_description": "Set by the Performance Roundtable each Sunday. The dashboard heatmap and adherence metrics read from here. Empty until the first roundtable runs.",
     "current": {
-      "effective_date": "2026-05-03",
-      "set_by": "initial_estimate",
-      "calories": null,
-      "protein_g": null,
-      "protein_floor_g": null,
-      "carbs_g": null,
-      "fat_g": null,
-      "fiber_g": null,
-      "notes": "No targets set yet. First roundtable will establish week 2 targets from real data."
+      "effective_date": "2026-05-11",
+      "set_by": "roundtable_week_1",
+      "calories": 2200,
+      "protein_g": 200,
+      "protein_floor_g": 178,
+      "carb_g": 230,
+      "fat_g": 60,
+      "fat_floor_g": 45,
+      "fiber_g": 35,
+      "notes": "Holding targets from observed intake patterns. TDEE still calibrating \u2014 first calculated targets come week 4. MF targets are ignored; roundtable is the sole authority."
     },
     "history": []
   },
