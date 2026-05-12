@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-10T22:00:00-07:00",
-  "_updated_by": "roundtable_week_1",
+  "_updated": "2026-05-11T10:00:00-07:00",
+  "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -12,7 +12,7 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": false,
     "current_phase": "calibration",
-    "days_into_cut": 8,
+    "days_into_cut": 9,
     "week_number": 2
   },
   "daily_log": {
@@ -945,18 +945,18 @@
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": null,
-        "mcp_protein": null,
-        "mcp_carbs": null,
-        "mcp_fat": null,
+        "mcp_calories": 2677,
+        "mcp_protein": 183,
+        "mcp_carbs": 302,
+        "mcp_fat": 106,
         "reconciled": false,
-        "reconciled_calories": null,
-        "reconciled_protein": null,
-        "reconciled_carbs": null,
-        "reconciled_fat": null,
+        "reconciled_calories": 2677,
+        "reconciled_protein": 183,
+        "reconciled_carbs": 302,
+        "reconciled_fat": 106,
         "reconciliation_notes": null,
-        "fiber_estimated_g": null,
-        "protein_per_lb": null
+        "fiber_estimated_g": 40,
+        "protein_per_lb": 1.04
       },
       "sleep": {
         "score": 76,
@@ -981,6 +981,129 @@
         "recovery_index": 61,
         "sleep_balance": 49,
         "body_temp_deviation": 0.27
+      },
+      "activity": {
+        "steps": 12676,
+        "calories_total": 2799,
+        "calories_active": 647,
+        "high_intensity_min": 0,
+        "medium_intensity_min": 90,
+        "low_intensity_min": 276,
+        "sedentary_min": 613,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": [
+          {
+            "time": "08:00",
+            "window": "breakfast",
+            "items": [
+              "ON Plant Protein 1 scoop",
+              "PB Fit 2tbsp",
+              "Keto English Muffin",
+              "Banana",
+              "Almond Milk"
+            ],
+            "cal": 383,
+            "pro": 42,
+            "carb": 66,
+            "fat": 7
+          },
+          {
+            "time": "13:00",
+            "window": "lunch",
+            "items": [
+              "Mother's Day Lunch (quick add)"
+            ],
+            "cal": 1310,
+            "pro": 70,
+            "carb": 125,
+            "fat": 55
+          },
+          {
+            "time": "16:00",
+            "window": "snack",
+            "items": [
+              "Quest Brownie a La Mode Stacks Bar"
+            ],
+            "cal": 220,
+            "pro": 20,
+            "carb": 19,
+            "fat": 11
+          },
+          {
+            "time": "18:17",
+            "window": "dinner",
+            "items": [
+              "Seaweed Salad",
+              "Cooked White Rice",
+              "Eggs"
+            ],
+            "cal": 320,
+            "pro": 11,
+            "carb": 55,
+            "fat": 5
+          },
+          {
+            "time": "21:00",
+            "window": "pre_sleep",
+            "items": [
+              "ON Plant Protein 1 scoop",
+              "PB Fit 2tbsp",
+              "Keto White Bread",
+              "Almond Milk"
+            ],
+            "cal": 247,
+            "pro": 36,
+            "carb": 23,
+            "fat": 6
+          }
+        ]
+      }
+    },
+    "2026-05-11": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 85,
+        "duration_min": 422,
+        "efficiency_pct": 93.3,
+        "deep_pct": 18.6,
+        "rem_pct": 23.7,
+        "light_pct": 57.7,
+        "awake_min": 30,
+        "latency_min": 11,
+        "hr_avg": 51.5,
+        "hr_lowest": 47,
+        "hrv_avg": 49,
+        "breathing_rate": 13.625,
+        "bedtime": "23:50",
+        "wake_time": "07:22"
+      },
+      "readiness": {
+        "score": 84,
+        "hrv_balance": 57,
+        "resting_hr": 100,
+        "recovery_index": 100,
+        "sleep_balance": 61,
+        "body_temp_deviation": -0.16
       },
       "activity": {
         "steps": null,
@@ -1191,14 +1314,14 @@
     "diet_break_triggers_active": [],
     "last_refeed": null,
     "last_diet_break": null,
-    "continuous_deficit_days": 7,
-    "notes": "Calibration period \u2014 triggers disabled until May 24."
+    "continuous_deficit_days": 8,
+    "notes": "Calibration period — triggers disabled until May 24."
   },
   "tdee_tracking": {
     "claude_estimate": null,
     "macrofactor_estimate": null,
     "divergence_cal": null,
-    "confidence": "low \u2014 week 1 calibrating",
+    "confidence": "low — week 1 calibrating",
     "history": []
   },
   "dexa_scans": {
@@ -1214,83 +1337,83 @@
   },
   "checkin_status": {
     "_description": "Tracks whether today's check-in is complete. Reset daily by the 10am task.",
-    "today": "2026-05-10",
+    "today": "2026-05-11",
     "morning_checkin_complete": false,
     "training_logged": false
   },
   "computed_dashboard_values": {
     "current_weight": 176.6,
-    "seven_day_avg_weight": 178.0,
-    "rate_of_loss_lbs_per_week": 1.8,
-    "projected_goal_date": "2026-07-19",
-    "weeks_remaining": 10,
-    "total_lost": 2.0,
-    "avg_intake_cal": 2532,
+    "seven_day_avg_weight": 178.3,
+    "rate_of_loss_lbs_per_week": 1.32,
+    "projected_goal_date": "2026-08-16",
+    "weeks_remaining": 14,
+    "total_lost": 1.7,
+    "avg_intake_cal": 2631,
     "avg_protein_g": 209,
-    "avg_carbs_g": 307,
-    "avg_fat_g": 85,
-    "avg_fiber_g": 58,
+    "avg_carbs_g": 311,
+    "avg_fat_g": 93,
+    "avg_fiber_g": 52,
     "protein_per_lb": 1.18,
     "macro_split_pct": {
-      "protein": 30,
+      "protein": 29,
       "carbs": 43,
-      "fat": 27
+      "fat": 29
     },
-    "last_night_sleep_score": 76,
-    "avg_sleep_score": 78.3,
-    "last_night_hrv": 51,
-    "avg_hrv": 50.6,
-    "last_night_hr_lowest": 51,
-    "avg_hr_lowest": 51.3,
-    "last_night_efficiency": 93.1,
+    "last_night_sleep_score": 85,
+    "avg_sleep_score": 78.7,
+    "last_night_hrv": 49,
+    "avg_hrv": 49.9,
+    "last_night_hr_lowest": 47,
+    "avg_hr_lowest": 50.7,
+    "last_night_efficiency": 93.3,
     "avg_efficiency": 92.4,
-    "last_night_deep_pct": 23.3,
-    "last_night_rem_pct": 22.7,
-    "last_night_latency_min": 9,
-    "readiness_today": 72,
-    "avg_readiness": 69.3,
-    "yesterday_steps": 14165,
-    "avg_steps": 17253,
+    "last_night_deep_pct": 18.6,
+    "last_night_rem_pct": 23.7,
+    "last_night_latency_min": 11,
+    "readiness_today": 84,
+    "avg_readiness": 71.0,
+    "yesterday_steps": 12676,
+    "avg_steps": 16599,
     "avg_stress": 4.7,
     "all_floor_lifts_green": true,
     "dal_score": null,
     "neat_score": null,
     "signals": [
       {
-        "icon": "\ud83d\udc93",
-        "title": "May 9 HRV was 28 \u2014 bounced back to 51 last night",
-        "detail": "The May 8 feast + 331lb deads caused a one-night HRV crash. Last night recovered to 51 (near avg). HR lowest back to 51 from 58.",
+        "icon": "🌟",
+        "title": "Best sleep of the cut: 85 score, 7h 2m",
+        "detail": "11:50 PM bedtime paid off. Deep at 18.6% (bit low) but REM excellent at 23.7%. HR lowest hit 47 — new cut low.",
         "severity": "positive"
       },
       {
-        "icon": "\ud83d\ude34",
-        "title": "Short sleep: 5h 39m (score 76)",
-        "detail": "1:09 AM bedtime cutting into duration. Efficiency was solid (93.1%) and biometrics recovered. Push for earlier bedtime tonight.",
+        "icon": "💪",
+        "title": "Readiness surged: 72 → 84",
+        "detail": "Full recovery from the May 8 feast + May 9 heavy deads. Recovery index and resting HR both at 100. Sleep balance climbing (49→61).",
+        "severity": "positive"
+      },
+      {
+        "icon": "🍕",
+        "title": "Mother's Day lunch: 1,310 cal quick-add",
+        "detail": "Total day hit 2,677 cal (477 over 2,200 target). Protein landed at 183g (1.04 g/lb). Not reconciled yet — may need adjustment if items were underestimated.",
         "severity": "warning"
       },
       {
-        "icon": "\ud83d\udd0b",
-        "title": "Readiness recovered: 54 \u2192 72",
-        "detail": "Sleep balance still low at 49/100. Body bouncing back from May 8 spike. Give it another day or two.",
-        "severity": "positive"
+        "icon": "🚶",
+        "title": "Steps dropped to 12,676 — new cut low",
+        "detail": "Two consecutive low-step days (14,165 → 12,676). 7-day avg falling from 17k range. Weekend NEAT dip is normal but worth monitoring.",
+        "severity": "warning"
       },
       {
-        "icon": "\ud83d\udc5f",
-        "title": "Steps dipped to 14,165 (avg 17,253)",
-        "detail": "Lowest day of the cut so far. Still decent NEAT but worth keeping an eye on today.",
+        "icon": "📅",
+        "title": "DEXA baseline in 2 days (May 13)",
+        "detail": "Target ~178 lbs. Current 7-day avg is 177.6 — right on track. Calibration runs through May 24.",
         "severity": "info"
       },
       {
-        "icon": "\ud83d\udcc5",
-        "title": "Week 2 begins \u2014 DEXA in 3 days",
-        "detail": "Calibration runs through May 24. DEXA baseline scan May 13 (target ~178 lbs).",
+        "icon": "💤",
+        "title": "HRV trending down: 60 → 57 → 51 → 28 → 51 → 49",
+        "detail": "7-day avg HRV at 49.9 vs early-cut readings in the mid-50s. Still recovering from the May 8-9 spike. HRV balance at 57/100.",
         "severity": "info"
-      },
-      {
-        "icon": "\ud83e\udd69",
-        "title": "Protein at 198g (1.12 g/lb) yesterday",
-        "detail": "7-day avg protein at 209g (1.18 g/lb). California roll + sashimi + chicken.",
-        "severity": "positive"
       }
     ],
     "micronutrient_status": {
@@ -1421,8 +1544,8 @@
           "severity": "good"
         }
       ],
-      "borderline": "Phosphorus 99% \u00b7 Magnesium 86% \u00b7 Panto (B5) 86% \u2014 borderline OK, boosted by supplements",
-      "top_fix_note": "9 micronutrients below 80% RDA. Top 3 fixes: eggs (choline, B12, A), spinach (folate, A, K), canned salmon (calcium, B12, omega-3). No dairy \u2014 athlete is lactose intolerant."
+      "borderline": "Phosphorus 99% · Magnesium 86% · Panto (B5) 86% — borderline OK, boosted by supplements",
+      "top_fix_note": "9 micronutrients below 80% RDA. Top 3 fixes: eggs (choline, B12, A), spinach (folate, A, K), canned salmon (calcium, B12, omega-3). No dairy — athlete is lactose intolerant."
     },
     "action_items": [
       {
@@ -1438,7 +1561,7 @@
       {
         "priority": "p3",
         "title": "Add spinach to dinner rotation",
-        "detail": "100g frozen spinach covers folate, vitamin A, and boosts magnesium at only 29 cal. Already eating frozen veg nightly \u2014 easy swap/add."
+        "detail": "100g frozen spinach covers folate, vitamin A, and boosts magnesium at only 29 cal. Already eating frozen veg nightly — easy swap/add."
       },
       {
         "priority": "p3",
@@ -1511,7 +1634,7 @@
       "fat_g": 60,
       "fat_floor_g": 45,
       "fiber_g": 35,
-      "notes": "Holding targets from observed intake patterns. TDEE still calibrating \u2014 first calculated targets come week 4. MF targets are ignored; roundtable is the sole authority."
+      "notes": "Holding targets from observed intake patterns. TDEE still calibrating — first calculated targets come week 4. MF targets are ignored; roundtable is the sole authority."
     },
     "history": []
   },
