@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-11T11:30:00-07:00",
-  "_updated_by": "checkin_reconciliation",
+  "_updated": "2026-05-12T10:00:00-07:00",
+  "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -12,7 +12,7 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": false,
     "current_phase": "calibration",
-    "days_into_cut": 9,
+    "days_into_cut": 10,
     "week_number": 2
   },
   "daily_log": {
@@ -1089,18 +1089,18 @@
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": null,
-        "mcp_protein": null,
-        "mcp_carbs": null,
-        "mcp_fat": null,
+        "mcp_calories": 1995,
+        "mcp_protein": 174,
+        "mcp_carbs": 255,
+        "mcp_fat": 66,
         "reconciled": false,
-        "reconciled_calories": null,
-        "reconciled_protein": null,
-        "reconciled_carbs": null,
-        "reconciled_fat": null,
+        "reconciled_calories": 1995,
+        "reconciled_protein": 174,
+        "reconciled_carbs": 255,
+        "reconciled_fat": 66,
         "reconciliation_notes": null,
-        "fiber_estimated_g": null,
-        "protein_per_lb": null
+        "fiber_estimated_g": 25,
+        "protein_per_lb": 0.99
       },
       "sleep": {
         "score": 85,
@@ -1125,6 +1125,133 @@
         "recovery_index": 100,
         "sleep_balance": 61,
         "body_temp_deviation": -0.16
+      },
+      "activity": {
+        "steps": 17377,
+        "calories_total": 3469,
+        "calories_active": 1279,
+        "high_intensity_min": 1,
+        "medium_intensity_min": 241,
+        "low_intensity_min": 217,
+        "sedentary_min": 500,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": [
+          {
+            "time": "08:00",
+            "window": "breakfast",
+            "items": [
+              "ON Plant Protein 1 scoop",
+              "PB Fit 2tbsp",
+              "Keto White Bread x1",
+              "Triple Berry Blend",
+              "Almond Milk"
+            ],
+            "cal": 327,
+            "pro": 38,
+            "carb": 43,
+            "fat": 6
+          },
+          {
+            "time": "14:00",
+            "window": "lunch",
+            "items": [
+              "Chicken Thigh 145g",
+              "Cooked White Rice 151g",
+              "Green Beans 100g",
+              "Peas & Carrots 100g",
+              "Eggs x2",
+              "Olive Oil 1tbsp",
+              "Hoisin sauce",
+              "Sriracha"
+            ],
+            "cal": 823,
+            "pro": 38,
+            "carb": 106,
+            "fat": 27
+          },
+          {
+            "time": "16:00",
+            "window": "snack",
+            "items": [
+              "Rold Gold Tiny Twists Pretzels"
+            ],
+            "cal": 230,
+            "pro": 6,
+            "carb": 45,
+            "fat": 2
+          },
+          {
+            "time": "18:00",
+            "window": "snack",
+            "items": [
+              "Legendary Protein Donut Vanilla Glazed"
+            ],
+            "cal": 160,
+            "pro": 20,
+            "carb": 26,
+            "fat": 6
+          },
+          {
+            "time": "20:00",
+            "window": "dinner",
+            "items": [
+              "Bumble Bee Wild Alaskan Red Salmon 150g",
+              "Keto White Bread x2",
+              "Miracle Whip Light"
+            ],
+            "cal": 155,
+            "pro": 17,
+            "carb": 14,
+            "fat": 8
+          }
+        ]
+      }
+    },
+    "2026-05-12": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 72,
+        "duration_min": 328,
+        "efficiency_pct": 93.0,
+        "deep_pct": 19.5,
+        "rem_pct": 19.5,
+        "light_pct": 61.0,
+        "awake_min": 24,
+        "latency_min": 15,
+        "hr_avg": 52.5,
+        "hr_lowest": 50,
+        "hrv_avg": 45,
+        "breathing_rate": 14.125,
+        "bedtime": "00:58",
+        "wake_time": "06:51"
+      },
+      "readiness": {
+        "score": 68,
+        "hrv_balance": 57,
+        "resting_hr": 79,
+        "recovery_index": 69,
+        "sleep_balance": 48,
+        "body_temp_deviation": 0.01
       },
       "activity": {
         "steps": null,
@@ -1358,89 +1485,89 @@
   },
   "checkin_status": {
     "_description": "Tracks whether today's check-in is complete. Reset daily by the 10am task.",
-    "today": "2026-05-11",
+    "today": "2026-05-12",
     "morning_checkin_complete": false,
     "training_logged": false
   },
   "computed_dashboard_values": {
     "current_weight": 176.6,
     "seven_day_avg_weight": 177.8,
-    "rate_of_loss_lbs_per_week": 1.71,
-    "projected_goal_date": "2026-07-22",
-    "weeks_remaining": 10,
+    "rate_of_loss_lbs_per_week": 1.54,
+    "projected_goal_date": "2026-07-31",
+    "weeks_remaining": 12,
     "total_lost": 2.2,
-    "avg_intake_cal": 2631,
-    "avg_protein_g": 209,
-    "avg_carbs_g": 311,
-    "avg_fat_g": 93,
-    "avg_fiber_g": 53,
-    "protein_per_lb": 1.18,
+    "avg_intake_cal": 2583,
+    "avg_protein_g": 203,
+    "avg_carbs_g": 302,
+    "avg_fat_g": 94,
+    "avg_fiber_g": 49,
+    "protein_per_lb": 1.15,
     "macro_split_pct": {
-      "protein": 29,
-      "carbs": 43,
-      "fat": 29
+      "protein": 28,
+      "carbs": 42,
+      "fat": 30
     },
-    "last_night_sleep_score": 85,
-    "avg_sleep_score": 78.7,
-    "last_night_hrv": 49,
-    "avg_hrv": 49.9,
-    "last_night_hr_lowest": 47,
-    "avg_hr_lowest": 50.7,
-    "last_night_efficiency": 93.3,
-    "avg_efficiency": 92.4,
-    "last_night_deep_pct": 18.6,
-    "last_night_rem_pct": 23.7,
-    "last_night_latency_min": 11,
-    "readiness_today": 84,
+    "last_night_sleep_score": 72,
+    "avg_sleep_score": 78.4,
+    "last_night_hrv": 45,
+    "avg_hrv": 48.7,
+    "last_night_hr_lowest": 50,
+    "avg_hr_lowest": 50.6,
+    "last_night_efficiency": 93.0,
+    "avg_efficiency": 92.5,
+    "last_night_deep_pct": 19.5,
+    "last_night_rem_pct": 19.5,
+    "last_night_latency_min": 15,
+    "readiness_today": 68,
     "avg_readiness": 71.0,
-    "yesterday_steps": 12676,
-    "avg_steps": 16599,
+    "yesterday_steps": 17377,
+    "avg_steps": 16540,
     "avg_stress": 4.7,
     "all_floor_lifts_green": true,
     "dal_score": null,
     "neat_score": null,
     "signals": [
       {
-        "icon": "✨",
-        "title": "Best sleep of the cut: 85 score, 7h 2m",
-        "detail": "11:50 PM bedtime paid off. Deep at 18.6% (bit low) but REM excellent at 23.7%. HR lowest hit 47 -- new cut low.",
-        "severity": "positive"
-      },
-      {
-        "icon": "💪",
-        "title": "Readiness surged: 72 -> 84",
-        "detail": "Full recovery from the May 8 feast + May 9 heavy deads. Recovery index and resting HR both at 100. Sleep balance climbing (49->61).",
-        "severity": "positive"
-      },
-      {
-        "icon": "✅",
-        "title": "Mother's Day dinner reconciled: 1,310 cal confirmed",
-        "detail": "AI-logged from gram weights (egg rolls 159g, noodles 196g, veg 177g, beef 148g, lobster ball 40g). MF quick-add matched exactly -- no adjustment. Total day: 2,677 cal (477 over 2,200 target). Protein at 183g (1.04 g/lb).",
-        "severity": "info"
-      },
-      {
-        "icon": "🚶",
-        "title": "Steps dropped to 12,676 -- new cut low",
-        "detail": "Two consecutive low-step days (14,165 -> 12,676). 7-day avg falling from 17k range. Weekend NEAT dip is normal but worth monitoring.",
+        "icon": "😴",
+        "title": "Short sleep: 5h 28m (score 72)",
+        "detail": "Shortest sleep of the cut. Bedtime 12:58 AM, wake 6:51 AM. Deep and REM both 19.5% (below recent avg). Get to bed by 11 PM tonight.",
         "severity": "warning"
       },
       {
-        "icon": "📅",
-        "title": "DEXA baseline in 2 days (May 13)",
-        "detail": "Target ~178 lbs. Current 7-day avg is 178.3 -- right on track. Calibration runs through May 24.",
-        "severity": "info"
+        "icon": "⚡",
+        "title": "Readiness dropped: 84 -> 68",
+        "detail": "Sleep balance hit 48 (cut low). Recovery index 69. Body bouncing back from high NEAT day (17.4k steps) on insufficient sleep.",
+        "severity": "warning"
       },
       {
-        "icon": "💤",
-        "title": "HRV trending down: 60 -> 57 -> 51 -> 28 -> 51 -> 49",
-        "detail": "7-day avg HRV at 49.9 vs early-cut readings in the mid-50s. Still recovering from the May 8-9 spike. HRV balance at 57/100.",
-        "severity": "info"
+        "icon": "💓",
+        "title": "HRV still declining: 49 -> 45 (7-day avg: 48.7)",
+        "detail": "Down from the May 6 peak of 60. Sleep debt is the likely driver. Body temp normal (+0.01C) so no illness signal.",
+        "severity": "warning"
       },
       {
-        "icon": "🧬",
-        "title": "B12 improved to 83% RDA (was 76%)",
-        "detail": "Mother's Day beef sirloin contributed ~2.5mcg B12. Moved from gap to borderline. Egg addition would push it over 100%.",
+        "icon": "🚶",
+        "title": "Steps rebounded: 12,676 -> 17,377",
+        "detail": "Back above 7-day avg (16,540). Active cals 1,279. Weekend NEAT dip corrected.",
         "severity": "positive"
+      },
+      {
+        "icon": "🍽️",
+        "title": "Yesterday: 1,995 cal (205 under target)",
+        "detail": "Protein 174g (0.99 g/lb) -- just below 1.0 floor. Light dinner (salmon sandwich 155 cal). Not a logging gap.",
+        "severity": "info"
+      },
+      {
+        "icon": "📅",
+        "title": "DEXA baseline TOMORROW (May 13)",
+        "detail": "7-day avg 177.8 lbs. Hydrate normally, don't manipulate. This sets the body-comp baseline for the whole cut.",
+        "severity": "info"
+      },
+      {
+        "icon": "🥩",
+        "title": "7-day avg protein: 203g (1.15 g/lb)",
+        "detail": "Floor is 178g. Yesterday 174g was below floor. Add extra protein today -- shake, eggs, or more chicken.",
+        "severity": "info"
       }
     ],
     "micronutrient_status": {
