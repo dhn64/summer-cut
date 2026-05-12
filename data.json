@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-11T10:00:00-07:00",
-  "_updated_by": "morning_prep_task",
+  "_updated": "2026-05-11T11:30:00-07:00",
+  "_updated_by": "checkin_reconciliation",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -949,13 +949,13 @@
         "mcp_protein": 183,
         "mcp_carbs": 302,
         "mcp_fat": 106,
-        "reconciled": false,
+        "reconciled": true,
         "reconciled_calories": 2677,
         "reconciled_protein": 183,
         "reconciled_carbs": 302,
         "reconciled_fat": 106,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 40,
+        "reconciliation_notes": "Mother's Day dinner AI-logged from gram weights: 4 pork egg rolls 159g (deep fried, drained), stir-fried noodles 196g, stir-fried veg 177g (bok choy/broccoli/carrots/mushrooms/tofu puffs), beef sirloin 148g (cornstarch velvet), lobster ball paste 40g (hot pot). MF quick-add of 1310/70P/125C/55F matched AI estimate exactly -- no adjustment needed.",
+        "fiber_estimated_g": 46,
         "protein_per_lb": 1.04
       },
       "sleep": {
@@ -1015,12 +1015,33 @@
             "time": "13:00",
             "window": "lunch",
             "items": [
-              "Mother's Day Lunch (quick add)"
+              "Pork Egg Rolls x4 (159g, deep fried, drained)",
+              "Stir-Fried Noodles (196g, lo mein w/ sauce)",
+              "Stir-Fried Veg (177g, bok choy/broccoli/carrots/mushrooms/tofu puffs)",
+              "Beef Sirloin stir-fry (148g, cornstarch velvet)",
+              "Lobster Ball paste (40g, hot pot cooked)"
             ],
             "cal": 1310,
             "pro": 70,
             "carb": 125,
-            "fat": 55
+            "fat": 55,
+            "reconciliation_flag": true,
+            "micro_estimates": {
+              "iron_mg": 6.5,
+              "zinc_mg": 7.5,
+              "b12_mcg": 2.5,
+              "vitamin_a_mcg_rae": 500,
+              "vitamin_c_mg": 80,
+              "vitamin_k_mcg": 175,
+              "calcium_mg": 200,
+              "potassium_mg": 1400,
+              "folate_mcg": 150,
+              "b6_mg": 0.8,
+              "selenium_mcg": 30,
+              "magnesium_mg": 120,
+              "fiber_g": 11,
+              "sodium_mg": 2500
+            }
           },
           {
             "time": "16:00",
@@ -1315,13 +1336,13 @@
     "last_refeed": null,
     "last_diet_break": null,
     "continuous_deficit_days": 8,
-    "notes": "Calibration period — triggers disabled until May 24."
+    "notes": "Calibration period -- triggers disabled until May 24."
   },
   "tdee_tracking": {
     "claude_estimate": null,
     "macrofactor_estimate": null,
     "divergence_cal": null,
-    "confidence": "low — week 1 calibrating",
+    "confidence": "low -- week 1 calibrating",
     "history": []
   },
   "dexa_scans": {
@@ -1346,13 +1367,13 @@
     "seven_day_avg_weight": 178.3,
     "rate_of_loss_lbs_per_week": 1.32,
     "projected_goal_date": "2026-08-16",
-    "weeks_remaining": 14,
+    "weeks_remaining": 13,
     "total_lost": 1.7,
     "avg_intake_cal": 2631,
     "avg_protein_g": 209,
     "avg_carbs_g": 311,
     "avg_fat_g": 93,
-    "avg_fiber_g": 52,
+    "avg_fiber_g": 53,
     "protein_per_lb": 1.18,
     "macro_split_pct": {
       "protein": 29,
@@ -1380,104 +1401,104 @@
     "neat_score": null,
     "signals": [
       {
-        "icon": "🌟",
+        "icon": "✨",
         "title": "Best sleep of the cut: 85 score, 7h 2m",
-        "detail": "11:50 PM bedtime paid off. Deep at 18.6% (bit low) but REM excellent at 23.7%. HR lowest hit 47 — new cut low.",
+        "detail": "11:50 PM bedtime paid off. Deep at 18.6% (bit low) but REM excellent at 23.7%. HR lowest hit 47 -- new cut low.",
         "severity": "positive"
       },
       {
         "icon": "💪",
-        "title": "Readiness surged: 72 → 84",
-        "detail": "Full recovery from the May 8 feast + May 9 heavy deads. Recovery index and resting HR both at 100. Sleep balance climbing (49→61).",
+        "title": "Readiness surged: 72 -> 84",
+        "detail": "Full recovery from the May 8 feast + May 9 heavy deads. Recovery index and resting HR both at 100. Sleep balance climbing (49->61).",
         "severity": "positive"
       },
       {
-        "icon": "🍕",
-        "title": "Mother's Day lunch: 1,310 cal quick-add",
-        "detail": "Total day hit 2,677 cal (477 over 2,200 target). Protein landed at 183g (1.04 g/lb). Not reconciled yet — may need adjustment if items were underestimated.",
-        "severity": "warning"
+        "icon": "✅",
+        "title": "Mother's Day dinner reconciled: 1,310 cal confirmed",
+        "detail": "AI-logged from gram weights (egg rolls 159g, noodles 196g, veg 177g, beef 148g, lobster ball 40g). MF quick-add matched exactly -- no adjustment. Total day: 2,677 cal (477 over 2,200 target). Protein at 183g (1.04 g/lb).",
+        "severity": "info"
       },
       {
         "icon": "🚶",
-        "title": "Steps dropped to 12,676 — new cut low",
-        "detail": "Two consecutive low-step days (14,165 → 12,676). 7-day avg falling from 17k range. Weekend NEAT dip is normal but worth monitoring.",
+        "title": "Steps dropped to 12,676 -- new cut low",
+        "detail": "Two consecutive low-step days (14,165 -> 12,676). 7-day avg falling from 17k range. Weekend NEAT dip is normal but worth monitoring.",
         "severity": "warning"
       },
       {
         "icon": "📅",
         "title": "DEXA baseline in 2 days (May 13)",
-        "detail": "Target ~178 lbs. Current 7-day avg is 177.6 — right on track. Calibration runs through May 24.",
+        "detail": "Target ~178 lbs. Current 7-day avg is 178.3 -- right on track. Calibration runs through May 24.",
         "severity": "info"
       },
       {
         "icon": "💤",
-        "title": "HRV trending down: 60 → 57 → 51 → 28 → 51 → 49",
+        "title": "HRV trending down: 60 -> 57 -> 51 -> 28 -> 51 -> 49",
         "detail": "7-day avg HRV at 49.9 vs early-cut readings in the mid-50s. Still recovering from the May 8-9 spike. HRV balance at 57/100.",
         "severity": "info"
+      },
+      {
+        "icon": "🧬",
+        "title": "B12 improved to 83% RDA (was 76%)",
+        "detail": "Mother's Day beef sirloin contributed ~2.5mcg B12. Moved from gap to borderline. Egg addition would push it over 100%.",
+        "severity": "positive"
       }
     ],
     "micronutrient_status": {
+      "_basis": "8-day average (May 3-10). Updated after reconciling Mother's Day dinner with per-item micro estimates.",
       "gaps": [
         {
           "nutrient": "Choline",
           "pct_rda": 45,
-          "intake": 249.8,
+          "intake": 245.7,
           "rda": 550,
           "severity": "gap"
         },
         {
           "nutrient": "Vitamin E",
-          "pct_rda": 55,
-          "intake": 8.3,
+          "pct_rda": 53,
+          "intake": 7.9,
           "rda": 15,
           "severity": "gap"
         },
         {
           "nutrient": "Calcium",
-          "pct_rda": 57,
-          "intake": 567.1,
+          "pct_rda": 56,
+          "intake": 562.5,
           "rda": 1000,
-          "severity": "watch"
+          "severity": "gap"
         },
         {
           "nutrient": "Potassium",
-          "pct_rda": 60,
-          "intake": 2036.7,
+          "pct_rda": 61,
+          "intake": 2090.9,
           "rda": 3400,
           "severity": "watch"
         },
         {
           "nutrient": "Riboflavin",
-          "pct_rda": 61,
+          "pct_rda": 62,
           "intake": 0.8,
           "rda": 1.3,
           "severity": "watch"
         },
         {
           "nutrient": "Folate",
-          "pct_rda": 64,
-          "intake": 256.2,
+          "pct_rda": 63,
+          "intake": 252.3,
           "rda": 400,
           "severity": "watch"
         },
         {
           "nutrient": "Thiamin (B1)",
-          "pct_rda": 68,
+          "pct_rda": 67,
           "intake": 0.8,
           "rda": 1.2,
           "severity": "watch"
         },
         {
-          "nutrient": "B12",
-          "pct_rda": 76,
-          "intake": 1.8,
-          "rda": 2.4,
-          "severity": "watch"
-        },
-        {
           "nutrient": "Vitamin A",
-          "pct_rda": 77,
-          "intake": 689.9,
+          "pct_rda": 75,
+          "intake": 677.4,
           "rda": 900,
           "severity": "watch"
         }
@@ -1490,32 +1511,27 @@
         },
         {
           "nutrient": "Copper",
-          "pct_rda": 277,
+          "pct_rda": 256,
           "severity": "high"
         },
         {
           "nutrient": "Vitamin C",
-          "pct_rda": 264,
+          "pct_rda": 244,
           "severity": "high"
         },
         {
           "nutrient": "Zinc",
-          "pct_rda": 241,
-          "severity": "high"
-        },
-        {
-          "nutrient": "Fiber",
-          "pct_rda": 232,
+          "pct_rda": 226,
           "severity": "high"
         },
         {
           "nutrient": "Iron",
-          "pct_rda": 216,
+          "pct_rda": 214,
           "severity": "high"
         },
         {
           "nutrient": "Manganese",
-          "pct_rda": 173,
+          "pct_rda": 170,
           "severity": "good"
         },
         {
@@ -1524,28 +1540,38 @@
           "severity": "good"
         },
         {
+          "nutrient": "Fiber",
+          "pct_rda": 148,
+          "severity": "good"
+        },
+        {
           "nutrient": "Selenium",
-          "pct_rda": 151,
+          "pct_rda": 145,
           "severity": "good"
         },
         {
           "nutrient": "Niacin (B3)",
-          "pct_rda": 132,
+          "pct_rda": 126,
           "severity": "good"
         },
         {
           "nutrient": "Omega-3",
-          "pct_rda": 130,
+          "pct_rda": 115,
           "severity": "good"
         },
         {
           "nutrient": "B6",
-          "pct_rda": 114,
+          "pct_rda": 112,
+          "severity": "good"
+        },
+        {
+          "nutrient": "Phosphorus",
+          "pct_rda": 103,
           "severity": "good"
         }
       ],
-      "borderline": "Phosphorus 99% · Magnesium 86% · Panto (B5) 86% — borderline OK, boosted by supplements",
-      "top_fix_note": "9 micronutrients below 80% RDA. Top 3 fixes: eggs (choline, B12, A), spinach (folate, A, K), canned salmon (calcium, B12, omega-3). No dairy — athlete is lactose intolerant."
+      "borderline": "B12 83% - Magnesium 84% - Panto (B5) 86% -- borderline OK. B12 improved from 76% after May 10 beef intake.",
+      "top_fix_note": "8 micronutrients below 80% RDA (down from 9 -- B12 graduated to borderline after Mother's Day beef). Top 3 fixes: eggs (choline, B12, A), spinach (folate, A, K), canned salmon (calcium, B12, omega-3). No dairy -- athlete is lactose intolerant."
     },
     "action_items": [
       {
@@ -1561,7 +1587,7 @@
       {
         "priority": "p3",
         "title": "Add spinach to dinner rotation",
-        "detail": "100g frozen spinach covers folate, vitamin A, and boosts magnesium at only 29 cal. Already eating frozen veg nightly — easy swap/add."
+        "detail": "100g frozen spinach covers folate, vitamin A, and boosts magnesium at only 29 cal. Already eating frozen veg nightly -- easy swap/add."
       },
       {
         "priority": "p3",
@@ -1582,11 +1608,16 @@
         "priority": "done",
         "title": "May 8 reconciled",
         "detail": "AI-logged Indian dinner: fish fry 349cal, paneer curry 927cal, 4 naan 580cal. Actual: 4,332 cal / 220g P."
+      },
+      {
+        "priority": "done",
+        "title": "May 10 reconciled",
+        "detail": "Mother's Day dinner AI-logged from gram weights: egg rolls 159g, noodles 196g, veg 177g, beef 148g, lobster ball 40g. MF quick-add matched at 1310 cal / 70P / 125C / 55F."
       }
     ]
   },
   "daily_log_archive": {
-    "_description": "Compressed daily entries older than 14 days. Retains trend-line data (weight, reconciled macros, sleep score, HRV, lowest HR, efficiency, readiness, steps, training type, fiber, stress) but drops per-meal detail, MCP raw values, readiness sub-scores, activity zone breakdowns, and sleep architecture detail. The roundtable reads this for full-arc trend analysis. The dashboard reads it for historical chart data.",
+    "_description": "Compressed daily entries older than 14 days.",
     "_archive_threshold_days": 14,
     "_fields_retained": [
       "weight_lbs",
@@ -1623,7 +1654,7 @@
     "note": "Never archive today or the last 13 days. The roundtable needs full per-meal detail for at least 2 weeks of recent history."
   },
   "weekly_targets": {
-    "_description": "Set by the Performance Roundtable each Sunday. The dashboard heatmap and adherence metrics read from here. Empty until the first roundtable runs.",
+    "_description": "Set by the Performance Roundtable each Sunday. The dashboard heatmap and adherence metrics read from here.",
     "current": {
       "effective_date": "2026-05-11",
       "set_by": "roundtable_week_1",
@@ -1634,12 +1665,12 @@
       "fat_g": 60,
       "fat_floor_g": 45,
       "fiber_g": 35,
-      "notes": "Holding targets from observed intake patterns. TDEE still calibrating — first calculated targets come week 4. MF targets are ignored; roundtable is the sole authority."
+      "notes": "Holding targets from observed intake patterns. TDEE still calibrating -- first calculated targets come week 4. MF targets are ignored; roundtable is the sole authority."
     },
     "history": []
   },
   "weekly_programming": {
-    "_description": "Set by the Performance Roundtable (Helms voice). Training prescription for the coming week. Includes lift targets, RPE ranges, volume recommendations, deload timing.",
+    "_description": "Set by the Performance Roundtable (Helms voice). Training prescription for the coming week.",
     "current": {
       "effective_date": null,
       "set_by": null,
