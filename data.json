@@ -1085,7 +1085,7 @@
       }
     },
     "2026-05-11": {
-      "weight_lbs": null,
+      "weight_lbs": 176.6,
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
@@ -1364,11 +1364,11 @@
   },
   "computed_dashboard_values": {
     "current_weight": 176.6,
-    "seven_day_avg_weight": 178.3,
-    "rate_of_loss_lbs_per_week": 1.32,
-    "projected_goal_date": "2026-08-16",
-    "weeks_remaining": 13,
-    "total_lost": 1.7,
+    "seven_day_avg_weight": 177.8,
+    "rate_of_loss_lbs_per_week": 1.71,
+    "projected_goal_date": "2026-07-22",
+    "weeks_remaining": 10,
+    "total_lost": 2.2,
     "avg_intake_cal": 2631,
     "avg_protein_g": 209,
     "avg_carbs_g": 311,
