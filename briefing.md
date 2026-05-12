@@ -1,31 +1,32 @@
-# Morning Prep — Sunday, May 10, 2026
-## Day 8 of the Summer Cut | Week 2
+# Morning Prep — Monday, May 11, 2026
+## Day 9 of the Summer Cut | Week 2
 
-**Down 3.4 lbs from start, HRV bounced back to 51, and all floor lifts are green. Recovery mode: engaged.**
+**Best sleep of the cut (85 score, 7h 2m) and readiness surged to 84 — the body is bouncing back strong after last week's feast + heavy deads.**
 
 ### Last Night's Sleep
-- Score: 76 | Duration: 5h 39m | Efficiency: 93.1%
-- Deep: 23.3% | REM: 22.7% | HRV: 51 | Lowest HR: 51
-- Bedtime: 1:09 AM > Wake: 7:13 AM
-- Readiness: 72
+- Score: 85 | Duration: 7h 2m | Efficiency: 93.3%
+- Deep: 18.6% | REM: 23.7% | HRV: 49 | Lowest HR: 47
+- Bedtime: 11:50 PM → Wake: 7:22 AM
+- Readiness: 84
 
 ### Weight Check
-- Today: 176.6 lbs | 7-day avg: 178.0 lbs | Direction: down
-- Total lost: 2.0 lbs (7-day avg basis) | Rate: 1.75 lbs/week
+- Today: no weigh-in yet | 7-day avg: 178.3 lbs | Direction: down
+- Total lost: 1.7 lbs | Rate: 1.32 lbs/week
+- DEXA baseline in 2 days (May 13)
 
-### Yesterday's Food (2,267 cal | 198g P | 269g C | 69g F)
-- **08:00 — Breakfast** (383 cal | 42P | 66C | 7F): ON Protein 1 scoop, PB Fit 2tbsp, Keto Muffin, Banana, Almond Milk
-- **14:00 — Lunch** (293 cal | 39P | 15C | 7F): California Roll 3pc, Yellowfin Tuna Sashimi 54g, Sashimi Salmon 42g, Hamachi 13g, Seaweed Salad
-- **15:14 — Snack** (342 cal | 42P | 55C | 6F): ON Protein 0.5 scoop, PB Fit 2tbsp, Keto Muffin, Triple Berry Blend, Almond Milk
-- **19:00 — Dinner** (678 cal | 67P | 71C | 13F): Chicken Thigh 153g, Yellowfin Tuna 45g, Salmon Sashimi 60g, Hamachi 28g, White Rice 200g, Green Beans, Peas & Carrots, Seaweed Salad
-- **22:00 — Pre-Sleep** (430 cal | 24P | 45C | 20F): Quest Stacks Cinnamon Brown Sugar, Sunchips Tomato Jalapeno
+### Yesterday's Food (2,677 cal | 183g P | 302g C | 106g F)
+- **8:00 AM — Breakfast** (383 cal | 42P | 66C | 7F): ON Protein, PB Fit, Keto English Muffin, Banana, Almond Milk
+- **1:00 PM — Lunch** (1,310 cal | 70P | 125C | 55F): Mother's Day Lunch (quick add)
+- **4:00 PM — Snack** (220 cal | 20P | 19C | 11F): Quest Brownie a La Mode Stacks Bar
+- **6:17 PM — Dinner** (320 cal | 11P | 55C | 5F): Seaweed Salad, White Rice, Eggs
+- **9:00 PM — Pre-sleep** (247 cal | 36P | 23C | 6F): ON Protein, PB Fit, Keto White Bread, Almond Milk
 
 ### Flags
-- **Short sleep again** — 5h 39m is two short nights in a row (5h 11m on May 8). Sleep balance contributor at 49/100. Push for midnight or earlier tonight.
-- **HRV recovered** — 51 last night vs. 28 on May 9. The post-feast/heavy-deadlift HRV crash is behind you.
-- **Steps dipped** — 14,165 yesterday (avg 17,500). Lifting day + sushi outings. Not a concern yet but note the trend.
-- **DEXA baseline in 3 days** (May 13, target ~178 lbs). You're tracking below target — great position.
-- **Calibration period** — 14 days remain (through May 24). No refeed/diet break triggers until then.
+- ⚠️ **Mother's Day lunch was 1,310 cal quick-add** — total day hit 2,677 cal (477 over 2,200 target). May need reconciliation if the quick-add underestimated.
+- ⚠️ **Steps at cut-low: 12,676** — two consecutive dip days (14,165 → 12,676). Weekend NEAT drop is normal but 7-day avg falling from 17k range.
+- 💤 **HRV still trending down** — 49 last night, 7-day avg 49.9. Still recovering from the May 8-9 stress spike. HRV balance at 57/100.
+- ✅ **Recovery complete** — readiness 84 (up from 54 on May 9). HR lowest hit 47, a new cut best. Sleep balance climbing.
+- 📅 **Yesterday auto-marked as rest day** — no training logged.
 
 ---
 Open the Summer Cut project to complete your check-in.
