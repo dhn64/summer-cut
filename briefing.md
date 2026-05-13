@@ -1,32 +1,31 @@
-# Morning Prep — Monday, May 11, 2026
-## Day 9 of the Summer Cut | Week 2
+# Morning Prep -- Tuesday, May 12, 2026
+## Day 10 of the Summer Cut | Week 2
 
-**Best sleep of the cut (85 score, 7h 2m) and readiness surged to 84 — the body is bouncing back strong after last week's feast + heavy deads.**
+**Down 2.2 lbs in 10 days, but last night's 5h28m sleep is waving a yellow flag -- DEXA baseline is tomorrow, so tonight's bedtime matters.**
 
 ### Last Night's Sleep
-- Score: 85 | Duration: 7h 2m | Efficiency: 93.3%
-- Deep: 18.6% | REM: 23.7% | HRV: 49 | Lowest HR: 47
-- Bedtime: 11:50 PM → Wake: 7:22 AM
-- Readiness: 84
+- Score: 72 | Duration: 5h 28m | Efficiency: 93%
+- Deep: 19.5% | REM: 19.5% | HRV: 45 | Lowest HR: 50
+- Bedtime: 12:58 AM > Wake: 6:51 AM
+- Readiness: 68
 
 ### Weight Check
-- Today: no weigh-in yet | 7-day avg: 178.3 lbs | Direction: down
-- Total lost: 1.7 lbs | Rate: 1.32 lbs/week
-- DEXA baseline in 2 days (May 13)
+- Today: no weigh-in yet | 7-day avg: 177.8 lbs | Direction: down
+- Total lost: 2.2 lbs | Rate: 1.54 lbs/week
 
-### Yesterday's Food (2,677 cal | 183g P | 302g C | 106g F)
-- **8:00 AM — Breakfast** (383 cal | 42P | 66C | 7F): ON Protein, PB Fit, Keto English Muffin, Banana, Almond Milk
-- **1:00 PM — Lunch** (1,310 cal | 70P | 125C | 55F): Mother's Day Lunch (quick add)
-- **4:00 PM — Snack** (220 cal | 20P | 19C | 11F): Quest Brownie a La Mode Stacks Bar
-- **6:17 PM — Dinner** (320 cal | 11P | 55C | 5F): Seaweed Salad, White Rice, Eggs
-- **9:00 PM — Pre-sleep** (247 cal | 36P | 23C | 6F): ON Protein, PB Fit, Keto White Bread, Almond Milk
+### Yesterday's Food (1,995 cal | 174g P | 255g C | 66g F)
+- **08:00 Breakfast** -- ON Plant Protein, PB Fit, Keto Bread, Triple Berry Blend, Almond Milk (327 cal | 38P | 43C | 6F)
+- **14:00 Lunch** -- Chicken Thigh 145g, White Rice 151g, Green Beans, Peas & Carrots, Eggs x2, Olive Oil, Hoisin, Sriracha (823 cal | 38P | 106C | 27F)
+- **16:00 Snack** -- Rold Gold Pretzels (230 cal | 6P | 45C | 2F)
+- **18:00 Snack** -- Legendary Protein Donut Vanilla Glazed (160 cal | 20P | 26C | 6F)
+- **20:00 Dinner** -- Wild Alaskan Red Salmon 150g, Keto Bread x2, Miracle Whip Light (155 cal | 17P | 14C | 8F)
 
 ### Flags
-- ⚠️ **Mother's Day lunch was 1,310 cal quick-add** — total day hit 2,677 cal (477 over 2,200 target). May need reconciliation if the quick-add underestimated.
-- ⚠️ **Steps at cut-low: 12,676** — two consecutive dip days (14,165 → 12,676). Weekend NEAT drop is normal but 7-day avg falling from 17k range.
-- 💤 **HRV still trending down** — 49 last night, 7-day avg 49.9. Still recovering from the May 8-9 stress spike. HRV balance at 57/100.
-- ✅ **Recovery complete** — readiness 84 (up from 54 on May 9). HR lowest hit 47, a new cut best. Sleep balance climbing.
-- 📅 **Yesterday auto-marked as rest day** — no training logged.
+- **Sleep debt accumulating** -- 5h28m is the shortest of the cut. HRV dropped to 45 (was 60 a week ago). Readiness fell from 84 to 68 with sleep balance at 48. Get to bed by 11 PM tonight.
+- **Protein below floor** -- 174g yesterday (0.99 g/lb). Weekly target floor is 178g. Add an extra shake or more chicken today.
+- **DEXA baseline TOMORROW** -- 7-day avg at 177.8 lbs. Hydrate normally, don't manipulate. This scan sets the baseline for the entire cut.
+- **Steps rebounded** -- 17,377 yesterday (back above 7-day avg of 16,541). Active cals 1,279. NEAT looking healthy.
+- **Intake 205 cal below target** -- 1,995 vs 2,200 target. Not a logging gap, just a lighter dinner day.
 
 ---
 Open the Summer Cut project to complete your check-in.
