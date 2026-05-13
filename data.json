@@ -1,14 +1,16 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-13T10:00:00-07:00",
-  "_updated_by": "morning_prep_task",
+  "_updated": "2026-05-13T11:30:00-07:00",
+  "_updated_by": "checkin_session",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
     "goal_weight": 160.0,
     "target_rate_above_168": 1.5,
     "target_rate_below_168": 1.0,
+    "lean_mass_lbs": 140,
+    "lean_mass_source": "DEXA baseline 2026-05-13",
     "calibration_end_date": "2026-05-24",
     "calibration_complete": false,
     "current_phase": "calibration",
@@ -1345,7 +1347,7 @@
       }
     },
     "2026-05-13": {
-      "weight_lbs": null,
+      "weight_lbs": 177.6,
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
@@ -1606,12 +1608,16 @@
     "history": []
   },
   "dexa_scans": {
-    "scans": [],
-    "next_scheduled": {
-      "date": "2026-05-13",
-      "target_weight": 178,
-      "label": "Baseline"
-    }
+    "scans": [
+      {
+        "date": "2026-05-13",
+        "weight_at_scan": 177.6,
+        "lean_mass_lbs": 140,
+        "label": "Baseline",
+        "notes": "Protein target anchored to ~1g/lb LBM. Full results TBD from athlete."
+      }
+    ],
+    "next_scheduled": null
   },
   "weekly_summaries": {
     "weeks": []
@@ -1623,18 +1629,18 @@
     "training_logged": false
   },
   "computed_dashboard_values": {
-    "current_weight": 176.6,
-    "seven_day_avg_weight": 177.1,
-    "rate_of_loss_lbs_per_week": 1.85,
-    "projected_goal_date": "2026-07-16",
-    "weeks_remaining": 9.2,
-    "total_lost": 2.9,
+    "current_weight": 177.6,
+    "seven_day_avg_weight": 177.5,
+    "rate_of_loss_lbs_per_week": 1.59,
+    "projected_goal_date": "2026-07-23",
+    "weeks_remaining": 11.0,
+    "total_lost": 2.5,
     "avg_intake_cal": 2619,
     "avg_protein_g": 197,
     "avg_carbs_g": 309,
     "avg_fat_g": 96,
     "avg_fiber_g": 40,
-    "protein_per_lb": 1.12,
+    "protein_per_lb": 1.41,
     "macro_split_pct": {
       "protein": 30,
       "carbs": 47,
@@ -1655,27 +1661,27 @@
     "avg_readiness": 71.3,
     "yesterday_steps": 14574,
     "avg_steps": 16031,
-    "avg_stress": 5.0,
+    "avg_stress": 4.7,
     "all_floor_lifts_green": true,
     "dal_score": null,
     "neat_score": null,
     "signals": [
       {
         "icon": "\ud83d\ude34",
-        "title": "Sleep improved: 5h28m \u2192 6h37m (score 80)",
+        "title": "Sleep improved: 5h28m -> 6h37m (score 80)",
         "detail": "HRV rebounded from 45 to 53. Efficiency dipped to 89.5% with 46m awake, but duration recovery is the win. Keep pushing for 7+ hours.",
         "severity": "positive"
       },
       {
         "icon": "\u26a1",
-        "title": "Readiness bounced back: 68 \u2192 81",
+        "title": "Readiness bounced back: 68 -> 81",
         "detail": "HRV balance improved to 64, resting HR contributor at 100. Sleep balance still low at 60 -- one more good night should stabilize it.",
         "severity": "positive"
       },
       {
         "icon": "\ud83d\udc93",
-        "title": "HRV recovering: 45 \u2192 53",
-        "detail": "Biggest single-day HRV jump of the cut. 7-day avg 47.7. Extra sleep hour was the catalyst. Body temp +0.28\u00b0C -- slightly warm but within range.",
+        "title": "HRV recovering: 45 -> 53",
+        "detail": "Biggest single-day HRV jump of the cut. 7-day avg 47.7. Extra sleep hour was the catalyst. Body temp +0.28C -- slightly warm but within range.",
         "severity": "positive"
       },
       {
@@ -1687,13 +1693,13 @@
       {
         "icon": "\ud83d\udeb6",
         "title": "Steps: 14,574 (below 7-day avg)",
-        "detail": "Down from Sunday's 17,377. Active cals 816. 7-day avg ~16031.",
+        "detail": "Down from Sunday's 17,377. Active cals 816. 7-day avg ~16,031.",
         "severity": "info"
       },
       {
         "icon": "\ud83d\udcc5",
         "title": "DEXA baseline scan TODAY",
-        "detail": "7-day avg weight 177.8 lbs \u2192 177.1 lbs. This sets body-comp baseline for the cut. Hydrate normally.",
+        "detail": "7-day avg weight 177.5 lbs. This sets body-comp baseline for the cut. Hydrate normally.",
         "severity": "info"
       },
       {
@@ -1916,18 +1922,31 @@
   "weekly_targets": {
     "_description": "Set by the Performance Roundtable each Sunday. The dashboard heatmap and adherence metrics read from here.",
     "current": {
-      "effective_date": "2026-05-11",
-      "set_by": "roundtable_week_1",
-      "calories": 2200,
-      "protein_g": 200,
-      "protein_floor_g": 178,
+      "effective_date": "2026-05-13",
+      "set_by": "athlete_post_dexa",
+      "calories": 2000,
+      "protein_g": 140,
+      "protein_floor_g": 126,
       "carb_g": 230,
       "fat_g": 60,
       "fat_floor_g": 45,
       "fiber_g": 35,
-      "notes": "Holding targets from observed intake patterns. TDEE still calibrating -- first calculated targets come week 4. MF targets are ignored; roundtable is the sole authority."
+      "notes": "Post-DEXA targets. Protein anchored to ~1g/lb lean mass (~140 lbs LBM). Calories dropped to 2000 -- athlete has plenty to lose. Carb/fat targets unchanged pending roundtable review."
     },
-    "history": []
+    "history": [
+      {
+        "effective_date": "2026-05-11",
+        "set_by": "roundtable_week_1",
+        "calories": 2200,
+        "protein_g": 200,
+        "protein_floor_g": 178,
+        "carb_g": 230,
+        "fat_g": 60,
+        "fat_floor_g": 45,
+        "fiber_g": 35,
+        "notes": "Initial targets from observed intake patterns."
+      }
+    ]
   },
   "weekly_programming": {
     "_description": "Set by the Performance Roundtable (Helms voice). Training prescription for the coming week.",
