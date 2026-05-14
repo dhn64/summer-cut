@@ -1,31 +1,32 @@
-# Morning Prep -- Wednesday, May 13, 2026
-## Day 11 of the Summer Cut | Week 2
+# Morning Prep -- Thursday, May 14, 2026
+## Day 12 of the Summer Cut | Week 2
 
-**Down 2.9 lbs from start and your body just told you it appreciated the extra sleep -- HRV jumped from 45 to 53 overnight. DEXA day. Let's get that baseline locked in.**
+**Two solid nights in a row, protein back on track, and the new 2,000-cal target feels dialed. Keep stacking these W's.**
 
 ### Last Night's Sleep
-- Score: 80 | Duration: 6h 37m | Efficiency: 89.5%
-- Deep: 22.9% | REM: 17.6% | HRV: 53 | Lowest HR: 47
-- Bedtime: 11:20 PM > Wake: 6:44 AM
-- Readiness: 81
+- Score: 80 | Duration: 6h 08m | Efficiency: 90.4%
+- Deep: 22.6% | REM: 17.1% | HRV: 54 | Lowest HR: 48
+- Bedtime: 11:55 PM > Wake: 6:42 AM
+- Readiness: 80
 
 ### Weight Check
-- Today: no weigh-in yet | 7-day avg: 177.1 lbs | Direction: down
-- Total lost: 2.9 lbs | Rate: 1.85 lbs/week
-- Last weigh-in: 176.6 lbs (May 11) -- weigh before DEXA if possible
+- Today: *not logged yet* | 7-day avg: 177.5 lbs | Direction: flat
+- Total lost: 2.5 lbs | Rate: 1.46 lbs/week
 
-### Yesterday's Food (1,962 cal | 164g P | 263g C | 60g F)
-- **08:00 Breakfast** -- ON Protein, PB Fit, Keto Bread, Banana, Almond Milk (368 cal | 38P)
-- **12:46 Lunch** -- ON Protein, PB Fit, Keto Bread, Banana, Almond Milk (368 cal | 38P)
-- **16:26 Snack** -- Quest Bar White Choc Raspberry (200 cal | 20P)
-- **18:40 Dinner** -- Salmon, Eggs x2, Rice, Broccoli, Peas & Carrots, Olive Oil, Condiments (1,026 cal | 68P)
+### Yesterday's Food (1,968 cal | 153g P | 273g C | 60g F)
+- **08:00 Breakfast** -- ON Plant Protein, PB Fit, Keto Bread, Banana, Almond Milk (368 cal | 38P)
+- **12:00 Lunch** -- Wild Salmon, Eggs, Keto Bread x2, Miracle Whip (280 cal | 27P)
+- **14:42 Snack** -- Banana (121 cal | 1P)
+- **16:00 Snack** -- Rold Gold Pretzels (230 cal | 6P)
+- **18:44 Dinner** -- Chicken Thigh, Broccoli, Peas & Carrots, Yukon Gold Potatoes, Olive Oil, BBQ Sauce (670 cal | 35P)
 
 ### Flags
-- **Protein below floor**: 164g (0.93 g/lb) vs 178g floor. Two shakes but dinner protein was light. Push protein today.
-- **Under calorie target**: 1,962 vs 2,200 target (-238 cal). Not critical for one day but don't string together undereating days.
-- **No weight logged**: Last entry May 11 (176.6 lbs). Step on the scale this morning before DEXA.
-- **DEXA baseline TODAY**: This scan sets your body composition starting point for the entire cut.
-- **Sleep rebound**: 80 score, HRV jumped +8 to 53. One more 7+ hour night and readiness should fully stabilize.
+- **No weight logged** -- step on the scale this morning
+- **Protein: 153g (1.09 g/lb LBM)** -- above the new 140g target, nice
+- **Calories: 1,968** -- 32 under the 2,000 target, right in the zone
+- **HRV trending up**: 45 > 53 > 54 over three days. Recovery is happening.
+- **Sleep balance still low (51)** -- one more 7+ hour night would help a lot
+- **Calibration: 10 days remaining** (ends May 24) -- no refeed triggers until then
 
 ---
 Open the Summer Cut project to complete your check-in.
