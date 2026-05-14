@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-14T16:51:37-07:00",
-  "_updated_by": "checkin_weight_log",
+  "_updated": "2026-05-14T10:00:00-07:00",
+  "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -14,7 +14,7 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": false,
     "current_phase": "calibration",
-    "days_into_cut": 12,
+    "days_into_cut": 11,
     "week_number": 2
   },
   "daily_log": {
@@ -1723,7 +1723,7 @@
     "diet_break_triggers_active": [],
     "last_refeed": null,
     "last_diet_break": null,
-    "continuous_deficit_days": 11,
+    "continuous_deficit_days": 10,
     "notes": "Calibration period -- triggers disabled until May 24."
   },
   "tdee_tracking": {
@@ -1756,21 +1756,21 @@
   },
   "computed_dashboard_values": {
     "current_weight": 176.5,
-    "seven_day_avg_weight": 177.1,
-    "rate_of_loss_lbs_per_week": 1.69,
-    "projected_goal_date": "2026-07-23",
-    "weeks_remaining": 10.1,
-    "total_lost": 2.9,
-    "avg_intake_cal": 2526,
-    "avg_protein_g": 191,
-    "avg_carbs_g": 304,
-    "avg_fat_g": 91,
-    "avg_fiber_g": 39,
-    "protein_per_lb": 1.36,
+    "seven_day_avg_weight": 177.0,
+    "rate_of_loss_lbs_per_week": 1.91,
+    "projected_goal_date": "2026-07-15",
+    "weeks_remaining": 8.9,
+    "total_lost": 3.0,
+    "avg_intake_cal": 2567,
+    "avg_protein_g": 186,
+    "avg_carbs_g": 307,
+    "avg_fat_g": 94,
+    "avg_fiber_g": 37,
+    "protein_per_lb": 1.33,
     "macro_split_pct": {
-      "protein": 27,
-      "carbs": 43,
-      "fat": 29
+      "protein": 26,
+      "carbs": 44,
+      "fat": 30
     },
     "last_night_sleep_score": 80,
     "avg_sleep_score": 78.3,
@@ -1786,46 +1786,46 @@
     "readiness_today": 80,
     "avg_readiness": 72.6,
     "yesterday_steps": 17072,
-    "avg_steps": 16180,
-    "avg_stress": 4.7,
+    "avg_steps": 15336,
+    "avg_stress": 5.0,
     "all_floor_lifts_green": true,
     "dal_score": null,
     "neat_score": null,
     "signals": [
       {
         "icon": "😴",
-        "title": "Sleep dipped: 6h37m → 6h08m (score 80)",
-        "detail": "Duration dropped 29 min but efficiency improved to 90.4%. HRV ticked up 53→54. Awake time down from 46m to 39m. Aiming for 7+ hours.",
+        "title": "Sleep: 6h 08m (score 80)",
+        "detail": "Lost 29 min vs prior night. Efficiency 90.4%. Aiming for 7+ hours.",
         "severity": "info"
       },
       {
         "icon": "💓",
         "title": "HRV steady: 53 → 54",
-        "detail": "Two nights in a row above 53. 7-day avg 47.3. Slow uptrend from post-binge nadir of 28.",
+        "detail": "7-day avg 47.3. Three consecutive nights above 50. Recovery trend positive.",
         "severity": "positive"
       },
       {
         "icon": "⚡",
         "title": "Readiness: 80 (stable)",
-        "detail": "Recovery index perfect 100, sleep balance still catching up at 51. Two solid nights in a row.",
+        "detail": "Recovery index perfect 100, sleep balance at 51. Consistent recovery.",
         "severity": "positive"
       },
       {
         "icon": "⚖️",
-        "title": "Weighed in: 176.5 lbs | 7-day avg: 177.1 lbs",
-        "detail": "New low! Down from 177.6 yesterday. Total lost: 2.9 lbs at 1.69 lbs/week.",
+        "title": "Weighed in: 176.5 lbs | 7-day avg: 177.0 lbs",
+        "detail": "Total lost: 3.0 lbs at 1.91 lbs/week. On track.",
         "severity": "positive"
       },
       {
         "icon": "🍽️",
-        "title": "Yesterday: 1,968 cal | 153g protein — on target",
-        "detail": "Calories 32 under 2,000 target. Protein at 153g (1.09 g/lb LBM), above 140g target. Good adherence day.",
+        "title": "Yesterday: 1,968 cal | 153g protein",
+        "detail": "Calories under 2,000 target by 32. Protein at 153g (1.09 g/lb LBM), above 140g floor.",
         "severity": "positive"
       },
       {
         "icon": "🚶",
-        "title": "Steps: 17,072 (above 7-day avg 16180)",
-        "detail": "Active cals 822. Good movement day.",
+        "title": "Steps: 17,072 (7-day avg 15,337)",
+        "detail": "Active cals 822. Above average.",
         "severity": "positive"
       },
       {
