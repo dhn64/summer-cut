@@ -14,7 +14,7 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": false,
     "current_phase": "calibration",
-    "days_into_cut": 11,
+    "days_into_cut": 12,
     "week_number": 2
   },
   "daily_log": {
@@ -1723,7 +1723,7 @@
     "diet_break_triggers_active": [],
     "last_refeed": null,
     "last_diet_break": null,
-    "continuous_deficit_days": 10,
+    "continuous_deficit_days": 11,
     "notes": "Calibration period -- triggers disabled until May 24."
   },
   "tdee_tracking": {
@@ -1757,9 +1757,9 @@
   "computed_dashboard_values": {
     "current_weight": 176.5,
     "seven_day_avg_weight": 177.0,
-    "rate_of_loss_lbs_per_week": 1.91,
-    "projected_goal_date": "2026-07-15",
-    "weeks_remaining": 8.9,
+    "rate_of_loss_lbs_per_week": 1.75,
+    "projected_goal_date": "2026-07-20",
+    "weeks_remaining": 9.7,
     "total_lost": 3.0,
     "avg_intake_cal": 2567,
     "avg_protein_g": 186,
