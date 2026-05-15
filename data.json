@@ -1,7 +1,7 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-14T10:00:00-07:00",
+  "_updated": "2026-05-15T10:00:00-07:00",
   "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
@@ -14,7 +14,7 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": false,
     "current_phase": "calibration",
-    "days_into_cut": 12,
+    "days_into_cut": 13,
     "week_number": 2
   },
   "daily_log": {
@@ -1477,18 +1477,18 @@
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": null,
-        "mcp_protein": null,
-        "mcp_carbs": null,
-        "mcp_fat": null,
+        "mcp_calories": 2106,
+        "mcp_protein": 160,
+        "mcp_carbs": 288,
+        "mcp_fat": 62,
         "reconciled": false,
-        "reconciled_calories": null,
-        "reconciled_protein": null,
-        "reconciled_carbs": null,
-        "reconciled_fat": null,
+        "reconciled_calories": 2106,
+        "reconciled_protein": 160,
+        "reconciled_carbs": 288,
+        "reconciled_fat": 62,
         "reconciliation_notes": null,
-        "fiber_estimated_g": null,
-        "protein_per_lb": null
+        "fiber_estimated_g": 38,
+        "protein_per_lb": 1.14
       },
       "sleep": {
         "score": 80,
@@ -1513,6 +1513,124 @@
         "recovery_index": 100,
         "sleep_balance": 51,
         "body_temp_deviation": 0.19
+      },
+      "activity": {
+        "steps": 18556,
+        "calories_total": 3193,
+        "calories_active": 1013,
+        "high_intensity_min": 1,
+        "medium_intensity_min": 132,
+        "low_intensity_min": 335,
+        "sedentary_min": 491,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": [
+          {
+            "time": "08:00",
+            "window": "breakfast",
+            "items": [
+              "ON Plant Protein 1 scoop",
+              "PB Fit 2tbsp",
+              "Keto Bread x1",
+              "Banana",
+              "Almond Milk"
+            ],
+            "cal": 368,
+            "pro": 38,
+            "carb": 54,
+            "fat": 6
+          },
+          {
+            "time": "12:00",
+            "window": "lunch",
+            "items": [
+              "ON Plant Protein 1 scoop",
+              "PB Fit 2tbsp",
+              "Keto Bread x1",
+              "Banana",
+              "Almond Milk"
+            ],
+            "cal": 368,
+            "pro": 38,
+            "carb": 54,
+            "fat": 6
+          },
+          {
+            "time": "16:00",
+            "window": "snack",
+            "items": [
+              "Little Debbie Double Decker Fudge Round"
+            ],
+            "cal": 490,
+            "pro": 3,
+            "carb": 77,
+            "fat": 19
+          },
+          {
+            "time": "19:38",
+            "window": "dinner",
+            "items": [
+              "Chicken Thigh 155g",
+              "Bumble Bee Red Salmon 75g",
+              "Yukon Gold Potatoes 270g",
+              "Frozen Spinach 100g",
+              "Peas & Carrots 150g",
+              "Olive Oil 1tbsp",
+              "Hoisin sauce",
+              "Sriracha"
+            ],
+            "cal": 910,
+            "pro": 52,
+            "carb": 117,
+            "fat": 29
+          }
+        ]
+      }
+    },
+    "2026-05-15": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 88,
+        "duration_min": 413,
+        "efficiency_pct": 91.7,
+        "deep_pct": 22.8,
+        "rem_pct": 27.5,
+        "light_pct": 49.8,
+        "awake_min": 37,
+        "latency_min": 14,
+        "hr_avg": 51,
+        "hr_lowest": 47,
+        "hrv_avg": 56,
+        "breathing_rate": 13.625,
+        "bedtime": "23:05",
+        "wake_time": "06:36"
+      },
+      "readiness": {
+        "score": 84,
+        "hrv_balance": 68,
+        "resting_hr": 100,
+        "recovery_index": 100,
+        "sleep_balance": 58,
+        "body_temp_deviation": -0.13
       },
       "activity": {
         "steps": null,
@@ -1723,7 +1841,7 @@
     "diet_break_triggers_active": [],
     "last_refeed": null,
     "last_diet_break": null,
-    "continuous_deficit_days": 11,
+    "continuous_deficit_days": 12,
     "notes": "Calibration period -- triggers disabled until May 24."
   },
   "tdee_tracking": {
@@ -1750,87 +1868,87 @@
   },
   "checkin_status": {
     "_description": "Tracks whether today's check-in is complete. Reset daily by the 10am task.",
-    "today": "2026-05-14",
+    "today": "2026-05-15",
     "morning_checkin_complete": false,
     "training_logged": false
   },
   "computed_dashboard_values": {
     "current_weight": 176.5,
-    "seven_day_avg_weight": 177.0,
-    "rate_of_loss_lbs_per_week": 1.75,
-    "projected_goal_date": "2026-07-20",
-    "weeks_remaining": 9.7,
-    "total_lost": 3.0,
-    "avg_intake_cal": 2567,
-    "avg_protein_g": 186,
-    "avg_carbs_g": 307,
-    "avg_fat_g": 94,
+    "seven_day_avg_weight": 176.9,
+    "rate_of_loss_lbs_per_week": 1.67,
+    "projected_goal_date": "2026-07-24",
+    "weeks_remaining": 10.1,
+    "total_lost": 3.1,
+    "avg_intake_cal": 2501,
+    "avg_protein_g": 182,
+    "avg_carbs_g": 305,
+    "avg_fat_g": 89,
     "avg_fiber_g": 37,
-    "protein_per_lb": 1.33,
+    "protein_per_lb": 1.3,
     "macro_split_pct": {
       "protein": 26,
       "carbs": 44,
-      "fat": 30
+      "fat": 29
     },
-    "last_night_sleep_score": 80,
-    "avg_sleep_score": 78.3,
-    "last_night_hrv": 54,
-    "avg_hrv": 47.3,
-    "last_night_hr_lowest": 48,
-    "avg_hr_lowest": 50.1,
-    "last_night_efficiency": 90.4,
-    "avg_efficiency": 92.1,
-    "last_night_deep_pct": 22.6,
-    "last_night_rem_pct": 17.1,
+    "last_night_sleep_score": 88,
+    "avg_sleep_score": 80.7,
+    "last_night_hrv": 56,
+    "avg_hrv": 48.0,
+    "last_night_hr_lowest": 47,
+    "avg_hr_lowest": 49.7,
+    "last_night_efficiency": 91.7,
+    "avg_efficiency": 92.3,
+    "last_night_deep_pct": 22.8,
+    "last_night_rem_pct": 27.5,
     "last_night_latency_min": 14,
-    "readiness_today": 80,
-    "avg_readiness": 72.6,
-    "yesterday_steps": 17072,
-    "avg_steps": 15336,
-    "avg_stress": 5.0,
+    "readiness_today": 84,
+    "avg_readiness": 74.7,
+    "yesterday_steps": 18556,
+    "avg_steps": 15797,
+    "avg_stress": 4.7,
     "all_floor_lifts_green": true,
     "dal_score": null,
     "neat_score": null,
     "signals": [
       {
         "icon": "😴",
-        "title": "Sleep: 6h 08m (score 80)",
-        "detail": "Lost 29 min vs prior night. Efficiency 90.4%. Aiming for 7+ hours.",
-        "severity": "info"
+        "title": "Sleep: 6h 53m (score 88)",
+        "detail": "Best score of the cut! Efficiency 91.7%. REM 27.5% outstanding. Deep 22.8% solid.",
+        "severity": "positive"
       },
       {
         "icon": "💓",
-        "title": "HRV steady: 53 → 54",
-        "detail": "7-day avg 47.3. Three consecutive nights above 50. Recovery trend positive.",
+        "title": "HRV climbing: 54 → 56",
+        "detail": "7-day avg 48.0. Four consecutive nights above 50. Lowest HR 47 bpm. Recovery trending up.",
         "severity": "positive"
       },
       {
         "icon": "⚡",
-        "title": "Readiness: 80 (stable)",
-        "detail": "Recovery index perfect 100, sleep balance at 51. Consistent recovery.",
+        "title": "Readiness: 84 (up from 80)",
+        "detail": "Recovery index 100, resting HR 100. HRV balance 68. Strong recovery day.",
         "severity": "positive"
       },
       {
         "icon": "⚖️",
-        "title": "Weighed in: 176.5 lbs | 7-day avg: 177.0 lbs",
-        "detail": "Total lost: 3.0 lbs at 1.91 lbs/week. On track.",
-        "severity": "positive"
+        "title": "No weigh-in today | 7-day avg: 176.9 lbs",
+        "detail": "Total lost: 3.1 lbs at 1.67 lbs/week. Weigh in when you can.",
+        "severity": "info"
       },
       {
         "icon": "🍽️",
-        "title": "Yesterday: 1,968 cal | 153g protein",
-        "detail": "Calories under 2,000 target by 32. Protein at 153g (1.09 g/lb LBM), above 140g floor.",
-        "severity": "positive"
+        "title": "Yesterday: 2,106 cal | 160g protein",
+        "detail": "Over 2,000 target by 106 cal. Protein at 1.14 g/lb LBM, above 140g floor. Fudge Round was 490 cal.",
+        "severity": "info"
       },
       {
         "icon": "🚶",
-        "title": "Steps: 17,072 (7-day avg 15,337)",
-        "detail": "Active cals 822. Above average.",
+        "title": "Steps: 18,556 (7-day avg 15,797)",
+        "detail": "Active cals 1,013. Highest step day in a week. Great NEAT.",
         "severity": "positive"
       },
       {
         "icon": "📅",
-        "title": "Calibration: 10 days remaining (ends May 24)",
+        "title": "Calibration: 9 days remaining (ends May 24)",
         "detail": "No refeed/diet break triggers until calibration completes. Keep logging consistently.",
         "severity": "info"
       }
