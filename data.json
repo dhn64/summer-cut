@@ -1,7 +1,7 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-16T17:11:17-07:00",
+  "_updated": "2026-05-16T18:48:03-07:00",
   "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
@@ -1139,7 +1139,7 @@
         "dal_score": null,
         "neat_score": null
       },
-      "training": "rest",
+      "training": "lifting",
       "food_log_summary": {
         "meals": [
           {
@@ -1280,7 +1280,7 @@
         "dal_score": null,
         "neat_score": null
       },
-      "training": "rest",
+      "training": "lifting",
       "food_log_summary": {
         "meals": [
           {
@@ -1525,7 +1525,7 @@
         "dal_score": null,
         "neat_score": null
       },
-      "training": "rest",
+      "training": "lifting",
       "food_log_summary": {
         "meals": [
           {
@@ -1591,22 +1591,22 @@
       }
     },
     "2026-05-15": {
-      "weight_lbs": null,
+      "weight_lbs": 176.5,
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": 1067,
-        "mcp_protein": 83,
-        "mcp_carbs": 128,
-        "mcp_fat": 36,
-        "reconciled": false,
-        "reconciled_calories": 1067,
-        "reconciled_protein": 83,
-        "reconciled_carbs": 128,
-        "reconciled_fat": 36,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 15,
-        "protein_per_lb": 0.59
+        "mcp_calories": 2580,
+        "mcp_protein": 172,
+        "mcp_carbs": 296,
+        "mcp_fat": 94,
+        "reconciled": true,
+        "reconciled_calories": 2580,
+        "reconciled_protein": 172,
+        "reconciled_carbs": 296,
+        "reconciled_fat": 94,
+        "reconciliation_notes": "Gym cafe strawberry cookie (265cal/3P/36C/12F) is a Claude visual estimate -- swap if real macros surface. Fob Poke bowl AI-logged from itemized weights (788cal/58P/74C/30F).",
+        "fiber_estimated_g": 17,
+        "protein_per_lb": 1.23
       },
       "sleep": {
         "score": 88,
@@ -1643,7 +1643,7 @@
         "dal_score": null,
         "neat_score": null
       },
-      "training": "rest",
+      "training": "lifting",
       "food_log_summary": {
         "meals": [
           {
@@ -1672,12 +1672,37 @@
             "pro": 35,
             "carb": 66,
             "fat": 25
+          },
+          {
+            "time": "18:00",
+            "window": "dinner",
+            "items": [
+              "Fob Poke Regular Bowl: salmon 140g, unagi 50g, crab salad 75g, white rice 150g, spinach 60g, seaweed salad, edamame, tamagoyaki, masago, shoyu sauce"
+            ],
+            "cal": 788,
+            "pro": 58,
+            "carb": 74,
+            "fat": 30
+          },
+          {
+            "time": "19:00",
+            "window": "snack",
+            "items": [
+              "Barebells PB&J Protein Bar",
+              "Kasugai Crispy Peas 56g",
+              "Gym Cafe Strawberry Cookie (AI estimate)"
+            ],
+            "cal": 725,
+            "pro": 30,
+            "carb": 93,
+            "fat": 28,
+            "reconciliation_flag": true
           }
         ]
       }
     },
     "2026-05-16": {
-      "weight_lbs": null,
+      "weight_lbs": 174.6,
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
@@ -1828,6 +1853,346 @@
         ],
         "subjective_notes": null,
         "polar_data": null
+      },
+      {
+        "date": "2026-05-11",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "Back Squat",
+            "floor_lift": true,
+            "warmup": "bar x8, 135x6, 185x4, 205x2",
+            "sets": [
+              {
+                "weight": 225,
+                "reps": 5,
+                "rpe": 8.5
+              },
+              {
+                "weight": 225,
+                "reps": 5,
+                "rpe": 8.5
+              },
+              {
+                "weight": 225,
+                "reps": 5,
+                "rpe": 8.5
+              }
+            ]
+          },
+          {
+            "name": "DB Chest Press",
+            "floor_lift": true,
+            "sets": [
+              {
+                "weight": 70,
+                "reps": 7,
+                "rpe": 8.5
+              },
+              {
+                "weight": 70,
+                "reps": 7,
+                "rpe": 8.5
+              },
+              {
+                "weight": 70,
+                "reps": 7,
+                "rpe": 9
+              }
+            ]
+          },
+          {
+            "name": "Hammer Strength Row",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 142.5,
+                "reps": 6,
+                "rpe": 8,
+                "notes": "per side: 3 plates + 5 + 2.5"
+              },
+              {
+                "weight": 142.5,
+                "reps": 6,
+                "rpe": 8
+              },
+              {
+                "weight": 142.5,
+                "reps": 6,
+                "rpe": 8
+              }
+            ]
+          },
+          {
+            "name": "Barbell Curls",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 60,
+                "reps": 10,
+                "rpe": null
+              },
+              {
+                "weight": 60,
+                "reps": 10,
+                "rpe": null
+              },
+              {
+                "weight": 60,
+                "reps": 10,
+                "rpe": null
+              }
+            ]
+          },
+          {
+            "name": "Triceps Pulldown",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 75,
+                "reps": 8,
+                "rpe": null,
+                "notes": "got bumped off cable, 1 working set only"
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Left knee felt iffy on squats, had some doubt but completed all reps. Considered 230 but held back. DB chest press rep PR: 70x7 up from 70x6.",
+        "polar_data": null
+      },
+      {
+        "date": "2026-05-12",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "Nautilus Glute Drive",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 420,
+                "reps": 6,
+                "rpe": null,
+                "notes": "4 plates + 25 + 5 per side (210/side)"
+              },
+              {
+                "weight": 420,
+                "reps": 6,
+                "rpe": null
+              },
+              {
+                "weight": 420,
+                "reps": 8,
+                "rpe": 8
+              }
+            ]
+          },
+          {
+            "name": "Hammer Strength Incline Press",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 225,
+                "reps": 6,
+                "rpe": 9,
+                "notes": "2 plates per side"
+              },
+              {
+                "weight": 225,
+                "reps": 5,
+                "rpe": 9
+              },
+              {
+                "weight": 225,
+                "reps": 5,
+                "rpe": 9
+              }
+            ]
+          },
+          {
+            "name": "Cybex Arm Curl Machine",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 80,
+                "reps": null,
+                "rpe": null,
+                "notes": "Long warmup series to 80 lbs, 1 working set. Got bumped off machine."
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Light day due to time constraints. Not well-rested. Meticulous warmups.",
+        "polar_data": null
+      },
+      {
+        "date": "2026-05-14",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "Machine RDL",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 320,
+                "reps": 6,
+                "rpe": 8,
+                "notes": "Big pink machine. 3 plates + 25 per side (160/side)"
+              },
+              {
+                "weight": 320,
+                "reps": 6,
+                "rpe": 8
+              },
+              {
+                "weight": 320,
+                "reps": 6,
+                "rpe": 8
+              }
+            ]
+          },
+          {
+            "name": "Barbell Curls",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 70,
+                "reps": 7,
+                "rpe": 8
+              },
+              {
+                "weight": 60,
+                "reps": 10,
+                "rpe": 8
+              },
+              {
+                "weight": 60,
+                "reps": 10,
+                "rpe": 8
+              }
+            ]
+          },
+          {
+            "name": "Triceps Pushdowns",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": null,
+                "reps": 8,
+                "rpe": 8,
+                "notes": "Plate 14 on VR3 stack"
+              },
+              {
+                "weight": null,
+                "reps": 8,
+                "rpe": 8
+              },
+              {
+                "weight": null,
+                "reps": 8,
+                "rpe": 8
+              }
+            ]
+          },
+          {
+            "name": "Kettlebell Swings",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 80,
+                "reps": null,
+                "rpe": null,
+                "notes": "Meticulous warmup to 80 lbs, 2 working sets"
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Circuit-style finish after RDLs. Meticulous warmups on all exercises.",
+        "polar_data": null
+      },
+      {
+        "date": "2026-05-15",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "DB Chest Press",
+            "floor_lift": true,
+            "sets": [
+              {
+                "weight": 70,
+                "reps": 7,
+                "rpe": null,
+                "notes": "Different/newer York DBs that felt heavier"
+              },
+              {
+                "weight": 70,
+                "reps": 6,
+                "rpe": null
+              },
+              {
+                "weight": 70,
+                "reps": 6,
+                "rpe": null
+              }
+            ]
+          },
+          {
+            "name": "EZ Bar Curls",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 60,
+                "reps": 10,
+                "rpe": null
+              },
+              {
+                "weight": 60,
+                "reps": 8,
+                "rpe": null
+              },
+              {
+                "weight": 60,
+                "reps": 8,
+                "rpe": null
+              }
+            ]
+          },
+          {
+            "name": "Hammer Strength Chest-Supported Row",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 135,
+                "reps": 8,
+                "rpe": null,
+                "notes": "3 plates per side"
+              },
+              {
+                "weight": 135,
+                "reps": 8,
+                "rpe": null
+              }
+            ]
+          },
+          {
+            "name": "Machine Chest Press",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 225,
+                "reps": 6,
+                "rpe": null,
+                "notes": "2 plates per side"
+              },
+              {
+                "weight": 225,
+                "reps": 6,
+                "rpe": null
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Fan bike warmup. Short session — had to leave for 3.5hr tattoo appointment. Only 2 sets of rows and machine press. Newer York DBs at 70 lbs felt heavier than the usual ones.",
+        "polar_data": null
       }
     ]
   },
@@ -1853,6 +2218,17 @@
             5
           ],
           "rpe_final": null
+        },
+        {
+          "date": "2026-05-11",
+          "weight": 225,
+          "reps": [
+            5,
+            5,
+            5
+          ],
+          "rpe_final": 8.5,
+          "notes": "Left knee felt iffy but completed all reps"
         }
       ]
     },
@@ -1860,10 +2236,10 @@
       "floor_weight": 70,
       "floor_reps": 4,
       "current_best": {
-        "weight": 75,
-        "reps": 4,
-        "sets": 1,
-        "date": "2026-05-09"
+        "weight": 70,
+        "reps": 7,
+        "sets": 3,
+        "date": "2026-05-11"
       },
       "status": "green",
       "consecutive_breaches": 0,
@@ -1884,6 +2260,27 @@
             5
           ],
           "rpe_final": 9.5
+        },
+        {
+          "date": "2026-05-11",
+          "weight": 70,
+          "reps": [
+            7,
+            7,
+            7
+          ],
+          "rpe_final": 9
+        },
+        {
+          "date": "2026-05-15",
+          "weight": 70,
+          "reps": [
+            7,
+            6,
+            6
+          ],
+          "rpe_final": null,
+          "notes": "Different/newer York DBs felt heavier"
         }
       ]
     },
@@ -1959,22 +2356,22 @@
     "training_logged": false
   },
   "computed_dashboard_values": {
-    "current_weight": 176.5,
-    "seven_day_avg_weight": 176.8,
-    "rate_of_loss_lbs_per_week": 1.6,
-    "projected_goal_date": "2026-07-28",
-    "weeks_remaining": 10.5,
-    "total_lost": 3.2,
-    "avg_intake_cal": 1996,
-    "avg_protein_g": 157,
-    "avg_carbs_g": 257,
-    "avg_fat_g": 66,
+    "current_weight": 174.6,
+    "seven_day_avg_weight": 176.4,
+    "rate_of_loss_lbs_per_week": 1.8,
+    "projected_goal_date": "2026-07-18",
+    "weeks_remaining": 9.1,
+    "total_lost": 3.6,
+    "avg_intake_cal": 2248,
+    "avg_protein_g": 172,
+    "avg_carbs_g": 285,
+    "avg_fat_g": 76,
     "avg_fiber_g": 32,
-    "protein_per_lb": 1.12,
+    "protein_per_lb": 1.23,
     "macro_split_pct": {
-      "protein": 28,
-      "carbs": 46,
-      "fat": 26
+      "protein": 27,
+      "carbs": 45,
+      "fat": 27
     },
     "last_night_sleep_score": 83,
     "avg_sleep_score": 80.6,
@@ -2016,15 +2413,15 @@
       },
       {
         "icon": "⚖️",
-        "title": "No weigh-in (2 days) | 7-day avg: 176.8 lbs",
-        "detail": "Last weigh-in: 176.5 lbs on May 14. Total lost: 3.2 lbs at 1.6 lbs/week. Weigh in when you can.",
-        "severity": "info"
+        "title": "174.6 lbs! New low | 7-day avg: 176.4 lbs",
+        "detail": "Down 1.9 lbs overnight (176.5 → 174.6). Total lost: 3.6 lbs at 1.8 lbs/week. New cut low!",
+        "severity": "positive"
       },
       {
-        "icon": "🚨",
-        "title": "Yesterday: only 1,067 cal / 83g protein",
-        "detail": "Well below 1,500 cal threshold. Only 2 eating occasions logged (breakfast + afternoon snack). Possible logging gap? If accurate, this is too low -- muscle preservation needs minimum ~1,500 cal and 140g protein.",
-        "severity": "warning"
+        "icon": "🍽️",
+        "title": "Yesterday: 2,580 cal | 172g protein (reconciled)",
+        "detail": "Over 2,000 target by 580 cal. Protein 1.23 g/lb LBM (above 140g floor). Poke bowl + cookie AI-logged. Higher fat day at 94g (poke + cookie + kasugai).",
+        "severity": "info"
       },
       {
         "icon": "🚶",
