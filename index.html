@@ -366,12 +366,8 @@ async function init() {
     };
   }
 
-  // Show all dates, paired into 2-row columns (week 1 top, week 2 bottom)
-  const heatDates = dates;
-  const midpoint = Math.ceil(heatDates.length / 2);
-  const topRow = heatDates.slice(0, midpoint);    // older dates (top)
-  const botRow = heatDates.slice(midpoint);        // newer dates (bottom)
-  const numCols = topRow.length;
+  // Show last 7 days
+  const heatDates = dates.slice(-7);
 
   function heatCell(dateStr, macro) {
     const entry = logs[dateStr] || archive[dateStr];
@@ -388,23 +384,12 @@ async function init() {
     return `<div class="heatmap-cell" style="background:${bg};${partial?'opacity:0.5;':''}">${v != null ? v : '—'}</div>`;
   }
 
-  function heatRow(macro, label) {
-    let html = `<div class="heatmap-label">${label}</div>`;
-    html += topRow.map(d => heatCell(d, macro)).join('');
-    // Bottom row for this macro
-    html += `<div class="heatmap-label"></div>`;
-    for (let i = 0; i < numCols; i++) {
-      html += i < botRow.length ? heatCell(botRow[i], macro) : `<div class="heatmap-cell" style="background:rgba(50,50,50,0.2);">—</div>`;
-    }
-    return html;
-  }
-
-  let heatHTML = `<div class="heatmap-grid" style="grid-template-columns: 50px repeat(${numCols}, 1fr);">
-    <div class="heatmap-label"></div>${topRow.map((d,i) => `<div class="heatmap-header">${shortDate(d)}<br><span style="opacity:0.4;">${i < botRow.length ? shortDate(botRow[i]) : ''}</span></div>`).join('')}
-    ${heatRow('cal', 'Cal')}
-    ${heatRow('pro', 'Pro')}
-    ${heatRow('carb', 'Carb')}
-    ${heatRow('fat', 'Fat')}
+  let heatHTML = `<div class="heatmap-grid" style="grid-template-columns: 50px repeat(${heatDates.length}, 1fr);">
+    <div class="heatmap-label"></div>${heatDates.map(d => `<div class="heatmap-header">${shortDate(d)}</div>`).join('')}
+    <div class="heatmap-label">Cal</div>${heatDates.map(d => heatCell(d, 'cal')).join('')}
+    <div class="heatmap-label">Pro</div>${heatDates.map(d => heatCell(d, 'pro')).join('')}
+    <div class="heatmap-label">Carb</div>${heatDates.map(d => heatCell(d, 'carb')).join('')}
+    <div class="heatmap-label">Fat</div>${heatDates.map(d => heatCell(d, 'fat')).join('')}
   </div>
   <div style="margin-top:10px;display:flex;gap:16px;font-family:var(--font-mono);font-size:10px;color:var(--text-muted);">
     <span><span style="display:inline-block;width:8px;height:8px;background:rgba(90,158,111,0.3);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>On target</span>
