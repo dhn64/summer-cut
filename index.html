@@ -121,7 +121,7 @@
   .action-priority.p3 { background: var(--accent-blue-dim); color: var(--accent-blue); }
   .action-text { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
   .action-text strong { color: var(--text-primary); font-weight: 500; }
-  .heatmap-grid { display: grid; grid-template-columns: 50px repeat(7, 1fr); gap: 3px; align-items: center; }
+  .heatmap-grid { display: grid; gap: 3px; align-items: center; }
   .heatmap-label { font-family: var(--font-mono); font-size: 10px; color: var(--text-muted); text-align: right; padding-right: 8px; }
   .heatmap-cell { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 10px; color: var(--text-primary); border-radius: 3px; min-height: 32px; }
   .heatmap-header { font-family: var(--font-mono); font-size: 9px; color: var(--text-muted); text-align: center; }
@@ -344,8 +344,8 @@ async function init() {
   const fatTarget = (targets && targets.fat_g) || 70;
   const targetsSet = targets && targets.calories != null;
   const targetSource = targetsSet ? `Targets: Roundtable ${targets.effective_date}` : 'Targets: pending first roundtable';
-  const heatDates = dates;
-  let heatHTML = `<div class="heatmap-grid">
+  const heatDates = dates.slice(-7);
+  let heatHTML = `<div class="heatmap-grid" style="grid-template-columns: 50px repeat(${heatDates.length}, 1fr);">
     <div class="heatmap-label"></div>${heatDates.map(d => `<div class="heatmap-header">${shortDate(d)}</div>`).join('')}
     <div class="heatmap-label">Cal</div>${heatDates.map(d => {
       const v = logs[d].nutrition?.reconciled_calories;

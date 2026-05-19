@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-16T18:48:03-07:00",
-  "_updated_by": "morning_prep_task",
+  "_updated": "2026-05-18T11:15:00-07:00",
+  "_updated_by": "checkin_session",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -14,129 +14,10 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": false,
     "current_phase": "calibration",
-    "days_into_cut": 14,
-    "week_number": 2
+    "days_into_cut": 16,
+    "week_number": 3
   },
   "daily_log": {
-    "2026-05-03": {
-      "weight_lbs": 180.0,
-      "stress_rating": 5,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 1982,
-        "mcp_protein": 187,
-        "mcp_carbs": 273,
-        "mcp_fat": 54,
-        "reconciled": false,
-        "reconciled_calories": 1982,
-        "reconciled_protein": 187,
-        "reconciled_carbs": 273,
-        "reconciled_fat": 54,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 82,
-        "protein_per_lb": 1.04
-      },
-      "sleep": {
-        "score": 75,
-        "duration_min": 372,
-        "efficiency_pct": 94.5,
-        "deep_pct": 25.0,
-        "rem_pct": 15.2,
-        "light_pct": 59.9,
-        "awake_min": 21,
-        "latency_min": 4,
-        "hr_avg": 55.6,
-        "hr_lowest": 51,
-        "hrv_avg": 58,
-        "breathing_rate": 14.875,
-        "bedtime": "00:44",
-        "wake_time": "07:18"
-      },
-      "readiness": {
-        "score": 66,
-        "hrv_balance": 41,
-        "resting_hr": 67,
-        "recovery_index": 64,
-        "sleep_balance": 55,
-        "body_temp_deviation": 0.25
-      },
-      "activity": {
-        "steps": 18987,
-        "calories_total": 3424,
-        "calories_active": 1288,
-        "high_intensity_min": 2,
-        "medium_intensity_min": 232,
-        "low_intensity_min": 226,
-        "sedentary_min": 368,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": null,
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "09:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto Bread x2",
-              "Smucker's preserves",
-              "Almond Milk"
-            ],
-            "cal": 311,
-            "pro": 40,
-            "carb": 41,
-            "fat": 8
-          },
-          {
-            "time": "12:00",
-            "window": "lunch",
-            "items": [
-              "Chicken Thigh 135g",
-              "Keto Bread x2",
-              "Miracle Whip"
-            ],
-            "cal": 194,
-            "pro": 29,
-            "carb": 26,
-            "fat": 9
-          },
-          {
-            "time": "15:19",
-            "window": "snack",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto Bread x4",
-              "Smucker's preserves",
-              "Almond Milk"
-            ],
-            "cal": 421,
-            "pro": 48,
-            "carb": 49,
-            "fat": 10
-          },
-          {
-            "time": "18:17",
-            "window": "dinner",
-            "items": [
-              "Chicken Thigh 205g",
-              "Peas&Carrots",
-              "Green Beans",
-              "Sweet Potato",
-              "Olive Oil 1tbsp",
-              "Hoisin",
-              "Sriracha"
-            ],
-            "cal": 527,
-            "pro": 33,
-            "carb": 83,
-            "fat": 22
-          }
-        ]
-      }
-    },
     "2026-05-04": {
       "weight_lbs": 180.0,
       "stress_rating": 4,
@@ -1706,18 +1587,18 @@
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": null,
-        "mcp_protein": null,
-        "mcp_carbs": null,
-        "mcp_fat": null,
-        "reconciled": false,
-        "reconciled_calories": null,
-        "reconciled_protein": null,
-        "reconciled_carbs": null,
-        "reconciled_fat": null,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": null,
-        "protein_per_lb": null
+        "mcp_calories": 1626,
+        "mcp_protein": 158,
+        "mcp_carbs": 121,
+        "mcp_fat": 60,
+        "reconciled": true,
+        "reconciled_calories": 2891,
+        "reconciled_protein": 200,
+        "reconciled_carbs": 237,
+        "reconciled_fat": 130,
+        "reconciliation_notes": "Dinner out not in MF: charcuterie board (~65% consumed + extra bread) 955cal/40P/77C/53F, fried plantains x5 + dip 310cal/2P/39C/17F, diet coke. Added 1,265cal/42P/116C/70F. High sodium (~1,850mg), high sat fat (~22g). Dairy present (cheese) -- athlete is lactose intolerant, note for symptoms.",
+        "fiber_estimated_g": 44,
+        "protein_per_lb": 1.43
       },
       "sleep": {
         "score": 83,
@@ -1744,6 +1625,289 @@
         "body_temp_deviation": -0.25
       },
       "activity": {
+        "steps": 20822,
+        "calories_total": 3412,
+        "calories_active": 1217,
+        "high_intensity_min": 1,
+        "medium_intensity_min": 170,
+        "low_intensity_min": 346,
+        "sedentary_min": 441,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "lifting",
+      "food_log_summary": {
+        "meals": [
+          {
+            "time": "10:30",
+            "window": "breakfast",
+            "items": [
+              "ON Plant Protein 1 scoop",
+              "PB Fit 2tbsp",
+              "Keto Bread x3",
+              "Banana",
+              "Almond Milk"
+            ],
+            "cal": 465,
+            "pro": 45,
+            "carb": 49,
+            "fat": 11
+          },
+          {
+            "time": "15:00",
+            "window": "snack",
+            "items": [
+              "Barebells PB&J Protein Bar",
+              "Legendary BBQ Chips"
+            ],
+            "cal": 350,
+            "pro": 40,
+            "carb": 26,
+            "fat": 12
+          },
+          {
+            "time": "16:30",
+            "window": "lunch",
+            "items": [
+              "Bumble Bee Red Salmon 150g",
+              "Ken's Vidalia Onion",
+              "Keto Bread x4"
+            ],
+            "cal": 436,
+            "pro": 45,
+            "carb": 16,
+            "fat": 20
+          },
+          {
+            "time": "18:30",
+            "window": "dinner",
+            "items": [
+              "Eggs x2",
+              "Frozen Spinach 100g",
+              "Peas & Carrots 100g",
+              "Keto Bread x2",
+              "Olive Oil",
+              "Hoisin",
+              "Sriracha"
+            ],
+            "cal": 376,
+            "pro": 28,
+            "carb": 29,
+            "fat": 17
+          },
+          {
+            "time": "20:00",
+            "window": "dinner",
+            "items": [
+              "Charcuterie board (~65%): cured meats, cheeses, olives, bread, pickled veg",
+              "Fried Plantains x5 + dip",
+              "Diet Coke"
+            ],
+            "cal": 1265,
+            "pro": 42,
+            "carb": 116,
+            "fat": 70,
+            "reconciliation_flag": true,
+            "micro_estimates": {
+              "sodium_mg": 1850,
+              "calcium_mg": 420,
+              "iron_mg": 2.8,
+              "magnesium_mg": 35,
+              "phosphorus_mg": 310,
+              "potassium_mg": 480,
+              "zinc_mg": 3.2,
+              "selenium_mcg": 12,
+              "vitamin_a_mcg_rae": 45,
+              "vitamin_c_mg": 8,
+              "vitamin_e_mg": 1.5,
+              "vitamin_k_mcg": 8,
+              "b1_mg": 0.25,
+              "b2_mg": 0.25,
+              "b3_mg": 4.5,
+              "b6_mg": 0.3,
+              "b12_mcg": 0.8,
+              "folate_mcg": 35,
+              "saturated_fat_g": 22,
+              "monounsat_fat_g": 28,
+              "polyunsat_fat_g": 8,
+              "fiber_g": 6
+            }
+          }
+        ]
+      }
+    },
+    "2026-05-17": {
+      "weight_lbs": 176.5,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": 2219,
+        "mcp_protein": 161,
+        "mcp_carbs": 282,
+        "mcp_fat": 56,
+        "reconciled": false,
+        "reconciled_calories": 2219,
+        "reconciled_protein": 161,
+        "reconciled_carbs": 282,
+        "reconciled_fat": 56,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": 24,
+        "protein_per_lb": 1.15
+      },
+      "sleep": {
+        "score": 79,
+        "duration_min": 410,
+        "efficiency_pct": 91.5,
+        "deep_pct": 21.6,
+        "rem_pct": 21.7,
+        "light_pct": 56.8,
+        "awake_min": 38,
+        "latency_min": 7,
+        "hr_avg": 51.625,
+        "hr_lowest": 48,
+        "hrv_avg": 60,
+        "breathing_rate": 13.75,
+        "bedtime": "01:09",
+        "wake_time": "08:38"
+      },
+      "readiness": {
+        "score": 81,
+        "hrv_balance": 79,
+        "resting_hr": 94,
+        "recovery_index": 86,
+        "sleep_balance": 61,
+        "body_temp_deviation": -0.06
+      },
+      "activity": {
+        "steps": 16178,
+        "calories_total": 3105,
+        "calories_active": 961,
+        "high_intensity_min": 13,
+        "medium_intensity_min": 136,
+        "low_intensity_min": 312,
+        "sedentary_min": 425,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "lifting",
+      "food_log_summary": {
+        "meals": [
+          {
+            "time": "10:00",
+            "window": "breakfast",
+            "items": [
+              "ON Plant Protein 1 scoop",
+              "PB Fit 2tbsp",
+              "Keto Bread x2",
+              "Banana",
+              "Almond Milk"
+            ],
+            "cal": 421,
+            "pro": 39,
+            "carb": 46,
+            "fat": 11
+          },
+          {
+            "time": "12:00",
+            "window": "snack",
+            "items": [
+              "Nerds Gummy Clusters"
+            ],
+            "cal": 90,
+            "pro": 1,
+            "carb": 22,
+            "fat": 0
+          },
+          {
+            "time": "15:00",
+            "window": "snack",
+            "items": [
+              "Barebells PB&J Protein Bar"
+            ],
+            "cal": 200,
+            "pro": 20,
+            "carb": 21,
+            "fat": 6
+          },
+          {
+            "time": "16:58",
+            "window": "dinner",
+            "items": [
+              "Bumble Bee Red Salmon 155g",
+              "Eggs 119g",
+              "Cooked White Rice 200g",
+              "Frozen Broccoli 70g",
+              "Frozen Spinach 70g",
+              "Green Beans 70g",
+              "Peas & Carrots 70g",
+              "Olive Oil 1tbsp"
+            ],
+            "cal": 695,
+            "pro": 38,
+            "carb": 85,
+            "fat": 26
+          },
+          {
+            "time": "19:00",
+            "window": "pre_sleep",
+            "items": [
+              "Jocko Chocolate Protein 1 scoop",
+              "PB Fit 2tbsp",
+              "Almond Milk",
+              "Triple Berry Blend 100g",
+              "Honey Bunches of Oats 70g"
+            ],
+            "cal": 450,
+            "pro": 36,
+            "carb": 61,
+            "fat": 9
+          }
+        ]
+      }
+    },
+    "2026-05-18": {
+      "weight_lbs": 174.8,
+      "stress_rating": 6.5,
+      "stress_notes": "Work/study load elevated. Felt slightly tired but energy decent -- no dozing. Pushed through temptation to rest day.",
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 69,
+        "duration_min": 332,
+        "efficiency_pct": 89.5,
+        "deep_pct": 21.7,
+        "rem_pct": 17.8,
+        "light_pct": 60.5,
+        "awake_min": 39,
+        "latency_min": 10,
+        "hr_avg": 52.75,
+        "hr_lowest": 49,
+        "hrv_avg": 53,
+        "breathing_rate": 13.75,
+        "bedtime": "01:05",
+        "wake_time": "07:16"
+      },
+      "readiness": {
+        "score": 76,
+        "hrv_balance": 79,
+        "resting_hr": 87,
+        "recovery_index": 89,
+        "sleep_balance": 59,
+        "body_temp_deviation": -0.05
+      },
+      "activity": {
         "steps": null,
         "calories_total": null,
         "calories_active": null,
@@ -1754,7 +1918,7 @@
         "dal_score": null,
         "neat_score": null
       },
-      "training": null,
+      "training": "lifting",
       "food_log_summary": {
         "meals": []
       }
@@ -2191,7 +2355,269 @@
             ]
           }
         ],
-        "subjective_notes": "Fan bike warmup. Short session — had to leave for 3.5hr tattoo appointment. Only 2 sets of rows and machine press. Newer York DBs at 70 lbs felt heavier than the usual ones.",
+        "subjective_notes": "Fan bike warmup. Short session \u2014 had to leave for 3.5hr tattoo appointment. Only 2 sets of rows and machine press. Newer York DBs at 70 lbs felt heavier than the usual ones.",
+        "polar_data": null
+      },
+      {
+        "date": "2026-05-17",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "Nautilus Glute Drive",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 430,
+                "reps": 6,
+                "rpe": 7.5,
+                "notes": "4 plates + 35 per side (215/side). Up from 420 on 05-12."
+              }
+            ]
+          },
+          {
+            "name": "Narrow Grip Lat Pulldown",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 160,
+                "reps": 8,
+                "rpe": 8.5
+              },
+              {
+                "weight": 160,
+                "reps": 7.5,
+                "rpe": 9
+              },
+              {
+                "weight": 160,
+                "reps": 7.25,
+                "rpe": 9,
+                "notes": "Last rep crappy"
+              }
+            ]
+          },
+          {
+            "name": "Hammer Strength Wide Grip Row",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 135,
+                "reps": 8,
+                "rpe": 8.5,
+                "notes": "3 plates per side. Superset with triceps pulldowns"
+              },
+              {
+                "weight": 135,
+                "reps": 7.5,
+                "rpe": 8.5
+              },
+              {
+                "weight": 135,
+                "reps": 7.25,
+                "rpe": 9,
+                "notes": "Last rep crappy"
+              },
+              {
+                "weight": 135,
+                "reps": 8,
+                "rpe": 9,
+                "notes": "Extra set"
+              },
+              {
+                "weight": 135,
+                "reps": 8,
+                "rpe": 9,
+                "notes": "Extra set"
+              }
+            ]
+          },
+          {
+            "name": "Triceps Pulldowns",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 145,
+                "reps": 6,
+                "rpe": 8.5,
+                "notes": "PR -- up from 135 lbs. Superset with rows"
+              },
+              {
+                "weight": 145,
+                "reps": 6,
+                "rpe": 8.5
+              },
+              {
+                "weight": 145,
+                "reps": 6,
+                "rpe": 8.5
+              },
+              {
+                "weight": null,
+                "reps": 6,
+                "rpe": 9,
+                "notes": "Different machine, near max stack. Superset with rows"
+              },
+              {
+                "weight": null,
+                "reps": 6,
+                "rpe": 9,
+                "notes": "Different machine, near max stack"
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Felt good -- fueled by higher-calorie day prior. Glute drive +10 lbs, triceps PR at 145. Superset rows with triceps for 5 sets each. Extra triceps volume because triceps are the limiter on pressing movements.",
+        "polar_data": null
+      },
+      {
+        "date": "2026-05-16",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "Trap Bar Deadlift",
+            "floor_lift": true,
+            "sets": [
+              {
+                "weight": 336,
+                "reps": 3,
+                "rpe": null,
+                "notes": "Top set"
+              },
+              {
+                "weight": 326,
+                "reps": 5,
+                "rpe": null,
+                "notes": "Back-off set"
+              },
+              {
+                "weight": 326,
+                "reps": 5,
+                "rpe": null,
+                "notes": "Back-off set"
+              }
+            ]
+          },
+          {
+            "name": "Wide Grip Lat Pulldown",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 160,
+                "reps": 8,
+                "rpe": null
+              },
+              {
+                "weight": 160,
+                "reps": 7.5,
+                "rpe": null
+              },
+              {
+                "weight": 160,
+                "reps": 7.25,
+                "rpe": null,
+                "notes": "Last rep crappy"
+              }
+            ]
+          },
+          {
+            "name": "Kettlebell Swings",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 80,
+                "reps": 15,
+                "rpe": null,
+                "notes": "Got worn out"
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Trap bar top set at 336 (new weight PR). KB swings were taxing. Session after charcuterie dinner out.",
+        "polar_data": null
+      },
+      {
+        "date": "2026-05-18",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "Hammer Strength Incline Press",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 230,
+                "reps": 6,
+                "rpe": 9,
+                "notes": "Top set. 2 plates + 2.5 per side."
+              },
+              {
+                "weight": 225,
+                "reps": 6,
+                "rpe": null,
+                "notes": "Back-off. 2 plates per side."
+              },
+              {
+                "weight": 225,
+                "reps": 5,
+                "rpe": 9.5,
+                "notes": "Back-off. Grinder -- fought for every rep."
+              }
+            ]
+          },
+          {
+            "name": "Cybex Arm Curl Machine",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 80,
+                "reps": 8,
+                "rpe": null,
+                "notes": "Got bumped off machine after 1 set"
+              },
+              {
+                "weight": 80,
+                "reps": 8,
+                "rpe": 8.5,
+                "notes": "Machine reopened later"
+              },
+              {
+                "weight": 80,
+                "reps": 8,
+                "rpe": 8.5
+              }
+            ]
+          },
+          {
+            "name": "Hammer Strength Chest Press",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 225,
+                "reps": 6,
+                "rpe": null,
+                "notes": "Red machine. 2 plates per side. Felt weak -- diminished from sleep + incline press."
+              },
+              {
+                "weight": 225,
+                "reps": 4,
+                "rpe": 10,
+                "notes": "Failed 5th rep."
+              },
+              {
+                "weight": 135,
+                "reps": 20,
+                "rpe": null,
+                "notes": "Dropped to 1 plate per side, pump sets."
+              },
+              {
+                "weight": 135,
+                "reps": 18,
+                "rpe": 8.5,
+                "notes": "Pump set."
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Short sleep (5h32m) + work/study stress. Tempted to skip but went anyway. Incline press top set at 230 (+5 from last incline session at 225). Flat press suffered -- failed 5th rep at 225 on set 2, pivoted to high-rep pump work. Curls solid at 80x8x3. Kept session short.",
         "polar_data": null
       }
     ]
@@ -2288,10 +2714,10 @@
       "floor_weight": 326,
       "floor_reps": 3,
       "current_best": {
-        "weight": 331,
-        "reps": 5,
-        "sets": 2,
-        "date": "2026-05-09"
+        "weight": 336,
+        "reps": 3,
+        "sets": 1,
+        "date": "2026-05-16"
       },
       "status": "green",
       "consecutive_breaches": 0,
@@ -2305,6 +2731,17 @@
             4
           ],
           "rpe_final": 10
+        },
+        {
+          "date": "2026-05-16",
+          "weight": 336,
+          "reps": [
+            3,
+            5,
+            5
+          ],
+          "rpe_final": null,
+          "notes": "Top set 336x3, back-off 326x5x2. Weight PR on trap bar."
         }
       ]
     }
@@ -2324,7 +2761,7 @@
     "diet_break_triggers_active": [],
     "last_refeed": null,
     "last_diet_break": null,
-    "continuous_deficit_days": 13,
+    "continuous_deficit_days": 14,
     "notes": "Calibration period -- triggers disabled until May 24."
   },
   "tdee_tracking": {
@@ -2351,88 +2788,88 @@
   },
   "checkin_status": {
     "_description": "Tracks whether today's check-in is complete. Reset daily by the 10am task.",
-    "today": "2026-05-16",
-    "morning_checkin_complete": false,
-    "training_logged": false
+    "today": "2026-05-18",
+    "morning_checkin_complete": true,
+    "training_logged": true
   },
   "computed_dashboard_values": {
-    "current_weight": 174.6,
-    "seven_day_avg_weight": 176.4,
-    "rate_of_loss_lbs_per_week": 1.8,
-    "projected_goal_date": "2026-07-18",
-    "weeks_remaining": 9.1,
-    "total_lost": 3.6,
-    "avg_intake_cal": 2248,
+    "current_weight": 174.8,
+    "seven_day_avg_weight": 176.2,
+    "rate_of_loss_lbs_per_week": 1.66,
+    "projected_goal_date": "2026-07-25",
+    "weeks_remaining": 9.8,
+    "total_lost": 3.8,
+    "avg_intake_cal": 2274,
     "avg_protein_g": 172,
-    "avg_carbs_g": 285,
+    "avg_carbs_g": 275,
     "avg_fat_g": 76,
-    "avg_fiber_g": 32,
+    "avg_fiber_g": 31,
     "protein_per_lb": 1.23,
     "macro_split_pct": {
-      "protein": 27,
-      "carbs": 45,
-      "fat": 27
+      "protein": 28,
+      "carbs": 44,
+      "fat": 28
     },
-    "last_night_sleep_score": 83,
-    "avg_sleep_score": 80.6,
-    "last_night_hrv": 59,
-    "avg_hrv": 52.4,
-    "last_night_hr_lowest": 47,
-    "avg_hr_lowest": 48.1,
-    "last_night_efficiency": 93.2,
-    "avg_efficiency": 92.0,
-    "last_night_deep_pct": 26.0,
-    "last_night_rem_pct": 24.1,
-    "last_night_latency_min": 9,
-    "readiness_today": 84,
-    "avg_readiness": 79.0,
-    "yesterday_steps": 19171,
-    "avg_steps": 16571,
-    "avg_stress": 4.7,
+    "last_night_sleep_score": 69,
+    "avg_sleep_score": 78.7,
+    "last_night_hrv": 53,
+    "avg_hrv": 54.3,
+    "last_night_hr_lowest": 49,
+    "avg_hr_lowest": 48.0,
+    "last_night_efficiency": 89.5,
+    "avg_efficiency": 91.3,
+    "last_night_deep_pct": 21.7,
+    "last_night_rem_pct": 17.8,
+    "last_night_latency_min": 10,
+    "readiness_today": 76,
+    "avg_readiness": 79.1,
+    "yesterday_steps": 16178,
+    "avg_steps": 17678,
+    "avg_stress": 4.9,
     "all_floor_lifts_green": true,
     "dal_score": null,
     "neat_score": null,
     "signals": [
       {
-        "icon": "😴",
-        "title": "Sleep: 7h 15m (score 83)",
-        "detail": "Deep 26.0% (best of the cut!), REM 24.1%. Efficiency 93.2%. Late bedtime 1:02 AM but quality was strong.",
-        "severity": "positive"
+        "icon": "\ud83d\ude34",
+        "title": "Sleep: 5h 32m (score 69)",
+        "detail": "Short night. Deep 21.7%, REM 17.8%, HRV 53 (down from 60). Bedtime 1:05 AM. Prioritize earlier bedtime tonight.",
+        "severity": "warning"
       },
       {
-        "icon": "💓",
-        "title": "HRV new high: 59 ms (7-day avg 52.4)",
-        "detail": "Climbing trend: 54 → 56 → 59. Lowest HR 47 bpm. Recovery biomarkers all trending up.",
-        "severity": "positive"
-      },
-      {
-        "icon": "⚡",
-        "title": "Readiness: 84 (HRV balance 74)",
-        "detail": "Recovery index 100, resting HR 100. Sleep balance 60 (climbing). Body temp -0.25°C.",
-        "severity": "positive"
-      },
-      {
-        "icon": "⚖️",
-        "title": "174.6 lbs! New low | 7-day avg: 176.4 lbs",
-        "detail": "Down 1.9 lbs overnight (176.5 → 174.6). Total lost: 3.6 lbs at 1.8 lbs/week. New cut low!",
-        "severity": "positive"
-      },
-      {
-        "icon": "🍽️",
-        "title": "Yesterday: 2,580 cal | 172g protein (reconciled)",
-        "detail": "Over 2,000 target by 580 cal. Protein 1.23 g/lb LBM (above 140g floor). Poke bowl + cookie AI-logged. Higher fat day at 94g (poke + cookie + kasugai).",
+        "icon": "\ud83d\udc93",
+        "title": "HRV dipped to 53 ms (7-day avg 54)",
+        "detail": "One-night dip from short sleep. Upward trend still intact over the week. Lowest HR 49.",
         "severity": "info"
       },
       {
-        "icon": "🚶",
-        "title": "Steps: 19,171 (7-day avg 16,571)",
-        "detail": "Active cals 1,074. Second-highest step day of the cut. Excellent NEAT.",
+        "icon": "\u26a1",
+        "title": "Readiness: 76 | Stress: 6.5",
+        "detail": "Work/study load elevated. Pushed through rest-day temptation. Recovery index 89, sleep balance 59.",
+        "severity": "info"
+      },
+      {
+        "icon": "\u2696\ufe0f",
+        "title": "174.8 lbs -- new cut low! | 7-day avg: 176.2 lbs",
+        "detail": "Down 1.7 from yesterday's 176.5. Water weight normalizing after Saturday's charcuterie sodium. Total lost: 3.8 lbs at 1.66 lbs/week.",
         "severity": "positive"
       },
       {
-        "icon": "📅",
-        "title": "Calibration: 8 days remaining (ends May 24)",
-        "detail": "No refeed/diet break triggers until calibration completes. Keep logging consistently.",
+        "icon": "\ud83c\udf7d\ufe0f",
+        "title": "Yesterday: 2,219 cal | 161g protein (1.15 g/lb LBM)",
+        "detail": "7-day avg: 2274 cal, 172g protein. Protein above 1g/lb LBM floor.",
+        "severity": "info"
+      },
+      {
+        "icon": "\ud83c\udfcb\ufe0f",
+        "title": "Today: Pressing + curls (short session)",
+        "detail": "Incline press 230x6 top set (+5 lbs). Flat press fatigued (failed 5th rep at 225, pivoted to pump sets). Curls 80x8x3. Sleep-diminished but still showed up.",
+        "severity": "positive"
+      },
+      {
+        "icon": "\ud83d\udcc5",
+        "title": "Calibration: 6 days remaining (ends May 24)",
+        "detail": "BJJ returns Friday May 23. All floor lifts GREEN.",
         "severity": "info"
       }
     ],
@@ -2629,7 +3066,25 @@
       "readiness_score",
       "steps",
       "training_type"
-    ]
+    ],
+    "2026-05-03": {
+      "weight_lbs": 180.0,
+      "stress_rating": 5,
+      "reconciled_calories": 1982,
+      "reconciled_protein": 187,
+      "reconciled_carbs": 273,
+      "reconciled_fat": 54,
+      "reconciled": false,
+      "protein_per_lb": 1.04,
+      "fiber_estimated_g": 82,
+      "sleep_score": 75,
+      "hrv_avg": 58,
+      "hr_lowest": 51,
+      "efficiency_pct": 94.5,
+      "readiness_score": 66,
+      "steps": 18987,
+      "training_type": null
+    }
   },
   "_archival_logic": {
     "description": "Run by the Cowork morning task after writing today's entry. Moves entries older than 14 days from daily_log to daily_log_archive in compressed format.",
