@@ -1,44 +1,36 @@
-# Morning Prep -- Monday, May 18, 2026
-## Day 16 of the Summer Cut | Week 3
+# Morning Prep -- Monday, May 19, 2026
+## Day 17 of the Summer Cut | Week 3
 
-**Two weeks down, triceps PR in the bank, and the 7-day average holds at 176.4 -- shorter sleep night but readiness says go.**
+**Big recovery bounce: readiness 88, sleep score 87, and you're still sitting at a cut-low 7-day average. Monday squats are a go.**
 
 ### Last Night's Sleep
-- Score: 69 (Fair) | Duration: 5h 32m | Efficiency: 89.5%
-- Deep: 21.7% | REM: 17.8% | HRV: 53 ms | Lowest HR: 49 bpm
-- Bedtime: 1:05 AM > Wake: 7:16 AM
-- Readiness: 76 (Good)
+- Score: 87 | Duration: 7h 56m | Efficiency: 91.1%
+- Deep: 13.4% | REM: 19.3% | HRV: 55 | Lowest HR: 49
+- Bedtime: 11:07 PM > Wake: 7:50 AM
+- Readiness: 88 (Recovery Index 100, HRV Balance 85)
 
 ### Weight Check
-- Today: No weigh-in | Yesterday: 176.5 lbs | 7-day avg: 176.4 lbs | Direction: flat
-- Total lost: 3.6 lbs | Rate: 1.57 lbs/week | Projected goal: 2026-07-28
+- Today: no weigh-in | Yesterday: 174.8 lbs | 7-day avg: 176.1 lbs | Direction: down
+- Total lost: 3.9 lbs | Rate: 1.61 lbs/week
 
-### Yesterday's Food (2,219 cal | 161g P | 282g C | 56g F)
-- **10:00 Breakfast** -- ON Plant Protein, PB Fit 2tbsp, Keto Bread x2, Banana, Almond Milk (421 cal | 39P)
-- **12:00 Snack** -- Nerds Gummy Clusters (90 cal | 1P)
-- **15:00 Snack** -- Barebells PB&J Protein Bar (200 cal | 20P)
-- **16:58 Dinner** -- Bumble Bee Red Salmon 155g, Eggs, White Rice 200g, Broccoli, Spinach, Green Beans, Peas & Carrots, Olive Oil (695 cal | 38P)
-- **19:00 Evening** -- Jocko Chocolate Protein, PB Fit, Almond Milk, Triple Berry Blend, Honey Bunches of Oats (450 cal | 36P)
-
-Protein: 1.15 g/lb lean mass (above 1g floor). Calories 219 over the 2,000 target. 7-day avg: 2,274 cal / 172g P.
+### Yesterday's Food (2,428 cal | 159g P | 294g C | 73g F)
+- **08:00 Breakfast** — ON Plant Protein, PB Fit, Keto Bread x2, Banana, Almond Milk (421 cal | 39P)
+- **11:00 Snack** — Honey Bunches of Oats 75g, Almond Milk (190 cal | 4P)
+- **13:00 Lunch** — Salmon 150g, Eggs 135g, Rice 145g, Spinach, Peas & Carrots, Olive Oil, Ken's Vidalia, Bone Suckin Sauce (743 cal | 32P)
+- **19:00 Dinner** — Chicken Thigh 150g, Rice 150g, Green Beans, Peas & Carrots, Olive Oil, Hoisin, Sriracha (753 cal | 32P)
+- **21:00 Pre-sleep** — Air-Popped Popcorn, Pam Spray (4 cal | 0P)
 
 ### Yesterday's Activity
-- Steps: 16,178 | Activity score: 95 (Optimal) | Active cals: 961
-- 7-day avg steps: 17,678
-
-### Yesterday's Training -- Back Day + Triceps PR
-- Nautilus Glute Drive 430x6 @ RPE 7.5 (+10 lbs from May 12)
-- Narrow Grip Lat Pulldown 160x8/7.5/7.25
-- Hammer Strength Wide Grip Row 135x8x5 (superset with triceps)
-- Triceps Pulldowns 145x6x3 @ RPE 8.5 -- **PR, up from 135 lbs**
+- Steps: 15,933 | Active cal: 822 | Medium intensity: 1h 46m
 
 ### Flags
-- **Short sleep**: 5h 32m is the lowest duration this week. HRV dipped from 60 to 53. One night won't hurt but try to get to bed earlier tonight.
-- **No weigh-in today**: Weigh in when you can for trend continuity.
-- **Readiness 76**: OK to train. Recovery index 89 is solid but sleep balance at 59 is accumulating debt. Don't push RPE ceilings today.
-- **Calibration**: 6 days remaining (ends May 24). No refeed/diet break triggers yet.
-- **Today is Monday**: Squat day. BJJ returns Friday.
-- All strength floor lifts: GREEN.
+- 🟡 Calories 2,428 vs 2,000 target (+428 over). 7-day avg intake: 2,365 cal -- running ~18% above target.
+- 🟡 Protein 159g (1.14 g/lb LBM) -- above 140g floor but below recent average of 168g.
+- 🟢 Sleep fully recovered from yesterday's 5h32m. Readiness jumped from 76 to 88.
+- 🟢 Deep sleep low at 13.4% (7-day avg ~22%) -- one-night dip, not a trend.
+- 🟢 All floor lifts GREEN. Trap bar 336 PR still standing.
+- 🦵 Monday = squat day. Last session: 225x5x3 on May 11. Readiness 88 -- send it.
+- 📅 Calibration ends in 5 days (May 24). BJJ returns Fri May 23.
 
 ---
 Open the Summer Cut project to complete your check-in.
