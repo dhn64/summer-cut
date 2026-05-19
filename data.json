@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-19T10:00:00-07:00",
-  "_updated_by": "morning_prep_task",
+  "_updated": "2026-05-19T16:15:00-07:00",
+  "_updated_by": "checkin_session",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -1927,7 +1927,7 @@
         "dal_score": null,
         "neat_score": null
       },
-      "training": null,
+      "training": "lifting",
       "food_log_summary": {
         "meals": []
       }
@@ -2628,6 +2628,79 @@
         ],
         "subjective_notes": "Short sleep (5h32m) + work/study stress. Tempted to skip but went anyway. Incline press top set at 230 (+5 from last incline session at 225). Flat press suffered -- failed 5th rep at 225 on set 2, pivoted to high-rep pump work. Curls solid at 80x8x3. Kept session short.",
         "polar_data": null
+      },
+      {
+        "date": "2026-05-19",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "Back Squat",
+            "floor_lift": true,
+            "sets": [
+              {
+                "weight": 225,
+                "reps": 5,
+                "rpe": 8
+              },
+              {
+                "weight": 225,
+                "reps": 5,
+                "rpe": 8
+              },
+              {
+                "weight": 225,
+                "reps": 5,
+                "rpe": 8
+              }
+            ]
+          },
+          {
+            "name": "Lat Pulldown",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 160,
+                "reps": 8,
+                "rpe": 8.5
+              },
+              {
+                "weight": 160,
+                "reps": 7.5,
+                "rpe": 9
+              },
+              {
+                "weight": 160,
+                "reps": 7,
+                "rpe": 9,
+                "notes": "Last reps crappy"
+              }
+            ]
+          },
+          {
+            "name": "Triceps Pushdowns",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": null,
+                "reps": 6,
+                "rpe": 8.5,
+                "notes": "Plate 15 of 16 on stack"
+              },
+              {
+                "weight": null,
+                "reps": 6,
+                "rpe": 9
+              },
+              {
+                "weight": null,
+                "reps": 6,
+                "rpe": 9
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Easiest squat session of the cut by far. Strongest since March depressive period. No left knee issues (cf. May 11 knee discomfort). RPE 8 across all 3 sets -- clean and confident. Superset lat pulldowns with triceps pushdowns. Rest day tomorrow.",
+        "polar_data": null
       }
     ]
   },
@@ -2639,7 +2712,7 @@
         "weight": 225,
         "reps": 5,
         "sets": 3,
-        "date": "2026-05-03"
+        "date": "2026-05-19"
       },
       "status": "green",
       "consecutive_breaches": 0,
@@ -2664,6 +2737,17 @@
           ],
           "rpe_final": 8.5,
           "notes": "Left knee felt iffy but completed all reps"
+        },
+        {
+          "date": "2026-05-19",
+          "weight": 225,
+          "reps": [
+            5,
+            5,
+            5
+          ],
+          "rpe_final": 8,
+          "notes": "Easiest of the cut. No knee issues. Strongest since March."
         }
       ]
     },
@@ -2799,7 +2883,7 @@
     "_description": "Tracks whether today's check-in is complete. Reset daily by the 10am task.",
     "today": "2026-05-19",
     "morning_checkin_complete": false,
-    "training_logged": false
+    "training_logged": true
   },
   "computed_dashboard_values": {
     "current_weight": 176.3,
