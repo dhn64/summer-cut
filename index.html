@@ -216,14 +216,16 @@ async function init() {
   const fmtDate = d => { const p = d.split('-'); return `${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+p[1]-1]} ${+p[2]}, ${p[0]}`; };
   const shortDate = d => `M${+d.split('-')[2]}`;
 
-  // Color helpers for heatmap
+  // Color helpers for heatmap — tighter bands for actionable adherence
   function heatColor(val, target, floor, isPartial) {
     if (isPartial) return 'rgba(50,50,50,0.4)';
-    if (floor != null && val < floor) return 'rgba(194,84,84,0.3)';
-    const diff = Math.abs(val - target) / target;
-    if (diff < 0.1) return 'rgba(90,158,111,0.3)';
-    if (val > target) return val > target * 1.5 ? 'rgba(194,84,84,0.3)' : 'rgba(196,162,101,0.25)';
-    return 'rgba(90,158,111,0.2)';
+    if (floor != null && val < floor) return 'rgba(194,84,84,0.3)';  // Below floor = red
+    const pctOff = (val - target) / target;
+    if (Math.abs(pctOff) <= 0.05) return 'rgba(90,158,111,0.35)';    // Within ±5% = green
+    if (pctOff > 0.25) return 'rgba(194,84,84,0.3)';                 // >25% over = red
+    if (pctOff > 0.05) return 'rgba(196,162,101,0.25)';              // 5-25% over = gold
+    if (pctOff < -0.15) return 'rgba(194,84,84,0.25)';               // >15% under = red
+    return 'rgba(90,158,111,0.2)';                                    // 5-15% under = soft green
   }
 
   function stressColor(v) {
@@ -336,32 +338,73 @@ async function init() {
     reconCallout = `<div class="callout info" style="margin-top:20px;">${notes}</div>`;
   }
 
-  // Heatmap — targets from weekly_targets (set by roundtable) or sensible defaults until first roundtable
+  // Heatmap — targets from weekly_targets (set by roundtable) or sensible defaults
   const targets = D.weekly_targets && D.weekly_targets.current;
   const calTarget = (targets && targets.calories) || Math.round(V.avg_intake_cal * 0.9);
   const proTarget = (targets && targets.protein_g) || 180;
   const proFloor = (targets && targets.protein_floor_g) || 160;
+  const carbTarget = (targets && (targets.carbs_g || targets.carb_g)) || 200;
   const fatTarget = (targets && targets.fat_g) || 70;
+  const fatFloor = (targets && targets.fat_floor_g) || null;
   const targetsSet = targets && targets.calories != null;
   const targetSource = targetsSet ? `Targets: Roundtable ${targets.effective_date}` : 'Targets: pending first roundtable';
-  const heatDates = dates.slice(-7);
-  let heatHTML = `<div class="heatmap-grid" style="grid-template-columns: 50px repeat(${heatDates.length}, 1fr);">
-    <div class="heatmap-label"></div>${heatDates.map(d => `<div class="heatmap-header">${shortDate(d)}</div>`).join('')}
-    <div class="heatmap-label">Cal</div>${heatDates.map(d => {
-      const v = logs[d].nutrition?.reconciled_calories;
-      const partial = d === today;
-      return `<div class="heatmap-cell" style="background:${v != null ? heatColor(v, calTarget, null, partial) : 'rgba(50,50,50,0.4)'};${partial?'opacity:0.5;':''}">${v != null ? v : '—'}</div>`;
-    }).join('')}
-    <div class="heatmap-label">Pro</div>${heatDates.map(d => {
-      const v = logs[d].nutrition?.reconciled_protein;
-      const partial = d === today;
-      return `<div class="heatmap-cell" style="background:${v != null ? heatColor(v, proTarget, proFloor, partial) : 'rgba(50,50,50,0.4)'};${partial?'opacity:0.5;':''}">${v != null ? v : '—'}</div>`;
-    }).join('')}
-    <div class="heatmap-label">Fat</div>${heatDates.map(d => {
-      const v = logs[d].nutrition?.reconciled_fat;
-      const partial = d === today;
-      return `<div class="heatmap-cell" style="background:${v != null ? heatColor(v, fatTarget, null, partial) : 'rgba(50,50,50,0.4)'};${partial?'opacity:0.5;':''}">${v != null ? v : '—'}</div>`;
-    }).join('')}
+
+  // Resolve per-date targets: check if the date falls under current or a history entry
+  function getTargetsForDate(dateStr) {
+    const wt = D.weekly_targets;
+    if (!wt) return { cal: calTarget, pro: proTarget, proF: proFloor, carb: carbTarget, fat: fatTarget, fatF: fatFloor };
+    // Check history (sorted newest first) then current
+    const all = [...(wt.history || []), wt.current].filter(t => t && t.effective_date).sort((a,b) => b.effective_date.localeCompare(a.effective_date));
+    const match = all.find(t => dateStr >= t.effective_date) || wt.current;
+    return {
+      cal: match?.calories || calTarget,
+      pro: match?.protein_g || proTarget,
+      proF: match?.protein_floor_g || proFloor,
+      carb: match?.carbs_g || match?.carb_g || carbTarget,
+      fat: match?.fat_g || fatTarget,
+      fatF: match?.fat_floor_g || fatFloor
+    };
+  }
+
+  // Show all dates, paired into 2-row columns (week 1 top, week 2 bottom)
+  const heatDates = dates;
+  const midpoint = Math.ceil(heatDates.length / 2);
+  const topRow = heatDates.slice(0, midpoint);    // older dates (top)
+  const botRow = heatDates.slice(midpoint);        // newer dates (bottom)
+  const numCols = topRow.length;
+
+  function heatCell(dateStr, macro) {
+    const entry = logs[dateStr] || archive[dateStr];
+    if (!entry) return `<div class="heatmap-cell" style="background:rgba(50,50,50,0.4);">—</div>`;
+    const n = entry.nutrition || entry;
+    const t = getTargetsForDate(dateStr);
+    const partial = dateStr === today;
+    let v, target, floor;
+    if (macro === 'cal') { v = n.reconciled_calories ?? n.mcp_calories; target = t.cal; floor = null; }
+    else if (macro === 'pro') { v = n.reconciled_protein ?? n.mcp_protein; target = t.pro; floor = t.proF; }
+    else if (macro === 'carb') { v = n.reconciled_carbs ?? n.mcp_carbs; target = t.carb; floor = null; }
+    else if (macro === 'fat') { v = n.reconciled_fat ?? n.mcp_fat; target = t.fat; floor = t.fatF; }
+    const bg = v != null ? heatColor(v, target, floor, partial) : 'rgba(50,50,50,0.4)';
+    return `<div class="heatmap-cell" style="background:${bg};${partial?'opacity:0.5;':''}">${v != null ? v : '—'}</div>`;
+  }
+
+  function heatRow(macro, label) {
+    let html = `<div class="heatmap-label">${label}</div>`;
+    html += topRow.map(d => heatCell(d, macro)).join('');
+    // Bottom row for this macro
+    html += `<div class="heatmap-label"></div>`;
+    for (let i = 0; i < numCols; i++) {
+      html += i < botRow.length ? heatCell(botRow[i], macro) : `<div class="heatmap-cell" style="background:rgba(50,50,50,0.2);">—</div>`;
+    }
+    return html;
+  }
+
+  let heatHTML = `<div class="heatmap-grid" style="grid-template-columns: 50px repeat(${numCols}, 1fr);">
+    <div class="heatmap-label"></div>${topRow.map((d,i) => `<div class="heatmap-header">${shortDate(d)}<br><span style="opacity:0.4;">${i < botRow.length ? shortDate(botRow[i]) : ''}</span></div>`).join('')}
+    ${heatRow('cal', 'Cal')}
+    ${heatRow('pro', 'Pro')}
+    ${heatRow('carb', 'Carb')}
+    ${heatRow('fat', 'Fat')}
   </div>
   <div style="margin-top:10px;display:flex;gap:16px;font-family:var(--font-mono);font-size:10px;color:var(--text-muted);">
     <span><span style="display:inline-block;width:8px;height:8px;background:rgba(90,158,111,0.3);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>On target</span>

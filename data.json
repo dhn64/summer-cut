@@ -3113,7 +3113,8 @@
       "fat_g": 60,
       "fat_floor_g": 45,
       "fiber_g": 35,
-      "notes": "Post-DEXA targets. Protein anchored to ~1g/lb lean mass (~140 lbs LBM). Calories dropped to 2000 -- athlete has plenty to lose. Carb/fat targets unchanged pending roundtable review."
+      "notes": "Post-DEXA targets. Protein anchored to ~1g/lb lean mass (~140 lbs LBM). Calories dropped to 2000 -- athlete has plenty to lose. Carb/fat targets unchanged pending roundtable review.",
+      "carbs_g": 230
     },
     "history": [
       {
@@ -3126,7 +3127,8 @@
         "fat_g": 60,
         "fat_floor_g": 45,
         "fiber_g": 35,
-        "notes": "Initial targets from observed intake patterns."
+        "notes": "Initial targets from observed intake patterns.",
+        "carbs_g": 230
       }
     ]
   },

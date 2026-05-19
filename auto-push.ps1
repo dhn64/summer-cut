@@ -5,7 +5,7 @@
 Import-Module BurntToast -ErrorAction SilentlyContinue
 
 $repoPath = Split-Path -Parent $MyInvocation.MyCommand.Path
-$debounceSeconds = 5
+$debounceSeconds = 8
 $watchFiles = @("data.json", "briefing.md", "index.html")
 
 function Send-Notification($title, $message, $isError) {
@@ -16,7 +16,21 @@ function Send-Notification($title, $message, $isError) {
     }
 }
 
-Send-Notification "Summer Cut" "Watcher started. Monitoring data.json and briefing.md"
+function Clear-GitLocks {
+    foreach ($lockName in @("index.lock", "HEAD.lock")) {
+        $lockPath = Join-Path $repoPath ".git\$lockName"
+        if (Test-Path $lockPath) {
+            # Only remove if older than 5 seconds (not from a live git process)
+            $age = (Get-Date) - (Get-Item $lockPath).LastWriteTime
+            if ($age.TotalSeconds -gt 5) {
+                Remove-Item $lockPath -Force -ErrorAction SilentlyContinue
+                Write-Host "  Cleaned stale $lockName" -ForegroundColor Yellow
+            }
+        }
+    }
+}
+
+Send-Notification "Summer Cut" "Watcher started. Monitoring data.json, briefing.md, index.html"
 Write-Host "Watching $repoPath for changes to: $($watchFiles -join ', ')" -ForegroundColor Cyan
 Write-Host "Debounce: ${debounceSeconds}s | Press Ctrl+C to stop" -ForegroundColor DarkGray
 
@@ -34,7 +48,13 @@ while ($true) {
     if (-not $result.TimedOut) {
         $changed = $result.Name
         if ($changed -in $watchFiles) {
+            # Debounce: wait for all writes to settle before pushing
             Start-Sleep -Seconds $debounceSeconds
+
+            # Drain any queued events so we don't double-fire
+            do {
+                $extra = $watcher.WaitForChanged([System.IO.WatcherChangeTypes]::Changed, 500)
+            } while (-not $extra.TimedOut)
 
             $now = Get-Date
             if (($now - $lastPush).TotalSeconds -lt 10) {
@@ -43,23 +63,36 @@ while ($true) {
 
             Push-Location $repoPath
             try {
-                $lockFile = Join-Path $repoPath ".git\index.lock"
-                if (Test-Path $lockFile) {
-                    Remove-Item $lockFile -Force -ErrorAction SilentlyContinue
-                }
+                Clear-GitLocks
 
                 $status = git status --porcelain $watchFiles 2>&1
                 if ($status) {
                     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
-                    git add $watchFiles
-                    git commit -m "auto: dashboard update $timestamp"
-                    git push
+
+                    # Stage all watched files at once
+                    git add $watchFiles 2>&1 | Out-Null
+
+                    $commitOut = git commit -m "auto: dashboard update $timestamp" 2>&1
+                    if ($LASTEXITCODE -ne 0) {
+                        Write-Host "[$timestamp] Commit failed, retrying in 3s..." -ForegroundColor Yellow
+                        Start-Sleep -Seconds 3
+                        Clear-GitLocks
+                        $commitOut = git commit -m "auto: dashboard update $timestamp" 2>&1
+                    }
+
                     if ($LASTEXITCODE -eq 0) {
-                        Write-Host "[$timestamp] Pushed: $changed" -ForegroundColor Green
-                        Send-Notification "Dashboard Updated" "Pushed $changed at $timestamp"
+                        # Parse which files were committed
+                        $committed = ($commitOut | Select-String "^\s" | ForEach-Object { $_.Line.Trim() }) -join ", "
+                        git push 2>&1 | Out-Null
+                        if ($LASTEXITCODE -eq 0) {
+                            Write-Host "[$timestamp] Pushed: $committed" -ForegroundColor Green
+                            Send-Notification "Dashboard Updated" "Pushed at $timestamp"
+                        } else {
+                            Write-Host "[$timestamp] Push failed, will retry on next change" -ForegroundColor Red
+                            Send-Notification "Push FAILED" "Commit OK but push failed. Will retry." $true
+                        }
                     } else {
-                        Write-Host "[$timestamp] Push failed, will retry on next change" -ForegroundColor Red
-                        Send-Notification "Push FAILED" "Could not push $changed. Will retry on next change." $true
+                        Write-Host "[$timestamp] Commit failed after retry: $commitOut" -ForegroundColor Red
                     }
                     $lastPush = $now
                 }
