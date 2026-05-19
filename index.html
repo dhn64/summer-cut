@@ -222,7 +222,7 @@ async function init() {
     if (floor != null && val < floor) return 'rgba(194,84,84,0.3)';  // Below floor = red
     const pctOff = (val - target) / target;
     if (Math.abs(pctOff) <= 0.05) return 'rgba(90,158,111,0.35)';    // Within ±5% = green
-    if (pctOff > 0.25) return 'rgba(194,84,84,0.3)';                 // >25% over = red
+    if (pctOff > 0.25) return 'rgba(180,120,60,0.35)';               // >25% over = dark amber
     if (pctOff > 0.05) return 'rgba(196,162,101,0.25)';              // 5-25% over = gold
     if (pctOff < -0.15) return 'rgba(194,84,84,0.25)';               // >15% under = red
     return 'rgba(90,158,111,0.2)';                                    // 5-15% under = soft green
@@ -392,8 +392,9 @@ async function init() {
     <div class="heatmap-label">Fat</div>${heatDates.map(d => heatCell(d, 'fat')).join('')}
   </div>
   <div style="margin-top:10px;display:flex;gap:16px;font-family:var(--font-mono);font-size:10px;color:var(--text-muted);">
-    <span><span style="display:inline-block;width:8px;height:8px;background:rgba(90,158,111,0.3);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>On target</span>
+    <span><span style="display:inline-block;width:8px;height:8px;background:rgba(90,158,111,0.35);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>On target</span>
     <span><span style="display:inline-block;width:8px;height:8px;background:rgba(196,162,101,0.25);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Over</span>
+    <span><span style="display:inline-block;width:8px;height:8px;background:rgba(180,120,60,0.35);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Way over</span>
     <span><span style="display:inline-block;width:8px;height:8px;background:rgba(194,84,84,0.3);border-radius:2px;margin-right:4px;vertical-align:middle;"></span>Below floor</span>
   </div>`;
 
