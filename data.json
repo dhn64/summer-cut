@@ -1875,7 +1875,7 @@
       }
     },
     "2026-05-19": {
-      "weight_lbs": null,
+      "weight_lbs": 176.3,
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
@@ -2802,7 +2802,7 @@
     "training_logged": false
   },
   "computed_dashboard_values": {
-    "current_weight": 174.8,
+    "current_weight": 176.3,
     "seven_day_avg_weight": 176.1,
     "rate_of_loss_lbs_per_week": 1.61,
     "projected_goal_date": "2026-07-28",
