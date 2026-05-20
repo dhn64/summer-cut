@@ -1,36 +1,44 @@
-# Morning Prep -- Monday, May 19, 2026
-## Day 17 of the Summer Cut | Week 3
+# Morning Prep — Wednesday, May 20, 2026
+## Day 18 of the Summer Cut | Week 3
 
-**Big recovery bounce: readiness 88, sleep score 87, and you're still sitting at a cut-low 7-day average. Monday squats are a go.**
+**Squats felt like butter yesterday — easiest session since March. 22K steps too. Short sleep last night but readiness still solid at 80. Rest day earned.**
 
 ### Last Night's Sleep
-- Score: 87 | Duration: 7h 56m | Efficiency: 91.1%
-- Deep: 13.4% | REM: 19.3% | HRV: 55 | Lowest HR: 49
-- Bedtime: 11:07 PM > Wake: 7:50 AM
-- Readiness: 88 (Recovery Index 100, HRV Balance 85)
+- Score: 73 | Duration: 6h 5m | Efficiency: 83.5%
+- Deep: 20.1% | REM: 21.0% | HRV: 57 | Lowest HR: 46
+- Bedtime: 12:13 AM → Wake: 7:30 AM
+- Readiness: 80 (sleep balance dropped to 59 — two short nights catching up)
 
 ### Weight Check
-- Today: no weigh-in | Yesterday: 174.8 lbs | 7-day avg: 176.1 lbs | Direction: down
-- Total lost: 3.9 lbs | Rate: 1.61 lbs/week
+- Last weigh-in: 176.3 lbs (May 19) | 7-day avg: 176.1 lbs | Direction: down
+- Total lost: 3.9 lbs | Rate: 1.52 lbs/week
+- Projected goal (160 lbs): Aug 2, 2026
 
-### Yesterday's Food (2,428 cal | 159g P | 294g C | 73g F)
-- **08:00 Breakfast** — ON Plant Protein, PB Fit, Keto Bread x2, Banana, Almond Milk (421 cal | 39P)
-- **11:00 Snack** — Honey Bunches of Oats 75g, Almond Milk (190 cal | 4P)
-- **13:00 Lunch** — Salmon 150g, Eggs 135g, Rice 145g, Spinach, Peas & Carrots, Olive Oil, Ken's Vidalia, Bone Suckin Sauce (743 cal | 32P)
-- **19:00 Dinner** — Chicken Thigh 150g, Rice 150g, Green Beans, Peas & Carrots, Olive Oil, Hoisin, Sriracha (753 cal | 32P)
-- **21:00 Pre-sleep** — Air-Popped Popcorn, Pam Spray (4 cal | 0P)
+### Yesterday's Training
+- **Back Squat**: 225×5×3 @ RPE 8 — easiest of the cut, no knee issues
+- **Lat Pulldown**: 160×8/7.5/7 @ RPE 8.5-9 (superset)
+- **Triceps Pushdowns**: plate 15/16 ×6×3 @ RPE 8.5-9 (superset)
+- Session note: "Strongest since March depressive period"
+
+### Yesterday's Nutrition
+- ⚠️ **MacroFactor MCP not connected** — yesterday's food log not pulled
+- Nutrition fields left null. Manual reconciliation needed during check-in.
 
 ### Yesterday's Activity
-- Steps: 15,933 | Active cal: 822 | Medium intensity: 1h 46m
+- Steps: 22,155 (highest of the cut!) | Active cal: 1,160
+- Medium intensity: 2h 55m | Low intensity: 6h 23m
+- 7-day avg steps: 18,555
+
+### 7-Day Averages (nutrition from available data)
+- Calories: 2,308 | Protein: 167g (1.19 g/lb LBM) | Carbs: 276g | Fat: 76g
+- Note: Yesterday's data missing — averages based on 6 days
 
 ### Flags
-- 🟡 Calories 2,428 vs 2,000 target (+428 over). 7-day avg intake: 2,365 cal -- running ~18% above target.
-- 🟡 Protein 159g (1.14 g/lb LBM) -- above 140g floor but below recent average of 168g.
-- 🟢 Sleep fully recovered from yesterday's 5h32m. Readiness jumped from 76 to 88.
-- 🟢 Deep sleep low at 13.4% (7-day avg ~22%) -- one-night dip, not a trend.
-- 🟢 All floor lifts GREEN. Trap bar 336 PR still standing.
-- 🦵 Monday = squat day. Last session: 225x5x3 on May 11. Readiness 88 -- send it.
-- 📅 Calibration ends in 5 days (May 24). BJJ returns Fri May 23.
+- 🟡 **Short sleep**: 6h 5m last night with 83.5% efficiency (72 min awake). Two below-par nights in a row — prioritize sleep tonight.
+- 🟡 **MacroFactor disconnected**: Yesterday's nutrition not captured. Reconnect MCP or manually reconcile.
+- 🟢 **All floor lifts GREEN**: Squat 225×5×3, DB chest press 70×7×3, trap bar 336×3.
+- 📅 **Calibration ends in 4 days** (May 24). BJJ returns Friday May 23. Exam ends Tue May 27.
+- 🛋️ **Rest day today** — per yesterday's session notes. Focus on recovery, walking, nutrition.
 
 ---
 Open the Summer Cut project to complete your check-in.
