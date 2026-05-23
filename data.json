@@ -1,7 +1,7 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-23T10:00:00-07:00",
+  "_updated": "2026-05-23T10:15:00-07:00",
   "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
@@ -1593,18 +1593,18 @@
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": null,
-        "mcp_protein": null,
-        "mcp_carbs": null,
-        "mcp_fat": null,
+        "mcp_calories": 1190,
+        "mcp_protein": 82,
+        "mcp_carbs": 119,
+        "mcp_fat": 43,
         "reconciled": false,
-        "reconciled_calories": null,
-        "reconciled_protein": null,
-        "reconciled_carbs": null,
-        "reconciled_fat": null,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": null,
-        "protein_per_lb": null
+        "reconciled_calories": 1190,
+        "reconciled_protein": 82,
+        "reconciled_carbs": 119,
+        "reconciled_fat": 43,
+        "reconciliation_notes": "Partial day -- only 2 meals logged (tuna roll + poke bowl). MF API down (403). Likely missing breakfast/snacks. Flag for reconciliation.",
+        "fiber_estimated_g": 8,
+        "protein_per_lb": 0.59
       },
       "sleep": {
         "score": 72,
@@ -1643,7 +1643,30 @@
       },
       "training": "rest",
       "food_log_summary": {
-        "meals": []
+        "meals": [
+          {
+            "time": "17:00",
+            "window": "dinner",
+            "items": [
+              "M2M Tuna Roll (6pc)"
+            ],
+            "cal": 290,
+            "pro": 18,
+            "carb": 48,
+            "fat": 2
+          },
+          {
+            "time": "19:00",
+            "window": "dinner",
+            "items": [
+              "Poke Bowl (rice reduced): mixed sashimi (tuna/salmon/hamachi ~220g), white rice ~150g, avocado ~80g, seaweed salad ~60g, masago ~25g, cucumber ~40g, crispy toppings ~20g, sauces ~30g"
+            ],
+            "cal": 900,
+            "pro": 64,
+            "carb": 71,
+            "fat": 41
+          }
+        ]
       }
     },
     "2026-05-23": {
@@ -2664,16 +2687,16 @@
     "projected_goal_date": "2026-08-17",
     "weeks_remaining": 12.4,
     "total_lost": 3.9,
-    "avg_intake_cal": 2337.6,
-    "avg_protein_g": 165.1,
-    "avg_carbs_g": 277.6,
-    "avg_fat_g": 76.0,
-    "avg_fiber_g": 27.9,
-    "protein_per_lb": 1.18,
+    "avg_intake_cal": 2226.4,
+    "avg_protein_g": 155.0,
+    "avg_carbs_g": 255.6,
+    "avg_fat_g": 73.6,
+    "avg_fiber_g": 24.1,
+    "protein_per_lb": 1.11,
     "macro_split_pct": {
       "protein": 28,
-      "carbs": 48,
-      "fat": 29
+      "carbs": 46,
+      "fat": 30
     },
     "last_night_sleep_score": 72,
     "avg_sleep_score": 77.3,
@@ -2698,7 +2721,7 @@
       {
         "icon": "\ud83d\ude34",
         "title": "Last night: Sleep 72 | 5h 27m | Efficiency 85.4%",
-        "detail": "Deep 30.7% | REM 18.0% | HRV 58 | Lowest HR 47. 7-day avg sleep score: 77.3.",
+        "detail": "Deep 30.7% | REM 18.0% | HRV 58 | Lowest HR 47. 7-day avg sleep: 77.3.",
         "severity": "warning"
       },
       {
@@ -2709,38 +2732,44 @@
       },
       {
         "icon": "\u2696\ufe0f",
-        "title": "Weight: 176.3 lbs | 7-day avg: 176.1 lbs",
-        "detail": "Total lost: 3.9 lbs at 1.3 lbs/week. Projected goal: 2026-08-17.",
-        "severity": "info"
+        "title": "No weigh-in in 4 days | Last: 176.3 lbs (2026-05-19) | 7-day avg: 176.1 lbs",
+        "detail": "Total lost: 3.9 lbs at 1.3 lbs/week. Step on the scale today.",
+        "severity": "warning"
       },
       {
-        "icon": "\u2696\ufe0f",
-        "title": "No weigh-in in 4 days (last: 176.3 lbs on 2026-05-19)",
-        "detail": "Step on the scale when you can for trend accuracy.",
+        "icon": "\ud83d\udea8",
+        "title": "MacroFactor API DOWN (Firestore 403)",
+        "detail": "All MCP endpoints returning 403. Food log, nutrition, and weight reads/writes all failing. May 19 and May 20 nutrition still missing. May 22 logged manually from Danny's entries (partial -- 2 meals only, 1190 cal).",
         "severity": "warning"
       },
       {
         "icon": "\ud83c\udf7d\ufe0f",
-        "title": "MacroFactor: permission error -- yesterday's nutrition not pulled",
-        "detail": "MacroFactor API returned 403 for food log, nutrition, and weight. Check MCP connector auth. Yesterday's nutrition data is missing.",
+        "title": "Yesterday (May 22): 1,190 cal | 82g P | 119g C | 43g F (PARTIAL)",
+        "detail": "Only tuna roll + poke bowl logged. Likely missing breakfast/snacks. Needs reconciliation.",
+        "severity": "warning"
+      },
+      {
+        "icon": "\ud83d\udcca",
+        "title": "Data gaps: May 19 nutrition, May 20 nutrition+weight",
+        "detail": "MCP was down for these days. If you can recall what you ate, we can backfill manually.",
         "severity": "warning"
       },
       {
         "icon": "\ud83d\udc5f",
-        "title": "Yesterday: 21,900 steps",
+        "title": "Yesterday: 21,900 steps (excellent)",
         "detail": "7-day avg: 19,520 steps.",
         "severity": "positive"
       },
       {
-        "icon": "\ud83d\udecb\ufe0f",
-        "title": "Yesterday: Rest day (auto-marked)",
-        "detail": "Last session: 2026-05-19. BJJ returns today (Fri May 23).",
+        "icon": "\ud83e\udd4b",
+        "title": "BJJ returns today!",
+        "detail": "First session back since cut started. Ease in. Don't stack squat+hinge on consecutive days with BJJ.",
         "severity": "info"
       },
       {
         "icon": "\ud83d\udcc5",
         "title": "Calibration: 1 day remaining (ends 2026-05-24)",
-        "detail": "BJJ starts today Fri May 23. Exam ends Tue May 27. All floor lifts GREEN.",
+        "detail": "Triggers activate after. Exam ends Tue May 27. All floor lifts GREEN.",
         "severity": "info"
       }
     ],
