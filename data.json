@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-23T10:20:00-07:00",
-  "_updated_by": "morning_prep_task",
+  "_updated": "2026-05-23T21:00:00-07:00",
+  "_updated_by": "manual_training_log",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -1722,7 +1722,7 @@
         "dal_score": null,
         "neat_score": null
       },
-      "training": null,
+      "training": "lifting",
       "food_log_summary": {
         "meals": []
       }
@@ -2496,6 +2496,210 @@
         ],
         "subjective_notes": "Easiest squat session of the cut by far. Strongest since March depressive period. No left knee issues (cf. May 11 knee discomfort). RPE 8 across all 3 sets -- clean and confident. Superset lat pulldowns with triceps pushdowns. Rest day tomorrow.",
         "polar_data": null
+      },
+      {
+        "date": "2026-05-22",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "Hammer Strength Incline Press",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 245,
+                "reps": 6,
+                "rpe": 8.25,
+                "notes": "CUT PR. 100 lbs per side (2 plates + 10). Up from 230 top set on 05-18."
+              }
+            ]
+          },
+          {
+            "name": "Cybex Arm Curl Machine",
+            "floor_lift": false,
+            "sets": [],
+            "notes": "Warmup only -- got jacked off machine before working sets."
+          },
+          {
+            "name": "Hammer Strength Row",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 145,
+                "reps": 6,
+                "rpe": 8,
+                "notes": "3 plates + 10 per side"
+              }
+            ]
+          },
+          {
+            "name": "Underhand Lat Pulldown",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 160,
+                "reps": 8,
+                "rpe": 9
+              },
+              {
+                "weight": 160,
+                "reps": 7,
+                "rpe": 9
+              },
+              {
+                "weight": 160,
+                "reps": 6,
+                "rpe": 9
+              }
+            ]
+          },
+          {
+            "name": "Barbell Curls",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 60,
+                "reps": 8,
+                "rpe": 7.5,
+                "notes": "Superset with triceps pushdowns. Held back intentionally."
+              }
+            ]
+          },
+          {
+            "name": "Triceps Pushdowns",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": null,
+                "reps": null,
+                "rpe": 7.5,
+                "notes": "Plate 14 on stack. Superset with curls."
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Cut PR on incline press: 245x6 (up from 230). Shockingly strong despite mediocre sleep lately. Got bumped off Cybex curl machine (again). Row held at 145/side. Lat pulldowns holding the line at 160 with underhand grip. Quick superset finisher -- curls + triceps, got the pump and bounced. Progressing on a cut. ~2600+ cal day.",
+        "polar_data": null
+      },
+      {
+        "date": "2026-05-23",
+        "type": "lifting",
+        "exercises": [
+          {
+            "name": "Nautilus Glute Drive",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 450,
+                "reps": 6,
+                "rpe": 8,
+                "notes": "PR -- 5 plates per side (225/side). Machine maxed out. Up from 430 on 05-17."
+              }
+            ]
+          },
+          {
+            "name": "DB Bench Press",
+            "floor_lift": true,
+            "sets": [
+              {
+                "weight": 70,
+                "reps": 6,
+                "rpe": 10,
+                "notes": "Last rep borderline failure"
+              },
+              {
+                "weight": 65,
+                "reps": 6,
+                "rpe": 9.25
+              },
+              {
+                "weight": 65,
+                "reps": 6,
+                "rpe": 9.25
+              }
+            ]
+          },
+          {
+            "name": "Barbell Curls",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 60,
+                "reps": 10,
+                "rpe": 8.5,
+                "notes": "Superset with DB bench press"
+              }
+            ]
+          },
+          {
+            "name": "Hammer Strength Chest-Supported Row",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 150,
+                "reps": 6,
+                "rpe": 9,
+                "notes": "3 plates + 15 per side. Superset with triceps pushdowns. Last rep sucked."
+              },
+              {
+                "weight": 150,
+                "reps": 6,
+                "rpe": 9
+              },
+              {
+                "weight": 150,
+                "reps": 6,
+                "rpe": 9
+              }
+            ]
+          },
+          {
+            "name": "Triceps Pushdowns",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 75,
+                "reps": 6,
+                "rpe": 9,
+                "notes": "Superset with rows"
+              },
+              {
+                "weight": 75,
+                "reps": 5,
+                "rpe": 10,
+                "notes": "Failed rep 6. Dropped to 70, got 2 more reps."
+              },
+              {
+                "weight": 75,
+                "reps": 6,
+                "rpe": 9
+              }
+            ]
+          },
+          {
+            "name": "Lat Pulldown",
+            "floor_lift": false,
+            "sets": [
+              {
+                "weight": 160,
+                "reps": 6,
+                "rpe": 9
+              },
+              {
+                "weight": 160,
+                "reps": 5,
+                "rpe": 10,
+                "notes": "Dropped to 150 for 1 long rep"
+              },
+              {
+                "weight": 160,
+                "reps": 6,
+                "rpe": 9
+              }
+            ]
+          }
+        ],
+        "subjective_notes": "Sleep deprivation catching up. Not strongest day but still put in the work. Hip thrust PR at 450 (machine maxed out) -- always been strong here, will progress via reps going forward. DB bench took a hit -- 70x6 was RPE 10, dropped to 65 for remaining sets. Rows up to 150/side (from 145 on 05-22). Lat pulldowns and triceps pushdowns both showing fatigue. BJJ returns tonight.",
+        "polar_data": null
       }
     ]
   },
@@ -2595,6 +2799,15 @@
           ],
           "rpe_final": null,
           "notes": "Different/newer York DBs felt heavier"
+        },
+        {
+          "date": "2026-05-23",
+          "weight": 70,
+          "reps": [
+            6
+          ],
+          "rpe_final": 10,
+          "notes": "Sleep-deprived session. Dropped to 65x6x2 @ RPE 9.25."
         }
       ]
     },
