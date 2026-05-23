@@ -1,11 +1,15 @@
 # auto-push.ps1 - Watches summer-cut for changes and pushes to GitHub
 # Usage: powershell -ExecutionPolicy Bypass -File auto-push.ps1
 # To run on startup: Win+R > shell:startup > paste a shortcut to this script
+#
+# Detection: FileSystemWatcher for normal edits + git-status polling every
+# 30s for writes that bypass FS events (e.g. Cowork / mounted-folder syncs).
 
 Import-Module BurntToast -ErrorAction SilentlyContinue
 
 $repoPath = Split-Path -Parent $MyInvocation.MyCommand.Path
 $debounceSeconds = 8
+$pollSeconds = 30
 $watchFiles = @("data.json", "briefing.md", "index.html")
 
 function Send-Notification($title, $message, $isError) {
@@ -20,7 +24,6 @@ function Clear-GitLocks {
     foreach ($lockName in @("index.lock", "HEAD.lock")) {
         $lockPath = Join-Path $repoPath ".git\$lockName"
         if (Test-Path $lockPath) {
-            # Only remove if older than 5 seconds (not from a live git process)
             $age = (Get-Date) - (Get-Item $lockPath).LastWriteTime
             if ($age.TotalSeconds -gt 5) {
                 Remove-Item $lockPath -Force -ErrorAction SilentlyContinue
@@ -30,9 +33,48 @@ function Clear-GitLocks {
     }
 }
 
+function Push-IfDirty($source) {
+    Push-Location $repoPath
+    try {
+        Clear-GitLocks
+
+        $status = git status --porcelain $watchFiles 2>&1
+        if (-not $status) { return $false }
+
+        $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
+
+        git add $watchFiles 2>&1 | Out-Null
+
+        $commitOut = git commit -m "auto: dashboard update $timestamp" 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "[$timestamp] Commit failed, retrying in 3s..." -ForegroundColor Yellow
+            Start-Sleep -Seconds 3
+            Clear-GitLocks
+            $commitOut = git commit -m "auto: dashboard update $timestamp" 2>&1
+        }
+
+        if ($LASTEXITCODE -eq 0) {
+            $committed = ($commitOut | Select-String "^\s" | ForEach-Object { $_.Line.Trim() }) -join ", "
+            git push 2>&1 | Out-Null
+            if ($LASTEXITCODE -eq 0) {
+                Write-Host "[$timestamp] Pushed ($source): $committed" -ForegroundColor Green
+                Send-Notification "Dashboard Updated" "Pushed at $timestamp"
+            } else {
+                Write-Host "[$timestamp] Push failed, will retry on next change" -ForegroundColor Red
+                Send-Notification "Push FAILED" "Commit OK but push failed. Will retry." $true
+            }
+        } else {
+            Write-Host "[$timestamp] Commit failed after retry: $commitOut" -ForegroundColor Red
+        }
+        return $true
+    } finally {
+        Pop-Location
+    }
+}
+
 Send-Notification "Summer Cut" "Watcher started. Monitoring data.json, briefing.md, index.html"
 Write-Host "Watching $repoPath for changes to: $($watchFiles -join ', ')" -ForegroundColor Cyan
-Write-Host "Debounce: ${debounceSeconds}s | Press Ctrl+C to stop" -ForegroundColor DarkGray
+Write-Host "Debounce: ${debounceSeconds}s | Poll: ${pollSeconds}s | Press Ctrl+C to stop" -ForegroundColor DarkGray
 
 $watcher = New-Object System.IO.FileSystemWatcher
 $watcher.Path = $repoPath
@@ -41,63 +83,40 @@ $watcher.NotifyFilter = [System.IO.NotifyFilters]::LastWrite
 $watcher.EnableRaisingEvents = $false
 
 $lastPush = [DateTime]::MinValue
+$lastPoll = [DateTime]::UtcNow
 
 while ($true) {
+    # Wait up to 2s for a filesystem event
     $result = $watcher.WaitForChanged([System.IO.WatcherChangeTypes]::Changed, 2000)
 
+    $now = Get-Date
+
+    # --- Path 1: FileSystemWatcher event ---
     if (-not $result.TimedOut) {
         $changed = $result.Name
         if ($changed -in $watchFiles) {
-            # Debounce: wait for all writes to settle before pushing
             Start-Sleep -Seconds $debounceSeconds
 
-            # Drain any queued events so we don't double-fire
+            # Drain queued events
             do {
                 $extra = $watcher.WaitForChanged([System.IO.WatcherChangeTypes]::Changed, 500)
             } while (-not $extra.TimedOut)
 
-            $now = Get-Date
-            if (($now - $lastPush).TotalSeconds -lt 10) {
-                continue
-            }
-
-            Push-Location $repoPath
-            try {
-                Clear-GitLocks
-
-                $status = git status --porcelain $watchFiles 2>&1
-                if ($status) {
-                    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
-
-                    # Stage all watched files at once
-                    git add $watchFiles 2>&1 | Out-Null
-
-                    $commitOut = git commit -m "auto: dashboard update $timestamp" 2>&1
-                    if ($LASTEXITCODE -ne 0) {
-                        Write-Host "[$timestamp] Commit failed, retrying in 3s..." -ForegroundColor Yellow
-                        Start-Sleep -Seconds 3
-                        Clear-GitLocks
-                        $commitOut = git commit -m "auto: dashboard update $timestamp" 2>&1
-                    }
-
-                    if ($LASTEXITCODE -eq 0) {
-                        # Parse which files were committed
-                        $committed = ($commitOut | Select-String "^\s" | ForEach-Object { $_.Line.Trim() }) -join ", "
-                        git push 2>&1 | Out-Null
-                        if ($LASTEXITCODE -eq 0) {
-                            Write-Host "[$timestamp] Pushed: $committed" -ForegroundColor Green
-                            Send-Notification "Dashboard Updated" "Pushed at $timestamp"
-                        } else {
-                            Write-Host "[$timestamp] Push failed, will retry on next change" -ForegroundColor Red
-                            Send-Notification "Push FAILED" "Commit OK but push failed. Will retry." $true
-                        }
-                    } else {
-                        Write-Host "[$timestamp] Commit failed after retry: $commitOut" -ForegroundColor Red
-                    }
+            if (($now - $lastPush).TotalSeconds -ge 10) {
+                if (Push-IfDirty "watcher") {
                     $lastPush = $now
+                    $lastPoll = [DateTime]::UtcNow
                 }
-            } finally {
-                Pop-Location
+            }
+        }
+    }
+
+    # --- Path 2: Polling fallback for writes that bypass FS events ---
+    if (([DateTime]::UtcNow - $lastPoll).TotalSeconds -ge $pollSeconds) {
+        $lastPoll = [DateTime]::UtcNow
+        if (($now - $lastPush).TotalSeconds -ge 10) {
+            if (Push-IfDirty "poll") {
+                $lastPush = $now
             }
         }
     }
