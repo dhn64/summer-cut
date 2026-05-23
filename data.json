@@ -1,7 +1,7 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-23T10:15:00-07:00",
+  "_updated": "2026-05-23T10:20:00-07:00",
   "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
@@ -1670,7 +1670,7 @@
       }
     },
     "2026-05-23": {
-      "weight_lbs": null,
+      "weight_lbs": 173.0,
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
@@ -2681,12 +2681,12 @@
     "training_logged": false
   },
   "computed_dashboard_values": {
-    "current_weight": 176.3,
-    "seven_day_avg_weight": 176.1,
-    "rate_of_loss_lbs_per_week": 1.3,
-    "projected_goal_date": "2026-08-17",
-    "weeks_remaining": 12.4,
-    "total_lost": 3.9,
+    "current_weight": 173.0,
+    "seven_day_avg_weight": 175.5,
+    "rate_of_loss_lbs_per_week": 1.5,
+    "projected_goal_date": "2026-08-03",
+    "weeks_remaining": 10.3,
+    "total_lost": 4.5,
     "avg_intake_cal": 2226.4,
     "avg_protein_g": 155.0,
     "avg_carbs_g": 255.6,
@@ -2732,9 +2732,9 @@
       },
       {
         "icon": "\u2696\ufe0f",
-        "title": "No weigh-in in 4 days | Last: 176.3 lbs (2026-05-19) | 7-day avg: 176.1 lbs",
-        "detail": "Total lost: 3.9 lbs at 1.3 lbs/week. Step on the scale today.",
-        "severity": "warning"
+        "title": "Today: 173.0 lbs | 7-day avg: 175.5 lbs | Down 4.5 lbs",
+        "detail": "Rate: 1.5 lbs/week. New low! Projected goal: 2026-08-03.",
+        "severity": "positive"
       },
       {
         "icon": "\ud83d\udea8",
