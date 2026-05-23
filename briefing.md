@@ -1,38 +1,41 @@
-# Morning Prep -- Friday, May 22, 2026
-## Day 20 of the Summer Cut | Week 3
+# Morning Prep -- Friday, May 23, 2026
+## Day 21 of the Summer Cut | Week 3
 
-**Three weeks in and 3.9 lbs down -- the engine's running. BJJ returns tomorrow, so enjoy this last pure-rest day before the grind doubles.**
+**Three weeks in, 3.9 lbs down, all floor lifts green -- and BJJ is back today. Let's go.**
 
 ### Last Night's Sleep
-- Score: N/A (Oura not synced) | Last recorded: 78 on May 21
-- Duration: N/A | Last recorded: 5h 43m | Efficiency: 87.9%
-- Deep: 24.2% | REM: 24.3% | HRV: 59 | Lowest HR: 46
-- Bedtime: 12:11 AM > Wake: 6:41 AM (May 21 data)
-- Readiness: N/A (sync your ring!)
+- Score: 72 | Duration: 5h 27m | Efficiency: 85.4%
+- Deep: 30.7% | REM: 18.0% | HRV: 58 | Lowest HR: 47
+- Bedtime: 12:33 AM > Wake: 6:57 AM
+- Readiness: not available (ring not synced for today)
+
+Short night again -- under 5.5 hours of actual sleep. Deep sleep percentage was excellent (30.7% is the best in weeks), but you just didn't get enough total time. HRV at 58 is solid. Efficiency took a hit at 85.4% with 55 minutes awake, likely from the short window.
 
 ### Weight Check
-- Today: no weigh-in | Last: 176.3 lbs (May 19) | 7-day avg: 176.1 lbs | Direction: down
-- Total lost: 3.9 lbs | Rate: 1.37 lbs/week
-- No scale reading in 3 days -- hop on the scale today
+- Today: no weigh-in (MacroFactor API 403 error) | Last: 176.3 lbs (May 19)
+- 7-day avg: 176.1 lbs | Direction: flat (stalled ~4 days without data)
+- Total lost: 3.9 lbs | Rate: 1.30 lbs/week
 
-### Yesterday's Food (2,171 cal | 151g P | 273g C | 57g F)
-- **08:00 Breakfast** -- ON Plant Protein, PB Fit, Keto Bread, Banana, Almond Milk x2 (414 cal | 39P | 48C | 8F)
-- **10:48 Snack** -- Grapes (5 cal | 0P | 1C | 0F)
-- **11:00 Lunch** -- Chicken Thigh 115g (139 cal | 21P | 0C | 7F)
-- **13:00 Snack** -- Rold Gold Pretzels, Lay's Baked BBQ (370 cal | 8P | 69C | 6F)
-- **16:00 Snack** -- Quest Tortilla Chips Ranch, Quest Hero Bar (310 cal | 34P | 16C | 14F)
-- **19:19 Dinner** -- Chicken Thigh 150g, Yukon Gold Potatoes 230g, Olive Oil (553 cal | 28P | 67C | 21F)
-- **21:22 Pre-sleep** -- Frosted Flakes Strawberry Milkshake, Almond Milk (170 cal | 3P | 34C | 3F)
+No scale reading in 4 days. Step on when you can -- the 7-day average needs fresh data points to stay meaningful. The rate of 1.30 lbs/week is in a good range.
+
+### Yesterday's Food
+- **MacroFactor data unavailable** -- API returned 403 (permission denied) on food log, nutrition, and weight endpoints. Yesterday's nutrition was NOT pulled.
+- Check MacroFactor MCP connector auth and re-sync when possible.
+
+### Yesterday's Activity
+- Steps: 21,900 (excellent) | Active cal: 1,171
+- Medium intensity: 2h 40m | Low intensity: 6h 17m
+- 7-day avg steps: 19,520
 
 ### Flags
-- **Oura not synced** -- No sleep or readiness data for today. Open the Oura app to sync your ring.
-- **No weigh-in in 3 days** -- Last scale reading was May 19 (176.3 lbs). Try to weigh in today.
-- **Protein: 151g (1.08g/lb LBM)** -- Hit the target (140g floor) but room to push higher. 7-day avg is 165g (1.18g/lb).
-- **Low fiber yesterday (~12g)** -- Target is 35g. Snack-heavy day with chips and bars. Add veg at dinner.
-- **Calories: 2,171** -- 171 over the 2,000 target. 7-day avg is 2,338. Still in deficit but trending above target.
-- **BJJ starts tomorrow (Fri 5/23)** -- First session back. Don't stack heavy hinge work today.
-- **Calibration ends in 2 days (May 24)** -- All floor lifts GREEN. Squats easiest of the cut last session.
-- **22,981 steps yesterday** -- Huge step day. 7-day avg: 19,130.
+- ⚠️ **MacroFactor permissions error**: food log, nutrition, and weight APIs all returned 403. Yesterday's nutrition is missing from data.json. Reconnect the MCP connector.
+- ⚠️ **No weigh-in in 4 days**: Last scale reading was 176.3 lbs on May 19. Weigh in today if you can.
+- ⚠️ **Oura not synced for today**: No readiness score available. Open Oura app to sync.
+- ℹ️ **BJJ returns today!** First session back. Ease into it -- you haven't rolled since the cut started.
+- ℹ️ **Calibration: 1 day remaining** -- ends May 24. Refeed/diet break triggers activate after that.
+- ℹ️ **Exam ends Tue May 27** -- stress load should ease soon.
+- ✅ **All floor lifts GREEN**: Squat 225x5x3, DB chest 70x7x3, trap bar DL 336x3.
+- ✅ **Yesterday auto-marked as rest day**.
 
 ---
 Open the Summer Cut project to complete your check-in.
