@@ -1,7 +1,7 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-22T17:07:09-07:00",
+  "_updated": "2026-05-23T10:00:00-07:00",
   "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
@@ -14,139 +14,10 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": false,
     "current_phase": "calibration",
-    "days_into_cut": 20,
+    "days_into_cut": 21,
     "week_number": 3
   },
   "daily_log": {
-    "2026-05-08": {
-      "weight_lbs": 177.0,
-      "stress_rating": 4,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2476,
-        "mcp_protein": 142,
-        "mcp_carbs": 327,
-        "mcp_fat": 80,
-        "reconciled": true,
-        "reconciled_calories": 4332,
-        "reconciled_protein": 220,
-        "reconciled_carbs": 452,
-        "reconciled_fat": 198,
-        "reconciliation_notes": "AI-logged Indian dinner missing from MCP: fish fry 349cal, paneer curry 927cal, garlic naan x4 580cal. Added 1856cal/78P/118F/125C.",
-        "fiber_estimated_g": 42,
-        "protein_per_lb": 1.24
-      },
-      "sleep": {
-        "score": 71,
-        "duration_min": 311,
-        "efficiency_pct": 90.6,
-        "deep_pct": 23.9,
-        "rem_pct": 18.3,
-        "light_pct": 57.8,
-        "awake_min": 32,
-        "latency_min": 11,
-        "hr_avg": 54.5,
-        "hr_lowest": 50,
-        "hrv_avg": 51,
-        "breathing_rate": 14.125,
-        "bedtime": "01:14",
-        "wake_time": "06:58"
-      },
-      "readiness": {
-        "score": 69,
-        "hrv_balance": 66,
-        "resting_hr": 78,
-        "recovery_index": 56,
-        "sleep_balance": 58,
-        "body_temp_deviation": 0.03
-      },
-      "activity": {
-        "steps": 16156,
-        "calories_total": 3035,
-        "calories_active": 849,
-        "high_intensity_min": 0,
-        "medium_intensity_min": 93,
-        "low_intensity_min": 330,
-        "sedentary_min": 579,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "rest",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Protein",
-              "PB Fit",
-              "Keto Bread x2",
-              "Keto Muffin",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 488,
-            "pro": 52,
-            "carb": 103,
-            "fat": 10
-          },
-          {
-            "time": "11:00",
-            "window": "snack",
-            "items": [
-              "ONE Maple Doughnut Bar"
-            ],
-            "cal": 230,
-            "pro": 20,
-            "carb": 23,
-            "fat": 8
-          },
-          {
-            "time": "13:00",
-            "window": "lunch",
-            "items": [
-              "Chicken Thigh 145g",
-              "Keto Bread x2",
-              "Broccoli",
-              "Miracle Whip"
-            ],
-            "cal": 166,
-            "pro": 17,
-            "carb": 22,
-            "fat": 3
-          },
-          {
-            "time": "16:50",
-            "window": "snack",
-            "items": [
-              "Kasugai Squid Pea Snack x2"
-            ],
-            "cal": 150,
-            "pro": 3,
-            "carb": 21,
-            "fat": 6
-          },
-          {
-            "time": "18:00",
-            "window": "dinner",
-            "items": [
-              "Indian Fish Fry 120g",
-              "Paneer Curry 1 bowl",
-              "Garlic Naan x4",
-              "Beer IPA x2",
-              "Garlic Fries 65g",
-              "Guacamole 60g",
-              "Tortilla Chips 100g"
-            ],
-            "cal": 3298,
-            "pro": 128,
-            "carb": 283,
-            "fat": 171,
-            "reconciliation_flag": true
-          }
-        ]
-      }
-    },
     "2026-05-09": {
       "weight_lbs": 177.4,
       "stress_rating": 6,
@@ -1736,6 +1607,64 @@
         "protein_per_lb": null
       },
       "sleep": {
+        "score": 72,
+        "duration_min": 327,
+        "efficiency_pct": 85.4,
+        "deep_pct": 30.7,
+        "rem_pct": 18.0,
+        "light_pct": 51.3,
+        "awake_min": 55,
+        "latency_min": 7,
+        "hr_avg": 51.5,
+        "hr_lowest": 47,
+        "hrv_avg": 58,
+        "breathing_rate": 13.875,
+        "bedtime": "00:33",
+        "wake_time": "06:57"
+      },
+      "readiness": {
+        "score": null,
+        "hrv_balance": null,
+        "resting_hr": null,
+        "recovery_index": null,
+        "sleep_balance": null,
+        "body_temp_deviation": null
+      },
+      "activity": {
+        "steps": 21900,
+        "calories_total": 3407,
+        "calories_active": 1171,
+        "high_intensity_min": 2,
+        "medium_intensity_min": 160,
+        "low_intensity_min": 377,
+        "sedentary_min": 539,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-05-23": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
         "score": null,
         "duration_min": null,
         "efficiency_pct": null,
@@ -2724,16 +2653,16 @@
   },
   "checkin_status": {
     "_description": "Tracks whether today's check-in is complete. Reset daily by the 10am task.",
-    "today": "2026-05-22",
+    "today": "2026-05-23",
     "morning_checkin_complete": false,
     "training_logged": false
   },
   "computed_dashboard_values": {
     "current_weight": 176.3,
     "seven_day_avg_weight": 176.1,
-    "rate_of_loss_lbs_per_week": 1.37,
-    "projected_goal_date": "2026-08-12",
-    "weeks_remaining": 11.8,
+    "rate_of_loss_lbs_per_week": 1.3,
+    "projected_goal_date": "2026-08-17",
+    "weeks_remaining": 12.4,
     "total_lost": 3.9,
     "avg_intake_cal": 2337.6,
     "avg_protein_g": 165.1,
@@ -2746,21 +2675,21 @@
       "carbs": 48,
       "fat": 29
     },
-    "last_night_sleep_score": null,
-    "avg_sleep_score": 79.6,
-    "last_night_hrv": null,
-    "avg_hrv": 57.0,
-    "last_night_hr_lowest": null,
+    "last_night_sleep_score": 72,
+    "avg_sleep_score": 77.3,
+    "last_night_hrv": 58,
+    "avg_hrv": 57.3,
+    "last_night_hr_lowest": 47,
     "avg_hr_lowest": 47.4,
-    "last_night_efficiency": null,
-    "avg_efficiency": 89.8,
-    "last_night_deep_pct": null,
-    "last_night_rem_pct": null,
-    "last_night_latency_min": null,
+    "last_night_efficiency": 85.4,
+    "avg_efficiency": 88.9,
+    "last_night_deep_pct": 30.7,
+    "last_night_rem_pct": 18.0,
+    "last_night_latency_min": 7,
     "readiness_today": null,
     "avg_readiness": 82.7,
-    "yesterday_steps": 22981,
-    "avg_steps": 19130.1,
+    "yesterday_steps": 21900,
+    "avg_steps": 19520.0,
     "avg_stress": 4.9,
     "all_floor_lifts_green": true,
     "dal_score": null,
@@ -2768,44 +2697,50 @@
     "signals": [
       {
         "icon": "\ud83d\ude34",
-        "title": "Sleep data not available (ring not synced)",
-        "detail": "Last night's sleep not recorded yet. Last recorded: May 21 -- score 78, 5h43m, HRV 59. Open Oura app to sync.",
+        "title": "Last night: Sleep 72 | 5h 27m | Efficiency 85.4%",
+        "detail": "Deep 30.7% | REM 18.0% | HRV 58 | Lowest HR 47. 7-day avg sleep score: 77.3.",
         "severity": "warning"
       },
       {
         "icon": "\u26a1",
         "title": "Readiness: not available (ring not synced)",
-        "detail": "Readiness data pending Oura sync. Yesterday's readiness was 86 (Optimal).",
+        "detail": "7-day avg readiness: 82.7.",
         "severity": "warning"
       },
       {
         "icon": "\u2696\ufe0f",
-        "title": "No weigh-in today | Last: 176.3 lbs (May 19) | 7-day avg: 176.1 lbs",
-        "detail": "Total lost: 3.9 lbs at 1.37 lbs/week. No scale reading in 3 days.",
+        "title": "Weight: 176.3 lbs | 7-day avg: 176.1 lbs",
+        "detail": "Total lost: 3.9 lbs at 1.3 lbs/week. Projected goal: 2026-08-17.",
+        "severity": "info"
+      },
+      {
+        "icon": "\u2696\ufe0f",
+        "title": "No weigh-in in 4 days (last: 176.3 lbs on 2026-05-19)",
+        "detail": "Step on the scale when you can for trend accuracy.",
         "severity": "warning"
       },
       {
         "icon": "\ud83c\udf7d\ufe0f",
-        "title": "Yesterday: 2,171 cal | 151g P | 273g C | 57g F",
-        "detail": "Protein at 1.08g/lb LBM (target ~1.0g). Calories over 2000 target by 171. Low fiber day (~12g, target 35g).",
-        "severity": "info"
+        "title": "MacroFactor: permission error -- yesterday's nutrition not pulled",
+        "detail": "MacroFactor API returned 403 for food log, nutrition, and weight. Check MCP connector auth. Yesterday's nutrition data is missing.",
+        "severity": "warning"
       },
       {
         "icon": "\ud83d\udc5f",
-        "title": "Yesterday: 22,981 steps (excellent)",
-        "detail": "7-day avg: 19130.1 steps. 243 min medium intensity. Highest step day in recent history.",
+        "title": "Yesterday: 21,900 steps",
+        "detail": "7-day avg: 19,520 steps.",
         "severity": "positive"
       },
       {
         "icon": "\ud83d\udecb\ufe0f",
         "title": "Yesterday: Rest day (auto-marked)",
-        "detail": "Last session was Mon 5/19 -- squats 225x5x3 (RPE 8). BJJ starts tomorrow (Fri 5/23).",
+        "detail": "Last session: 2026-05-19. BJJ returns today (Fri May 23).",
         "severity": "info"
       },
       {
         "icon": "\ud83d\udcc5",
-        "title": "Calibration: 2 days remaining (ends May 24)",
-        "detail": "BJJ returns tomorrow Fri May 23. Exam ends Tue May 27. All floor lifts GREEN.",
+        "title": "Calibration: 1 day remaining (ends 2026-05-24)",
+        "detail": "BJJ starts today Fri May 23. Exam ends Tue May 27. All floor lifts GREEN.",
         "severity": "info"
       }
     ],
@@ -3092,6 +3027,24 @@
       "readiness_score": 71,
       "steps": 21238,
       "training_type": null
+    },
+    "2026-05-08": {
+      "weight_lbs": 177.0,
+      "stress_rating": 4,
+      "reconciled_calories": 4332,
+      "reconciled_protein": 220,
+      "reconciled_carbs": 452,
+      "reconciled_fat": 198,
+      "reconciled": true,
+      "protein_per_lb": 1.24,
+      "fiber_estimated_g": 42,
+      "sleep_score": 71,
+      "hrv_avg": 51,
+      "hr_lowest": 50,
+      "efficiency_pct": 90.6,
+      "readiness_score": 69,
+      "steps": 16156,
+      "training_type": "rest"
     }
   },
   "_archival_logic": {
