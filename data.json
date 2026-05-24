@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-23T21:00:00-07:00",
-  "_updated_by": "manual_training_log",
+  "_updated": "2026-05-23T22:00:00-07:00",
+  "_updated_by": "fiber_trueup_and_micronutrient_status",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -33,7 +33,7 @@
         "reconciled_carbs": 269,
         "reconciled_fat": 69,
         "reconciliation_notes": null,
-        "fiber_estimated_g": 40,
+        "fiber_estimated_g": 84,
         "protein_per_lb": 1.12
       },
       "sleep": {
@@ -167,7 +167,7 @@
         "reconciled_carbs": 302,
         "reconciled_fat": 106,
         "reconciliation_notes": "Mother's Day dinner AI-logged from gram weights: 4 pork egg rolls 159g (deep fried, drained), stir-fried noodles 196g, stir-fried veg 177g (bok choy/broccoli/carrots/mushrooms/tofu puffs), beef sirloin 148g (cornstarch velvet), lobster ball paste 40g (hot pot). MF quick-add of 1310/70P/125C/55F matched AI estimate exactly -- no adjustment needed.",
-        "fiber_estimated_g": 46,
+        "fiber_estimated_g": 81,
         "protein_per_lb": 1.04
       },
       "sleep": {
@@ -311,7 +311,7 @@
         "reconciled_carbs": 287,
         "reconciled_fat": 71,
         "reconciliation_notes": null,
-        "fiber_estimated_g": 28,
+        "fiber_estimated_g": 120,
         "protein_per_lb": 1.13
       },
       "sleep": {
@@ -452,7 +452,7 @@
         "reconciled_carbs": 263,
         "reconciled_fat": 60,
         "reconciliation_notes": null,
-        "fiber_estimated_g": 32,
+        "fiber_estimated_g": 109,
         "protein_per_lb": 0.93
       },
       "sleep": {
@@ -571,7 +571,7 @@
         "reconciled_carbs": 273,
         "reconciled_fat": 60,
         "reconciliation_notes": null,
-        "fiber_estimated_g": 34,
+        "fiber_estimated_g": 99,
         "protein_per_lb": 1.09
       },
       "sleep": {
@@ -697,7 +697,7 @@
         "reconciled_carbs": 288,
         "reconciled_fat": 62,
         "reconciliation_notes": null,
-        "fiber_estimated_g": 38,
+        "fiber_estimated_g": 96,
         "protein_per_lb": 1.14
       },
       "sleep": {
@@ -815,7 +815,7 @@
         "reconciled_carbs": 296,
         "reconciled_fat": 94,
         "reconciliation_notes": "Gym cafe strawberry cookie (265cal/3P/36C/12F) is a Claude visual estimate -- swap if real macros surface. Fob Poke bowl AI-logged from itemized weights (788cal/58P/74C/30F).",
-        "fiber_estimated_g": 17,
+        "fiber_estimated_g": 51,
         "protein_per_lb": 1.23
       },
       "sleep": {
@@ -926,7 +926,7 @@
         "reconciled_carbs": 237,
         "reconciled_fat": 130,
         "reconciliation_notes": "Dinner out not in MF: charcuterie board (~65% consumed + extra bread) 955cal/40P/77C/53F, fried plantains x5 + dip 310cal/2P/39C/17F, diet coke. Added 1,265cal/42P/116C/70F. High sodium (~1,850mg), high sat fat (~22g). Dairy present (cheese) -- athlete is lactose intolerant, note for symptoms.",
-        "fiber_estimated_g": 44,
+        "fiber_estimated_g": 101,
         "protein_per_lb": 1.43
       },
       "sleep": {
@@ -1080,7 +1080,7 @@
         "reconciled_carbs": 282,
         "reconciled_fat": 56,
         "reconciliation_notes": null,
-        "fiber_estimated_g": 24,
+        "fiber_estimated_g": 51,
         "protein_per_lb": 1.15
       },
       "sleep": {
@@ -1209,7 +1209,7 @@
         "reconciled_carbs": 294,
         "reconciled_fat": 73,
         "reconciliation_notes": null,
-        "fiber_estimated_g": 26,
+        "fiber_estimated_g": 54,
         "protein_per_lb": 1.14
       },
       "sleep": {
@@ -1458,7 +1458,7 @@
         "reconciled_carbs": 273,
         "reconciled_fat": 57,
         "reconciliation_notes": null,
-        "fiber_estimated_g": 12,
+        "fiber_estimated_g": 46,
         "protein_per_lb": 1.08
       },
       "sleep": {
@@ -1603,7 +1603,7 @@
         "reconciled_carbs": 322,
         "reconciled_fat": 74,
         "reconciliation_notes": "MF export (1594 cal) + manual data.json entries (tuna roll 290 cal + poke bowl 900 cal = 1190 cal). MF was down (403) so poke/tuna were only logged here. Includes 19g alcohol in MF portion.",
-        "fiber_estimated_g": 42,
+        "fiber_estimated_g": 34,
         "protein_per_lb": 1.33
       },
       "sleep": {
@@ -3189,7 +3189,7 @@
       "reconciled_fat": 54,
       "reconciled": false,
       "protein_per_lb": 1.04,
-      "fiber_estimated_g": 82,
+      "fiber_estimated_g": 119,
       "sleep_score": 75,
       "hrv_avg": 58,
       "hr_lowest": 51,
@@ -3207,7 +3207,7 @@
       "reconciled_fat": 53,
       "reconciled": false,
       "protein_per_lb": 1.16,
-      "fiber_estimated_g": 48,
+      "fiber_estimated_g": 90,
       "sleep_score": 82,
       "hrv_avg": 54,
       "hr_lowest": 51,
@@ -3225,7 +3225,7 @@
       "reconciled_fat": 78,
       "reconciled": false,
       "protein_per_lb": 1.25,
-      "fiber_estimated_g": 84,
+      "fiber_estimated_g": 133,
       "sleep_score": 74,
       "hrv_avg": 53,
       "hr_lowest": 51,
@@ -3243,7 +3243,7 @@
       "reconciled_fat": 71,
       "reconciled": false,
       "protein_per_lb": 1.17,
-      "fiber_estimated_g": 58,
+      "fiber_estimated_g": 126,
       "sleep_score": 86,
       "hrv_avg": 60,
       "hr_lowest": 50,
@@ -3261,7 +3261,7 @@
       "reconciled_fat": 75,
       "reconciled": false,
       "protein_per_lb": 1.23,
-      "fiber_estimated_g": 50,
+      "fiber_estimated_g": 113,
       "sleep_score": 75,
       "hrv_avg": 57,
       "hr_lowest": 48,
@@ -3279,7 +3279,7 @@
       "reconciled_fat": 198,
       "reconciled": true,
       "protein_per_lb": 1.24,
-      "fiber_estimated_g": 42,
+      "fiber_estimated_g": 101,
       "sleep_score": 71,
       "hrv_avg": 51,
       "hr_lowest": 50,
@@ -3344,5 +3344,64 @@
       "notes": "Need 2-3 weeks of training log data before Helms can prescribe a structured program."
     },
     "history": []
+  },
+  "supplement_stack": {
+    "_description": "Daily supplements not captured in MacroFactor food logs. Dashboard should add these to food-only micronutrient totals before flagging deficiencies.",
+    "updated": "2026-05-23",
+    "supplements": [
+      {
+        "name": "Vitamin D3",
+        "dose": "2000+ IU",
+        "estimated_contribution": { "vitamin_d_mcg": 50 },
+        "frequency": "daily",
+        "status": "covers_rda"
+      },
+      {
+        "name": "Magnesium Glycinate",
+        "dose": "200+ mg elemental",
+        "estimated_contribution": { "magnesium_mg": 200 },
+        "frequency": "daily",
+        "status": "food_plus_supp_near_rda"
+      },
+      {
+        "name": "Sports Research Fish Oil (Triple Strength)",
+        "dose": "2 capsules",
+        "estimated_contribution": { "omega3_total_g": 2.12, "epa_mg": 1374, "dha_mg": 548 },
+        "frequency": "daily_unless_150g_salmon",
+        "status": "covers_rda"
+      }
+    ]
+  },
+  "micronutrient_status": {
+    "_description": "Supplement-adjusted micronutrient assessment. Based on MF Excel export May 3-23 + supplement stack. Dashboard reads this to avoid false deficiency flags.",
+    "updated": "2026-05-23",
+    "assessment_basis": "21-day avg from MacroFactor export + daily supplement contributions",
+    "covered_by_supplements": {
+      "omega_3": { "food_pct_rda": 18, "adjusted_pct_rda": 112, "status": "good" },
+      "vitamin_d": { "food_pct_rda": 43, "adjusted_pct_rda": 376, "status": "good" },
+      "magnesium": { "food_pct_rda": 43, "adjusted_pct_rda": 90, "status": "ok" }
+    },
+    "covered_by_food": {
+      "fiber": { "pct_rda": 221, "status": "good", "notes": "High due to keto bread, PB powder, protein bars (functional fiber). Avg 84g." },
+      "iron": { "pct_rda": 425, "status": "good" },
+      "calcium": { "pct_rda": 143, "status": "good", "notes": "Fortified almond milk is primary driver." },
+      "vitamin_c": { "pct_rda": 137, "status": "good" },
+      "vitamin_k": { "pct_rda": 131, "status": "good" },
+      "vitamin_a": { "pct_rda": 114, "status": "good" },
+      "b6": { "pct_rda": 115, "status": "good" },
+      "selenium": { "pct_rda": 120, "status": "good" },
+      "phosphorus": { "pct_rda": 118, "status": "good" }
+    },
+    "true_gaps": {
+      "choline": { "pct_rda": 32, "status": "deficient", "fix": "Adding 3 eggs daily → ~112% RDA" },
+      "zinc": { "pct_rda": 47, "status": "deficient", "fix": "Red meat 2-3x/wk or standalone zinc supplement" },
+      "folate": { "pct_rda": 55, "status": "low", "fix": "Extra leafy greens or fortified foods" },
+      "b12": { "pct_rda": 57, "status": "low", "fix": "3 eggs daily → ~104% RDA" },
+      "thiamine": { "pct_rda": 58, "status": "low" },
+      "potassium": { "pct_rda": 78, "status": "low", "fix": "Extra potato or spinach serving" }
+    },
+    "watch": {
+      "sodium": { "pct_ul": 149, "status": "high", "notes": "Avg 3436mg vs 2300mg UL. Driven by processed snacks and soy sauce." }
+    }
   }
 }
