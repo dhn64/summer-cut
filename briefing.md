@@ -1,36 +1,33 @@
-# Morning Prep — Monday, June 8, 2026
-## Day 37 of the Summer Cut | Week 6
+# Morning Prep -- Tuesday, June 9, 2026
+## Day 38 of the Summer Cut | Week 6
 
-**Down 4.5 lbs with all floor lifts green — the cut is holding. HRV bounced up to 56 last night. Squat day. Let's go.**
+**Five weeks deep and holding the line -- strength is green, sleep efficiency hit 94% last night, and the deficit is doing its thing even without MF data.**
 
 ### Last Night's Sleep
-- Score: 82 | Duration: 6h 47m | Efficiency: 90%
-- Deep: 19.8% | REM: 21.3% | HRV: 56 | Lowest HR: 52
-- Bedtime: 00:28 → Wake: 08:01
-- Readiness: 73
+- Score: 82 | Duration: 6h 47m | Efficiency: 94%
+- Deep: 26.7% | REM: 18.4% | HRV: 48 | Lowest HR: 54
+- Bedtime: 12:06 AM > Wake: 7:19 AM
+- Readiness: 76
 
 ### Weight Check
-- Last weigh-in: 173.0 lbs (May 23) | 7-day avg: 175.5 lbs | Direction: down
-- Total lost: 4.5 lbs | Rate: 0.85 lbs/week
-- ⚠️ No weigh-in in 16 days — step on the scale today
+- Today: no weigh-in (MF down) | 7-day avg: 175.5 lbs | Direction: stale data (17 days since last weigh-in)
+- Last weigh-in: 173.0 lbs (May 23) | Total lost: 4.5 lbs | Rate: 0.83 lbs/week
 
 ### Yesterday's Food
-- ⚠️ MacroFactor MCP unavailable (Day 21 of Firestore 403 outage). No nutrition data pulled.
+- MacroFactor MCP unavailable -- Day 22 of Firestore 403 outage
+- No nutrition data. Manual logging or Excel export needed.
 
 ### Yesterday's Activity
-- 17,020 steps | 2,977 cal total (875 active)
-- Medium intensity: 1h 46m | Low: 5h 6m | Sedentary: 6h 13m
+- Steps: 13,032 | Total cal: 2,871 | Active cal: 711
+- Medium intensity: 1h 34m | Low intensity: 4h 19m | Sedentary: 10h 13m
 
 ### Flags
-- 🔴 **MacroFactor MCP outage (Day 21)** — Firestore 403 since May 19. GitHub issue #40 open. No auto nutrition/weight data.
-- 🔴 **Nutrition data gap: May 24 – Jun 8** — 16 days with no food tracking. Manual Excel export or direct logging needed urgently.
-- 🔴 **No weigh-in in 16 days** — Rate calculation (0.85 lbs/wk) is getting stale. Weigh in today.
-- ⚠️ **Short sleep: 6h 47m** — Below 7h target. Sleep balance contributor at 54. Early bedtime tonight.
-- ⚠️ **Low recovery index: 32** — Resting HR didn't stabilize well. Keep squat RPE moderate.
-- ✅ **HRV elevated: 56** — Above calibration mean (54.2). Good recovery signal.
-- ✅ **All floor lifts GREEN** — Squat 225x5x3 | DB Chest 70x7x3 | Trap Bar DL 336x3.
-- ✅ **Steps solid** — 17,020 yesterday. 7-day avg: 19,633.
-- 📅 **Monday = Squat day** — Readiness 73, green light. Don't stack hinge tomorrow if BJJ Wed/Fri.
+- **HRV dip**: 48 last night, below calibration mean (54.2). Within 1 SD but trending down from 56 two nights ago. Monitor.
+- **Short sleep**: 6h 47m again (below 7h target). Sleep balance at 63. Two consecutive short nights.
+- **Weight data gap**: No weigh-in in 17 days. Scale data needed for rate accuracy.
+- **MacroFactor outage Day 22**: GitHub issue #40 still open. No auto nutrition/weight tracking.
+- **Nutrition blind spot**: No calorie/macro data since May 23. Consider manual Excel export from MF app.
+- **Steps below avg**: 13,032 vs 7-day avg ~18,000. Low activity day.
 
 ---
 Open the Summer Cut project to complete your check-in.
