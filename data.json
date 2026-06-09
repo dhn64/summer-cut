@@ -1,8 +1,8 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-05-23T22:00:00-07:00",
-  "_updated_by": "fiber_trueup_and_micronutrient_status",
+  "_updated": "2026-06-08T10:00:00-07:00",
+  "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
     "start_weight": 180.0,
@@ -12,1615 +12,161 @@
     "lean_mass_lbs": 140,
     "lean_mass_source": "DEXA baseline 2026-05-13",
     "calibration_end_date": "2026-05-24",
-    "calibration_complete": false,
-    "current_phase": "calibration",
-    "days_into_cut": 21,
-    "week_number": 3
+    "calibration_complete": true,
+    "current_phase": "active_cut",
+    "days_into_cut": 37,
+    "week_number": 6
   },
   "daily_log": {
-    "2026-05-09": {
-      "weight_lbs": 177.4,
-      "stress_rating": 6,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2267,
-        "mcp_protein": 198,
-        "mcp_carbs": 269,
-        "mcp_fat": 69,
-        "reconciled": false,
-        "reconciled_calories": 2267,
-        "reconciled_protein": 198,
-        "reconciled_carbs": 269,
-        "reconciled_fat": 69,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 84,
-        "protein_per_lb": 1.12
-      },
-      "sleep": {
-        "score": 84,
-        "duration_min": 408,
-        "efficiency_pct": 94.9,
-        "deep_pct": 21.2,
-        "rem_pct": 24.3,
-        "light_pct": 54.5,
-        "awake_min": 21,
-        "latency_min": 9,
-        "hr_avg": 67.6,
-        "hr_lowest": 58,
-        "hrv_avg": 28,
-        "breathing_rate": 15.5,
-        "bedtime": "23:55",
-        "wake_time": "07:05"
-      },
-      "readiness": {
-        "score": 54,
-        "hrv_balance": 55,
-        "resting_hr": 16,
-        "recovery_index": 42,
-        "sleep_balance": 62,
-        "body_temp_deviation": 0.5
-      },
-      "activity": {
-        "steps": 14165,
-        "calories_total": 2884,
-        "calories_active": 736,
-        "high_intensity_min": 0,
-        "medium_intensity_min": 90,
-        "low_intensity_min": 279,
-        "sedentary_min": 521,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "lifting",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto Muffin",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 383,
-            "pro": 42,
-            "carb": 66,
-            "fat": 7
-          },
-          {
-            "time": "14:00",
-            "window": "lunch",
-            "items": [
-              "California Roll 3pc",
-              "Yellowfin Tuna Sashimi 54g",
-              "Sashimi Salmon 42g",
-              "Hamachi 13g",
-              "Seaweed Salad"
-            ],
-            "cal": 293,
-            "pro": 39,
-            "carb": 15,
-            "fat": 7
-          },
-          {
-            "time": "15:14",
-            "window": "snack",
-            "items": [
-              "ON Protein 0.5 scoop",
-              "PB Fit 2tbsp",
-              "Keto Muffin",
-              "Triple Berry Blend",
-              "Almond Milk"
-            ],
-            "cal": 342,
-            "pro": 42,
-            "carb": 55,
-            "fat": 6
-          },
-          {
-            "time": "19:00",
-            "window": "dinner",
-            "items": [
-              "Chicken Thigh 153g",
-              "Yellowfin Tuna 45g",
-              "Sashimi Salmon 60g",
-              "Hamachi 28g",
-              "Cooked White Rice 200g",
-              "Green Beans",
-              "Peas & Carrots",
-              "Seaweed Salad"
-            ],
-            "cal": 678,
-            "pro": 67,
-            "carb": 71,
-            "fat": 13
-          },
-          {
-            "time": "22:00",
-            "window": "pre_sleep",
-            "items": [
-              "Quest Stacks Cinnamon Brown Sugar",
-              "Sunchips Tomato Jalapeno"
-            ],
-            "cal": 430,
-            "pro": 24,
-            "carb": 45,
-            "fat": 20
-          }
-        ]
-      }
-    },
-    "2026-05-10": {
-      "weight_lbs": 176.6,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2677,
-        "mcp_protein": 183,
-        "mcp_carbs": 302,
-        "mcp_fat": 106,
-        "reconciled": true,
-        "reconciled_calories": 2677,
-        "reconciled_protein": 183,
-        "reconciled_carbs": 302,
-        "reconciled_fat": 106,
-        "reconciliation_notes": "Mother's Day dinner AI-logged from gram weights: 4 pork egg rolls 159g (deep fried, drained), stir-fried noodles 196g, stir-fried veg 177g (bok choy/broccoli/carrots/mushrooms/tofu puffs), beef sirloin 148g (cornstarch velvet), lobster ball paste 40g (hot pot). MF quick-add of 1310/70P/125C/55F matched AI estimate exactly -- no adjustment needed.",
-        "fiber_estimated_g": 81,
-        "protein_per_lb": 1.04
-      },
-      "sleep": {
-        "score": 76,
-        "duration_min": 339,
-        "efficiency_pct": 93.1,
-        "deep_pct": 23.3,
-        "rem_pct": 22.7,
-        "light_pct": 54.0,
-        "awake_min": 25,
-        "latency_min": 9,
-        "hr_avg": 55.25,
-        "hr_lowest": 51,
-        "hrv_avg": 51,
-        "breathing_rate": 14.5,
-        "bedtime": "01:09",
-        "wake_time": "07:13"
-      },
-      "readiness": {
-        "score": 72,
-        "hrv_balance": 77,
-        "resting_hr": 71,
-        "recovery_index": 61,
-        "sleep_balance": 49,
-        "body_temp_deviation": 0.27
-      },
-      "activity": {
-        "steps": 12676,
-        "calories_total": 2799,
-        "calories_active": 647,
-        "high_intensity_min": 0,
-        "medium_intensity_min": 90,
-        "low_intensity_min": 276,
-        "sedentary_min": 613,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "rest",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto English Muffin",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 383,
-            "pro": 42,
-            "carb": 66,
-            "fat": 7
-          },
-          {
-            "time": "13:00",
-            "window": "lunch",
-            "items": [
-              "Pork Egg Rolls x4 (159g, deep fried, drained)",
-              "Stir-Fried Noodles (196g, lo mein w/ sauce)",
-              "Stir-Fried Veg (177g, bok choy/broccoli/carrots/mushrooms/tofu puffs)",
-              "Beef Sirloin stir-fry (148g, cornstarch velvet)",
-              "Lobster Ball paste (40g, hot pot cooked)"
-            ],
-            "cal": 1310,
-            "pro": 70,
-            "carb": 125,
-            "fat": 55,
-            "reconciliation_flag": true,
-            "micro_estimates": {
-              "iron_mg": 6.5,
-              "zinc_mg": 7.5,
-              "b12_mcg": 2.5,
-              "vitamin_a_mcg_rae": 500,
-              "vitamin_c_mg": 80,
-              "vitamin_k_mcg": 175,
-              "calcium_mg": 200,
-              "potassium_mg": 1400,
-              "folate_mcg": 150,
-              "b6_mg": 0.8,
-              "selenium_mcg": 30,
-              "magnesium_mg": 120,
-              "fiber_g": 11,
-              "sodium_mg": 2500
-            }
-          },
-          {
-            "time": "16:00",
-            "window": "snack",
-            "items": [
-              "Quest Brownie a La Mode Stacks Bar"
-            ],
-            "cal": 220,
-            "pro": 20,
-            "carb": 19,
-            "fat": 11
-          },
-          {
-            "time": "18:17",
-            "window": "dinner",
-            "items": [
-              "Seaweed Salad",
-              "Cooked White Rice",
-              "Eggs"
-            ],
-            "cal": 320,
-            "pro": 11,
-            "carb": 55,
-            "fat": 5
-          },
-          {
-            "time": "21:00",
-            "window": "pre_sleep",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto White Bread",
-              "Almond Milk"
-            ],
-            "cal": 247,
-            "pro": 36,
-            "carb": 23,
-            "fat": 6
-          }
-        ]
-      }
-    },
-    "2026-05-11": {
-      "weight_lbs": 176.6,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2198,
-        "mcp_protein": 199,
-        "mcp_carbs": 287,
-        "mcp_fat": 71,
-        "reconciled": false,
-        "reconciled_calories": 2198,
-        "reconciled_protein": 199,
-        "reconciled_carbs": 287,
-        "reconciled_fat": 71,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 120,
-        "protein_per_lb": 1.13
-      },
-      "sleep": {
-        "score": 85,
-        "duration_min": 422,
-        "efficiency_pct": 93.3,
-        "deep_pct": 18.6,
-        "rem_pct": 23.7,
-        "light_pct": 57.7,
-        "awake_min": 30,
-        "latency_min": 11,
-        "hr_avg": 51.5,
-        "hr_lowest": 47,
-        "hrv_avg": 49,
-        "breathing_rate": 13.625,
-        "bedtime": "23:50",
-        "wake_time": "07:22"
-      },
-      "readiness": {
-        "score": 84,
-        "hrv_balance": 57,
-        "resting_hr": 100,
-        "recovery_index": 100,
-        "sleep_balance": 61,
-        "body_temp_deviation": -0.16
-      },
-      "activity": {
-        "steps": 17377,
-        "calories_total": 3469,
-        "calories_active": 1279,
-        "high_intensity_min": 1,
-        "medium_intensity_min": 241,
-        "low_intensity_min": 217,
-        "sedentary_min": 500,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "lifting",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto White Bread x1",
-              "Triple Berry Blend",
-              "Almond Milk"
-            ],
-            "cal": 327,
-            "pro": 38,
-            "carb": 43,
-            "fat": 6
-          },
-          {
-            "time": "14:00",
-            "window": "lunch",
-            "items": [
-              "Chicken Thigh 145g",
-              "Cooked White Rice 151g",
-              "Green Beans 100g",
-              "Peas & Carrots 100g",
-              "Eggs x2",
-              "Olive Oil 1tbsp",
-              "Hoisin sauce",
-              "Sriracha"
-            ],
-            "cal": 823,
-            "pro": 38,
-            "carb": 106,
-            "fat": 27
-          },
-          {
-            "time": "16:00",
-            "window": "snack",
-            "items": [
-              "Rold Gold Tiny Twists Pretzels"
-            ],
-            "cal": 230,
-            "pro": 6,
-            "carb": 45,
-            "fat": 2
-          },
-          {
-            "time": "18:00",
-            "window": "snack",
-            "items": [
-              "Legendary Protein Donut Vanilla Glazed"
-            ],
-            "cal": 160,
-            "pro": 20,
-            "carb": 26,
-            "fat": 6
-          },
-          {
-            "time": "20:00",
-            "window": "dinner",
-            "items": [
-              "Bumble Bee Wild Alaskan Red Salmon 150g",
-              "Keto White Bread x2",
-              "Miracle Whip Light"
-            ],
-            "cal": 155,
-            "pro": 17,
-            "carb": 14,
-            "fat": 8
-          },
-          {
-            "time": "21:00",
-            "window": "pre_sleep",
-            "items": [
-              "ON Plant Protein 0.5 scoop",
-              "PB Fit 1tbsp",
-              "Keto White Bread x1",
-              "Almond Milk"
-            ],
-            "cal": 247,
-            "pro": 36,
-            "carb": 23,
-            "fat": 7
-          }
-        ]
-      }
-    },
-    "2026-05-12": {
+    "2026-05-25": {
       "weight_lbs": null,
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": 1962,
-        "mcp_protein": 164,
-        "mcp_carbs": 263,
-        "mcp_fat": 60,
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
         "reconciled": false,
-        "reconciled_calories": 1962,
-        "reconciled_protein": 164,
-        "reconciled_carbs": 263,
-        "reconciled_fat": 60,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
         "reconciliation_notes": null,
-        "fiber_estimated_g": 109,
-        "protein_per_lb": 0.93
-      },
-      "sleep": {
-        "score": 72,
-        "duration_min": 328,
-        "efficiency_pct": 93.0,
-        "deep_pct": 19.5,
-        "rem_pct": 19.5,
-        "light_pct": 61.0,
-        "awake_min": 24,
-        "latency_min": 15,
-        "hr_avg": 52.5,
-        "hr_lowest": 50,
-        "hrv_avg": 45,
-        "breathing_rate": 14.125,
-        "bedtime": "00:58",
-        "wake_time": "06:51"
-      },
-      "readiness": {
-        "score": 68,
-        "hrv_balance": 57,
-        "resting_hr": 79,
-        "recovery_index": 69,
-        "sleep_balance": 48,
-        "body_temp_deviation": 0.01
-      },
-      "activity": {
-        "steps": 14574,
-        "calories_total": 3012,
-        "calories_active": 816,
-        "high_intensity_min": 0,
-        "medium_intensity_min": 113,
-        "low_intensity_min": 353,
-        "sedentary_min": 529,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "lifting",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto White Bread x1",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 368,
-            "pro": 38,
-            "carb": 54,
-            "fat": 6
-          },
-          {
-            "time": "12:46",
-            "window": "lunch",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto White Bread x1",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 368,
-            "pro": 38,
-            "carb": 54,
-            "fat": 6
-          },
-          {
-            "time": "16:26",
-            "window": "snack",
-            "items": [
-              "Quest Protein Bar White Choc Raspberry"
-            ],
-            "cal": 200,
-            "pro": 20,
-            "carb": 22,
-            "fat": 8
-          },
-          {
-            "time": "18:40",
-            "window": "dinner",
-            "items": [
-              "Bumble Bee Wild Salmon 75g",
-              "Eggs x2",
-              "Cooked White Rice 195g",
-              "Broccoli 150g",
-              "Peas & Carrots 150g",
-              "Olive Oil 1tbsp",
-              "Miracle Whip Light",
-              "Hoisin sauce",
-              "Sriracha"
-            ],
-            "cal": 1026,
-            "pro": 68,
-            "carb": 133,
-            "fat": 40
-          }
-        ]
-      }
-    },
-    "2026-05-13": {
-      "weight_lbs": 177.6,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 1968,
-        "mcp_protein": 153,
-        "mcp_carbs": 273,
-        "mcp_fat": 60,
-        "reconciled": false,
-        "reconciled_calories": 1968,
-        "reconciled_protein": 153,
-        "reconciled_carbs": 273,
-        "reconciled_fat": 60,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 99,
-        "protein_per_lb": 1.09
-      },
-      "sleep": {
-        "score": 80,
-        "duration_min": 397,
-        "efficiency_pct": 89.5,
-        "deep_pct": 22.9,
-        "rem_pct": 17.6,
-        "light_pct": 59.4,
-        "awake_min": 46,
-        "latency_min": 10,
-        "hr_avg": 50.25,
-        "hr_lowest": 47,
-        "hrv_avg": 53,
-        "breathing_rate": 13.75,
-        "bedtime": "23:20",
-        "wake_time": "06:44"
-      },
-      "readiness": {
-        "score": 81,
-        "hrv_balance": 64,
-        "resting_hr": 100,
-        "recovery_index": 77,
-        "sleep_balance": 60,
-        "body_temp_deviation": 0.28
-      },
-      "activity": {
-        "steps": 17072,
-        "calories_total": 2999,
-        "calories_active": 822,
-        "high_intensity_min": 0,
-        "medium_intensity_min": 146,
-        "low_intensity_min": 249,
-        "sedentary_min": 615,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "rest",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto White Bread x1",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 368,
-            "pro": 38,
-            "carb": 54,
-            "fat": 6
-          },
-          {
-            "time": "12:00",
-            "window": "lunch",
-            "items": [
-              "Bumble Bee Wild Salmon 75g",
-              "Eggs x1",
-              "Keto White Bread x2",
-              "Miracle Whip Light x2"
-            ],
-            "cal": 280,
-            "pro": 27,
-            "carb": 29,
-            "fat": 15
-          },
-          {
-            "time": "14:42",
-            "window": "snack",
-            "items": [
-              "Banana"
-            ],
-            "cal": 121,
-            "pro": 1,
-            "carb": 31,
-            "fat": 0
-          },
-          {
-            "time": "16:00",
-            "window": "snack",
-            "items": [
-              "Rold Gold Tiny Twist Pretzels"
-            ],
-            "cal": 230,
-            "pro": 6,
-            "carb": 45,
-            "fat": 2
-          },
-          {
-            "time": "18:44",
-            "window": "dinner",
-            "items": [
-              "Chicken Thigh 150g",
-              "Broccoli 150g",
-              "Peas & Carrots 150g",
-              "Yukon Gold Potatoes 335g",
-              "Olive Oil 1tbsp",
-              "Bone Suckin' Sauce"
-            ],
-            "cal": 670,
-            "pro": 35,
-            "carb": 93,
-            "fat": 21
-          }
-        ]
-      }
-    },
-    "2026-05-14": {
-      "weight_lbs": 176.5,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2106,
-        "mcp_protein": 160,
-        "mcp_carbs": 288,
-        "mcp_fat": 62,
-        "reconciled": false,
-        "reconciled_calories": 2106,
-        "reconciled_protein": 160,
-        "reconciled_carbs": 288,
-        "reconciled_fat": 62,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 96,
-        "protein_per_lb": 1.14
-      },
-      "sleep": {
-        "score": 80,
-        "duration_min": 368,
-        "efficiency_pct": 90.4,
-        "deep_pct": 22.6,
-        "rem_pct": 17.1,
-        "light_pct": 60.3,
-        "awake_min": 39,
-        "latency_min": 14,
-        "hr_avg": 50.875,
-        "hr_lowest": 48,
-        "hrv_avg": 54,
-        "breathing_rate": 13.875,
-        "bedtime": "23:55",
-        "wake_time": "06:42"
-      },
-      "readiness": {
-        "score": 80,
-        "hrv_balance": 63,
-        "resting_hr": 94,
-        "recovery_index": 100,
-        "sleep_balance": 51,
-        "body_temp_deviation": 0.19
-      },
-      "activity": {
-        "steps": 18556,
-        "calories_total": 3193,
-        "calories_active": 1013,
-        "high_intensity_min": 1,
-        "medium_intensity_min": 132,
-        "low_intensity_min": 335,
-        "sedentary_min": 491,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "lifting",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto Bread x1",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 368,
-            "pro": 38,
-            "carb": 54,
-            "fat": 6
-          },
-          {
-            "time": "12:00",
-            "window": "lunch",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto Bread x1",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 368,
-            "pro": 38,
-            "carb": 54,
-            "fat": 6
-          },
-          {
-            "time": "16:00",
-            "window": "snack",
-            "items": [
-              "Little Debbie Double Decker Fudge Round"
-            ],
-            "cal": 490,
-            "pro": 3,
-            "carb": 77,
-            "fat": 19
-          },
-          {
-            "time": "19:38",
-            "window": "dinner",
-            "items": [
-              "Chicken Thigh 155g",
-              "Bumble Bee Red Salmon 75g",
-              "Yukon Gold Potatoes 270g",
-              "Frozen Spinach 100g",
-              "Peas & Carrots 150g",
-              "Olive Oil 1tbsp",
-              "Hoisin sauce",
-              "Sriracha"
-            ],
-            "cal": 910,
-            "pro": 52,
-            "carb": 117,
-            "fat": 29
-          }
-        ]
-      }
-    },
-    "2026-05-15": {
-      "weight_lbs": 176.5,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2580,
-        "mcp_protein": 172,
-        "mcp_carbs": 296,
-        "mcp_fat": 94,
-        "reconciled": true,
-        "reconciled_calories": 2580,
-        "reconciled_protein": 172,
-        "reconciled_carbs": 296,
-        "reconciled_fat": 94,
-        "reconciliation_notes": "Gym cafe strawberry cookie (265cal/3P/36C/12F) is a Claude visual estimate -- swap if real macros surface. Fob Poke bowl AI-logged from itemized weights (788cal/58P/74C/30F).",
-        "fiber_estimated_g": 51,
-        "protein_per_lb": 1.23
-      },
-      "sleep": {
-        "score": 88,
-        "duration_min": 413,
-        "efficiency_pct": 91.7,
-        "deep_pct": 22.8,
-        "rem_pct": 27.5,
-        "light_pct": 49.8,
-        "awake_min": 37,
-        "latency_min": 14,
-        "hr_avg": 51,
-        "hr_lowest": 47,
-        "hrv_avg": 56,
-        "breathing_rate": 13.625,
-        "bedtime": "23:05",
-        "wake_time": "06:36"
-      },
-      "readiness": {
-        "score": 84,
-        "hrv_balance": 68,
-        "resting_hr": 100,
-        "recovery_index": 100,
-        "sleep_balance": 58,
-        "body_temp_deviation": -0.13
-      },
-      "activity": {
-        "steps": 19171,
-        "calories_total": 3220,
-        "calories_active": 1074,
-        "high_intensity_min": 1,
-        "medium_intensity_min": 160,
-        "low_intensity_min": 312,
-        "sedentary_min": 528,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "lifting",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto White Bread",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 466,
-            "pro": 48,
-            "carb": 62,
-            "fat": 11
-          },
-          {
-            "time": "13:39",
-            "window": "snack",
-            "items": [
-              "Lenny & Larry's Complete Cookies x6",
-              "ONE Fruity Cereal Protein Bar"
-            ],
-            "cal": 600,
-            "pro": 35,
-            "carb": 66,
-            "fat": 25
-          },
-          {
-            "time": "18:00",
-            "window": "dinner",
-            "items": [
-              "Fob Poke Regular Bowl: salmon 140g, unagi 50g, crab salad 75g, white rice 150g, spinach 60g, seaweed salad, edamame, tamagoyaki, masago, shoyu sauce"
-            ],
-            "cal": 788,
-            "pro": 58,
-            "carb": 74,
-            "fat": 30
-          },
-          {
-            "time": "19:00",
-            "window": "snack",
-            "items": [
-              "Barebells PB&J Protein Bar",
-              "Kasugai Crispy Peas 56g",
-              "Gym Cafe Strawberry Cookie (AI estimate)"
-            ],
-            "cal": 725,
-            "pro": 30,
-            "carb": 93,
-            "fat": 28,
-            "reconciliation_flag": true
-          }
-        ]
-      }
-    },
-    "2026-05-16": {
-      "weight_lbs": 174.6,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 1626,
-        "mcp_protein": 158,
-        "mcp_carbs": 121,
-        "mcp_fat": 60,
-        "reconciled": true,
-        "reconciled_calories": 2891,
-        "reconciled_protein": 200,
-        "reconciled_carbs": 237,
-        "reconciled_fat": 130,
-        "reconciliation_notes": "Dinner out not in MF: charcuterie board (~65% consumed + extra bread) 955cal/40P/77C/53F, fried plantains x5 + dip 310cal/2P/39C/17F, diet coke. Added 1,265cal/42P/116C/70F. High sodium (~1,850mg), high sat fat (~22g). Dairy present (cheese) -- athlete is lactose intolerant, note for symptoms.",
-        "fiber_estimated_g": 101,
-        "protein_per_lb": 1.43
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
       },
       "sleep": {
         "score": 83,
-        "duration_min": 435,
-        "efficiency_pct": 93.2,
-        "deep_pct": 26.0,
-        "rem_pct": 24.1,
-        "light_pct": 49.9,
-        "awake_min": 31,
+        "duration_min": 430,
+        "efficiency_pct": 92.7,
+        "deep_pct": 18.2,
+        "rem_pct": 22.1,
+        "light_pct": 59.7,
+        "awake_min": 34,
         "latency_min": 9,
         "hr_avg": 50.875,
-        "hr_lowest": 47,
-        "hrv_avg": 59,
-        "breathing_rate": 13.5,
-        "bedtime": "01:02",
-        "wake_time": "08:49"
-      },
-      "readiness": {
-        "score": 84,
-        "hrv_balance": 74,
-        "resting_hr": 100,
-        "recovery_index": 100,
-        "sleep_balance": 60,
-        "body_temp_deviation": -0.25
-      },
-      "activity": {
-        "steps": 20822,
-        "calories_total": 3412,
-        "calories_active": 1217,
-        "high_intensity_min": 1,
-        "medium_intensity_min": 170,
-        "low_intensity_min": 346,
-        "sedentary_min": 441,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "lifting",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "10:30",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto Bread x3",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 465,
-            "pro": 45,
-            "carb": 49,
-            "fat": 11
-          },
-          {
-            "time": "15:00",
-            "window": "snack",
-            "items": [
-              "Barebells PB&J Protein Bar",
-              "Legendary BBQ Chips"
-            ],
-            "cal": 350,
-            "pro": 40,
-            "carb": 26,
-            "fat": 12
-          },
-          {
-            "time": "16:30",
-            "window": "lunch",
-            "items": [
-              "Bumble Bee Red Salmon 150g",
-              "Ken's Vidalia Onion",
-              "Keto Bread x4"
-            ],
-            "cal": 436,
-            "pro": 45,
-            "carb": 16,
-            "fat": 20
-          },
-          {
-            "time": "18:30",
-            "window": "dinner",
-            "items": [
-              "Eggs x2",
-              "Frozen Spinach 100g",
-              "Peas & Carrots 100g",
-              "Keto Bread x2",
-              "Olive Oil",
-              "Hoisin",
-              "Sriracha"
-            ],
-            "cal": 376,
-            "pro": 28,
-            "carb": 29,
-            "fat": 17
-          },
-          {
-            "time": "20:00",
-            "window": "dinner",
-            "items": [
-              "Charcuterie board (~65%): cured meats, cheeses, olives, bread, pickled veg",
-              "Fried Plantains x5 + dip",
-              "Diet Coke"
-            ],
-            "cal": 1265,
-            "pro": 42,
-            "carb": 116,
-            "fat": 70,
-            "reconciliation_flag": true,
-            "micro_estimates": {
-              "sodium_mg": 1850,
-              "calcium_mg": 420,
-              "iron_mg": 2.8,
-              "magnesium_mg": 35,
-              "phosphorus_mg": 310,
-              "potassium_mg": 480,
-              "zinc_mg": 3.2,
-              "selenium_mcg": 12,
-              "vitamin_a_mcg_rae": 45,
-              "vitamin_c_mg": 8,
-              "vitamin_e_mg": 1.5,
-              "vitamin_k_mcg": 8,
-              "b1_mg": 0.25,
-              "b2_mg": 0.25,
-              "b3_mg": 4.5,
-              "b6_mg": 0.3,
-              "b12_mcg": 0.8,
-              "folate_mcg": 35,
-              "saturated_fat_g": 22,
-              "monounsat_fat_g": 28,
-              "polyunsat_fat_g": 8,
-              "fiber_g": 6
-            }
-          }
-        ]
-      }
-    },
-    "2026-05-17": {
-      "weight_lbs": 176.5,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2219,
-        "mcp_protein": 161,
-        "mcp_carbs": 282,
-        "mcp_fat": 56,
-        "reconciled": false,
-        "reconciled_calories": 2219,
-        "reconciled_protein": 161,
-        "reconciled_carbs": 282,
-        "reconciled_fat": 56,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 51,
-        "protein_per_lb": 1.15
-      },
-      "sleep": {
-        "score": 79,
-        "duration_min": 410,
-        "efficiency_pct": 91.5,
-        "deep_pct": 21.6,
-        "rem_pct": 21.7,
-        "light_pct": 56.8,
-        "awake_min": 38,
-        "latency_min": 7,
-        "hr_avg": 51.625,
-        "hr_lowest": 48,
-        "hrv_avg": 60,
-        "breathing_rate": 13.75,
-        "bedtime": "01:09",
-        "wake_time": "08:38"
-      },
-      "readiness": {
-        "score": 81,
-        "hrv_balance": 79,
-        "resting_hr": 94,
-        "recovery_index": 86,
-        "sleep_balance": 61,
-        "body_temp_deviation": -0.06
-      },
-      "activity": {
-        "steps": 16178,
-        "calories_total": 3105,
-        "calories_active": 961,
-        "high_intensity_min": 13,
-        "medium_intensity_min": 136,
-        "low_intensity_min": 312,
-        "sedentary_min": 425,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "lifting",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "10:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto Bread x2",
-              "Banana",
-              "Almond Milk"
-            ],
-            "cal": 421,
-            "pro": 39,
-            "carb": 46,
-            "fat": 11
-          },
-          {
-            "time": "12:00",
-            "window": "snack",
-            "items": [
-              "Nerds Gummy Clusters"
-            ],
-            "cal": 90,
-            "pro": 1,
-            "carb": 22,
-            "fat": 0
-          },
-          {
-            "time": "15:00",
-            "window": "snack",
-            "items": [
-              "Barebells PB&J Protein Bar"
-            ],
-            "cal": 200,
-            "pro": 20,
-            "carb": 21,
-            "fat": 6
-          },
-          {
-            "time": "16:58",
-            "window": "dinner",
-            "items": [
-              "Bumble Bee Red Salmon 155g",
-              "Eggs 119g",
-              "Cooked White Rice 200g",
-              "Frozen Broccoli 70g",
-              "Frozen Spinach 70g",
-              "Green Beans 70g",
-              "Peas & Carrots 70g",
-              "Olive Oil 1tbsp"
-            ],
-            "cal": 695,
-            "pro": 38,
-            "carb": 85,
-            "fat": 26
-          },
-          {
-            "time": "19:00",
-            "window": "pre_sleep",
-            "items": [
-              "Jocko Chocolate Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Almond Milk",
-              "Triple Berry Blend 100g",
-              "Honey Bunches of Oats 70g"
-            ],
-            "cal": 450,
-            "pro": 36,
-            "carb": 61,
-            "fat": 9
-          }
-        ]
-      }
-    },
-    "2026-05-18": {
-      "weight_lbs": 174.8,
-      "stress_rating": 6.5,
-      "stress_notes": "Work/study load elevated. Felt slightly tired but energy decent -- no dozing. Pushed through temptation to rest day.",
-      "nutrition": {
-        "mcp_calories": 2428,
-        "mcp_protein": 159,
-        "mcp_carbs": 294,
-        "mcp_fat": 73,
-        "reconciled": false,
-        "reconciled_calories": 2428,
-        "reconciled_protein": 159,
-        "reconciled_carbs": 294,
-        "reconciled_fat": 73,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 54,
-        "protein_per_lb": 1.14
-      },
-      "sleep": {
-        "score": 69,
-        "duration_min": 332,
-        "efficiency_pct": 89.5,
-        "deep_pct": 21.7,
-        "rem_pct": 17.8,
-        "light_pct": 60.5,
-        "awake_min": 39,
-        "latency_min": 10,
-        "hr_avg": 52.75,
-        "hr_lowest": 49,
-        "hrv_avg": 53,
-        "breathing_rate": 13.75,
-        "bedtime": "01:05",
-        "wake_time": "07:16"
-      },
-      "readiness": {
-        "score": 76,
-        "hrv_balance": 79,
-        "resting_hr": 87,
-        "recovery_index": 89,
-        "sleep_balance": 59,
-        "body_temp_deviation": -0.05
-      },
-      "activity": {
-        "steps": 15933,
-        "calories_total": 3013,
-        "calories_active": 822,
-        "high_intensity_min": 0,
-        "medium_intensity_min": 106,
-        "low_intensity_min": 364,
-        "sedentary_min": 475,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "lifting",
-      "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto Bread x2",
-              "Banana",
-              "Almond Milk x2"
-            ],
-            "cal": 421,
-            "pro": 39,
-            "carb": 46,
-            "fat": 11
-          },
-          {
-            "time": "11:00",
-            "window": "snack",
-            "items": [
-              "Honey Bunches of Oats 75g",
-              "Almond Milk"
-            ],
-            "cal": 190,
-            "pro": 4,
-            "carb": 35,
-            "fat": 5
-          },
-          {
-            "time": "13:00",
-            "window": "lunch",
-            "items": [
-              "Bumble Bee Red Salmon 150g",
-              "Eggs 135g",
-              "White Rice 145g",
-              "Frozen Spinach 100g",
-              "Peas & Carrots 100g",
-              "Olive Oil 1tbsp",
-              "Ken's Vidalia Onion",
-              "Bone Suckin Sauce"
-            ],
-            "cal": 743,
-            "pro": 32,
-            "carb": 90,
-            "fat": 30
-          },
-          {
-            "time": "19:00",
-            "window": "dinner",
-            "items": [
-              "Chicken Thigh 150g",
-              "White Rice 150g",
-              "Green Beans 100g",
-              "Peas & Carrots 100g",
-              "Olive Oil 1tbsp",
-              "Hoisin Sauce",
-              "Sriracha"
-            ],
-            "cal": 753,
-            "pro": 32,
-            "carb": 105,
-            "fat": 23
-          },
-          {
-            "time": "21:00",
-            "window": "pre_sleep",
-            "items": [
-              "Air-Popped Popcorn 56g",
-              "Pam Spray"
-            ],
-            "cal": 4,
-            "pro": 0,
-            "carb": 0,
-            "fat": 0
-          }
-        ]
-      }
-    },
-    "2026-05-19": {
-      "weight_lbs": 176.3,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2035,
-        "mcp_protein": 153,
-        "mcp_carbs": 245,
-        "mcp_fat": 54,
-        "reconciled": true,
-        "reconciled_calories": 2035,
-        "reconciled_protein": 153,
-        "reconciled_carbs": 245,
-        "reconciled_fat": 54,
-        "reconciliation_notes": "Backfilled from MacroFactor Excel export 2026-05-23.",
-        "fiber_estimated_g": 53,
-        "protein_per_lb": 1.09
-      },
-      "sleep": {
-        "score": 87,
-        "duration_min": 476,
-        "efficiency_pct": 91.1,
-        "deep_pct": 13.4,
-        "rem_pct": 19.3,
-        "light_pct": 67.3,
-        "awake_min": 46,
-        "latency_min": 12,
-        "hr_avg": 52.5,
-        "hr_lowest": 49,
-        "hrv_avg": 55,
+        "hr_lowest": 46,
+        "hrv_avg": 62,
         "breathing_rate": 13.875,
-        "bedtime": "23:07",
-        "wake_time": "07:50"
-      },
-      "readiness": {
-        "score": 88,
-        "hrv_balance": 85,
-        "resting_hr": 87,
-        "recovery_index": 100,
-        "sleep_balance": 75,
-        "body_temp_deviation": -0.06
-      },
-      "activity": {
-        "steps": 22155,
-        "calories_total": 3390,
-        "calories_active": 1160,
-        "high_intensity_min": 0,
-        "medium_intensity_min": 175,
-        "low_intensity_min": 383,
-        "sedentary_min": 456,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "lifting",
-      "food_log_summary": {
-        "meals": []
-      }
-    },
-    "2026-05-20": {
-      "weight_lbs": null,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2071,
-        "mcp_protein": 157,
-        "mcp_carbs": 207,
-        "mcp_fat": 77,
-        "reconciled": true,
-        "reconciled_calories": 2071,
-        "reconciled_protein": 157,
-        "reconciled_carbs": 207,
-        "reconciled_fat": 77,
-        "reconciliation_notes": "Backfilled from MacroFactor Excel export 2026-05-23.",
-        "fiber_estimated_g": 67,
-        "protein_per_lb": 1.12
-      },
-      "sleep": {
-        "score": 73,
-        "duration_min": 365,
-        "efficiency_pct": 83.5,
-        "deep_pct": 20.1,
-        "rem_pct": 21.0,
-        "light_pct": 58.9,
-        "awake_min": 72,
-        "latency_min": 9,
-        "hr_avg": 51.625,
-        "hr_lowest": 46,
-        "hrv_avg": 57,
-        "breathing_rate": 13.75,
-        "bedtime": "00:13",
-        "wake_time": "07:30"
-      },
-      "readiness": {
-        "score": 80,
-        "hrv_balance": 86,
-        "resting_hr": 100,
-        "recovery_index": 83,
-        "sleep_balance": 59,
-        "body_temp_deviation": -0.07
-      },
-      "activity": {
-        "steps": 16671,
-        "calories_total": 2978,
-        "calories_active": 787,
-        "high_intensity_min": 0,
-        "medium_intensity_min": 103,
-        "low_intensity_min": 334,
-        "sedentary_min": 523,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "rest",
-      "food_log_summary": {
-        "meals": []
-      }
-    },
-    "2026-05-21": {
-      "weight_lbs": null,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": 2171,
-        "mcp_protein": 151,
-        "mcp_carbs": 273,
-        "mcp_fat": 57,
-        "reconciled": false,
-        "reconciled_calories": 2171,
-        "reconciled_protein": 151,
-        "reconciled_carbs": 273,
-        "reconciled_fat": 57,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": 46,
-        "protein_per_lb": 1.08
-      },
-      "sleep": {
-        "score": 78,
-        "duration_min": 343,
-        "efficiency_pct": 87.9,
-        "deep_pct": 24.2,
-        "rem_pct": 24.3,
-        "light_pct": 51.5,
-        "awake_min": 47,
-        "latency_min": 16,
-        "hr_avg": 50.5,
-        "hr_lowest": 46,
-        "hrv_avg": 59,
-        "breathing_rate": 13.75,
-        "bedtime": "00:11",
-        "wake_time": "06:41"
+        "bedtime": "00:19",
+        "wake_time": "08:04"
       },
       "readiness": {
         "score": 86,
-        "hrv_balance": 86,
+        "hrv_balance": 88,
         "resting_hr": 100,
         "recovery_index": 100,
-        "sleep_balance": 67,
-        "body_temp_deviation": -0.15
+        "sleep_balance": 59,
+        "body_temp_deviation": 0.08
       },
       "activity": {
-        "steps": 22981,
-        "calories_total": 3549,
-        "calories_active": 1309,
-        "high_intensity_min": 1,
-        "medium_intensity_min": 243,
-        "low_intensity_min": 355,
-        "sedentary_min": 469,
+        "steps": 14412,
+        "calories_total": 3252,
+        "calories_active": 1073,
+        "high_intensity_min": 0,
+        "medium_intensity_min": 166,
+        "low_intensity_min": 285,
+        "sedentary_min": 414,
         "dal_score": null,
         "neat_score": null
       },
       "training": "rest",
       "food_log_summary": {
-        "meals": [
-          {
-            "time": "08:00",
-            "window": "breakfast",
-            "items": [
-              "ON Plant Protein 1 scoop",
-              "PB Fit 2tbsp",
-              "Keto Bread x1",
-              "Banana",
-              "Almond Milk x2"
-            ],
-            "cal": 414,
-            "pro": 39,
-            "carb": 48,
-            "fat": 8
-          },
-          {
-            "time": "10:48",
-            "window": "snack",
-            "items": [
-              "Grapes"
-            ],
-            "cal": 5,
-            "pro": 0,
-            "carb": 1,
-            "fat": 0
-          },
-          {
-            "time": "11:00",
-            "window": "lunch",
-            "items": [
-              "Chicken Thigh 115g"
-            ],
-            "cal": 139,
-            "pro": 21,
-            "carb": 0,
-            "fat": 7
-          },
-          {
-            "time": "13:00",
-            "window": "snack",
-            "items": [
-              "Rold Gold Pretzels",
-              "Lay's Baked BBQ"
-            ],
-            "cal": 370,
-            "pro": 8,
-            "carb": 69,
-            "fat": 6
-          },
-          {
-            "time": "16:00",
-            "window": "snack",
-            "items": [
-              "Quest Tortilla Chips Ranch",
-              "Quest Hero Bar Choc Caramel Pecan"
-            ],
-            "cal": 310,
-            "pro": 34,
-            "carb": 16,
-            "fat": 14
-          },
-          {
-            "time": "19:19",
-            "window": "dinner",
-            "items": [
-              "Chicken Thigh 150g",
-              "Yukon Gold Potatoes 230g",
-              "Olive Oil 1tbsp"
-            ],
-            "cal": 553,
-            "pro": 28,
-            "carb": 67,
-            "fat": 21
-          },
-          {
-            "time": "21:22",
-            "window": "pre_sleep",
-            "items": [
-              "Frosted Flakes Strawberry Milkshake 75g",
-              "Almond Milk"
-            ],
-            "cal": 170,
-            "pro": 3,
-            "carb": 34,
-            "fat": 3
-          }
-        ]
+        "meals": []
       }
     },
-    "2026-05-22": {
+    "2026-05-26": {
       "weight_lbs": null,
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": 1594,
-        "mcp_protein": 104,
-        "mcp_carbs": 203,
-        "mcp_fat": 31,
-        "reconciled": true,
-        "reconciled_calories": 2784,
-        "reconciled_protein": 186,
-        "reconciled_carbs": 322,
-        "reconciled_fat": 74,
-        "reconciliation_notes": "MF export (1594 cal) + manual data.json entries (tuna roll 290 cal + poke bowl 900 cal = 1190 cal). MF was down (403) so poke/tuna were only logged here. Includes 19g alcohol in MF portion.",
-        "fiber_estimated_g": 34,
-        "protein_per_lb": 1.33
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
       },
       "sleep": {
-        "score": 72,
+        "score": 73,
         "duration_min": 327,
-        "efficiency_pct": 85.4,
-        "deep_pct": 30.7,
-        "rem_pct": 18.0,
-        "light_pct": 51.3,
-        "awake_min": 55,
-        "latency_min": 7,
-        "hr_avg": 51.5,
+        "efficiency_pct": 93.2,
+        "deep_pct": 22.5,
+        "rem_pct": 17.9,
+        "light_pct": 59.6,
+        "awake_min": 23,
+        "latency_min": 12,
+        "hr_avg": 50.25,
         "hr_lowest": 47,
+        "hrv_avg": 59,
+        "breathing_rate": 13.75,
+        "bedtime": "00:49",
+        "wake_time": "06:40"
+      },
+      "readiness": {
+        "score": 72,
+        "hrv_balance": 89,
+        "resting_hr": 99,
+        "recovery_index": 11,
+        "sleep_balance": 52,
+        "body_temp_deviation": 0.01
+      },
+      "activity": {
+        "steps": 24750,
+        "calories_total": 3583,
+        "calories_active": 1359,
+        "high_intensity_min": 0,
+        "medium_intensity_min": 242,
+        "low_intensity_min": 312,
+        "sedentary_min": 445,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-05-27": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable (Firestore 403 outage ongoing).",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 67,
+        "duration_min": 325,
+        "efficiency_pct": 85.0,
+        "deep_pct": 24.7,
+        "rem_pct": 20.0,
+        "light_pct": 55.3,
+        "awake_min": 57,
+        "latency_min": 17,
+        "hr_avg": 52.5,
+        "hr_lowest": 48,
         "hrv_avg": 58,
-        "breathing_rate": 13.875,
-        "bedtime": "00:33",
-        "wake_time": "06:57"
+        "breathing_rate": 14.125,
+        "bedtime": "01:08",
+        "wake_time": "07:31"
       },
       "readiness": {
         "score": null,
@@ -1631,61 +177,386 @@
         "body_temp_deviation": null
       },
       "activity": {
-        "steps": 21900,
-        "calories_total": 3407,
-        "calories_active": 1171,
-        "high_intensity_min": 2,
-        "medium_intensity_min": 160,
-        "low_intensity_min": 377,
-        "sedentary_min": 539,
+        "steps": 19050,
+        "calories_total": 3438,
+        "calories_active": 1262,
+        "high_intensity_min": 0,
+        "medium_intensity_min": 187,
+        "low_intensity_min": 274,
+        "sedentary_min": 488,
         "dal_score": null,
         "neat_score": null
       },
       "training": "rest",
       "food_log_summary": {
-        "meals": [
-          {
-            "time": "17:00",
-            "window": "dinner",
-            "items": [
-              "M2M Tuna Roll (6pc)"
-            ],
-            "cal": 290,
-            "pro": 18,
-            "carb": 48,
-            "fat": 2
-          },
-          {
-            "time": "19:00",
-            "window": "dinner",
-            "items": [
-              "Poke Bowl (rice reduced): mixed sashimi (tuna/salmon/hamachi ~220g), white rice ~150g, avocado ~80g, seaweed salad ~60g, masago ~25g, cucumber ~40g, crispy toppings ~20g, sauces ~30g"
-            ],
-            "cal": 900,
-            "pro": 64,
-            "carb": 71,
-            "fat": 41
-          }
-        ]
+        "meals": []
       }
     },
-    "2026-05-23": {
-      "weight_lbs": 173.0,
+    "2026-05-28": {
+      "weight_lbs": null,
       "stress_rating": null,
       "stress_notes": null,
       "nutrition": {
-        "mcp_calories": 1846,
-        "mcp_protein": 110,
-        "mcp_carbs": 220,
-        "mcp_fat": 64,
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
         "reconciled": false,
-        "reconciled_calories": 1846,
-        "reconciled_protein": 110,
-        "reconciled_carbs": 220,
-        "reconciled_fat": 64,
-        "reconciliation_notes": "From MacroFactor Excel export. Day may not be complete yet.",
-        "fiber_estimated_g": 34,
-        "protein_per_lb": 0.79
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable (Firestore 403 outage ongoing).",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 81,
+        "duration_min": 378,
+        "efficiency_pct": 93.6,
+        "deep_pct": 16.8,
+        "rem_pct": 24.4,
+        "light_pct": 58.8,
+        "awake_min": 26,
+        "latency_min": 11,
+        "hr_avg": 53.125,
+        "hr_lowest": 49,
+        "hrv_avg": 55,
+        "breathing_rate": 14.125,
+        "bedtime": "00:30",
+        "wake_time": "07:15"
+      },
+      "readiness": {
+        "score": null,
+        "hrv_balance": null,
+        "resting_hr": null,
+        "recovery_index": null,
+        "sleep_balance": null,
+        "body_temp_deviation": null
+      },
+      "activity": {
+        "steps": 21953,
+        "calories_total": 3469,
+        "calories_active": 1253,
+        "high_intensity_min": 1,
+        "medium_intensity_min": 221,
+        "low_intensity_min": 266,
+        "sedentary_min": 541,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-05-29": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 73,
+        "duration_min": 346,
+        "efficiency_pct": 87.6,
+        "deep_pct": 17.2,
+        "rem_pct": 20.5,
+        "light_pct": 62.3,
+        "awake_min": 49,
+        "latency_min": 9,
+        "hr_avg": 61,
+        "hr_lowest": 55,
+        "hrv_avg": 51,
+        "breathing_rate": 15,
+        "bedtime": "00:38",
+        "wake_time": "07:13"
+      },
+      "readiness": {
+        "score": 70,
+        "hrv_balance": 88,
+        "resting_hr": 37,
+        "recovery_index": 98,
+        "sleep_balance": 49,
+        "body_temp_deviation": 0.01
+      },
+      "activity": {
+        "steps": null,
+        "calories_total": null,
+        "calories_active": null,
+        "high_intensity_min": null,
+        "medium_intensity_min": null,
+        "low_intensity_min": null,
+        "sedentary_min": null,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-05-30": {
+      "training": "rest",
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "sleep": {
+        "score": 87,
+        "duration_min": 421,
+        "efficiency_pct": 94.8,
+        "deep_pct": 22.3,
+        "rem_pct": 24.2,
+        "light_pct": 53.4,
+        "awake_min": 23,
+        "latency_min": 6,
+        "hr_avg": 58.875,
+        "hr_lowest": 55,
+        "hrv_avg": 56,
+        "breathing_rate": 14.625,
+        "bedtime": "00:07",
+        "wake_time": "07:31"
+      },
+      "activity": {
+        "steps": 19773,
+        "calories_total": 3191,
+        "calories_active": 1017,
+        "high_intensity_min": 1,
+        "medium_intensity_min": 148,
+        "low_intensity_min": 360,
+        "sedentary_min": 452,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "readiness": {
+        "score": null,
+        "hrv_balance": null,
+        "resting_hr": null,
+        "recovery_index": null,
+        "sleep_balance": null,
+        "body_temp_deviation": null
+      },
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable (Firestore 403 outage ongoing).",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-05-31": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable (Firestore 403 outage ongoing).",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 88,
+        "duration_min": 463,
+        "efficiency_pct": 92.5,
+        "deep_pct": 21.3,
+        "rem_pct": 23.2,
+        "light_pct": 55.6,
+        "awake_min": 37,
+        "latency_min": 23,
+        "hr_avg": 65.625,
+        "hr_lowest": 58,
+        "hrv_avg": 28,
+        "breathing_rate": 15.125,
+        "bedtime": "00:03",
+        "wake_time": "08:25"
+      },
+      "readiness": {
+        "score": 64,
+        "hrv_balance": 69,
+        "resting_hr": 16,
+        "recovery_index": 21,
+        "sleep_balance": 58,
+        "body_temp_deviation": 0.26
+      },
+      "activity": {
+        "steps": 18231,
+        "calories_total": 3002,
+        "calories_active": 868,
+        "high_intensity_min": 0,
+        "medium_intensity_min": 110,
+        "low_intensity_min": 373,
+        "sedentary_min": 392,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-06-01": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable (Firestore 403 outage ongoing).",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 78,
+        "duration_min": 337,
+        "efficiency_pct": 92.1,
+        "deep_pct": 24.6,
+        "rem_pct": 20.6,
+        "light_pct": 54.7,
+        "awake_min": 28,
+        "latency_min": 18,
+        "hr_avg": 57.25,
+        "hr_lowest": 52,
+        "hrv_avg": 55,
+        "breathing_rate": 14.375,
+        "bedtime": "00:11",
+        "wake_time": "06:16"
+      },
+      "readiness": {
+        "score": 78,
+        "hrv_balance": 88,
+        "resting_hr": 63,
+        "recovery_index": 91,
+        "sleep_balance": 51,
+        "body_temp_deviation": 0.04
+      },
+      "activity": {
+        "steps": 16655,
+        "calories_total": 3054,
+        "calories_active": 868,
+        "high_intensity_min": 0,
+        "medium_intensity_min": 141,
+        "low_intensity_min": 290,
+        "sedentary_min": 563,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-06-02": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 80,
+        "duration_min": 368,
+        "efficiency_pct": 94.4,
+        "deep_pct": 21.1,
+        "rem_pct": 26.1,
+        "light_pct": 52.9,
+        "awake_min": 22,
+        "latency_min": 7,
+        "hr_avg": 55.625,
+        "hr_lowest": 52,
+        "hrv_avg": 50,
+        "breathing_rate": 13.875,
+        "bedtime": "00:19",
+        "wake_time": "06:49"
+      },
+      "readiness": {
+        "score": 77,
+        "hrv_balance": 66,
+        "resting_hr": 64,
+        "recovery_index": 97,
+        "sleep_balance": 62,
+        "body_temp_deviation": -0.08
+      },
+      "activity": {
+        "steps": null,
+        "calories_total": null,
+        "calories_active": null,
+        "high_intensity_min": null,
+        "medium_intensity_min": null,
+        "low_intensity_min": null,
+        "sedentary_min": null,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-06-03": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable.",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
       },
       "sleep": {
         "score": null,
@@ -1722,7 +593,297 @@
         "dal_score": null,
         "neat_score": null
       },
-      "training": "lifting",
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-06-04": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable.",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": null,
+        "duration_min": null,
+        "efficiency_pct": null,
+        "deep_pct": null,
+        "rem_pct": null,
+        "light_pct": null,
+        "awake_min": null,
+        "latency_min": null,
+        "hr_avg": null,
+        "hr_lowest": null,
+        "hrv_avg": null,
+        "breathing_rate": null,
+        "bedtime": null,
+        "wake_time": null
+      },
+      "readiness": {
+        "score": null,
+        "hrv_balance": null,
+        "resting_hr": null,
+        "recovery_index": null,
+        "sleep_balance": null,
+        "body_temp_deviation": null
+      },
+      "activity": {
+        "steps": null,
+        "calories_total": null,
+        "calories_active": null,
+        "high_intensity_min": null,
+        "medium_intensity_min": null,
+        "low_intensity_min": null,
+        "sedentary_min": null,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-06-05": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable.",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": null,
+        "duration_min": null,
+        "efficiency_pct": null,
+        "deep_pct": null,
+        "rem_pct": null,
+        "light_pct": null,
+        "awake_min": null,
+        "latency_min": null,
+        "hr_avg": null,
+        "hr_lowest": null,
+        "hrv_avg": null,
+        "breathing_rate": null,
+        "bedtime": null,
+        "wake_time": null
+      },
+      "readiness": {
+        "score": null,
+        "hrv_balance": null,
+        "resting_hr": null,
+        "recovery_index": null,
+        "sleep_balance": null,
+        "body_temp_deviation": null
+      },
+      "activity": {
+        "steps": null,
+        "calories_total": null,
+        "calories_active": null,
+        "high_intensity_min": null,
+        "medium_intensity_min": null,
+        "low_intensity_min": null,
+        "sedentary_min": null,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-06-06": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable.",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": null,
+        "duration_min": null,
+        "efficiency_pct": null,
+        "deep_pct": null,
+        "rem_pct": null,
+        "light_pct": null,
+        "awake_min": null,
+        "latency_min": null,
+        "hr_avg": null,
+        "hr_lowest": null,
+        "hrv_avg": null,
+        "breathing_rate": null,
+        "bedtime": null,
+        "wake_time": null
+      },
+      "readiness": {
+        "score": null,
+        "hrv_balance": null,
+        "resting_hr": null,
+        "recovery_index": null,
+        "sleep_balance": null,
+        "body_temp_deviation": null
+      },
+      "activity": {
+        "steps": null,
+        "calories_total": null,
+        "calories_active": null,
+        "high_intensity_min": null,
+        "medium_intensity_min": null,
+        "low_intensity_min": null,
+        "sedentary_min": null,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-06-07": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable.",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 80,
+        "duration_min": 459,
+        "efficiency_pct": 88.9,
+        "deep_pct": 21.5,
+        "rem_pct": 16.2,
+        "light_pct": 62.2,
+        "awake_min": 57,
+        "latency_min": 8,
+        "hr_avg": 58.75,
+        "hr_lowest": 50,
+        "hrv_avg": 53,
+        "breathing_rate": 14.125,
+        "bedtime": "01:48",
+        "wake_time": "10:24"
+      },
+      "readiness": {
+        "score": null,
+        "hrv_balance": null,
+        "resting_hr": null,
+        "recovery_index": null,
+        "sleep_balance": null,
+        "body_temp_deviation": null
+      },
+      "activity": {
+        "steps": 17020,
+        "calories_total": 2977,
+        "calories_active": 875,
+        "high_intensity_min": 0,
+        "medium_intensity_min": 106,
+        "low_intensity_min": 306,
+        "sedentary_min": 373,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-06-08": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable.",
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 82,
+        "duration_min": 407,
+        "efficiency_pct": 90.0,
+        "deep_pct": 19.8,
+        "rem_pct": 21.3,
+        "light_pct": 58.9,
+        "awake_min": 45,
+        "latency_min": 8,
+        "hr_avg": 57,
+        "hr_lowest": 52,
+        "hrv_avg": 56,
+        "breathing_rate": 14.5,
+        "bedtime": "00:28",
+        "wake_time": "08:01"
+      },
+      "readiness": {
+        "score": 73,
+        "hrv_balance": 80,
+        "resting_hr": 65,
+        "recovery_index": 32,
+        "sleep_balance": 54,
+        "body_temp_deviation": 0.12
+      },
+      "activity": {
+        "steps": null,
+        "calories_total": null,
+        "calories_active": null,
+        "high_intensity_min": null,
+        "medium_intensity_min": null,
+        "low_intensity_min": null,
+        "sedentary_min": null,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": null,
       "food_log_summary": {
         "meals": []
       }
@@ -2848,14 +2009,13 @@
     }
   },
   "calibration_baselines": {
-    "hrv_mean": null,
-    "hrv_sd": null,
-    "sleep_score_mean": null,
-    "sleep_score_sd": null,
-    "resting_hr_mean": null,
-    "resting_hr_sd": null,
-    "tdee_initial_estimate": null,
-    "_notes": "Collecting data. Will establish after May 24."
+    "hrv_mean": 54.2,
+    "hrv_sd": 7.1,
+    "sleep_score_mean": 78.6,
+    "sleep_score_sd": 5.6,
+    "resting_hr_mean": 49.0,
+    "resting_hr_sd": 2.6,
+    "_notes": "Established from 23 days of data (May 3 - May 24). Note: May 9 HRV (28) is a likely outlier."
   },
   "trigger_status": {
     "refeed_triggers_active": [],
@@ -2863,7 +2023,7 @@
     "last_refeed": null,
     "last_diet_break": null,
     "continuous_deficit_days": 14,
-    "notes": "Calibration period -- triggers disabled until May 24."
+    "notes": "Calibration complete as of May 25. Triggers now active. No triggers fired yet."
   },
   "tdee_tracking": {
     "claude_estimate": null,
@@ -2889,100 +2049,112 @@
   },
   "checkin_status": {
     "_description": "Tracks whether today's check-in is complete. Reset daily by the 10am task.",
-    "today": "2026-05-23",
+    "today": "2026-06-08",
     "morning_checkin_complete": false,
     "training_logged": false
   },
   "computed_dashboard_values": {
     "current_weight": 173.0,
     "seven_day_avg_weight": 175.5,
-    "rate_of_loss_lbs_per_week": 1.5,
-    "projected_goal_date": "2026-08-03",
-    "weeks_remaining": 10.3,
+    "rate_of_loss_lbs_per_week": 0.85,
+    "projected_goal_date": "2026-10-13",
+    "weeks_remaining": 18.2,
     "total_lost": 4.5,
-    "avg_intake_cal": 2226.4,
-    "avg_protein_g": 155.0,
-    "avg_carbs_g": 255.6,
-    "avg_fat_g": 73.6,
-    "avg_fiber_g": 24.1,
-    "protein_per_lb": 1.11,
+    "avg_intake_cal": 2222.0,
+    "avg_protein_g": 153.9,
+    "avg_carbs_g": 263.3,
+    "avg_fat_g": 65.0,
+    "avg_fiber_g": 48.4,
+    "protein_per_lb": 1.1,
     "macro_split_pct": {
-      "protein": 28,
-      "carbs": 46,
-      "fat": 30
+      "protein": 27,
+      "carbs": 47,
+      "fat": 26
     },
-    "last_night_sleep_score": 72,
-    "avg_sleep_score": 77.3,
-    "last_night_hrv": 58,
-    "avg_hrv": 57.3,
-    "last_night_hr_lowest": 47,
-    "avg_hr_lowest": 47.4,
-    "last_night_efficiency": 85.4,
-    "avg_efficiency": 88.9,
-    "last_night_deep_pct": 30.7,
-    "last_night_rem_pct": 18.0,
-    "last_night_latency_min": 7,
-    "readiness_today": null,
-    "avg_readiness": 82.7,
-    "yesterday_steps": 21900,
-    "avg_steps": 19520.0,
+    "last_night_sleep_score": 82,
+    "avg_sleep_score": 81.1,
+    "last_night_hrv": 56,
+    "avg_hrv": 49.9,
+    "last_night_hr_lowest": 52,
+    "avg_hr_lowest": 53.4,
+    "last_night_efficiency": 90.0,
+    "avg_efficiency": 91.5,
+    "last_night_deep_pct": 19.8,
+    "last_night_rem_pct": 21.3,
+    "last_night_latency_min": 8,
+    "readiness_today": 73,
+    "avg_readiness": 74.3,
+    "yesterday_steps": 17020,
+    "avg_steps": 19633.1,
     "avg_stress": 4.9,
     "all_floor_lifts_green": true,
     "dal_score": null,
     "neat_score": null,
     "signals": [
       {
-        "icon": "\ud83d\ude34",
-        "title": "Last night: Sleep 72 | 5h 27m | Efficiency 85.4%",
-        "detail": "Deep 30.7% | REM 18.0% | HRV 58 | Lowest HR 47. 7-day avg sleep: 77.3.",
-        "severity": "warning"
-      },
-      {
-        "icon": "\u26a1",
-        "title": "Readiness: not available (ring not synced)",
-        "detail": "7-day avg readiness: 82.7.",
-        "severity": "warning"
-      },
-      {
-        "icon": "\u2696\ufe0f",
-        "title": "Today: 173.0 lbs | 7-day avg: 175.5 lbs | Down 4.5 lbs",
-        "detail": "Rate: 1.5 lbs/week. New low! Projected goal: 2026-08-03.",
-        "severity": "positive"
-      },
-      {
-        "icon": "\ud83d\udea8",
-        "title": "MacroFactor API DOWN (Firestore 403)",
-        "detail": "All MCP endpoints returning 403. Food log, nutrition, and weight reads/writes all failing. May 19 and May 20 nutrition still missing. May 22 logged manually from Danny's entries (partial -- 2 meals only, 1190 cal).",
-        "severity": "warning"
-      },
-      {
-        "icon": "\ud83c\udf7d\ufe0f",
-        "title": "Yesterday (May 22): 1,190 cal | 82g P | 119g C | 43g F (PARTIAL)",
-        "detail": "Only tuna roll + poke bowl logged. Likely missing breakfast/snacks. Needs reconciliation.",
-        "severity": "warning"
-      },
-      {
-        "icon": "\ud83d\udcca",
-        "title": "Data gaps: May 19 nutrition, May 20 nutrition+weight",
-        "detail": "MCP was down for these days. If you can recall what you ate, we can backfill manually.",
-        "severity": "warning"
-      },
-      {
-        "icon": "\ud83d\udc5f",
-        "title": "Yesterday: 21,900 steps (excellent)",
-        "detail": "7-day avg: 19,520 steps.",
-        "severity": "positive"
-      },
-      {
-        "icon": "\ud83e\udd4b",
-        "title": "BJJ returns today!",
-        "detail": "First session back since cut started. Ease in. Don't stack squat+hinge on consecutive days with BJJ.",
+        "icon": "sleep",
+        "title": "Last night: Sleep 82 | 6h 47m | Efficiency 90.0%",
+        "detail": "Deep 19.8% | REM 21.3% | HRV 56 | Lowest HR 52. 7-day avg: 81.1.",
         "severity": "info"
       },
       {
-        "icon": "\ud83d\udcc5",
-        "title": "Calibration: 1 day remaining (ends 2026-05-24)",
-        "detail": "Triggers activate after. Exam ends Tue May 27. All floor lifts GREEN.",
+        "icon": "sleep",
+        "title": "HRV elevated: 56",
+        "detail": "Above calibration baseline mean (54.2 \u00b1 7.1). 7-day avg: 49.9. Good recovery.",
+        "severity": "positive"
+      },
+      {
+        "icon": "readiness",
+        "title": "Readiness: 73",
+        "detail": "HRV balance 80, recovery index 32, sleep balance 54. Body temp +0.12\u00b0C.",
+        "severity": "info"
+      },
+      {
+        "icon": "alert",
+        "title": "Short sleep: 6h 47m (below 7h target)",
+        "detail": "Bed at 00:28, woke 08:01. Sleep balance at 54.",
+        "severity": "warning"
+      },
+      {
+        "icon": "readiness",
+        "title": "Low recovery index: 32",
+        "detail": "Resting HR didn't stabilize well during sleep. Consider lighter training intensity.",
+        "severity": "warning"
+      },
+      {
+        "icon": "weight",
+        "title": "Last weigh-in: 173.0 lbs (2026-05-23) | 7-day avg: 175.5 lbs",
+        "detail": "No weigh-ins in 16 days. Rate: 0.85 lbs/wk. Total lost: 4.5 lbs.",
+        "severity": "warning"
+      },
+      {
+        "icon": "alert",
+        "title": "MacroFactor MCP UNAVAILABLE \u2014 Day 21 of outage",
+        "detail": "Firestore 403 ongoing since May 19. No auto nutrition/weight data. GitHub issue #40 open.",
+        "severity": "warning"
+      },
+      {
+        "icon": "nutrition",
+        "title": "Nutrition data gap: May 24 \u2013 Jun 8 (MF outage)",
+        "detail": "No nutrition data in recent window. Manual logging or Excel export needed.",
+        "severity": "warning"
+      },
+      {
+        "icon": "steps",
+        "title": "Yesterday: 17,020 steps",
+        "detail": "7-day avg: 19,633. Great activity level.",
+        "severity": "positive"
+      },
+      {
+        "icon": "strength",
+        "title": "All floor lifts GREEN",
+        "detail": "Squat 225x5x3 | DB Chest 70x7x3 | Trap Bar DL 336x3. No strength erosion.",
+        "severity": "positive"
+      },
+      {
+        "icon": "calendar",
+        "title": "Monday \u2014 Squat day",
+        "detail": "Squats once/week on Mondays. Readiness 73. Don't stack hinge tomorrow if BJJ Wed/Fri.",
         "severity": "info"
       }
     ],
@@ -3287,6 +2459,294 @@
       "readiness_score": 69,
       "steps": 16156,
       "training_type": "rest"
+    },
+    "2026-05-09": {
+      "weight_lbs": 177.4,
+      "stress_rating": 6,
+      "reconciled_calories": 2267,
+      "reconciled_protein": 198,
+      "reconciled_carbs": 269,
+      "reconciled_fat": 69,
+      "reconciled": false,
+      "protein_per_lb": 1.12,
+      "fiber_estimated_g": 84,
+      "sleep_score": 84,
+      "hrv_avg": 28,
+      "hr_lowest": 58,
+      "efficiency_pct": 94.9,
+      "readiness_score": 54,
+      "steps": 14165,
+      "training_type": "lifting"
+    },
+    "2026-05-10": {
+      "weight_lbs": 176.6,
+      "stress_rating": null,
+      "reconciled_calories": 2677,
+      "reconciled_protein": 183,
+      "reconciled_carbs": 302,
+      "reconciled_fat": 106,
+      "reconciled": true,
+      "protein_per_lb": 1.04,
+      "fiber_estimated_g": 81,
+      "sleep_score": 76,
+      "hrv_avg": 51,
+      "hr_lowest": 51,
+      "efficiency_pct": 93.1,
+      "readiness_score": 72,
+      "steps": 12676,
+      "training_type": "rest"
+    },
+    "2026-05-11": {
+      "weight_lbs": 176.6,
+      "stress_rating": null,
+      "reconciled_calories": 2198,
+      "reconciled_protein": 199,
+      "reconciled_carbs": 287,
+      "reconciled_fat": 71,
+      "reconciled": false,
+      "protein_per_lb": 1.13,
+      "fiber_estimated_g": 120,
+      "sleep_score": 85,
+      "hrv_avg": 49,
+      "hr_lowest": 47,
+      "efficiency_pct": 93.3,
+      "readiness_score": 84,
+      "steps": 17377,
+      "training_type": "lifting"
+    },
+    "2026-05-12": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "reconciled_calories": 1962,
+      "reconciled_protein": 164,
+      "reconciled_carbs": 263,
+      "reconciled_fat": 60,
+      "reconciled": false,
+      "protein_per_lb": 0.93,
+      "fiber_estimated_g": 109,
+      "sleep_score": 72,
+      "hrv_avg": 45,
+      "hr_lowest": 50,
+      "efficiency_pct": 93.0,
+      "readiness_score": 68,
+      "steps": 14574,
+      "training_type": "lifting"
+    },
+    "2026-05-13": {
+      "weight_lbs": 177.6,
+      "stress_rating": null,
+      "reconciled_calories": 1968,
+      "reconciled_protein": 153,
+      "reconciled_carbs": 273,
+      "reconciled_fat": 60,
+      "reconciled": false,
+      "protein_per_lb": 1.09,
+      "fiber_estimated_g": 99,
+      "sleep_score": 80,
+      "hrv_avg": 53,
+      "hr_lowest": 47,
+      "efficiency_pct": 89.5,
+      "readiness_score": 81,
+      "steps": 17072,
+      "training_type": "rest"
+    },
+    "2026-05-14": {
+      "weight_lbs": 176.5,
+      "stress_rating": null,
+      "reconciled_calories": 2106,
+      "reconciled_protein": 160,
+      "reconciled_carbs": 288,
+      "reconciled_fat": 62,
+      "reconciled": false,
+      "protein_per_lb": 1.14,
+      "fiber_estimated_g": 96,
+      "sleep_score": 80,
+      "hrv_avg": 54,
+      "hr_lowest": 48,
+      "efficiency_pct": 90.4,
+      "readiness_score": 80,
+      "steps": 18556,
+      "training_type": "lifting"
+    },
+    "2026-05-15": {
+      "weight_lbs": 176.5,
+      "stress_rating": null,
+      "reconciled_calories": 2580,
+      "reconciled_protein": 172,
+      "reconciled_carbs": 296,
+      "reconciled_fat": 94,
+      "reconciled": true,
+      "protein_per_lb": 1.23,
+      "fiber_estimated_g": 51,
+      "sleep_score": 88,
+      "hrv_avg": 56,
+      "hr_lowest": 47,
+      "efficiency_pct": 91.7,
+      "readiness_score": 84,
+      "steps": 19171,
+      "training_type": "lifting"
+    },
+    "2026-05-16": {
+      "weight_lbs": 174.6,
+      "stress_rating": null,
+      "reconciled_calories": 2891,
+      "reconciled_protein": 200,
+      "reconciled_carbs": 237,
+      "reconciled_fat": 130,
+      "reconciled": true,
+      "protein_per_lb": 1.43,
+      "fiber_estimated_g": 101,
+      "sleep_score": 83,
+      "hrv_avg": 59,
+      "hr_lowest": 47,
+      "efficiency_pct": 93.2,
+      "readiness_score": 84,
+      "steps": 20822,
+      "training_type": "lifting"
+    },
+    "2026-05-17": {
+      "weight_lbs": 176.5,
+      "stress_rating": null,
+      "reconciled_calories": 2219,
+      "reconciled_protein": 161,
+      "reconciled_carbs": 282,
+      "reconciled_fat": 56,
+      "reconciled": false,
+      "protein_per_lb": 1.15,
+      "fiber_estimated_g": 51,
+      "sleep_score": 79,
+      "hrv_avg": 60,
+      "hr_lowest": 48,
+      "efficiency_pct": 91.5,
+      "readiness_score": 81,
+      "steps": 16178,
+      "training_type": "lifting"
+    },
+    "2026-05-18": {
+      "weight_lbs": 174.8,
+      "stress_rating": 6.5,
+      "reconciled_calories": 2428,
+      "reconciled_protein": 159,
+      "reconciled_carbs": 294,
+      "reconciled_fat": 73,
+      "reconciled": false,
+      "protein_per_lb": 1.14,
+      "fiber_estimated_g": 54,
+      "sleep_score": 69,
+      "hrv_avg": 53,
+      "hr_lowest": 49,
+      "efficiency_pct": 89.5,
+      "readiness_score": 76,
+      "steps": 15933,
+      "training_type": "lifting"
+    },
+    "2026-05-19": {
+      "weight_lbs": 176.3,
+      "stress_rating": null,
+      "reconciled_calories": 2035,
+      "reconciled_protein": 153,
+      "reconciled_carbs": 245,
+      "reconciled_fat": 54,
+      "reconciled": true,
+      "protein_per_lb": 1.09,
+      "fiber_estimated_g": 53,
+      "sleep_score": 87,
+      "hrv_avg": 55,
+      "hr_lowest": 49,
+      "efficiency_pct": 91.1,
+      "readiness_score": 88,
+      "steps": 22155,
+      "training_type": "lifting"
+    },
+    "2026-05-20": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "reconciled_calories": 2071,
+      "reconciled_protein": 157,
+      "reconciled_carbs": 207,
+      "reconciled_fat": 77,
+      "reconciled": true,
+      "protein_per_lb": 1.12,
+      "fiber_estimated_g": 67,
+      "sleep_score": 73,
+      "hrv_avg": 57,
+      "hr_lowest": 46,
+      "efficiency_pct": 83.5,
+      "readiness_score": 80,
+      "steps": 16671,
+      "training_type": "rest"
+    },
+    "2026-05-21": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "reconciled_calories": 2171,
+      "reconciled_protein": 151,
+      "reconciled_carbs": 273,
+      "reconciled_fat": 57,
+      "reconciled": false,
+      "protein_per_lb": 1.08,
+      "fiber_estimated_g": 46,
+      "sleep_score": 78,
+      "hrv_avg": 59,
+      "hr_lowest": 46,
+      "efficiency_pct": 87.9,
+      "readiness_score": 86,
+      "steps": 22981,
+      "training_type": "rest"
+    },
+    "2026-05-22": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "reconciled_calories": 2784,
+      "reconciled_protein": 186,
+      "reconciled_carbs": 322,
+      "reconciled_fat": 74,
+      "reconciled": true,
+      "protein_per_lb": 1.33,
+      "fiber_estimated_g": 34,
+      "sleep_score": 72,
+      "hrv_avg": 58,
+      "hr_lowest": 47,
+      "efficiency_pct": 85.4,
+      "readiness_score": null,
+      "steps": 21900,
+      "training_type": "rest"
+    },
+    "2026-05-23": {
+      "weight_lbs": 173.0,
+      "stress_rating": null,
+      "reconciled_calories": 1846,
+      "reconciled_protein": 110,
+      "reconciled_carbs": 220,
+      "reconciled_fat": 64,
+      "reconciled": false,
+      "protein_per_lb": 0.79,
+      "fiber_estimated_g": 34,
+      "sleep_score": 75,
+      "hrv_avg": 52,
+      "hr_lowest": 50,
+      "efficiency_pct": 94.2,
+      "readiness_score": null,
+      "steps": 13605,
+      "training_type": "lifting"
+    },
+    "2026-05-24": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "reconciled_calories": null,
+      "reconciled_protein": null,
+      "reconciled_carbs": null,
+      "reconciled_fat": null,
+      "reconciled": false,
+      "protein_per_lb": null,
+      "fiber_estimated_g": null,
+      "sleep_score": 81,
+      "hrv_avg": 62,
+      "hr_lowest": 49,
+      "efficiency_pct": 95.9,
+      "readiness_score": 77,
+      "steps": 16869,
+      "training_type": "rest"
     }
   },
   "_archival_logic": {
@@ -3352,21 +2812,29 @@
       {
         "name": "Vitamin D3",
         "dose": "2000+ IU",
-        "estimated_contribution": { "vitamin_d_mcg": 50 },
+        "estimated_contribution": {
+          "vitamin_d_mcg": 50
+        },
         "frequency": "daily",
         "status": "covers_rda"
       },
       {
         "name": "Magnesium Glycinate",
         "dose": "200+ mg elemental",
-        "estimated_contribution": { "magnesium_mg": 200 },
+        "estimated_contribution": {
+          "magnesium_mg": 200
+        },
         "frequency": "daily",
         "status": "food_plus_supp_near_rda"
       },
       {
         "name": "Sports Research Fish Oil (Triple Strength)",
         "dose": "2 capsules",
-        "estimated_contribution": { "omega3_total_g": 2.12, "epa_mg": 1374, "dha_mg": 548 },
+        "estimated_contribution": {
+          "omega3_total_g": 2.12,
+          "epa_mg": 1374,
+          "dha_mg": 548
+        },
         "frequency": "daily_unless_150g_salmon",
         "status": "covers_rda"
       }
@@ -3377,31 +2845,99 @@
     "updated": "2026-05-23",
     "assessment_basis": "21-day avg from MacroFactor export + daily supplement contributions",
     "covered_by_supplements": {
-      "omega_3": { "food_pct_rda": 18, "adjusted_pct_rda": 112, "status": "good" },
-      "vitamin_d": { "food_pct_rda": 43, "adjusted_pct_rda": 376, "status": "good" },
-      "magnesium": { "food_pct_rda": 43, "adjusted_pct_rda": 90, "status": "ok" }
+      "omega_3": {
+        "food_pct_rda": 18,
+        "adjusted_pct_rda": 112,
+        "status": "good"
+      },
+      "vitamin_d": {
+        "food_pct_rda": 43,
+        "adjusted_pct_rda": 376,
+        "status": "good"
+      },
+      "magnesium": {
+        "food_pct_rda": 43,
+        "adjusted_pct_rda": 90,
+        "status": "ok"
+      }
     },
     "covered_by_food": {
-      "fiber": { "pct_rda": 221, "status": "good", "notes": "High due to keto bread, PB powder, protein bars (functional fiber). Avg 84g." },
-      "iron": { "pct_rda": 425, "status": "good" },
-      "calcium": { "pct_rda": 143, "status": "good", "notes": "Fortified almond milk is primary driver." },
-      "vitamin_c": { "pct_rda": 137, "status": "good" },
-      "vitamin_k": { "pct_rda": 131, "status": "good" },
-      "vitamin_a": { "pct_rda": 114, "status": "good" },
-      "b6": { "pct_rda": 115, "status": "good" },
-      "selenium": { "pct_rda": 120, "status": "good" },
-      "phosphorus": { "pct_rda": 118, "status": "good" }
+      "fiber": {
+        "pct_rda": 221,
+        "status": "good",
+        "notes": "High due to keto bread, PB powder, protein bars (functional fiber). Avg 84g."
+      },
+      "iron": {
+        "pct_rda": 425,
+        "status": "good"
+      },
+      "calcium": {
+        "pct_rda": 143,
+        "status": "good",
+        "notes": "Fortified almond milk is primary driver."
+      },
+      "vitamin_c": {
+        "pct_rda": 137,
+        "status": "good"
+      },
+      "vitamin_k": {
+        "pct_rda": 131,
+        "status": "good"
+      },
+      "vitamin_a": {
+        "pct_rda": 114,
+        "status": "good"
+      },
+      "b6": {
+        "pct_rda": 115,
+        "status": "good"
+      },
+      "selenium": {
+        "pct_rda": 120,
+        "status": "good"
+      },
+      "phosphorus": {
+        "pct_rda": 118,
+        "status": "good"
+      }
     },
     "true_gaps": {
-      "choline": { "pct_rda": 32, "status": "deficient", "fix": "Adding 3 eggs daily → ~112% RDA" },
-      "zinc": { "pct_rda": 47, "status": "deficient", "fix": "Red meat 2-3x/wk or standalone zinc supplement" },
-      "folate": { "pct_rda": 55, "status": "low", "fix": "Extra leafy greens or fortified foods" },
-      "b12": { "pct_rda": 57, "status": "low", "fix": "3 eggs daily → ~104% RDA" },
-      "thiamine": { "pct_rda": 58, "status": "low" },
-      "potassium": { "pct_rda": 78, "status": "low", "fix": "Extra potato or spinach serving" }
+      "choline": {
+        "pct_rda": 32,
+        "status": "deficient",
+        "fix": "Adding 3 eggs daily"
+      },
+      "zinc": {
+        "pct_rda": 47,
+        "status": "deficient",
+        "fix": "Red meat 2-3x/wk or zinc supplement"
+      },
+      "folate": {
+        "pct_rda": 55,
+        "status": "low",
+        "fix": "Extra leafy greens or fortified foods"
+      },
+      "b12": {
+        "pct_rda": 57,
+        "status": "low",
+        "fix": "3 eggs daily"
+      },
+      "thiamine": {
+        "pct_rda": 58,
+        "status": "low"
+      },
+      "potassium": {
+        "pct_rda": 78,
+        "status": "low",
+        "fix": "Extra potato or spinach serving"
+      }
     },
     "watch": {
-      "sodium": { "pct_ul": 149, "status": "high", "notes": "Avg 3436mg vs 2300mg UL. Driven by processed snacks and soy sauce." }
+      "sodium": {
+        "pct_ul": 149,
+        "status": "high",
+        "notes": "Avg 3436mg vs 2300mg UL. Driven by processed snacks and soy sauce."
+      }
     }
   }
 }
