@@ -1,7 +1,7 @@
 {
   "_schema_version": "1.1",
   "_description": "Summer Cut data blob v1.1. Single source of truth for dashboard + roundtable. daily_log holds last 14 days with full detail. daily_log_archive holds older days as trend-line summaries.",
-  "_updated": "2026-06-09T10:00:00-07:00",
+  "_updated": "2026-06-10T10:00:00-07:00",
   "_updated_by": "morning_prep_task",
   "cut_metadata": {
     "start_date": "2026-05-03",
@@ -14,68 +14,10 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": true,
     "current_phase": "active_cut",
-    "days_into_cut": 38,
+    "days_into_cut": 39,
     "week_number": 6
   },
   "daily_log": {
-    "2026-05-26": {
-      "weight_lbs": null,
-      "stress_rating": null,
-      "stress_notes": null,
-      "nutrition": {
-        "mcp_calories": null,
-        "mcp_protein": null,
-        "mcp_carbs": null,
-        "mcp_fat": null,
-        "reconciled": false,
-        "reconciled_calories": null,
-        "reconciled_protein": null,
-        "reconciled_carbs": null,
-        "reconciled_fat": null,
-        "reconciliation_notes": null,
-        "fiber_estimated_g": null,
-        "protein_per_lb": null
-      },
-      "sleep": {
-        "score": 73,
-        "duration_min": 327,
-        "efficiency_pct": 93.2,
-        "deep_pct": 22.5,
-        "rem_pct": 17.9,
-        "light_pct": 59.6,
-        "awake_min": 23,
-        "latency_min": 12,
-        "hr_avg": 50.25,
-        "hr_lowest": 47,
-        "hrv_avg": 59,
-        "breathing_rate": 13.75,
-        "bedtime": "00:49",
-        "wake_time": "06:40"
-      },
-      "readiness": {
-        "score": 72,
-        "hrv_balance": 89,
-        "resting_hr": 99,
-        "recovery_index": 11,
-        "sleep_balance": 52,
-        "body_temp_deviation": 0.01
-      },
-      "activity": {
-        "steps": 24750,
-        "calories_total": 3583,
-        "calories_active": 1359,
-        "high_intensity_min": 0,
-        "medium_intensity_min": 242,
-        "low_intensity_min": 312,
-        "sedentary_min": 445,
-        "dal_score": null,
-        "neat_score": null
-      },
-      "training": "rest",
-      "food_log_summary": {
-        "meals": []
-      }
-    },
     "2026-05-27": {
       "weight_lbs": null,
       "stress_rating": null,
@@ -844,7 +786,7 @@
         "reconciled_protein": null,
         "reconciled_carbs": null,
         "reconciled_fat": null,
-        "reconciliation_notes": null,
+        "reconciliation_notes": "MacroFactor MCP unavailable (Firestore 403 outage ongoing since May 19).",
         "fiber_estimated_g": null,
         "protein_per_lb": null
       },
@@ -871,6 +813,64 @@
         "recovery_index": 85,
         "sleep_balance": 63,
         "body_temp_deviation": 0.14
+      },
+      "activity": {
+        "steps": 18632,
+        "calories_total": 3177,
+        "calories_active": 981,
+        "high_intensity_min": 0,
+        "medium_intensity_min": 185,
+        "low_intensity_min": 247,
+        "sedentary_min": 543,
+        "dal_score": null,
+        "neat_score": null
+      },
+      "training": "rest",
+      "food_log_summary": {
+        "meals": []
+      }
+    },
+    "2026-06-10": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "stress_notes": null,
+      "nutrition": {
+        "mcp_calories": null,
+        "mcp_protein": null,
+        "mcp_carbs": null,
+        "mcp_fat": null,
+        "reconciled": false,
+        "reconciled_calories": null,
+        "reconciled_protein": null,
+        "reconciled_carbs": null,
+        "reconciled_fat": null,
+        "reconciliation_notes": null,
+        "fiber_estimated_g": null,
+        "protein_per_lb": null
+      },
+      "sleep": {
+        "score": 79,
+        "duration_min": 378,
+        "efficiency_pct": 87.5,
+        "deep_pct": 25.0,
+        "rem_pct": 20.5,
+        "light_pct": 54.5,
+        "awake_min": 54,
+        "latency_min": 16,
+        "hr_avg": 55.75,
+        "hr_lowest": 50,
+        "hrv_avg": 49,
+        "breathing_rate": 14.0,
+        "bedtime": "00:40",
+        "wake_time": "07:52"
+      },
+      "readiness": {
+        "score": 81,
+        "hrv_balance": 79,
+        "resting_hr": 83,
+        "recovery_index": 100,
+        "sleep_balance": 63,
+        "body_temp_deviation": -0.28
       },
       "activity": {
         "steps": null,
@@ -2049,16 +2049,16 @@
   },
   "checkin_status": {
     "_description": "Tracks whether today's check-in is complete. Reset daily by the 10am task.",
-    "today": "2026-06-09",
+    "today": "2026-06-10",
     "morning_checkin_complete": false,
     "training_logged": false
   },
   "computed_dashboard_values": {
     "current_weight": 173.0,
     "seven_day_avg_weight": 175.5,
-    "rate_of_loss_lbs_per_week": 0.83,
-    "projected_goal_date": "2026-10-17",
-    "weeks_remaining": 18.7,
+    "rate_of_loss_lbs_per_week": 0.81,
+    "projected_goal_date": "2026-10-21",
+    "weeks_remaining": 19.1,
     "total_lost": 4.5,
     "avg_intake_cal": 2222.0,
     "avg_protein_g": 153.9,
@@ -2067,25 +2067,25 @@
     "avg_fiber_g": 48.4,
     "protein_per_lb": 1.1,
     "macro_split_pct": {
-      "protein": 27,
+      "protein": 28,
       "carbs": 47,
       "fat": 26
     },
-    "last_night_sleep_score": 82,
-    "avg_sleep_score": 82.4,
-    "last_night_hrv": 48,
-    "avg_hrv": 49.4,
-    "last_night_hr_lowest": 54,
-    "avg_hr_lowest": 53.3,
-    "last_night_efficiency": 94.0,
-    "avg_efficiency": 92.4,
-    "last_night_deep_pct": 26.7,
-    "last_night_rem_pct": 18.4,
-    "last_night_latency_min": 5,
-    "readiness_today": 76,
-    "avg_readiness": 72.9,
-    "yesterday_steps": 13032,
-    "avg_steps": 17959.1,
+    "last_night_sleep_score": 79,
+    "avg_sleep_score": 81.3,
+    "last_night_hrv": 49,
+    "avg_hrv": 48.4,
+    "last_night_hr_lowest": 50,
+    "avg_hr_lowest": 52.6,
+    "last_night_efficiency": 87.5,
+    "avg_efficiency": 91.3,
+    "last_night_deep_pct": 25.0,
+    "last_night_rem_pct": 20.5,
+    "last_night_latency_min": 16,
+    "readiness_today": 81,
+    "avg_readiness": 74.1,
+    "yesterday_steps": 18632,
+    "avg_steps": 17899.4,
     "avg_stress": 4.9,
     "all_floor_lifts_green": true,
     "dal_score": null,
@@ -2093,32 +2093,32 @@
     "signals": [
       {
         "icon": "sleep",
-        "title": "Last night: Sleep 82 | 6h 47m | Efficiency 94.0%",
-        "detail": "Deep 26.7% | REM 18.4% | HRV 48 | Lowest HR 54. 7-day avg: 82.4.",
+        "title": "Last night: Sleep 79 | 6h 18m | Efficiency 87.5%",
+        "detail": "Deep 25.0% | REM 20.5% | HRV 49 | Lowest HR 50. 7-day avg: 81.3.",
         "severity": "info"
       },
       {
         "icon": "sleep",
-        "title": "HRV slightly below mean: 48",
-        "detail": "Below calibration mean (54.2) but within 1 SD (7.1). 7-day avg: 49.4.",
+        "title": "HRV slightly below mean: 49",
+        "detail": "Below calibration mean (54.2) but within 1 SD (7.1). 7-day avg: 48.4.",
         "severity": "info"
       },
       {
         "icon": "readiness",
-        "title": "Readiness: 76",
-        "detail": "HRV balance 75, recovery index 85, sleep balance 63. Body temp +0.14°C.",
+        "title": "Readiness: 81",
+        "detail": "HRV balance 79, recovery index 100, sleep balance 63. Body temp -0.28°C.",
         "severity": "info"
       },
       {
         "icon": "alert",
-        "title": "Short sleep: 6h 47m (below 7h target)",
-        "detail": "Bed at 00:06, woke 07:19. Sleep balance at 63.",
+        "title": "Short sleep: 6h 18m (below 7h target)",
+        "detail": "Bed at 00:40, woke 07:52. Efficiency dipped to 87.5%. Sleep balance at 63.",
         "severity": "warning"
       },
       {
         "icon": "weight",
         "title": "Last weigh-in: 173.0 lbs (2026-05-23) | 7-day avg: 175.5 lbs",
-        "detail": "No weigh-ins in 17 days. Rate: 0.83 lbs/wk. Total lost: 4.5 lbs.",
+        "detail": "No weigh-ins in 18 days. Rate: 0.81 lbs/wk. Total lost: 4.5 lbs.",
         "severity": "warning"
       },
       {
@@ -2129,15 +2129,15 @@
       },
       {
         "icon": "nutrition",
-        "title": "Nutrition data gap: May 24 – Jun 9 (MF outage)",
+        "title": "Nutrition data gap: May 24 – Jun 10 (MF outage)",
         "detail": "No nutrition data in recent window. Manual logging or Excel export needed.",
         "severity": "warning"
       },
       {
         "icon": "steps",
-        "title": "Yesterday: 13,032 steps",
-        "detail": "7-day avg: 17,959. Below recent average.",
-        "severity": "info"
+        "title": "Yesterday: 18,632 steps",
+        "detail": "7-day avg: 17,899. Above recent average — solid NEAT day.",
+        "severity": "positive"
       },
       {
         "icon": "strength",
@@ -2147,8 +2147,8 @@
       },
       {
         "icon": "calendar",
-        "title": "Tuesday — No scheduled training slot",
-        "detail": "Squats are Mondays only. Consider upper body or rest based on readiness.",
+        "title": "Wednesday — flexible training day",
+        "detail": "Squats are Mondays only. Upper body, BJJ, or rest based on readiness (81 = good to go).",
         "severity": "info"
       }
     ],
@@ -2758,6 +2758,24 @@
       "efficiency_pct": 92.7,
       "readiness_score": 86,
       "steps": 14412,
+      "training_type": "rest"
+    },
+    "2026-05-26": {
+      "weight_lbs": null,
+      "stress_rating": null,
+      "reconciled_calories": null,
+      "reconciled_protein": null,
+      "reconciled_carbs": null,
+      "reconciled_fat": null,
+      "reconciled": false,
+      "protein_per_lb": null,
+      "fiber_estimated_g": null,
+      "sleep_score": 73,
+      "hrv_avg": 59,
+      "hr_lowest": 47,
+      "efficiency_pct": 93.2,
+      "readiness_score": 72,
+      "steps": 24750,
       "training_type": "rest"
     }
   },
