@@ -1,32 +1,31 @@
-# Morning Prep -- Friday, June 12, 2026
-## Day 41 of the Summer Cut | Week 6
+# Morning Prep — Saturday, June 13, 2026
+## Day 42 of the Summer Cut | Week 6
 
-**7 lbs down, sleep back on track, and the Oura ring is happy with you again. Now let's get that scale talking too.**
+**7 lbs down in 6 weeks, but your body is waving a yellow flag today — HRV hit 39 and readiness dipped to 70. Saturday is made for recovery.**
 
 ### Last Night's Sleep
-- Score: 84 | Duration: 7h 2m | Efficiency: 89.8%
-- Deep: 27.0% | REM: 18.3% | HRV: 47 | Lowest HR: 51
-- Bedtime: 11:21 PM > Wake: 7:12 AM
-- Readiness: 77 (Recovery Index 40 -- body still catching up)
+- Score: 80 | Duration: 6h 36m | Efficiency: 92.4%
+- Deep: 20.9% | REM: 21.4% | HRV: 39 | Lowest HR: 55
+- Bedtime: 12:59 AM → Wake: 8:08 AM
+- Readiness: 70 (HRV Balance 65 | Recovery Index 49 | Resting HR 45)
 
 ### Weight Check
 - Today: no weigh-in (MacroFactor MCP still down)
-- Last recorded: 173.0 lbs (May 23) | 7-day avg: 173.0 lbs
-- Total lost: 7.0 lbs | Rate: 1.2 lbs/week
-- Projected goal (160 lbs): Aug 26, 2026 (~10.8 weeks)
+- Last recorded: 173.0 lbs (May 23) | 7-day avg: 173.0 lbs | Direction: unknown
+- Total lost: 7.0 lbs | Rate: 1.17 lbs/week
+- Projected goal (160 lbs): ~Aug 30
 
 ### Yesterday's Food
-- MacroFactor MCP unavailable -- Day 24 of Firestore 403 outage
+- MacroFactor MCP unavailable — Day 25 of Firestore 403 outage
 - No auto-pull possible. Manual logging or Excel export needed.
-- Last 7-day nutrition avg (May 17-23): 2,222 cal | 154g P | 263g C | 65g F
 
 ### Flags
-- **MacroFactor outage continues** -- Day 24. GitHub issue #40 still open. No nutrition or weight data auto-syncing since May 19.
-- **No weigh-in in 20 days** -- Last scale reading was 173.0 on May 23. Trend data is stale.
-- **Recovery Index low (40)** -- Despite decent sleep score, your body is flagging slower recovery. Consider intensity today.
-- **Prior night sleep (Jun 11)** backfilled: Score 79 | 6h 27m | HRV 44. Short night but efficient (92.4%).
-- **All floor lifts remain GREEN** -- Squat 225x5x3, DB Chest 70x7x3, Trap Bar DL 336x3.
-- **Yesterday's steps: 17,607** (7-day avg: 16,314) -- NEAT game strong.
+- **⚠️ HRV 39 — below 2-SD threshold (40.0).** Calibration mean is 54.2 ± 7.1. This is the lowest recent reading. Recovery priority today.
+- **⚠️ Readiness 70** — Recovery Index (49) and HRV Balance (65) both depressed. Resting HR contributor also low at 45.
+- **⚠️ MacroFactor outage day 25.** No nutrition or weight data since May 24. GitHub issue #40 still open.
+- **⚠️ No weigh-in in 21 days.** Rate estimate is stale. Consider a manual weigh-in if possible.
+- **✅ Yesterday's steps: 19,745** (7-day avg: 16,886). NEAT game strong.
+- **✅ All floor lifts GREEN.** No strength erosion despite the cut.
 
 ---
 Open the Summer Cut project to complete your check-in.
