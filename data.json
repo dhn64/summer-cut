@@ -2055,11 +2055,11 @@
   },
   "computed_dashboard_values": {
     "current_weight": 173.0,
-    "seven_day_avg_weight": 175.5,
-    "rate_of_loss_lbs_per_week": 0.73,
-    "projected_goal_date": "2026-11-09",
-    "weeks_remaining": 21.2,
-    "total_lost": 4.5,
+    "seven_day_avg_weight": 173.0,
+    "rate_of_loss_lbs_per_week": 1.14,
+    "projected_goal_date": "2026-09-01",
+    "weeks_remaining": 11.4,
+    "total_lost": 7.0,
     "avg_intake_cal": 2222.0,
     "avg_protein_g": 153.9,
     "avg_carbs_g": 263.3,
@@ -2099,8 +2099,8 @@
       },
       {
         "icon": "weight",
-        "title": "Last weigh-in: 173.0 lbs (2026-05-23) | 7-day avg: 175.5 lbs",
-        "detail": "No weigh-ins in 22 days. Rate: 0.73 lbs/wk. Total lost: 4.5 lbs.",
+        "title": "Last weigh-in: 173.0 lbs (2026-05-23) | 7-day avg: 173.0 lbs",
+        "detail": "No weigh-ins in 22 days. Rate: 1.14 lbs/wk. Total lost: 7.0 lbs.",
         "severity": "warning"
       },
       {
