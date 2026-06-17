@@ -1,40 +1,37 @@
-# Morning Prep -- Tuesday, June 16, 2026
-## Day 45 of the Summer Cut | Week 7
+# Morning Prep — Wednesday, June 17, 2026
+## Day 46 of the Summer Cut | Week 7
 
-**7 lbs down, holding steady at 173 -- now let's get that Oura ring synced and keep the momentum rolling.**
+**7 lbs down at 1.07 lbs/week — on pace, but we're flying blind on nutrition and weight for 25 days now. Time to close that data gap.**
 
 ### Last Night's Sleep
-- Score: 68 | Duration: 5h 54m | Efficiency: 91.4%
-- Deep: 17.3% (low) | REM: 15.4% (low) | HRV: 68 ms | Lowest HR: 50
-- Bedtime: 1:44 AM > Wake: 8:12 AM
-- Readiness: 73
-
-*Note: No Oura data for tonight's sleep yet -- ring hasn't synced. Open the Oura app to pull latest data.*
+- **No new data** — Oura MCP not connected this session
+- Most recent (Jun 15): Score 68 | 5h 54m | Efficiency 91.4%
+- Deep: 17.3% | REM: 15.4% | HRV: 68 ms | Lowest HR: 50
+- Bedtime: 01:44 → Wake: 08:12
+- Readiness (Jun 15): 73
 
 ### Weight Check
-- Last weigh-in: 173.0 lbs (May 23) | 7-day avg: 173.0 lbs | Direction: flat (stale data)
-- Total lost: 7.0 lbs | Rate: 1.09 lbs/week
-- Projected goal (160 lbs): Sep 7, 2026 (~11.9 weeks)
-
-*No weigh-ins in 24 days due to MacroFactor outage. Manual weigh-in needed.*
+- Last weigh-in: **173.0 lbs** (May 23 — 25 days ago)
+- 7-day avg: N/A (no recent weigh-ins)
+- Total lost: **7.0 lbs** | Rate: ~1.07 lbs/week
+- Projected goal (160 lbs): **Sep 10, 2026** (~12 weeks)
 
 ### Yesterday's Food
-- **MacroFactor MCP unavailable** -- Day 28 of Firestore 403 outage
-- No nutrition data. Manual logging or Excel export needed.
-
-### Yesterday's Activity
-- Steps: 11,587 | Active cal: 536 | Total cal: 2,618
-- Medium intensity: 43m | Low intensity: 3h 48m | Sedentary: 7h
-- 7-day avg steps: 17,233 (yesterday was a lighter day)
+- **No data** — MacroFactor MCP outage Day 29 (Firestore 403 since May 19)
+- Yesterday auto-marked as **rest day** (no training logged)
 
 ### Flags
-- **MacroFactor outage Day 28** -- No auto nutrition or weight data since May 19. GitHub issue #40 still open.
-- **No weigh-in in 24 days** -- Weight data is stale. Rate/projection based on last known 173.0 lbs.
-- **Nutrition gap May 24 - Jun 16** -- Entire recent window has no food data. Consider Excel export from MF app.
-- **Oura not synced** -- No sleep/readiness for last night (June 15-16). Sync ring.
-- **Sleep short** -- 5h 54m with low deep (17.3%) and low REM (15.4%). HRV recovered nicely to 68 ms though.
-- **Tuesday** -- Upper body or rest day. No squat.
-- **All floor lifts GREEN** -- Squat 225x5x3 | DB Chest 70x7x3 | Trap Bar DL 336x3
+- ⚠️ **MacroFactor MCP outage: Day 29.** No auto-pull of nutrition or weight data since May 19. GitHub issue #40 still open. Consider manual Excel export to backfill.
+- ⚠️ **Oura MCP not connected** in this session — no sleep/readiness/activity data pulled today.
+- ⚠️ **No weigh-in in 25 days.** Last recorded weight was 173.0 lbs on May 23. Step on the scale!
+- ⚠️ **No nutrition data in 25 days.** Can't compute protein/lb, calorie adherence, or macro split.
+- ✅ **All floor lifts GREEN** — Squat 225×5×3 | DB Chest 70×7×3 | Trap Bar DL 336×3
+- ℹ️ Wednesday — mid-week training day option. Check how you feel before committing to intensity.
+
+### 7-Day Averages (sleep only — all that's available)
+- Sleep score: 75.3 | HRV: 49.9 ms | Lowest HR: 52.3
+- Efficiency: 90.3% | Readiness: 75.2
+- Steps: N/A (yesterday's Oura data not pulled)
 
 ---
 Open the Summer Cut project to complete your check-in.
