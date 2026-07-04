@@ -1,41 +1,40 @@
 # Morning Prep -- Saturday, July 4, 2026
 ## Day 63 of the Summer Cut | Week 9
 
-**Nine weeks in, still grinding. No scale data in 6 weeks but Oura says your body's holding up -- time to reconnect MacroFactor and get the full picture back.**
+**Happy 4th! Nine weeks in, 7 lbs down, strength floors all green. The cut is holding -- now we just need that scale and food log back online.**
 
 ### Last Night's Sleep
-- No data yet (ring hasn't synced). Sync your Oura app to populate.
-- Prior night (07-03): Score 79 | 6h 25m | Efficiency 94%
-- Deep: 20.1% | REM: 21.7% | HRV: 58 | Lowest HR: 49
+- Score: N/A (ring not synced for 07-04)
+- Most recent (07-03): Score 79 | 6h 25m | Efficiency 94%
+- Deep: 20.1% | REM: 21.7% | HRV: 58 ms | Lowest HR: 49
 - Bedtime: 1:15 AM > Wake: 8:05 AM
-- Readiness: No data (sync needed)
+- Readiness: N/A (no data for 07-04; last known: 86 on 06-30)
 
 ### Weight Check
+- Today: N/A (MacroFactor not connected)
 - Last weigh-in: 173.0 lbs (May 23 -- 42 days ago)
-- 7-day avg: 173.0 lbs | Direction: unknown (stale data)
-- Total lost: 7.0 lbs | Rate: ~0.78 lbs/week
-- Projected goal (160 lbs): late October at current rate
+- 7-day avg: 173.0 lbs | Total lost: 7.0 lbs | Rate: 0.78 lbs/week
+- Projected goal (160 lbs): ~Oct 28
 
 ### Yesterday's Food
-- **No data** -- MacroFactor MCP not connected (day 46 of gap)
-- Log manually in MacroFactor or reconnect the MCP
+- MacroFactor MCP not connected -- no nutrition data available.
+- Day 46 of the data gap (since May 19).
 
-### Yesterday's Activity (Jul 3)
+### Yesterday's Activity (07-03)
 - Steps: 15,661 | Total cal: 2,736 | Active cal: 630
-- Medium intensity: 46m | Low intensity: 5h 46m | Sedentary: 5h 50m
-- Solid movement day
+- Medium intensity: 46 min | Low intensity: 5h 46m | Sedentary: 5h 50m
 
-### 7-Day Averages (where data exists)
+### 7-Day Averages
 - Sleep score: 80.3 | HRV: 58.7 ms | Lowest HR: 48.7
-- Steps: ~15,044 (limited data points in window)
-- Nutrition: no data
+- Steps: 15,044 (2 data points only)
+- Readiness: 86.0 (1 data point only)
 
 ### Flags
-- **MacroFactor MCP disconnected since May 19 (46 days).** No auto nutrition or weight data. This is the #1 thing to fix.
-- **No weigh-in in 42 days.** Weight trend is completely stale -- the 173.0 from May 23 is unreliable for tracking progress.
-- **Oura ring not synced for today.** Open the Oura app to get last night's sleep + readiness.
-- **No training logged since May 23.** If you've been training, log sessions to keep strength floor tracking accurate.
-- **Happy 4th of July!** Enjoy the holiday. If eating out, a rough log is better than no log.
+- **MacroFactor MCP still disconnected** -- 46 days without auto nutrition/weight data. Connect MCP or log manually.
+- **Weight data stale** -- last weigh-in was 42 days ago. Trend data unreliable without recent readings.
+- **Oura ring not synced** -- no sleep/readiness data for today. Open Oura app to sync.
+- **HRV trending well** -- 58.7 ms avg, above calibration mean (54.2 ms).
+- **All floor lifts GREEN** -- Squat 225x5x3 | DB Chest 70x7x3 | Trap Bar DL 336x3.
 
 ---
 Open the Summer Cut project to complete your check-in.
