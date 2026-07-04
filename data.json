@@ -14,7 +14,7 @@
     "calibration_end_date": "2026-05-24",
     "calibration_complete": true,
     "current_phase": "active_cut",
-    "days_into_cut": 62,
+    "days_into_cut": 63,
     "week_number": 9
   },
   "daily_log": {
@@ -2056,9 +2056,9 @@
   "computed_dashboard_values": {
     "current_weight": 173.0,
     "seven_day_avg_weight": 173.0,
-    "rate_of_loss_lbs_per_week": 0.79,
-    "projected_goal_date": "2026-10-27",
-    "weeks_remaining": 16.5,
+    "rate_of_loss_lbs_per_week": 0.78,
+    "projected_goal_date": "2026-10-28",
+    "weeks_remaining": 16.7,
     "total_lost": 7.0,
     "avg_intake_cal": null,
     "avg_protein_g": null,
@@ -2100,7 +2100,7 @@
       {
         "icon": "weight",
         "title": "Last weigh-in: 173.0 lbs (2026-05-23) | 42 days ago",
-        "detail": "Rate: 0.79 lbs/wk. Total lost: 7.0 lbs. No recent weigh-ins \u2014 trend data stale.",
+        "detail": "Rate: 0.78 lbs/wk. Total lost: 7.0 lbs. No recent weigh-ins \u2014 trend data stale.",
         "severity": "warning"
       },
       {
