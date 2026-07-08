@@ -1,29 +1,30 @@
-# Morning Prep -- Tuesday, July 7, 2026
-## Day 66 of the Summer Cut | Week 10
+# Morning Prep — Wednesday, July 8, 2026
+## Day 67 of the Summer Cut | Week 10
 
-**Readiness bounced back to 83 — HRV up to 60, resting HR holding strong. Body's ready even if last night's sleep was short.**
+**Readiness is OPTIMAL at 89 — best recovery signal this week. HRV 64 ms is running well above your calibration baseline. Good day to train.**
 
 ### Last Night's Sleep
-- Score: 73 | Duration: 6h 23m | Efficiency: 90.7%
-- Deep: 15.0% | REM: 9.7% | HRV: 60 | Lowest HR: 48
-- Bedtime: 11:47 PM > Wake: 6:50 AM
-- Readiness: 83
+- Score: 80 | Duration: 6h 30m | Efficiency: 87.9%
+- Deep: 23.7% | REM: 23.9% | HRV: 64 | Lowest HR: 47
+- Bedtime: 11:10 PM > Wake: 6:35 AM
+- Readiness: 89 (Optimal)
 
 ### Weight Check
 - Today: no weigh-in | Last: 173.0 lbs (May 23) | 7-day avg: 173.0 lbs
-- Total lost: 7.0 lbs | Rate: 0.74 lbs/week
-- Projected goal (160 lbs): Nov 7, 2026
+- Total lost: 7.0 lbs | Rate: 0.73 lbs/week
+- No weigh-in in 46 days — trend data is stale
 
 ### Yesterday's Food
-- MacroFactor MCP not connected — no nutrition data available
+- MacroFactor MCP not connected — no nutrition data pulled
+- Manual logging or MCP reconnection needed
 
 ### Flags
-- **Low REM: 9.7%** — well below the 20%+ target. Sleep duration was also short at 6h 23m. Late bedtime or disrupted sleep cycles likely.
-- **HRV 60 ms** — above calibration mean (54.2), good recovery signal despite short sleep.
-- **Weight data stale** — last weigh-in was 45 days ago. Step on the scale today.
-- **MacroFactor MCP still disconnected** — Day 49+ of nutrition data gap. No calorie/macro tracking since May 23.
-- **No training logged since May 23** — 45 days without a logged session. Log today's training during check-in.
-- **Yesterday's activity solid** — 16,839 steps, 3,086 cal total burned. 2.5 hrs medium intensity.
+- **MacroFactor MCP still disconnected** — 46+ day data gap for nutrition and weight. This is the biggest blind spot in the cut right now.
+- **No training logged since May 23** — 46 days without a logged session. If you're training, log it during check-in.
+- Recovery looks great — HRV 64 ms (calibration mean: 54.2), readiness 89. Body temp normal (-0.13C).
+- Sleep improved — REM bounced back to 23.9% (vs 9.7% night before). Deep sleep solid at 23.7%.
+- Yesterday: 15,800 steps — 91m medium intensity, staying active.
+- All floor lifts GREEN — no strength erosion detected.
 
 ---
 Open the Summer Cut project to complete your check-in.
