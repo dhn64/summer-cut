@@ -1,34 +1,32 @@
-# Morning Prep -- Saturday, July 11, 2026
-## Day 70 of the Summer Cut | Week 10
+# Morning Prep -- Sunday, July 12, 2026
+## Day 71 of the Summer Cut | Week 11
 
-**Ten weeks in. Oura's still tracking, readiness is optimal at 88 -- your body's ready even if MacroFactor isn't.**
+**Short sleep night but readiness is holding at 81 -- the engine's still running even if the fuel tank was low.**
 
 ### Last Night's Sleep
-- Score: 84 | Duration: 6h 6m | Efficiency: 93.1%
-- Deep: 21.6% | REM: 15.2% | HRV: 55 | Lowest HR: 50
-- Bedtime: 11:35 PM > Wake: 6:09 AM
-- Latency: 5m (fell asleep fast)
-- Readiness: 88 (Optimal)
+- Score: 71 | Duration: 5h 40m | Efficiency: 91.1%
+- Deep: 16.3% | REM: 15.3% | HRV: 51 | Lowest HR: 50
+- Bedtime: 12:21 AM > Wake: 6:34 AM
+- Readiness: 81
 
 ### Weight Check
-- Today: no weigh-in (MacroFactor MCP not connected)
-- Last known: 173.0 lbs (May 23) | 7-day avg: 173.0 lbs | Direction: unknown (49 days stale)
-- Total lost: 7.0 lbs | Rate: 0.70 lbs/week (based on stale data)
+- Today: no weigh-in | 7-day avg: 173.0 lbs | Direction: flat (stale data)
+- Total lost: 7.0 lbs | Rate: 0.7 lbs/week
+- Last weigh-in was May 23 (50 days ago) -- trend data unreliable
 
 ### Yesterday's Food
-- MacroFactor MCP not connected -- no nutrition data available.
-- Day 53+ of the data gap (since May 19).
+- MacroFactor MCP not connected -- no nutrition data available
+- Day 51+ without auto-logged nutrition. Manual logging or MCP reconnection needed.
 
 ### Yesterday's Activity
-- Steps: 18,680 | Calories: 3,314 total (1,167 active)
-- Medium intensity: 194m | Low intensity: 290m | Sedentary: 497m
-- Big movement day.
+- Steps: 16,964 | Total cal: 3,110 | Active cal: 988
+- Medium intensity: 2h 4m | Low intensity: 5h 2m | Sedentary: 8h 11m
 
 ### Flags
-- **MacroFactor MCP still disconnected** -- 53+ days without auto nutrition/weight data. This is the longest gap of the cut. Weight trend is completely stale.
-- **Low REM last night: 15.2%** -- below the 20% target. Short sleep duration (6h 6m) limits REM cycles, which tend to concentrate in later sleep hours.
-- **No training logged since May 23** -- 49 days. If you're still lifting, log sessions to keep strength floor tracking current.
-- **Readiness 88 (Optimal)** -- recovery is strong. HRV 55 is right at calibration mean (54.2). Good day to train.
+- **MacroFactor MCP still disconnected** -- no nutrition or weight data since May 24. This is the single biggest gap in the system right now.
+- **Short sleep (5h 40m)** -- under 6h floor. Both deep (16.3%) and REM (15.3%) below target ranges (>20% each). HRV dipped to 51 (calibration mean: 54.2).
+- **Weight data stale** -- 50 days since last weigh-in. Rate of loss calculation (0.7 lbs/wk) is unreliable.
+- **No training logged since May 23** -- 50 days. If you're training, log it so the system can track strength floors.
 
 ---
 Open the Summer Cut project to complete your check-in.
