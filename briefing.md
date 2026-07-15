@@ -1,32 +1,35 @@
-# Morning Prep -- Sunday, July 12, 2026
-## Day 71 of the Summer Cut | Week 11
+# Morning Prep -- Wednesday, July 15, 2026
+## Day 74 of the Summer Cut | Week 11
 
-**Short sleep night but readiness is holding at 81 -- the engine's still running even if the fuel tank was low.**
+**Ten and a half weeks in, Oura's looking good -- readiness 87 and HRV rebounding. Now if only we could get MacroFactor talking again.**
 
 ### Last Night's Sleep
-- Score: 71 | Duration: 5h 40m | Efficiency: 91.1%
-- Deep: 16.3% | REM: 15.3% | HRV: 51 | Lowest HR: 50
-- Bedtime: 12:21 AM > Wake: 6:34 AM
-- Readiness: 81
+- Score: 79 | Duration: 7h 03m | Efficiency: 87.6%
+- Deep: 23.6% | REM: 16.9% | HRV: 56 | Lowest HR: 48
+- Bedtime: 10:34 PM > Wake: 6:37 AM
+- Readiness: 87 (Optimal)
 
 ### Weight Check
-- Today: no weigh-in | 7-day avg: 173.0 lbs | Direction: flat (stale data)
-- Total lost: 7.0 lbs | Rate: 0.7 lbs/week
-- Last weigh-in was May 23 (50 days ago) -- trend data unreliable
+- Today: no weigh-in (MacroFactor MCP not connected)
+- Last weigh-in: 173.0 lbs (May 23) | 7-day avg: 173.0 lbs
+- Total lost: 7.0 lbs | Rate: ~0.7 lbs/week
+- **53 days without a weigh-in -- trend data is stale**
 
 ### Yesterday's Food
 - MacroFactor MCP not connected -- no nutrition data available
-- Day 51+ without auto-logged nutrition. Manual logging or MCP reconnection needed.
+- Manual logging recommended
 
-### Yesterday's Activity
-- Steps: 16,964 | Total cal: 3,110 | Active cal: 988
-- Medium intensity: 2h 4m | Low intensity: 5h 2m | Sedentary: 8h 11m
+### Yesterday's Activity (Jul 14)
+- Steps: 18,646 | Total cal: 3,117 | Active cal: 952
+- Medium intensity: 2h 57m | Low intensity: 4h 27m
+- Solid activity day -- well above average (16,260 steps/day 7-day avg)
 
 ### Flags
-- **MacroFactor MCP still disconnected** -- no nutrition or weight data since May 24. This is the single biggest gap in the system right now.
-- **Short sleep (5h 40m)** -- under 6h floor. Both deep (16.3%) and REM (15.3%) below target ranges (>20% each). HRV dipped to 51 (calibration mean: 54.2).
-- **Weight data stale** -- 50 days since last weigh-in. Rate of loss calculation (0.7 lbs/wk) is unreliable.
-- **No training logged since May 23** -- 50 days. If you're training, log it so the system can track strength floors.
+- **MacroFactor MCP still disconnected** -- Day 57+ of nutrition/weight data gap. No auto-pull of calories, protein, or weight. GitHub issue #40 still open.
+- **No weigh-in since May 23** -- 53 days. Weight trend, rate of loss, and projected goal date are all stale. Consider manual weigh-in.
+- **Sleep efficiency 87.6%** -- slightly below your calibration average (91.1%). 59 min awake. REM at 16.9% is a bit low.
+- **Readiness 87 (Optimal)** -- best in a while. HRV Balance 86, Recovery Index 100, Resting HR perfect. Good day for training if scheduled.
+- **No training logged since May 23** -- 53 days. If you're training, log sessions during check-in.
 
 ---
 Open the Summer Cut project to complete your check-in.
