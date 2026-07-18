@@ -1,33 +1,32 @@
-# Morning Prep -- Thursday, July 16, 2026
-## Day 75 of the Summer Cut | Week 11
+# Morning Prep -- Friday, July 17, 2026
+## Day 76 of the Summer Cut | Week 11
 
-**11 weeks in, 7 lbs down, floor lifts green -- the machine keeps running. Time to reconnect MacroFactor and get eyes on the nutrition data again.**
+**Short sleep night — 5h 26m and a 69 readiness. Recovery index at 34 says take it easy today.**
 
 ### Last Night's Sleep
-- No sleep data synced for last night -- ring may not have synced yet
-- Most recent sleep (Jul 15): Score 79 | 7h 3m | Efficiency 87.6%
-- Deep: 23.6% | REM: 16.9% | HRV: 56 | Lowest HR: 48
-- Bedtime: 10:34 PM > Wake: 6:37 AM
-- **Readiness: 77** (down from 87 yesterday -- recovery index 68, sleep balance 66 dragging it down)
+- Score: 69 | Duration: 5h 26m | Efficiency: 87.8%
+- Deep: 27.3% | REM: 13.5% | HRV: 55 | Lowest HR: 51
+- Bedtime: 11:09 PM > Wake: 5:21 AM
+- Latency: 6m | Breathing: 13.9 br/min
+- Readiness: 73 (recovery index 34, sleep balance 65)
 
 ### Weight Check
-- Today: **no weigh-in** (MacroFactor not connected)
-- Last recorded: **173.0 lbs** (May 23 -- 54 days ago)
-- 7-day avg: 173.0 lbs | Total lost: 7.0 lbs | Rate: ~0.65 lbs/week
+- Today: no weigh-in (MF not connected) | 7-day avg: 173.0 lbs | Direction: flat (stale data)
+- Total lost: 7.0 lbs | Rate: 0.64 lbs/week
+- Last weigh-in: 173.0 lbs on May 23 (55 days ago)
+
+### Yesterday's Activity (Thu Jul 16)
+- Steps: 15,274 | Calories: 2,971 total (803 active)
+- Medium intensity: 1h 46m | Low: 5h 6m | Sedentary: 8h 37m
 
 ### Yesterday's Food
-- **No data** -- MacroFactor MCP not connected
-
-### Yesterday's Activity
-- Steps: **16,237** | Calories: 2,944 total (766 active)
-- Medium intensity: 1h 41m | Low intensity: 5h 51m | Sedentary: 9h 8m
-- 7-day avg steps: ~16,342
+- MacroFactor MCP not connected — no nutrition data available.
 
 ### Flags
-- **MacroFactor MCP disconnected -- Day 54+ of nutrition/weight data gap.** This is the #1 thing to fix. No calorie tracking, no protein compliance data, no weight trend.
-- **Readiness dropped 87 > 77.** Recovery index (68) and sleep balance (66) are the weak contributors. Not alarming on its own but worth monitoring.
-- **No training sessions logged since May 23.** If you've been training, the log needs catching up. If intentional rest block, note it in check-in.
-- **Sleep data missing for last night.** Sync your Oura ring.
+- **Short sleep**: 5h 26m with only 13.5% REM. Recovery index cratered to 34. If training today, keep it light.
+- **Readiness 73**: Driven by low recovery index (34) and sleep balance (65). Body temp deviation -0.43°C.
+- **Weight data stale**: Last weigh-in was 55 days ago. Scale or manual entry needed.
+- **MacroFactor MCP still disconnected**: No auto nutrition/weight data since May 24. Day 55+ of the data gap.
 
 ---
 Open the Summer Cut project to complete your check-in.
