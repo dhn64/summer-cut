@@ -1,32 +1,43 @@
-# Morning Prep -- Friday, July 17, 2026
-## Day 76 of the Summer Cut | Week 11
+# Morning Prep -- Sunday, July 19, 2026
+## Day 78 of the Summer Cut | Week 12
 
-**Short sleep night — 5h 26m and a 69 readiness. Recovery index at 34 says take it easy today.**
+**Rough night -- 68 readiness with a recovery index of 13. Sunday rest day is well-timed.**
 
 ### Last Night's Sleep
-- Score: 69 | Duration: 5h 26m | Efficiency: 87.8%
-- Deep: 27.3% | REM: 13.5% | HRV: 55 | Lowest HR: 51
-- Bedtime: 11:09 PM > Wake: 5:21 AM
-- Latency: 6m | Breathing: 13.9 br/min
-- Readiness: 73 (recovery index 34, sleep balance 65)
+- Score: 68 | Duration: 6h 17m | Efficiency: 77.4%
+- Deep: 24.4% | REM: 17.0% | HRV: 52 | Lowest HR: 52
+- Bedtime: 1:04 AM > Wake: 9:11 AM
+- Awake time: 110 min (restless night)
+- Readiness: 68 (recovery index 13, sleep balance 61)
 
 ### Weight Check
-- Today: no weigh-in (MF not connected) | 7-day avg: 173.0 lbs | Direction: flat (stale data)
-- Total lost: 7.0 lbs | Rate: 0.64 lbs/week
-- Last weigh-in: 173.0 lbs on May 23 (55 days ago)
+- Today: no weigh-in (MF not connected) | 7-day avg: 173.0 lbs | Direction: stale
+- Total lost: 7.0 lbs | Rate: 0.63 lbs/week
+- Last weigh-in was May 23 -- 57 days ago. Trend data unreliable.
 
-### Yesterday's Activity (Thu Jul 16)
-- Steps: 15,274 | Calories: 2,971 total (803 active)
-- Medium intensity: 1h 46m | Low: 5h 6m | Sedentary: 8h 37m
+### Yesterday's Activity (Saturday)
+- Steps: 13,391 | Total cal burn: 2,991 (900 active)
+- Medium intensity: 2h 37m | Low intensity: 3h 47m
+- Sedentary: 5h 54m
 
 ### Yesterday's Food
-- MacroFactor MCP not connected — no nutrition data available.
+- MacroFactor MCP not connected -- no nutrition data available.
+
+### Prior Night's Sleep (Fri > Sat)
+- Score: 85 | Duration: 7h 13m | Efficiency: 87.4%
+- Deep: 19.1% | REM: 20.2% | HRV: 55 | Lowest HR: 51
+- Two naps also recorded Saturday afternoon (39m + 35m)
+
+### 7-Day Averages
+- Sleep score: 77.2 | HRV: 54.2 | Lowest HR: 50.7
+- Steps: 15,887 | Readiness: 76.3
 
 ### Flags
-- **Short sleep**: 5h 26m with only 13.5% REM. Recovery index cratered to 34. If training today, keep it light.
-- **Readiness 73**: Driven by low recovery index (34) and sleep balance (65). Body temp deviation -0.43°C.
-- **Weight data stale**: Last weigh-in was 55 days ago. Scale or manual entry needed.
-- **MacroFactor MCP still disconnected**: No auto nutrition/weight data since May 24. Day 55+ of the data gap.
+- **MacroFactor MCP still not connected** -- Day 57+ of nutrition/weight data gap. No calories, protein, or weight tracking since May 23.
+- **Poor sleep quality** -- 110 min awake, 77% efficiency, late 1 AM bedtime. Recovery index cratered to 13.
+- **Readiness 68** -- lowest sub-score is recovery index (13) driven by poor sleep. Sleep balance at 61.
+- **Weight data stale** -- last weigh-in 173.0 lbs was 57 days ago. Cannot assess true cut progress.
+- **No training logged since May 23** -- training_log hasn't been updated in 57 days. All recent days auto-marked rest.
 
 ---
 Open the Summer Cut project to complete your check-in.
